@@ -24,6 +24,11 @@ A curated collection of modern, responsive, and production-ready static HTML web
 - **Architecture:** Modern B2B industrial manufacturing website with tailored corporate design tokens, comprehensive product categories, manufacturing specifications, and quotation request forms.
 - **Technologies:** HTML5, Tailwind CSS, JavaScript.
 
+### 4. `rds` — Rural Development Sangstha (RDS)
+- **Organization:** Rural Development Sangstha (RDS)
+- **Architecture:** NGO web portal featuring mega menu navigation, interactive slider, impact counters, sustainable livelihood & microfinance programs, health & education initiatives, and community stories.
+- **Technologies:** HTML5, CSS3, JavaScript, Bootstrap 5, Bootstrap Icons.
+
 ---
 
 ## 🚀 Getting Started

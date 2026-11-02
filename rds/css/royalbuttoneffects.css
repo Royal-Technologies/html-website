@@ -1,0 +1,2928 @@
+.royalbuttonstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.royalbuttonstyle.royalalignleft,
+.elementor-align-left .royalbuttonstyle,
+.elementor-tablet-align-left .royalbuttonstyle,
+.elementor-mobile-align-left .royalbuttonstyle {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.royalbuttonstyle.royalaligncenter,
+.elementor-align-center .royalbuttonstyle,
+.elementor-tablet-align-center .royalbuttonstyle,
+.elementor-mobile-align-center .royalbuttonstyle {
+  justify-content: center;
+  text-align: center;
+}
+
+.royalbuttonstyle.royalalignright,
+.elementor-align-right .royalbuttonstyle,
+.elementor-tablet-align-right .royalbuttonstyle,
+.elementor-mobile-align-right .royalbuttonstyle {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.royalbuttonstyle.royalalignjustify .royalbutton,
+.elementor-align-justify .royalbuttonstyle .royalbutton,
+.elementor-tablet-align-justify .royalbuttonstyle .royalbutton,
+.elementor-mobile-align-justify .royalbuttonstyle .royalbutton,
+.royalbuttonstyle[data-align="justify"] .royalbutton {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.royalbutton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all var(--transition, 0.4s) ease;
+  padding: 12px 28px;
+  line-height: 1.4;
+  outline: none;
+  background-color: var(--color1, #0b4d26);
+  color: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.royalbutton:focus,
+.royalbutton:active {
+  outline: none;
+}
+
+.royalbutton .icontext {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.royalbutton .icontext .text {
+  display: inline-block;
+  line-height: inherit;
+  transition: all 0.3s ease;
+}
+
+.royalbutton .royal-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.3s ease, color 0.3s ease, fill 0.3s ease;
+  flex-shrink: 0;
+}
+
+.royalbutton .royal-btn-icon svg {
+  display: block;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.royalbutton .royal-btn-icon i {
+  display: inline-block;
+  line-height: 1;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.royalbutton .icontext i,
+.royalbutton .icontext svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease, fill 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Ensure all button category types have rich, visible default styles */
+.royalbutton.slidestyle,
+.royalbutton.borderstyle,
+.royalbutton.shadowstyle,
+.royalbutton.backgroundstyle,
+.royalbutton.backgroundwstyle,
+.royalbutton.animatingeffect,
+.royalbutton.otherseffect,
+.royalbutton.shineeffect,
+.royalbutton.moderneffect {
+  background-color: var(--color1, #0b4d26);
+  color: #ffffff;
+}
+
+
+/* ==========================================================================
+   SHINE & LIGHT EFFECTS (Including Unnayan Prochesta button)
+   ========================================================================== */
+
+/* 1. Light Sweep (Smooth Gloss Glaze + Lift + Icon Shift) */
+.royalbutton-shinestyle1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: var(--color1, #0b4d26);
+  color: #ffffff;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, background-color 0.35s ease, color 0.35s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -90%;
+  width: 50%;
+  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%);
+  transform: skewX(-22deg);
+  transition: left 0.75s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.royalbutton-shinestyle1:hover::after {
+  left: 140%;
+}
+
+.royalbutton-shinestyle1:hover {
+  transform: translateY(-3px);
+  background-color: var(--backgroundcolorhover, #063519) !important;
+  box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.45);
+}
+
+.royalbutton-shinestyle1 .icontext {
+  transition: transform 0.3s ease;
+}
+
+.royalbutton-shinestyle1:hover .royal-btn-icon-right,
+.royalbutton-shinestyle1:hover .icontext.royal-icon-align-right i,
+.royalbutton-shinestyle1:hover .icontext.royal-icon-align-right svg {
+  transform: translateX(4px);
+}
+
+.royalbutton-shinestyle1:hover .royal-btn-icon-left,
+.royalbutton-shinestyle1:hover .icontext.royal-icon-align-left i,
+.royalbutton-shinestyle1:hover .icontext.royal-icon-align-left svg {
+  transform: translateX(-4px);
+}
+
+/* 2. Glass Glare / Spotlight */
+.royalbutton-shinestyle2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--color1, #2563eb);
+  box-shadow: 0 8px 20px -6px rgba(37, 99, 235, 0.4);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle2::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), transparent 60%);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.royalbutton-shinestyle2:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.royalbutton-shinestyle2:hover {
+  transform: translateY(-2px);
+  background-color: var(--backgroundcolorhover, #1d4ed8) !important;
+  box-shadow: 0 12px 26px -6px rgba(37, 99, 235, 0.6);
+}
+
+/* 3. Double Light Beam */
+.royalbutton-shinestyle3 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: var(--color1, #7c3aed);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle3::before,
+.royalbutton-shinestyle3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-25deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.royalbutton-shinestyle3::before {
+  left: -80%;
+  transition: left 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.royalbutton-shinestyle3::after {
+  left: -110%;
+  width: 15%;
+  opacity: 0.7;
+  transition: left 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
+}
+
+.royalbutton-shinestyle3:hover::before {
+  left: 130%;
+}
+
+.royalbutton-shinestyle3:hover::after {
+  left: 145%;
+}
+
+.royalbutton-shinestyle3:hover {
+  transform: translateY(-3px);
+  background-color: var(--backgroundcolorhover, #6d28d9) !important;
+  box-shadow: 0 14px 28px -8px rgba(124, 58, 237, 0.5);
+}
+
+/* 4. Laser Shimmer Beam */
+.royalbutton-shinestyle4 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: var(--color1, #0f172a);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.08) 70%, transparent 100%);
+  transition: left 0.6s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.royalbutton-shinestyle4:hover::after {
+  left: 100%;
+}
+
+.royalbutton-shinestyle4:hover {
+  background-color: var(--backgroundcolorhover, #1e293b) !important;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.28);
+  transform: scale(1.02);
+}
+
+/* 5. Rainbow Prismatic Sheen */
+.royalbutton-shinestyle5 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: var(--color1, #111827);
+  transition: all 0.35s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle5::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 20%, rgba(255, 0, 128, 0.45) 35%, rgba(0, 230, 255, 0.45) 50%, rgba(255, 220, 0, 0.45) 65%, transparent 80%);
+  transform: translateX(-120%) skewX(-20deg);
+  transition: transform 0.8s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.royalbutton-shinestyle5:hover::before {
+  transform: translateX(120%) skewX(-20deg);
+}
+
+.royalbutton-shinestyle5:hover {
+  transform: translateY(-3px);
+  background-color: var(--backgroundcolorhover, #1f2937) !important;
+  box-shadow: 0 12px 28px -8px rgba(0, 230, 255, 0.4);
+}
+
+/* 6. Soft Halo Flash */
+.royalbutton-shinestyle6 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--color1, #e11d48);
+  transition: all 0.35s ease;
+  z-index: 1;
+}
+
+.royalbutton-shinestyle6::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.royalbutton-shinestyle6:hover::after {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.royalbutton-shinestyle6:hover {
+  transform: scale(1.03);
+  background-color: var(--backgroundcolorhover, #be123c) !important;
+  box-shadow: 0 10px 25px -5px rgba(225, 29, 72, 0.5);
+}
+
+
+/* ==========================================================================
+   MODERN UI/UX EFFECTS (Trending Modern Buttons)
+   ========================================================================== */
+
+/* 1. 3D SaaS Elevation Lift */
+.royalbutton-modernstyle1 {
+  border-radius: 10px;
+  background-color: var(--color1, #0f172a);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.royalbutton-modernstyle1:hover {
+  transform: translateY(-4px);
+  background-color: var(--backgroundcolorhover, #1e293b) !important;
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.15);
+}
+
+.royalbutton-modernstyle1:active {
+  transform: translateY(-1px);
+}
+
+/* 2. Rotating Border Beam (Aceternity Conic Spin) */
+.royalbutton-modernstyle2 {
+  position: relative;
+  z-index: 1;
+  border-radius: 999px;
+  background: var(--color1, #09090b);
+  padding: 12px 28px;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.royalbutton-modernstyle2::before {
+  content: "";
+  position: absolute;
+  inset: -150%;
+  background: conic-gradient(from 0deg, transparent 0deg, var(--color2, #3b82f6) 60deg, var(--color1, #ec4899) 120deg, transparent 180deg);
+  animation: royalBorderBeamSpin 4s linear infinite;
+  z-index: -2;
+}
+
+.royalbutton-modernstyle2::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--color1, #09090b);
+  border-radius: inherit;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+.royalbutton-modernstyle2:hover::after {
+  background: var(--backgroundcolorhover, #18181b);
+}
+
+.royalbutton-modernstyle2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.45);
+}
+
+@keyframes royalBorderBeamSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 3. Pulse Ping Ripple Ring (Unnayan Prochesta hp-pulse style) */
+.royalbutton-modernstyle3 {
+  position: relative;
+  border-radius: 999px;
+  background-color: var(--color1, #c9a24a);
+  color: #2b2108;
+  font-weight: 700;
+  box-shadow: 0 10px 25px -8px rgba(201, 162, 74, 0.8);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.royalbutton-modernstyle3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--color1, #c9a24a);
+  animation: royalHpPing 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.royalbutton-modernstyle3:hover {
+  transform: translateY(-3px) scale(1.02);
+  background-color: var(--backgroundcolorhover, #dcb65c) !important;
+  box-shadow: 0 16px 32px -8px rgba(201, 162, 74, 1);
+}
+
+@keyframes royalHpPing {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.45, 1.65);
+    opacity: 0;
+  }
+}
+
+/* 4. Cyberpunk Tech Corners */
+.royalbutton-modernstyle4 {
+  position: relative;
+  background-color: var(--color1, #0a0a0f);
+  color: #00ffcc;
+  border: 1px solid rgba(0, 255, 204, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.royalbutton-modernstyle4::before,
+.royalbutton-modernstyle4::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-color: var(--color2, #00ffcc);
+  border-style: solid;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.royalbutton-modernstyle4::before {
+  top: -2px;
+  left: -2px;
+  border-width: 2px 0 0 2px;
+}
+
+.royalbutton-modernstyle4::after {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 2px 2px 0;
+}
+
+.royalbutton-modernstyle4:hover::before,
+.royalbutton-modernstyle4:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-color: var(--color2, #00ffcc);
+}
+
+.royalbutton-modernstyle4:hover {
+  background-color: var(--backgroundcolorhover, #00ffcc) !important;
+  color: #0a0a0f !important;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.65);
+}
+
+/* 5. Liquid Jelly Squish */
+.royalbutton-modernstyle5 {
+  border-radius: 50px;
+  background-color: var(--color1, #6366f1);
+  color: #fff;
+  transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6), background-color 0.3s ease;
+}
+
+.royalbutton-modernstyle5:hover {
+  background-color: var(--backgroundcolorhover, #4f46e5) !important;
+  animation: royalJellySquish 0.6s ease;
+  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.55);
+}
+
+@keyframes royalJellySquish {
+  0%   { transform: scale(1, 1); }
+  30%  { transform: scale(1.22, 0.78); }
+  40%  { transform: scale(0.78, 1.22); }
+  50%  { transform: scale(1.12, 0.88); }
+  65%  { transform: scale(0.96, 1.04); }
+  75%  { transform: scale(1.04, 0.96); }
+  100% { transform: scale(1, 1); }
+}
+
+/* 6. Flowing Aurora Gradient */
+.royalbutton-modernstyle6 {
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color1, #ff007a), var(--color2, #7928ca), #4338ca, #06b6d4);
+  background-size: 300% 300%;
+  animation: royalAuroraGradient 6s ease infinite;
+  color: #ffffff;
+  box-shadow: 0 10px 30px -10px rgba(121, 40, 202, 0.5);
+  transition: all 0.3s ease;
+}
+
+.royalbutton-modernstyle6:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 36px -8px rgba(255, 0, 122, 0.65);
+}
+
+@keyframes royalAuroraGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 7. Frosted Glass Neumorph */
+.royalbutton-modernstyle7 {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  transition: all 0.35s ease;
+}
+
+.royalbutton-modernstyle7:hover {
+  background: var(--backgroundcolorhover, rgba(255, 255, 255, 0.22)) !important;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px 0 rgba(0, 0, 0, 0.25), inset 0 1px 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* 8. Arrow Icon Slide Reveal */
+.royalbutton-modernstyle8 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: var(--color1, #18181b);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.royalbutton-modernstyle8 .icontext {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.royalbutton-modernstyle8:hover .icontext {
+  transform: translateX(4px);
+}
+
+.royalbutton-modernstyle8 .icontext i,
+.royalbutton-modernstyle8 .icontext svg {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.royalbutton-modernstyle8:hover .icontext i,
+.royalbutton-modernstyle8:hover .icontext svg {
+  transform: translateX(5px) scale(1.15);
+}
+
+.royalbutton-modernstyle8:hover {
+  background-color: var(--backgroundcolorhover, #27272a) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.35);
+}
+
+/* 9. 3D Mechanical Press */
+.royalbutton-modernstyle9 {
+  border-radius: 12px;
+  background-color: var(--color1, #10b981);
+  color: #ffffff;
+  box-shadow: 0 6px 0 0 var(--color2, #047857), 0 10px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: all 0.15s ease;
+}
+
+.royalbutton-modernstyle9:hover {
+  background-color: var(--backgroundcolorhover, #059669) !important;
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 0 var(--color2, #047857), 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.royalbutton-modernstyle9:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 0 var(--color2, #047857), 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 10. Glow Pill Radial Flare */
+.royalbutton-modernstyle10 {
+  position: relative;
+  border-radius: 999px;
+  background-color: var(--color1, #09090b);
+  color: #ffffff;
+  z-index: 1;
+  transition: all 0.35s ease;
+}
+
+.royalbutton-modernstyle10::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--color1, #f43f5e), var(--color2, #8b5cf6));
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.55;
+  transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+.royalbutton-modernstyle10:hover::before {
+  opacity: 1;
+  filter: blur(18px);
+}
+
+.royalbutton-modernstyle10:hover {
+  transform: translateY(-2px);
+  background-color: var(--backgroundcolorhover, #18181b) !important;
+}
+
+
+/* Border */
+.royalbutton-borderstyle1 {
+  outline: none;
+  font-size: 16px;  
+  transition: all .5s;
+}
+
+.royalbutton-borderstyle1:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle1::after, 
+.royalbutton-borderstyle1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-width: 2px;
+  border-style: solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.royalbutton-borderstyle1::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: var(--color1);
+  border-right-color: var(--color1);
+}
+.royalbutton-borderstyle1::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: var(--color2);
+  border-left-color: var(--color2);
+}
+.royalbutton-borderstyle1:hover:after, 
+.royalbutton-borderstyle1:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+
+.royalbutton-borderstyle2 {
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;  
+  transition: all .5s;
+}
+
+
+.royalbutton-borderstyle2:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle2:after, 
+.royalbutton-borderstyle2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color1);
+  transition: all 0.3s ease;
+  transform: scale(0.85);
+}
+.royalbutton-borderstyle2:hover:before {
+  top: 0;
+  transform: scale(1);
+}
+.royalbutton-borderstyle2:hover:after {
+  transform: scale(1);
+}
+
+.royalbutton-borderstyle3 {
+  background-color: transparent;
+  font-size: 16px;  
+  transition: all .5s;
+}
+
+.royalbutton-borderstyle3:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle3::after, 
+.royalbutton-borderstyle3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-width: 2px;
+  border-style: solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.royalbutton-borderstyle3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: var(--color1);
+  border-right-color: var(--color1);
+}
+
+.royalbutton-borderstyle3::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: var(--color2);
+  border-left-color: var(--color2);
+}
+
+.royalbutton-borderstyle3:hover:after, 
+.royalbutton-borderstyle3:hover:before {
+  border-bottom-color: var(--color1);
+  border-right-color: var(--color1);
+  border-top-color: var(--color2);
+  border-left-color: var(--color2);
+  width: 100%;
+  height: 100%;
+}
+
+
+.royalbutton-borderstyle4 {
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;  
+  transition: all .5s;
+}
+
+.royalbutton-borderstyle4:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle4::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  background-color: var(--color1);
+  transition: width 0.3s ease-in-out;
+}
+
+.royalbutton-borderstyle4::after {
+  bottom: 0;
+}
+
+.royalbutton-borderstyle4:hover::after {
+  width: 50px;
+}
+
+
+.royalbutton-borderstyle5:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle5::before, 
+.royalbutton-borderstyle5::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  content: "";
+}
+.royalbutton-borderstyle5::before {
+  width: 100%;
+  left: 0;
+  background-color: var(--color1);
+  z-index: -1;
+}
+
+.royalbutton-borderstyle5::after {
+  width: 0;
+  left: 50%;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.royalbutton-borderstyle5:hover::before {
+  transform: scale(0, 1);
+}
+
+.royalbutton-borderstyle5:hover::after {
+  width: 100%;
+  border-color: var(--color2);
+  transition-delay: 0.2s;
+}
+
+
+
+.royalbutton-borderstyle6 {
+  position: relative;
+  border-color: var(--color1);
+}
+
+.royalbutton-borderstyle6:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle6::before, 
+.royalbutton-borderstyle6::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-color: var(--color2);
+  border-style: solid;
+  transition: all 0.35s;
+  content: "";
+  z-index: 1;
+}
+
+.royalbutton-borderstyle6::before {
+  width: 0;
+  height: 100%;
+  border-width: 1px 0 1px 0;
+}
+
+.royalbutton-borderstyle6::after {
+  width: 100%;
+  height: 0;
+  border-width: 0 1px 0 1px;
+}
+
+.royalbutton-borderstyle6:hover::before {
+  width: 100%;
+  border-width: 1px 0 1px 0;
+}
+
+.royalbutton-borderstyle6:hover::after {
+  height: 100%;
+  border-width: 0 1px 0 1px;
+}
+
+
+.royalbutton-borderstyle7 {
+  position: relative;
+  border: 1px solid var(--color1)!important;
+}
+
+.royalbutton-borderstyle7:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle7::before,
+.royalbutton-borderstyle7::after,
+.royalbutton-borderstyle7 .icontext::before,
+.royalbutton-borderstyle7 .icontext::after {
+  width: 110%;
+  height: 130%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s;
+  border: 0px solid var(--color2);
+  content: "";
+}
+.royalbutton-borderstyle7::before {
+  border-top-width: 1px;
+  transition-delay: 0.3s;
+  transform-origin: right top;
+}
+.royalbutton-borderstyle7::after {
+  border-bottom-width: 1px;
+  transition-delay: 0.9s;
+  transform-origin: left bottom;
+}
+.royalbutton-borderstyle7 .icontext::before {
+  border-left-width: 1px;
+  transition-delay: 0.6s;
+  transform-origin: left top;
+}
+.royalbutton-borderstyle7 .icontext::after {
+  border-right-width: 1px;
+  transform-origin: right bottom;
+}
+.royalbutton-borderstyle7:hover::before,
+.royalbutton-borderstyle7:hover::after,
+.royalbutton-borderstyle7:hover .icontext::before,
+.royalbutton-borderstyle7:hover .icontext::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.royalbutton-borderstyle8 {
+  padding: 15px 25px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-decoration: none;
+  user-select: none;
+  position: relative;
+  transition: all 500ms ease;
+}
+
+.royalbutton-borderstyle8:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-borderstyle8::before, 
+.royalbutton-borderstyle8::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid transparent;
+}
+
+.royalbutton-borderstyle8:hover::before, 
+.royalbutton-borderstyle8:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: var(--color2);
+  transition: width 500ms, height 500ms, border-color 0ms;
+}
+
+.royalbutton-borderstyle8:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.royalbutton-borderstyle8:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+
+
+/* borderstyle9 (Corner Accent) */
+.royalbutton-borderstyle9 {
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.royalbutton-borderstyle9::before,
+.royalbutton-borderstyle9::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: var(--color1, #2563eb);
+  border-style: solid;
+  transition: all 0.35s ease;
+  pointer-events: none;
+}
+.royalbutton-borderstyle9::before {
+  top: -2px;
+  left: -2px;
+  border-width: 2px 0 0 2px;
+}
+.royalbutton-borderstyle9::after {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 2px 2px 0;
+}
+.royalbutton-borderstyle9:hover::before,
+.royalbutton-borderstyle9:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-color: var(--bordercolorhover, var(--color2, #3b82f6));
+}
+.royalbutton-borderstyle9:hover {
+  background-color: var(--backgroundcolorhover, transparent) !important;
+}
+
+/* borderstyle10 (Offset Brutalist) */
+.royalbutton-borderstyle10 {
+  position: relative;
+  border: 2px solid var(--color1, #0f172a);
+  box-shadow: 4px 4px 0 0 var(--color2, #ec4899);
+  transition: all 0.25s ease;
+}
+.royalbutton-borderstyle10:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 0 var(--color2, #ec4899);
+  background-color: var(--backgroundcolorhover, transparent) !important;
+  border-color: var(--bordercolorhover, var(--color1, #0f172a));
+}
+
+/* Slidestyle */
+.royalbutton-slidestyle1:hover{box-shadow: inset 0 300px 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle2:hover{box-shadow: inset 0 -300px 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle3:hover{box-shadow: inset 200px 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle4:hover{box-shadow: inset -200px 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle5:hover{box-shadow: inset 0 0 0 50px var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle6{box-shadow: inset 0 0 0 50px var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle6:hover{box-shadow: inset 0 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle7{box-shadow: inset 0 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle7:hover{box-shadow: inset 200px 50px 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle8{box-shadow: inset 0 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle8:hover{box-shadow: inset -200px -50px 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle9{box-shadow: inset 0 0 0 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle9:hover{box-shadow: inset 0 0 200px 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle10{box-shadow: inset 0 0 200px 0 var(--backgroundcolorhover)!important;}
+.royalbutton-slidestyle10:hover{box-shadow: inset 0 0 0 0 var(--backgroundcolorhover)!important;}
+
+
+
+/* slidestyle11 (Diagonal Slide) */
+.royalbutton-slidestyle11 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.royalbutton-slidestyle11::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--backgroundcolorhover, #2563eb);
+  transform: rotate(-45deg) scale(0);
+  transition: transform 0.4s ease;
+  z-index: -1;
+  border-radius: inherit;
+}
+.royalbutton-slidestyle11:hover::before {
+  transform: rotate(0) scale(1.6);
+}
+
+/* slidestyle12 (Circle Expand) */
+.royalbutton-slidestyle12 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.royalbutton-slidestyle12::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--backgroundcolorhover, #2563eb);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.45s ease, height 0.45s ease;
+  z-index: -1;
+}
+.royalbutton-slidestyle12:hover::before {
+  width: 320%;
+  height: 320%;
+}
+
+/* slidestyle13 (Split Meet) */
+.royalbutton-slidestyle13 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.royalbutton-slidestyle13::before,
+.royalbutton-slidestyle13::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: var(--backgroundcolorhover, #2563eb);
+  transition: transform 0.35s ease;
+  z-index: -1;
+}
+.royalbutton-slidestyle13::before {
+  top: 0;
+  transform: translateY(-100%);
+}
+.royalbutton-slidestyle13::after {
+  bottom: 0;
+  transform: translateY(100%);
+}
+.royalbutton-slidestyle13:hover::before,
+.royalbutton-slidestyle13:hover::after {
+  transform: translateY(0);
+}
+
+/* Shadow Effects*/
+
+.royalbutton.shadowstyle:hover{
+  background: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-shadowstyle1:hover {
+  box-shadow: inset 0 0 5px var(--color1);
+}
+
+.royalbutton-shadowstyle2::after {
+  position: absolute;
+  content: "";
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 5px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px var(--color1);
+  transition: .5s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.royalbutton-shadowstyle2:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.royalbutton-shadowstyle3::after,
+.royalbutton-shadowstyle3::before {
+  position: absolute;
+  content: "";
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 5px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px var(--color1);
+  transition: .5s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.royalbutton-shadowstyle3:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.royalbutton-shadowstyle3:hover::before {
+  top: 0;
+  opacity: 1;
+}
+
+
+.royalbutton-shadowstyle4:hover {
+  box-shadow: 0 0 5px var(--color1);
+}
+
+.royalbutton-shadowstyle5:hover {
+  box-shadow: 3px 3px 3px var(--color1);
+}
+
+
+.royalbutton-shadowstyle6:hover {
+  transform: translateY(-0.25em);
+}
+
+.royalbutton-shadowstyle6:hover::before {
+  opacity: 1;
+}
+
+.royalbutton-shadowstyle6::before {
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  left: 0;
+  bottom: -1.35em;
+  background: radial-gradient(ellipse at center, var(--color1) 0%, var(--color1) 80%);
+  opacity: 0;
+  transition: all 0.65s;
+  content: "";
+}
+
+.royalbutton-shadowstyle7 {
+  box-shadow: 0.3em 0.3em 0 var(--color1)!important;
+}
+
+.royalbutton-shadowstyle7:hover {
+  box-shadow: -0.3em -0.3em 0 var(--color1)!important;
+}
+
+
+
+
+/* shadowstyle8 (3D Isometric Extrude) */
+.royalbutton-shadowstyle8 {
+  box-shadow: 0 1px 0 var(--color1, #0f172a), 0 2px 0 var(--color1, #0f172a), 0 3px 0 var(--color1, #0f172a), 0 4px 0 var(--color1, #0f172a), 0 5px 0 var(--color1, #0f172a), 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+.royalbutton-shadowstyle8:hover {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--color1, #0f172a), 0 2px 0 var(--color1, #0f172a), 0 3px 0 var(--color1, #0f172a), 0 3px 1px rgba(0,0,0,0.1);
+  background-color: var(--backgroundcolorhover) !important;
+}
+
+/* shadowstyle9 (Neon Ambient Glow) */
+.royalbutton-shadowstyle9 {
+  transition: all 0.35s ease;
+}
+.royalbutton-shadowstyle9:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--color1, #3b82f6), 0 0 30px var(--color2, #ec4899);
+  background-color: var(--backgroundcolorhover) !important;
+}
+
+/* shadowstyle10 (Soft Apple Elevation) */
+.royalbutton-shadowstyle10 {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.royalbutton-shadowstyle10:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.16);
+  background-color: var(--backgroundcolorhover) !important;
+}
+
+/* Background Effects */
+.royalbutton-backgroundstyle1:hover {
+  background: radial-gradient(circle, var(--backgroundcolorhover) 0.2em, transparent 0.3em) 6em 6em/1em 1em, radial-gradient(circle, var(--backgroundcolorhover) 0.2em, transparent 0.3em) 0 0/1em 1em;
+  transition-delay: 0.2s;
+  animation: backgroundani500 0.6s forwards;
+}
+
+@keyframes backgroundani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+ }
+}
+
+.royalbutton-backgroundstyle2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.royalbutton-backgroundstyle2::before, 
+.royalbutton-backgroundstyle2::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100px) skewX(-15deg);
+  content: "";
+}
+
+.royalbutton-backgroundstyle2::before {
+  width: 60px;
+  background: var(--color1);
+  filter: blur(30px);
+  opacity: 0.5;
+}
+
+.royalbutton-backgroundstyle2::after {
+  width: 30px;
+  left: 30px;
+  background: var(--color2);
+  filter: blur(5px);
+}
+
+.royalbutton-backgroundstyle2:hover {
+  background-color: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-backgroundstyle2:hover::before {
+  opacity: 1;
+}
+
+.royalbutton-backgroundstyle2:hover::before, 
+.royalbutton-backgroundstyle2:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  transition: all 0.9s ease;
+}
+
+
+.royalbutton-backgroundstyle3 {
+  position: relative;
+  border-color: transparent;
+  overflow: hidden;
+}
+
+.royalbutton-backgroundstyle3 span, 
+.royalbutton-backgroundstyle3 i{
+  position: relative;
+  z-index: 2;
+}
+
+.royalbutton-backgroundstyle3::before, 
+.royalbutton-backgroundstyle3::after {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  background-color: var(--backgroundcolorhover);
+  transition: all 0.25s;
+  content: "";
+  z-index: 1;
+}
+
+.royalbutton-backgroundstyle3::before {
+  top: 0;
+  transform: translate(-100%, 0);
+}
+
+.royalbutton-backgroundstyle3::after {
+  bottom: 0;
+  transform: translate(100%, 0);
+}
+
+.royalbutton-backgroundstyle3:hover::before, 
+.royalbutton-backgroundstyle3:hover::after {
+  transform: translate(0, 0);
+}
+
+
+.royalbutton-backgroundstyle4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.royalbutton-backgroundstyle4::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0) rotate(50deg);
+  transform-origin: top left;
+  transition: all 0.35s;
+  background-color: var(--backgroundcolorhover);
+  z-index: 1;
+  content: "";
+}
+
+.royalbutton-backgroundstyle4:hover::before {
+  transform: translate(0, 0);
+}
+
+.royalbutton-backgroundstyle4 span,
+.royalbutton-backgroundstyle4 i{
+  z-index: 2;
+}
+
+
+.royalbutton-backgroundstyle5 {
+  transition: all 0.5s;
+}
+
+.royalbutton-backgroundstyle5:hover {
+  box-shadow: inset 5em 0 0 0 var(--backgroundcolorhover), inset -5em 0 0 0 var(--backgroundcolorhover);
+}
+
+
+.royalbutton-backgroundstyle6 {
+  border-color: var(--color1);
+  transition: all 0.5s;
+}
+
+.royalbutton-backgroundstyle6:hover {
+  box-shadow: inset 0 1.5em 0em 0em var(--backgroundcolorhover), inset 0 -1.5em 0em 0em var(--backgroundcolorhover);
+}
+
+
+.royalbutton-backgroundstyle7 {
+  transition: all 0.5s;
+}
+
+.royalbutton-backgroundstyle7:hover {
+  box-shadow: inset 0 0 0 2em var(--backgroundcolorhover);
+}
+
+
+.royalbutton-backgroundstyle8 {
+  position: relative;
+  overflow: hidden;
+}
+
+.royalbutton-backgroundstyle8::before {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: var(--backgroundcolorhover);
+  transform: rotateZ(-45deg) translate(-50%, -50%);
+  transition: all 0.3s;
+  content: "";
+  z-index: 1;
+}
+
+.royalbutton-backgroundstyle8:hover::before {
+  width: 100%;
+  top: 0;
+  transform: none;
+}
+
+.royalbutton-backgroundstyle8 span,
+.royalbutton-backgroundstyle8 i{
+  z-index: 2;
+}
+
+
+.royalbutton-backgroundstyle9 {
+  position: relative;
+  border-color: var(--color1);
+  overflow: hidden;
+}
+
+.royalbutton-backgroundstyle9::before {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--backgroundcolorhover);
+  transform: rotateZ(-45deg) translate(-50%, -50%);
+  transition: all 0.3s;
+  content: "";
+  z-index: 1;
+}
+
+.royalbutton-backgroundstyle9 span,
+.royalbutton-backgroundstyle9 i{
+  z-index: 2;
+}
+
+.royalbutton-backgroundstyle9:hover {
+  transition-delay: 0.35s;
+}
+
+.royalbutton-backgroundstyle9:hover::before {
+  animation: backgroundstyle9 0.6s forwards;
+}
+@keyframes backgroundstyle9 {
+  10% {
+    width: 0;
+    transform: rotateZ(-45deg) translate(-100%, -50%);
+ }
+  20% {
+    width: 0;
+    transform: rotateZ(0) translate(-100%, 85%);
+ }
+  60% {
+    width: 100%;
+    transform: rotateZ(0) translate(0, 85%);
+ }
+  100% {
+    width: 100%;
+    transform: rotateZ(0) translate(0, 0);
+ }
+}
+
+
+
+
+
+/* backgroundstyle10 (Radial Ripple) */
+.royalbutton-backgroundstyle10 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.royalbutton-backgroundstyle10::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--backgroundcolorhover, #2563eb);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 1;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  z-index: -1;
+}
+.royalbutton-backgroundstyle10:hover::before {
+  transform: translate(-50%, -50%) scale(25);
+}
+
+/* backgroundstyle11 (Curtain Reveal) */
+.royalbutton-backgroundstyle11 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.royalbutton-backgroundstyle11::before,
+.royalbutton-backgroundstyle11::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--backgroundcolorhover, #2563eb);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+.royalbutton-backgroundstyle11::before {
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.royalbutton-backgroundstyle11::after {
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.royalbutton-backgroundstyle11:hover::before,
+.royalbutton-backgroundstyle11:hover::after {
+  transform: scaleX(1);
+}
+
+/* backgroundstyle12 (Mesh Gradient Shift) */
+.royalbutton-backgroundstyle12 {
+  background: linear-gradient(120deg, var(--color1, #3b82f6), var(--color2, #ec4899), var(--color1, #3b82f6));
+  background-size: 200% 100%;
+  transition: background-position 0.6s ease, transform 0.3s ease;
+}
+.royalbutton-backgroundstyle12:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+}
+
+/* Animating effect */
+.royalbutton-animatingglowing1 {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none !important;
+}
+
+.royalbutton-animatingglowing1:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: animatingglowing1 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.royalbutton-animatingglowing1:before {
+  opacity: 1;
+}
+
+.royalbutton-animatingglowing1:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.royalbutton-animatingglowing1:hover::after {
+  background: var(--backgroundcolorhover);
+}
+
+@keyframes animatingglowing1 {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+.royalbutton-animatingglowing2 {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(var(--color1), var(--color2));
+}
+
+.royalbutton-animatingglowing2:before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: -10%;
+  width: 0;
+  height: 100%;
+  transform: rotate(15deg) scale(1, 2);
+  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.7);
+  animation: animatingglowing2 3000ms ease-in-out infinite;
+}
+
+@keyframes animatingglowing2 {
+  0% {left: -20%;}
+  50% {left: 120%;}
+  100% {left: 120%; }
+}
+
+
+.royalbutton-animatingglowing3 {
+  animation: animatingglowing3 5000ms infinite;
+}
+
+.royalbutton-animatingglowing3:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+@keyframes animatingglowing3 {
+  0% {box-shadow: 0 0 -10px var(--color1);}
+  40% {box-shadow: 0 0 20px var(--color2);}
+  60% {box-shadow: 0 0 20px var(--color1);}
+  100% {box-shadow: 0 0 -10px var(--color2);}
+}
+
+
+.royalbutton-animatingpulsing1 {
+  padding: 20px;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.royalbutton-animatingpulsing1:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-animatingpulsing1:before, 
+.royalbutton-animatingpulsing1:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	border: inherit;
+	top: 0;
+	left: 0;
+	background: var(--color1);
+	border-radius: inherit;
+	animation: royalbuttonanimatingpulsing1 2.5s linear infinite;
+}
+.royalbutton-animatingpulsing1:after {
+  animation: royalbuttonanimatingpulsing11 2.5s linear infinite;
+}
+
+@keyframes royalbuttonanimatingpulsing1 {
+  0% {
+    opacity: 1;
+    transform: scaleY(1) scaleX(1);
+  }
+  20% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+    transform: scaleY(1.8) scaleX(1.4);
+  }
+  80% {
+    opacity: 0;
+    transform: scaleY(1.8) scaleX(1.4);
+  }
+  90% {
+    opacity: 0;
+    transform: scaleY(1) scaleX(1);
+  }
+}
+@keyframes royalbuttonanimatingpulsing11 {
+  0% {
+    opacity: 1;
+    transform: scaleY(1) scaleX(1);
+  }
+  20% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+    transform: scaleY(1.3) scaleX(1.15);
+  }
+  80% {
+    opacity: 0;
+    transform: scaleY(1.3) scaleX(1.15);
+  }
+  90% {
+    opacity: 0;
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+.royalbutton-animatingpulsing2{
+  animation: animatingpulsing2 2s infinite;
+}
+
+@keyframes animatingpulsing2 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+
+.royalbutton-animatingpulsing3 {
+  animation: animatingpulsing3 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+}
+
+.royalbutton-animatingpulsing3:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+@keyframes animatingpulsing3 {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+
+.royalbutton-animatingsnakeborder1 {
+  overflow: hidden;
+}
+
+.royalbutton-animatingsnakeborder1:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+.royalbutton-animatingsnakeborder1::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+}
+.royalbutton-animatingsnakeborder1 > span {
+  position: absolute;
+}
+.royalbutton-animatingsnakeborder1 > span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, var(--color1), var(--color2));
+  animation: borderAnimation1 2s linear infinite;
+}
+@keyframes borderAnimation1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.royalbutton-animatingsnakeborder1 > span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+  animation: borderAnimation2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes borderAnimation2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.royalbutton-animatingsnakeborder1 > span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, var(--color1), var(--color2));
+  animation: borderAnimation3 2s linear infinite;
+}
+@keyframes borderAnimation3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.royalbutton-animatingsnakeborder1 > span:nth-child(4) {
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to top, var(--color1), var(--color2));
+  animation: borderAnimation4 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes borderAnimation4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.royalbutton-animatingwiggle1 {
+  animation: animatingwiggle1 4s 2s infinite;
+}
+
+.royalbutton-animatingwiggle1:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+@keyframes animatingwiggle1 {
+  5%, 50% {
+    transform: scale(1);
+ }
+  10% {
+    transform: scale(0.9);
+ }
+  15% {
+    transform: scale(1.15);
+ }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+ }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+ }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+ }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+ }
+  40% {
+    transform: scale(1.15) rotate(0);
+ }
+}
+
+
+.royalbutton-animatingfloat1 {
+  animation: animatingfloat1 1.5s linear alternate infinite;
+}
+
+.royalbutton-animatingfloat1:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+@keyframes animatingfloat1 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(-16px); }
+}
+
+
+.royalbutton-animatingneon1 {
+  animation: animatingneon1 2s infinite;
+}
+
+.royalbutton-animatingneon1:hover {
+  background: var(--backgroundcolorhover)!important;
+}
+
+@keyframes animatingneon1 {
+  0%,
+  100% {
+    box-shadow: 1px 0px 19px 4px var(--color1),
+      inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px 0px var(--color2),
+      inset 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+}
+
+
+
+
+
+
+
+
+/* animatingping1 (Ping Ripple Wave) */
+.royalbutton-animatingping1 {
+  position: relative;
+  border-radius: 999px;
+  background-color: var(--color1, #c9a24a);
+  color: #2b2108;
+  z-index: 1;
+}
+.royalbutton-animatingping1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--color1, #c9a24a);
+  animation: royalHpPing 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+.royalbutton-animatingping1:hover {
+  background-color: var(--backgroundcolorhover, #dcb65c) !important;
+}
+
+/* animatinggradientrotate1 (Conic Border Beam) */
+.royalbutton-animatinggradientrotate1 {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  background: var(--color1, #0f172a);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.royalbutton-animatinggradientrotate1::before {
+  content: "";
+  position: absolute;
+  inset: -150%;
+  background: conic-gradient(from 0deg, transparent 0deg, var(--color1, #38bdf8) 90deg, var(--color2, #f43f5e) 180deg, transparent 270deg);
+  animation: royalBorderBeamSpin 3s linear infinite;
+  z-index: -2;
+}
+.royalbutton-animatinggradientrotate1::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--color1, #0f172a);
+  border-radius: inherit;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+.royalbutton-animatinggradientrotate1:hover::after {
+  background: var(--backgroundcolorhover, #1e293b);
+}
+
+/* animatingheartbeat1 (Heartbeat Throb) */
+.royalbutton-animatingheartbeat1 {
+  animation: royalHeartbeat 1.6s ease-in-out infinite;
+}
+.royalbutton-animatingheartbeat1:hover {
+  background: var(--backgroundcolorhover) !important;
+}
+@keyframes royalHeartbeat {
+  0%   { transform: scale(1); }
+  14%  { transform: scale(1.08); }
+  28%  { transform: scale(1); }
+  42%  { transform: scale(1.08); }
+  70%  { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+/* animatingshimmer1 (Continuous Shimmer Wave) */
+.royalbutton-animatingshimmer1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--color1, #1e293b);
+  z-index: 1;
+}
+.royalbutton-animatingshimmer1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: royalShimmerWave 2.5s infinite;
+  pointer-events: none;
+}
+.royalbutton-animatingshimmer1:hover {
+  background: var(--backgroundcolorhover, #334155) !important;
+}
+@keyframes royalShimmerWave {
+  0%   { left: -100%; }
+  60%  { left: 120%; }
+  100% { left: 120%; }
+}
+
+/* animatingbounce1 (Floating Gentle Bounce) */
+.royalbutton-animatingbounce1 {
+  animation: royalGentleBounce 2s ease-in-out infinite;
+}
+.royalbutton-animatingbounce1:hover {
+  background: var(--backgroundcolorhover) !important;
+}
+@keyframes royalGentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+
+/* cloud effect1 */
+.royalbutton-cloudeffect1{
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 10px 25px;
+}
+
+.royalbutton-cloudeffect1 .cloudes span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--backgroundcolorhover);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.royalbutton-cloudeffect1:hover .cloudes span {
+  transform: translateY(-20%) scale(2);
+}
+
+.royalbutton-cloudeffect1 .cloudes span:nth-child(1) {
+  --n: 1;
+}
+
+.royalbutton-cloudeffect1 .cloudes span:nth-child(2) {
+  --n: 2;
+}
+
+.royalbutton-cloudeffect1 .cloudes span:nth-child(3) {
+  --n: 3;
+}
+
+.royalbutton-cloudeffect1 .cloudes span:nth-child(4) {
+  --n: 4;
+}
+
+
+/* Half effect */
+.royalbutton-halfeffect {
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  position: relative;
+}
+
+.royalbutton-halfeffect::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--backgroundcolorhover);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.royalbutton-halfeffect span {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+.royalbutton-halfeffect:hover::before {
+  background: var(--backgroundcolorhover);
+  width: 100%;
+}
+
+.royalbutton-halfeffect2 {
+  border-radius: 50px;
+}
+
+.royalbutton-halfeffect2::before {
+  border-radius: 50px;
+  width: 25%;
+}
+.royalbutton-halfeffect2:hover::before {
+  width: 100%;
+}
+
+
+/* filter button */
+.royalfilterbutton {
+  filter: url('#goo');
+}
+
+.royalfilterbutton1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 25px;
+  line-height: 100%;
+  border-radius: 1em;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.royalfilterbutton1:before,
+.royalfilterbutton1:after {
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+  background: var(--backgroundcolorhover);
+}
+
+.royalfilterbutton1:before {
+  top: -25%;
+  left: 20%;
+}
+
+.royalfilterbutton1:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.royalfilterbutton1:hover:before,
+.royalfilterbutton1:hover:after {
+  transform: none;
+}
+
+
+
+
+/* gooeyeffect */
+.royalbutton-gooeyeffect1 svg{
+  position: absolute;
+  top: -4000px;
+  left: -4000px;
+}
+.royalbutton-gooeyeffect1 {
+  padding: 10px 25px;
+  border: none;
+  filter: url("#gooey");
+  position: relative;
+  background-color: var(--color1, #2563eb);
+  transition: background 0.3s ease;
+}
+.royalbutton-gooeyeffect1:hover {
+  background-color: var(--backgroundcolorhover, #1d4ed8) !important;
+}
+.royalbutton-gooeyeffect1:focus {
+outline: none;
+}
+.royalbutton-gooeyeffect1 .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble {
+  background-color: var(--backgroundcolorhover);
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(1) {
+left: calc(65% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-1 3.02s infinite;
+        animation: move-1 3.02s infinite;
+-webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(2) {
+left: calc(90% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-2 3.04s infinite;
+        animation: move-2 3.04s infinite;
+-webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(3) {
+left: calc(95% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-3 3.06s infinite;
+        animation: move-3 3.06s infinite;
+-webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(4) {
+left: calc(65% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-4 3.08s infinite;
+        animation: move-4 3.08s infinite;
+-webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(5) {
+left: calc(35% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-5 3.1s infinite;
+        animation: move-5 3.1s infinite;
+-webkit-animation-delay: 1s;
+        animation-delay: 1s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(6) {
+left: calc(46% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-6 3.12s infinite;
+        animation: move-6 3.12s infinite;
+-webkit-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(7) {
+left: calc(98% - 25px);
+width: 25px;
+height: 25px;
+-webkit-animation: move-7 3.14s infinite;
+        animation: move-7 3.14s infinite;
+-webkit-animation-delay: 1.4s;
+        animation-delay: 1.4s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(8) {
+left: calc(91% - 25px);;
+width: 25px;
+height: 25px;
+-webkit-animation: move-8 3.16s infinite;
+        animation: move-8 3.16s infinite;
+-webkit-animation-delay: 1.6s;
+        animation-delay: 1.6s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(9) {
+left: calc(78% - 25px);;
+width: 25px;
+height: 25px;
+-webkit-animation: move-9 3.18s infinite;
+        animation: move-9 3.18s infinite;
+-webkit-animation-delay: 1.8s;
+        animation-delay: 1.8s;
+}
+.royalbutton-gooeyeffect1 .bubbles .bubble:nth-child(10) {
+left: calc(67% - 25px);;
+width: 25px;
+height: 25px;
+-webkit-animation: move-10 3.2s infinite;
+        animation: move-10 3.2s infinite;
+-webkit-animation-delay: 2s;
+        animation-delay: 2s;
+}
+
+
+/* swipe1 */
+.royalbutton-swipe1 {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.royalbutton-swipe1 .icontext {
+  font-weight: 900;
+  z-index: 2;
+}
+.royalbutton-swipe1:before, 
+.royalbutton-swipe1:after {
+  content: "";
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--backgroundcolorhover);
+  transition: transform 0.4s;
+  will-change: transform;
+}
+.royalbutton-swipe1:before {
+  left: -100%;
+}
+.royalbutton-swipe1:after {
+  left: 100%;
+}
+.royalbutton-swipe1:hover:before {
+  transform: translateX(100%);
+}
+.royalbutton-swipe1:hover:after {
+  transform: translateX(-100%);
+}
+
+
+
+/*alternate1*/
+.royalbutton-alternate1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.royalbutton-alternate1 .icontext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.royalbutton-alternate1 .text {
+  display: block;
+  position: relative;
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.royalbutton-alternate1:hover .text {
+  animation: move-up-alternate 0.3s forwards;
+  will-change: transform;
+}
+@keyframes move-up-alternate {
+  from {
+    transform: translateY(0%);
+ }
+  50% {
+    transform: translateY(80%);
+ }
+  51% {
+    transform: translateY(-80%);
+ }
+  100% {
+    transform: translateY(0%);
+ }
+}
+.royalbutton-alternate1:before, 
+.royalbutton-alternate1:after {
+  content: "";
+  z-index: 1;
+  height: 100%;
+  width: 100%;;
+  position: absolute;
+  background-color: var(--backgroundcolorhover);
+  transition: transform 0.2s;
+  will-change: transform;
+}
+
+.royalbutton-alternate1:before {
+  top: -100%;
+  left: 0;
+}
+
+.royalbutton-alternate1:after {
+  top: 100%;
+  left: 100%;
+}
+
+.royalbutton-alternate1:hover:before {
+  transform: translateY(100%);
+}
+
+.royalbutton-alternate1:hover:after {
+  transform: translateY(-100%);
+}
+
+
+
+/*diagonals1*/
+.royalbutton-diagonals1 {
+  --tilt: 40px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.royalbutton-diagonals1 .icontext {
+  font-weight: 900;
+  z-index: 2;
+}
+
+.royalbutton-diagonals1:before, 
+.royalbutton-diagonals1:after {
+  content: "";
+  z-index: 1;
+  width: calc(100% + var(--tilt));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--backgroundcolorhover);
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  transition: transform 0.6s;
+}
+
+.royalbutton-diagonals1:before {
+  left: calc(-100% - var(--tilt));
+}
+
+.royalbutton-diagonals1:after {
+  left: 100%;
+  transform: rotate(180deg);
+}
+
+.royalbutton-diagonals1:hover:before {
+  transform: translateX(100%);
+}
+
+.royalbutton-diagonals1:hover:after {
+  transform: rotate(180deg) translateX(100%);
+}
+
+
+
+
+/*pushin*/
+.royalbutton-pushin {
+  --tilt: 40px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.royalbutton-pushin .icontext {
+  font-weight: 900;
+  z-index: 2;
+}
+
+.royalbutton-pushin:before,
+.royalbutton-pushin:after {
+  content: "";
+  z-index: 1;
+  width: calc(100% + var(--tilt));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: calc(-100% - var(--tilt));
+  background-color: var(--backgroundcolorhover);
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100%);
+  transition: transform 0.6s;
+}
+
+.royalbutton-pushin:before {
+  left: calc(-100% - var(--tilt));
+}
+
+.royalbutton-pushin:after {
+  left: 100%;
+  transform: rotate(180deg);
+}
+
+.royalbutton-pushin:hover:before {
+  transform: translateX(100%);
+}
+
+.royalbutton-pushin:hover:after {
+  transform: rotate(180deg) translateX(100%);
+}
+
+
+/*pushout*/
+.royalbutton-pushout {
+  --tilt: 40px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.royalbutton-pushout .icontext {
+  font-weight: 900;
+  z-index: 2;
+}
+
+.royalbutton-pushout:before, .royalbutton-pushout:after {
+  content: "";
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: var(--backgroundcolorhover);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--tilt)) 50%, 100% 100%, 0 100%);
+  transition: transform 0.6s;
+}
+
+.royalbutton-pushout:before {
+  left: -100%;
+}
+
+.royalbutton-pushout:after {
+  left: 100%;
+  transform: rotate(180deg);
+}
+
+.royalbutton-pushout:hover:before {
+  transform: translateX(100%);
+}
+
+.royalbutton-pushout:hover:after {
+  transform: rotate(180deg) translateX(100%);
+}
+
+/*overfold*/
+.royalbutton-overfold {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  position: relative;
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.royalbutton-overfold:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  --progress: 100%;
+  background-color: var(--backgroundcolorhover);
+  clip-path: polygon(100% 0, var(--progress) var(--progress), 0 100%, 100% 100%);
+  transition: clip-path 0.2s;
+}
+
+.royalbutton-overfold:hover:before {
+  --progress: 0%;
+}
+
+.royalbutton-overfold .icontext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.royalbutton-overfold .text {
+  display: block;
+  position: relative;
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+
+.royalbutton-overfold:hover .text {
+  animation: move-up-alternate 0.3s forwards;
+  will-change: transform;
+}
+
+@keyframes move-up-alternate {
+  from {
+    transform: translateY(0%);
+ }
+  50% {
+    transform: translateY(80%);
+ }
+  51% {
+    transform: translateY(-80%);
+ }
+  100% {
+    transform: translateY(0%);
+ }
+}
+
+
+/*bubbledown*/
+.royalbutton-bubbledown {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.royalbutton-bubbledown .icontext {
+  font-weight: 900;
+}
+
+.royalbutton-bubbledown:before {
+  content: "";
+  height: 0;
+  aspect-ratio: 2;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  background-color: var(--backgroundcolorhover);
+  border-radius: 50%;
+  transition: height 0.3s;
+}
+
+.royalbutton-bubbledown:hover:before {
+  height: 400%;
+}
+
+.royalbutton-bubbledown .icontext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.royalbutton-bubbledown .icontext i,
+.royalbutton-bubbledown .icontext span {
+  display: block;
+  position: relative;
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+
+.royalbutton-bubbledown:hover i,
+.royalbutton-bubbledown:hover span {
+  animation: move-up-alternate 0.3s forwards;
+  will-change: transform;
+}
+
+@keyframes move-up-alternate {
+  from {
+    transform: translateY(0%);
+ }
+  50% {
+    transform: translateY(80%);
+ }
+  51% {
+    transform: translateY(-80%);
+ }
+  100% {
+    transform: translateY(0%);
+ }
+}
+
+
+/*doubledown*/
+.royalbutton-doubledown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid var(--color1, #2563eb);
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.royalbutton-doubledown i {
+  font-size: 1em;
+  padding: 0 10px;
+  transition: all 0.5s linear;
+}
+
+.royalbutton-doubledown:hover i {
+  transform: translateX(10px);
+}
+
+.royalbutton-doubledown::before,
+.royalbutton-doubledown::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: var(--backgroundcolorhover);
+  z-index: 1;
+  transition: all 400ms ease-in;
+}
+
+.royalbutton-doubledown .icontext {
+  z-index: 2;
+}
+
+.royalbutton-doubledown::before {
+  opacity: 0.3;
+}
+
+.royalbutton-doubledown::after {
+  transition-delay: 0.3s;
+}
+
+.royalbutton-doubledown:hover::before,
+.royalbutton-doubledown:hover::after {
+  top: 0;
+}
+
+
+
+
+/*burst*/
+.royalbutton-burst{
+  display: flex;
+  padding: 0.8em 1.5em;
+  border-radius: 20em;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 100ms linear;
+  position: relative;
+  box-shadow: inset 0 4px 6px -1px var(--color1),  0 2px 4px -2px var(--color2);
+}
+
+.royalbutton-burst:active {
+  box-shadow: inset 0 0 0 4px var(--color1);
+}
+
+.royalbutton-burst::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundcolorhover);
+  position: absolute;
+  border-radius: inherit;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  animation: flash 100ms ease-in-out;
+  transform: scaleX(2) scaleY(2);
+}
+
+.royalbutton-burst .icontext{
+  z-index: 2;
+}
+
+.royalbutton-burst:hover::before {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+@keyframes flash {
+  0%{
+      opacity: 1;
+      transform: translate(45px);
+  }
+  100%{
+      opacity: 0;
+      transform: translate(0);
+  }
+}
+
+
+
+/*glowing*/
+.royalbutton-glowing {
+  position: relative; 
+  display: block;
+  padding: 20px;
+  text-align: center;
+  transition: .5s;
+}
+
+.royalbutton-glowing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--backgroundcolorhover);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.royalbutton-glowing:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--backgroundcolorhover);
+}
+
+.royalbutton-glowing:hover {
+  box-shadow: 0 0 5px var(--backgroundcolorhover);
+  text-shadow: 0 0 5px var(--backgroundcolorhover);
+}
+
+
+
+
+
+/* fortnite */
+.royalbutton-fortnite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  line-height: 1;
+  position: relative;
+  color: #000;
+  box-shadow: inset 0 0 0 0 rgba(248, 249, 255, 0.5), inset 0 0 0 0 rgba(248, 249, 255, 0.3), 0 0 0 rgba(248, 249, 255, 0.2);
+  transition: all ease 0.2s;
+}
+
+.royalbutton-fortnite:hover {
+  background-color: var(--backgroundcolorhover)!important;
+  box-shadow: inset 0 0 0 calc(var(--font) * 0.2) rgb(248, 249, 255, 0.5), inset 0 0 calc(var(--font) * 0.2) calc(var(--font) * 0.5) rgb(248, 249, 255, 0.3), 0 0 calc(var(--font) * 0.2) rgb(248, 249, 255, 0.2);
+}
+
+.royalbutton-fortnite::before {
+  content: '';
+  height: 110%;
+  width: 105%;
+  position: absolute;
+  border-radius: calc(var(--font) * 0.8);
+  background-color: transparent;
+}
+
+@keyframes borders {
+  0%, 100% {border-width: calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02);}
+  25% { border-width: calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2);}
+  50% { border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1);}
+  75% { border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02);}
+}
+
+.royalbutton-fortnite:hover::before {
+  border: solid rgb(210, 255, 227, 0.8);
+  padding: calc(var(--font) * 0.08);
+  box-shadow: inset 0 0 calc(var(--font) * 0.2) calc(var(--font) * 0.2) rgb(186, 201, 255, 0.3);
+  filter: blur(calc(var(--font) * 0.06));
+  animation: borders infinite 2s linear;
+  opacity: 0.5;
+}
+
+
