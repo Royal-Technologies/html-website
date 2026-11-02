@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#073b1c">
+    <title>CREED | Centre for Rehabilitation Education Earning Development</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/fabicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 & Icons -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <!-- Vite -->
+    
+    <link rel="stylesheet" href="css/style.css">
+        </head>
+<body>
+
+    <!-- ===================== টপ বার ===================== -->
+        <!-- ===================== হেডলাইন টপ বার ===================== -->
+    <div class="up-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <a class="fw-semibold" href="#">
+                    <i class="bi bi-geo-alt-fill gold me-1"></i>Our Branches
+                </a>
+                <a class="text-nowrap d-none d-sm-inline" href="tel:+8801711608288">
+                    <i class="bi bi-telephone-fill gold me-1"></i>+880 1711-608288
+                </a>
+                <span class="text-white-50 d-none d-lg-inline">|</span>
+                <a class="text-nowrap d-none d-lg-inline text-white-50" href="tel:+8801313046006">
+                    <i class="bi bi-headset gold me-1"></i>+880 1313-046006
+                </a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="d-none d-md-inline">News &amp; Events</a>
+                <a href="#" class="d-none d-md-inline">Notices</a>
+                <a href="#" class="d-none d-md-inline">Careers</a>
+                <a href="support-us.html" class="up-support">
+                    <i class="bi bi-heart-fill text-danger"></i> Donate Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== মূল হেডার (টিকার + ন্যাভ-বার) ===================== -->
+    <header class="up-header" id="upHeader">
+
+        <!-- জরুরী বিজ্ঞপ্তি টিকার -->
+        <div class="up-ticker is-ready" id="upTicker" role="region" aria-label="Urgent notices">
+            <div class="container">
+                <span class="tk-label">
+                    <span class="tk-dot"></span>
+                    <i class="bi bi-megaphone-fill"></i>
+                    <span class="d-none d-sm-inline">জরুরী বিজ্ঞপ্তি</span>
+                    <span class="d-sm-none">বিজ্ঞপ্তি</span>
+                </span>
+
+                <div class="tk-view" id="tkView">
+                    <div class="tk-track" id="tkTrack">
+                        <div class="tk-group" id="tkGroup">
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">এমআরএ</span>
+                                <span class="tk-title">মাইক্রোক্রেডিট রেগুলেটরি অথরিটি (MRA) এর সাথে সিআইবি (CIB) চুক্তি স্বাক্ষর সম্পন্ন করেছে ক্রীড (CREED)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">সেন্ট মার্টিন কোরাল দ্বীপে দীর্ঘ ২৩+ বছর ধরে ১,৪০০+ সুবিধাবঞ্চিত শিশুর মাঝে শিক্ষার আলো বিস্তার</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">ক্ষুদ্রঋণ</span>
+                                <span class="tk-title">তৃণমূল নারীদের স্বাবলম্বনে ক্ষুদ্রঋণ ও সঞ্চয় কর্মসূচি (আদায় হার ৯৮.৭১%, বিতরণ ৳৩৬২.৮+ কোটি)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">প্রাণিসম্পদ উন্নয়ন প্রকল্প (AHDP) ও নিরাপদ সুপেয় পানি নিশ্চিতকরণে নলকূপ বিতরণ কার্যক্রম চলমান</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tk-tools d-none d-sm-flex align-items-center gap-2">
+                    <button type="button" class="tk-btn" id="tkToggle" aria-label="Pause notices">
+                        <i class="bi bi-pause-fill"></i>
+                    </button>
+                    <a href="#" class="tk-all">সকল বিজ্ঞপ্তি</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- মূল ন্যাভ-বার (লগো + মেনু) -->
+        <nav class="up-nav" aria-label="Main navigation">
+            <div class="container">
+
+                <a class="up-brand" href="index.html" aria-label="CREED - Home">
+                    <img src="images/logo.png" alt="CREED Logo" width="260" height="62" decoding="async" fetchpriority="high">
+                </a>
+
+                <!-- ডেস্কটপ মেনু (Strictly from https://www.creedbd.org/ - Pure clean text, NO icons) -->
+                <ul class="up-menu">
+                    <li>
+                        <a href="index.html" class="up-link">Home</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            About Us <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 960px; --cols: 3;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Identity &amp; Foundation</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">About CREED</a></li>
+                                        <li><a href="#">Background</a></li>
+                                        <li><a href="#">Philosophy</a></li>
+                                        <li><a href="#">Objectives</a></li>
+                                        <li><a href="#">Goals</a></li>
+                                        <li><a href="#">Target Group</a></li>
+                                        <li><a href="#">Legal Status</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Governance &amp; Reach</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Management</a></li>
+                                        <li><a href="#">Executive Committee</a></li>
+                                        <li><a href="#">Organogram</a></li>
+                                        <li><a href="#">Source of Funds</a></li>
+                                        <li><a href="#">Geographical Coverage</a></li>
+                                        <li><a href="#">Location Map</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 2;">
+                                    <h6 class="up-gtitle">Reports &amp; Leadership</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Message of Founder &amp; CEO</a></li>
+                                        <li><a href="#">Case Studies (Microcredit)</a></li>
+                                        <li><a href="#">Annual Reports</a></li>
+                                        <li><a href="#">Audit Report</a></li>
+                                        <li><a href="#">Research &amp; Studies</a></li>
+                                        <li><a href="#">CREED-MRA CIB Agreement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Activities <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 880px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Present Activities</h6>
+                                    <ul class="up-glinks">
+                                        <li>
+                                            <a href="#" class="is-key">Micro Credit Program</a>
+                                            <ul class="up-sub">
+                                                <li><a href="#">Jagoron Program</a></li>
+                                                <li><a href="#">Buniad Program</a></li>
+                                                <li><a href="#">Aogrosor Program</a></li>
+                                                <li><a href="#">Sahos Program</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Formal Primary Education At St. Martin</a></li>
+                                        <li><a href="#">Distribution of Tube-Well</a></li>
+                                        <li><a href="#">Animal Husbandry Development (AHDP)</a></li>
+                                        <li><a href="#">Networking Agencies</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Campaigns &amp; Events</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="support-us.html">Global Food Security Campaign (GFSC)</a></li>
+                                        <li><a href="#">Future Activities</a></li>
+                                        <li><a href="#">Previous Activities</a></li>
+                                        <li><a href="#">CREED &amp; MRA CIB Agreement</a></li>
+                                        <li><a href="#">Beneficiary Success Stories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#">Branches</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Others <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 520px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Media &amp; Gallery</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Images Gallery</a></li>
+                                        <li><a href="#">Videos Gallery</a></li>
+                                        <li><a href="#">News &amp; Events</a></li>
+                                        <li><a href="#">Press Releases</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Information</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Career Opportunities</a></li>
+                                        <li><a href="#">Official Notices</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="support-us.html">Donate Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link text-success fw-bold" href="support-us.html">
+                            <i class="bi bi-heart-fill text-danger me-1"></i>Donate Us
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- মোবাইল টগল বাটন -->
+                <button class="up-burger d-lg-none" id="upBurger" type="button"
+                        aria-label="Toggle menu" aria-expanded="false" aria-controls="upDrawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <!-- স্ক্রল প্রগ্রেস -->
+            <div class="up-progress" aria-hidden="true"><span id="upProg"></span></div>
+        </nav>
+    </header>
+
+    <!-- ===================== মোবাইল মেনু (স্লাইড-ইন ড্রয়ার) ===================== -->
+    <div class="up-drawer" id="upDrawer" aria-hidden="true">
+        <div class="up-drawer-inner">
+            <div id="mNav">
+                <div class="m-section m-item" style="--i: 0;">
+                    <a href="index.html" class="m-head text-decoration-none">
+                        <span class="m-ico"><i class="bi bi-house-door"></i></span>
+                        <span>Home</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 1;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-0" aria-expanded="false" aria-controls="msec-0">
+                        <span class="m-ico"><i class="bi bi-info-circle"></i></span>
+                        <span>About Us</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-0" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-0">
+                            <div class="m-gtitle">Identity &amp; Foundation</div>
+                            <div class="m-links">
+                                <a href="#">About CREED</a>
+                                <a href="#">Background</a>
+                                <a href="#">Philosophy</a>
+                                <a href="#">Objectives &amp; Goals</a>
+                                <a href="#">Target Group</a>
+                                <a href="#">Legal Status</a>
+                            </div>
+                            <div class="m-gtitle">Governance &amp; Structure</div>
+                            <div class="m-links">
+                                <a href="#">Management</a>
+                                <a href="#">Executive Committee</a>
+                                <a href="#">Organogram</a>
+                                <a href="#">Message of Founder &amp; CEO</a>
+                                <a href="#">Source of Funds</a>
+                                <a href="#">Geographical Coverage</a>
+                            </div>
+                            <div class="m-gtitle">Reports &amp; Studies</div>
+                            <div class="m-links">
+                                <a href="#">Case Studies (Microcredit)</a>
+                                <a href="#">Annual Reports</a>
+                                <a href="#">Audit Report</a>
+                                <a href="#">Research &amp; Studies</a>
+                                <a href="#">CREED-MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 2;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-1" aria-expanded="false" aria-controls="msec-1">
+                        <span class="m-ico"><i class="bi bi-grid"></i></span>
+                        <span>Activities</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-1" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-1">
+                            <div class="m-gtitle">Present Activities</div>
+                            <div class="m-links">
+                                <a href="#">Micro Credit Program (Jagoron)</a>
+                                <a href="#">Buniad (Ultra-Poor)</a>
+                                <a href="#">Aogrosor (Microenterprise)</a>
+                                <a href="#">Sahos (Emergency)</a>
+                                <a href="#">Formal Primary Education At St. Martin</a>
+                                <a href="#">Distribution of Tube-Well</a>
+                                <a href="#">Animal Husbandry Development (AHDP)</a>
+                                <a href="#">Networking Agencies</a>
+                            </div>
+                            <div class="m-gtitle">Campaigns &amp; Events</div>
+                            <div class="m-links">
+                                <a href="support-us.html">Global Food Security Campaign (GFSC)</a>
+                                <a href="#">Future Activities</a>
+                                <a href="#">Previous Activities</a>
+                                <a href="#">CREED &amp; MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 3;">
+                    <a class="m-head text-decoration-none" href="#">
+                        <span class="m-ico"><i class="bi bi-geo-alt"></i></span>
+                        <span>Branches</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 4;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-2" aria-expanded="false" aria-controls="msec-2">
+                        <span class="m-ico"><i class="bi bi-journal-richtext"></i></span>
+                        <span>Others</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-2" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-2">
+                            <div class="m-gtitle">Media &amp; Gallery</div>
+                            <div class="m-links">
+                                <a href="#">Images Gallery</a>
+                                <a href="#">Videos Gallery</a>
+                                <a href="#">News &amp; Events</a>
+                                <a href="#">Press Releases</a>
+                                <a href="#">Official Notices</a>
+                            </div>
+                            <div class="m-gtitle">Information</div>
+                            <div class="m-links">
+                                <a href="#">Career Opportunities</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="support-us.html">Donate Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 5;">
+                    <a class="m-head text-decoration-none" href="contact-us.html">
+                        <span class="m-ico"><i class="bi bi-envelope-paper"></i></span>
+                        <span>Contact Us</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="m-item" style="--i: 6;">
+                <a class="m-cta" href="support-us.html"><i class="bi bi-heart-fill text-danger"></i> Donate Us</a>
+                <div class="m-quick">
+                    <a href="tel:+8801711608288"><i class="bi bi-telephone-fill"></i> Call us</a>
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> Branches</a>
+                </div>
+            </div>
+
+            <div class="m-social">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="contact-us.html" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- ১. হেডার ব্যানার -->
+<div class="py-5 text-white text-center position-relative" style="background-color: #0b4d26;">
+    <div class="container py-4">
+        <span class="badge bg-warning text-dark fw-bold text-uppercase px-3 py-1 mb-2 rounded-pill">
+            SUPPORT OUR CAUSE
+        </span>
+        <h1 class="fw-bold mb-3 display-4">Make a Difference</h1>
+        <p class="mb-0 opacity-75 fs-5">
+            Your generosity empowers communities and transforms lives across Bangladesh.
+        </p>
+    </div>
+</div>
+
+<!-- ২. অনুদানের উপায়সমূহ (Ways to Give) -->
+<div class="py-5 bg-light">
+    <div class="container">
+        
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Ways to <span class="text-success" style="color: #e67e22 !important;">Give</span></h2>
+            <p class="text-muted">Choose the payment method that works best for you.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <!-- কার্ড ১: ব্যাংক ট্রান্সফার -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-start position-relative hover-top" style="transition: all 0.3s ease;">
+                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #0b4d26 !important;">
+                        <i class="bi bi-bank fs-4"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-3">Bank Transfer</h5>
+                    <p class="text-muted small mb-1"><strong>Account Name:</strong> CREED</p>
+                    <p class="text-muted small mb-1"><strong>Account Number:</strong> 100009967</p>
+                    <p class="text-muted small mb-1"><strong>Account Type</strong> Savings Account</p>
+                    <p class="text-muted small mb-0"><strong>Bank Name:</strong> Sonali Bank Limited</p>
+                    <p class="text-muted small mb-0"><strong>Branch:</strong> Dhanmondi Branch, Dhaka</p>
+                </div>
+            </div>
+
+            <!-- কার্ড ২: মোবাইল ব্যাংকিং -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-start position-relative hover-top" style="transition: all 0.3s ease;">
+                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #0b4d26 !important;">
+                        <i class="bi bi-phone-vibrate fs-4"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-3">Mobile Banking (bKash / Nagad / Rocket)</h5>
+                    <p class="text-muted small mb-2"><strong>Merchant Number:</strong> 017XXXXXXXX</p>
+                    <p class="text-muted small mb-0">
+                        Select <strong>"Payment"</strong> and use reference <strong>"Donation"</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- কার্ড ৩: সরাসরি বা চেক -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-start position-relative hover-top" style="transition: all 0.3s ease;">
+                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; background-color: #0b4d26 !important;">
+                        <i class="bi bi-heart-fill fs-4"></i>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-3">In-Person / Cheque</h5>
+                    <p class="text-muted small mb-0">
+                        Visit our Head Office or mail a cheque payable to <strong>"CREED"</strong>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- যোগাযোগ সেকশন -->
+        <div class="text-center mt-5 pt-4">
+            <h3 class="fw-bold text-dark">Questions About <span style="color: #e67e22;">Giving?</span></h3>
+            <p class="text-muted mb-3">Reach out to our team for help with your donation.</p>
+            <a href="mailto:info@creedbd.org" class="btn btn-outline-success rounded-pill px-4 fw-bold">
+                <i class="bi bi-envelope-fill me-1"></i> Contact Donation Support
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .hover-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    }
+</style>
+    </main>
+
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+    <footer class="up-foot">
+        <span class="up-foot-orb o1"></span>
+        <span class="up-foot-orb o2"></span>
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-12 col-lg-4 reveal" style="--d: 0;">
+                    <a href="index.html" class="d-inline-flex align-items-center gap-3 mb-3 flex-wrap">
+                        <span class="up-foot-logo">
+                            <img src="images/logo.png" alt="CREED Logo">
+                        </span>
+                    </a>
+                    <p class="up-foot-about mb-3">
+                        Centre for Rehabilitation Education Earning Development (CREED) is a registered non-governmental, voluntary social welfare organization established in 1987, working for the socio-economic empowerment of marginalized communities across Bangladesh.
+                    </p>
+                    <div class="up-foot-box">
+                        <small class="d-block fw-bold mb-1" style="color: var(--up-gold);">Official Registrations</small>
+                        <small class="text-white d-block">
+                            • MRA License No: 01079-03171-00358 (30.11.2008)<br>
+                            • NGO Affairs Bureau Reg: 805 (13.02.1994)<br>
+                            • Dept. of Social Services Reg: Dha-02293 (17.06.1989)
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 reveal" style="--d: 1;">
+                    <h6>About Us</h6>
+                    <ul>
+                        <li><a href="#">About CREED</a></li>
+                        <li><a href="#">Background</a></li>
+                        <li><a href="#">Objectives &amp; Goals</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Executive Committee</a></li>
+                        <li><a href="#">Organogram</a></li>
+                        <li><a href="#">Founder &amp; CEO Message</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal" style="--d: 2;">
+                    <h6>Activities</h6>
+                    <ul>
+                        <li><a href="#">Micro Credit Program</a></li>
+                        <li><a href="#">Formal Primary Education</a></li>
+                        <li><a href="#">Distribution of Tube-Well</a></li>
+                        <li><a href="#">Animal Husbandry (AHDP)</a></li>
+                        <li><a href="#">Geographical Coverage</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="support-us.html">Donate Us (GFSC)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 reveal" style="--d: 3;">
+                    <h6>Head Office</h6>
+                    <div class="up-foot-contact">
+                        <p><i class="bi bi-geo-alt"></i> Navana Siddique Sorrento, House#289, 290, 290/1 (4th Floor), Road#8/A, West Dhanmondi, Dhaka-1209, Bangladesh</p>
+                        <p><i class="bi bi-telephone"></i> <a href="tel:+8801711608288" style="opacity: 1;">+880 1711-608288</a></p>
+                        <p><i class="bi bi-phone"></i> <a href="tel:+8801313046006" style="opacity: 1;">+880 1313-046006</a></p>
+                        <p><i class="bi bi-envelope"></i> <a href="mailto:info@creedbd.org" style="opacity: 1; word-break: break-all;">info@creedbd.org</a></p>
+                        <p><i class="bi bi-globe"></i> <a href="https://www.creedbd.org/" target="_blank" rel="noopener" style="opacity: 1;">www.creedbd.org</a></p>
+                    </div>
+                    <div class="mt-3 d-flex gap-2">
+                        <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/" class="social-btn" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="contact-us.html" class="social-btn" title="Contact Us"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up-foot-bottom d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div>
+                    &copy; 2026 CREED. All rights reserved.
+                </div>
+                <div class="ra-dev-credit">
+                    Developed By <a href="http://www.royaltechbd.com/" target="_blank" rel="noopener">Royal Technologies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- উপরে যাওয়ার বাটন -->
+    <button type="button" class="up-totop" id="upToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>

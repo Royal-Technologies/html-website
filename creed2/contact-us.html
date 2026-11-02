@@ -1,0 +1,880 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#073b1c">
+    <title>CREED | Centre for Rehabilitation Education Earning Development</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/fabicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 & Icons -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <!-- Vite -->
+    
+    <link rel="stylesheet" href="css/style.css">
+        </head>
+<body>
+
+    <!-- ===================== টপ বার ===================== -->
+        <!-- ===================== হেডলাইন টপ বার ===================== -->
+    <div class="up-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <a class="fw-semibold" href="#">
+                    <i class="bi bi-geo-alt-fill gold me-1"></i>Our Branches
+                </a>
+                <a class="text-nowrap d-none d-sm-inline" href="tel:+8801711608288">
+                    <i class="bi bi-telephone-fill gold me-1"></i>+880 1711-608288
+                </a>
+                <span class="text-white-50 d-none d-lg-inline">|</span>
+                <a class="text-nowrap d-none d-lg-inline text-white-50" href="tel:+8801313046006">
+                    <i class="bi bi-headset gold me-1"></i>+880 1313-046006
+                </a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="d-none d-md-inline">News &amp; Events</a>
+                <a href="#" class="d-none d-md-inline">Notices</a>
+                <a href="#" class="d-none d-md-inline">Careers</a>
+                <a href="support-us.html" class="up-support">
+                    <i class="bi bi-heart-fill text-danger"></i> Donate Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== মূল হেডার (টিকার + ন্যাভ-বার) ===================== -->
+    <header class="up-header" id="upHeader">
+
+        <!-- জরুরী বিজ্ঞপ্তি টিকার -->
+        <div class="up-ticker is-ready" id="upTicker" role="region" aria-label="Urgent notices">
+            <div class="container">
+                <span class="tk-label">
+                    <span class="tk-dot"></span>
+                    <i class="bi bi-megaphone-fill"></i>
+                    <span class="d-none d-sm-inline">জরুরী বিজ্ঞপ্তি</span>
+                    <span class="d-sm-none">বিজ্ঞপ্তি</span>
+                </span>
+
+                <div class="tk-view" id="tkView">
+                    <div class="tk-track" id="tkTrack">
+                        <div class="tk-group" id="tkGroup">
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">এমআরএ</span>
+                                <span class="tk-title">মাইক্রোক্রেডিট রেগুলেটরি অথরিটি (MRA) এর সাথে সিআইবি (CIB) চুক্তি স্বাক্ষর সম্পন্ন করেছে ক্রীড (CREED)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">সেন্ট মার্টিন কোরাল দ্বীপে দীর্ঘ ২৩+ বছর ধরে ১,৪০০+ সুবিধাবঞ্চিত শিশুর মাঝে শিক্ষার আলো বিস্তার</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">ক্ষুদ্রঋণ</span>
+                                <span class="tk-title">তৃণমূল নারীদের স্বাবলম্বনে ক্ষুদ্রঋণ ও সঞ্চয় কর্মসূচি (আদায় হার ৯৮.৭১%, বিতরণ ৳৩৬২.৮+ কোটি)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">প্রাণিসম্পদ উন্নয়ন প্রকল্প (AHDP) ও নিরাপদ সুপেয় পানি নিশ্চিতকরণে নলকূপ বিতরণ কার্যক্রম চলমান</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tk-tools d-none d-sm-flex align-items-center gap-2">
+                    <button type="button" class="tk-btn" id="tkToggle" aria-label="Pause notices">
+                        <i class="bi bi-pause-fill"></i>
+                    </button>
+                    <a href="#" class="tk-all">সকল বিজ্ঞপ্তি</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- মূল ন্যাভ-বার (লগো + মেনু) -->
+        <nav class="up-nav" aria-label="Main navigation">
+            <div class="container">
+
+                <a class="up-brand" href="index.html" aria-label="CREED - Home">
+                    <img src="images/logo.png" alt="CREED Logo" width="260" height="62" decoding="async" fetchpriority="high">
+                </a>
+
+                <!-- ডেস্কটপ মেনু (Strictly from https://www.creedbd.org/ - Pure clean text, NO icons) -->
+                <ul class="up-menu">
+                    <li>
+                        <a href="index.html" class="up-link">Home</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            About Us <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 960px; --cols: 3;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Identity &amp; Foundation</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">About CREED</a></li>
+                                        <li><a href="#">Background</a></li>
+                                        <li><a href="#">Philosophy</a></li>
+                                        <li><a href="#">Objectives</a></li>
+                                        <li><a href="#">Goals</a></li>
+                                        <li><a href="#">Target Group</a></li>
+                                        <li><a href="#">Legal Status</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Governance &amp; Reach</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Management</a></li>
+                                        <li><a href="#">Executive Committee</a></li>
+                                        <li><a href="#">Organogram</a></li>
+                                        <li><a href="#">Source of Funds</a></li>
+                                        <li><a href="#">Geographical Coverage</a></li>
+                                        <li><a href="#">Location Map</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 2;">
+                                    <h6 class="up-gtitle">Reports &amp; Leadership</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Message of Founder &amp; CEO</a></li>
+                                        <li><a href="#">Case Studies (Microcredit)</a></li>
+                                        <li><a href="#">Annual Reports</a></li>
+                                        <li><a href="#">Audit Report</a></li>
+                                        <li><a href="#">Research &amp; Studies</a></li>
+                                        <li><a href="#">CREED-MRA CIB Agreement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Activities <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 880px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Present Activities</h6>
+                                    <ul class="up-glinks">
+                                        <li>
+                                            <a href="#" class="is-key">Micro Credit Program</a>
+                                            <ul class="up-sub">
+                                                <li><a href="#">Jagoron Program</a></li>
+                                                <li><a href="#">Buniad Program</a></li>
+                                                <li><a href="#">Aogrosor Program</a></li>
+                                                <li><a href="#">Sahos Program</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Formal Primary Education At St. Martin</a></li>
+                                        <li><a href="#">Distribution of Tube-Well</a></li>
+                                        <li><a href="#">Animal Husbandry Development (AHDP)</a></li>
+                                        <li><a href="#">Networking Agencies</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Campaigns &amp; Events</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="support-us.html">Global Food Security Campaign (GFSC)</a></li>
+                                        <li><a href="#">Future Activities</a></li>
+                                        <li><a href="#">Previous Activities</a></li>
+                                        <li><a href="#">CREED &amp; MRA CIB Agreement</a></li>
+                                        <li><a href="#">Beneficiary Success Stories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#">Branches</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Others <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 520px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Media &amp; Gallery</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Images Gallery</a></li>
+                                        <li><a href="#">Videos Gallery</a></li>
+                                        <li><a href="#">News &amp; Events</a></li>
+                                        <li><a href="#">Press Releases</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Information</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Career Opportunities</a></li>
+                                        <li><a href="#">Official Notices</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="support-us.html">Donate Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link text-success fw-bold" href="support-us.html">
+                            <i class="bi bi-heart-fill text-danger me-1"></i>Donate Us
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- মোবাইল টগল বাটন -->
+                <button class="up-burger d-lg-none" id="upBurger" type="button"
+                        aria-label="Toggle menu" aria-expanded="false" aria-controls="upDrawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <!-- স্ক্রল প্রগ্রেস -->
+            <div class="up-progress" aria-hidden="true"><span id="upProg"></span></div>
+        </nav>
+    </header>
+
+    <!-- ===================== মোবাইল মেনু (স্লাইড-ইন ড্রয়ার) ===================== -->
+    <div class="up-drawer" id="upDrawer" aria-hidden="true">
+        <div class="up-drawer-inner">
+            <div id="mNav">
+                <div class="m-section m-item" style="--i: 0;">
+                    <a href="index.html" class="m-head text-decoration-none">
+                        <span class="m-ico"><i class="bi bi-house-door"></i></span>
+                        <span>Home</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 1;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-0" aria-expanded="false" aria-controls="msec-0">
+                        <span class="m-ico"><i class="bi bi-info-circle"></i></span>
+                        <span>About Us</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-0" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-0">
+                            <div class="m-gtitle">Identity &amp; Foundation</div>
+                            <div class="m-links">
+                                <a href="#">About CREED</a>
+                                <a href="#">Background</a>
+                                <a href="#">Philosophy</a>
+                                <a href="#">Objectives &amp; Goals</a>
+                                <a href="#">Target Group</a>
+                                <a href="#">Legal Status</a>
+                            </div>
+                            <div class="m-gtitle">Governance &amp; Structure</div>
+                            <div class="m-links">
+                                <a href="#">Management</a>
+                                <a href="#">Executive Committee</a>
+                                <a href="#">Organogram</a>
+                                <a href="#">Message of Founder &amp; CEO</a>
+                                <a href="#">Source of Funds</a>
+                                <a href="#">Geographical Coverage</a>
+                            </div>
+                            <div class="m-gtitle">Reports &amp; Studies</div>
+                            <div class="m-links">
+                                <a href="#">Case Studies (Microcredit)</a>
+                                <a href="#">Annual Reports</a>
+                                <a href="#">Audit Report</a>
+                                <a href="#">Research &amp; Studies</a>
+                                <a href="#">CREED-MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 2;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-1" aria-expanded="false" aria-controls="msec-1">
+                        <span class="m-ico"><i class="bi bi-grid"></i></span>
+                        <span>Activities</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-1" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-1">
+                            <div class="m-gtitle">Present Activities</div>
+                            <div class="m-links">
+                                <a href="#">Micro Credit Program (Jagoron)</a>
+                                <a href="#">Buniad (Ultra-Poor)</a>
+                                <a href="#">Aogrosor (Microenterprise)</a>
+                                <a href="#">Sahos (Emergency)</a>
+                                <a href="#">Formal Primary Education At St. Martin</a>
+                                <a href="#">Distribution of Tube-Well</a>
+                                <a href="#">Animal Husbandry Development (AHDP)</a>
+                                <a href="#">Networking Agencies</a>
+                            </div>
+                            <div class="m-gtitle">Campaigns &amp; Events</div>
+                            <div class="m-links">
+                                <a href="support-us.html">Global Food Security Campaign (GFSC)</a>
+                                <a href="#">Future Activities</a>
+                                <a href="#">Previous Activities</a>
+                                <a href="#">CREED &amp; MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 3;">
+                    <a class="m-head text-decoration-none" href="#">
+                        <span class="m-ico"><i class="bi bi-geo-alt"></i></span>
+                        <span>Branches</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 4;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-2" aria-expanded="false" aria-controls="msec-2">
+                        <span class="m-ico"><i class="bi bi-journal-richtext"></i></span>
+                        <span>Others</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-2" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-2">
+                            <div class="m-gtitle">Media &amp; Gallery</div>
+                            <div class="m-links">
+                                <a href="#">Images Gallery</a>
+                                <a href="#">Videos Gallery</a>
+                                <a href="#">News &amp; Events</a>
+                                <a href="#">Press Releases</a>
+                                <a href="#">Official Notices</a>
+                            </div>
+                            <div class="m-gtitle">Information</div>
+                            <div class="m-links">
+                                <a href="#">Career Opportunities</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="support-us.html">Donate Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 5;">
+                    <a class="m-head text-decoration-none" href="contact-us.html">
+                        <span class="m-ico"><i class="bi bi-envelope-paper"></i></span>
+                        <span>Contact Us</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="m-item" style="--i: 6;">
+                <a class="m-cta" href="support-us.html"><i class="bi bi-heart-fill text-danger"></i> Donate Us</a>
+                <div class="m-quick">
+                    <a href="tel:+8801711608288"><i class="bi bi-telephone-fill"></i> Call us</a>
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> Branches</a>
+                </div>
+            </div>
+
+            <div class="m-social">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="contact-us.html" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        
+<!-- ================= HERO ================= -->
+<section class="ct-hero">
+    <div class="ct-blob ct-blob-1"></div>
+    <div class="ct-blob ct-blob-2"></div>
+    <span class="ct-ring ct-ring-1"></span>
+    <span class="ct-ring ct-ring-2"></span>
+    <span class="ct-ring ct-ring-3"></span>
+
+    <div class="container position-relative text-center" style="z-index:2;">
+        <span class="ct-tag"><i class="ct-dot"></i> GET IN TOUCH</span>
+        <h1 class="ct-title">Contact <span>With Us</span></h1>
+        <p class="ct-sub">We are here to answer any questions you may have about our organization and initiatives.</p>
+    </div>
+
+    <svg class="ct-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,35 L1440,80 L0,80 Z" fill="#f1f6f3"></path>
+    </svg>
+</section>
+
+<!-- ================= MAIN ================= -->
+<section class="ct-main">
+    <div class="ct-main-blob ct-main-blob-1"></div>
+    <div class="ct-main-blob ct-main-blob-2"></div>
+
+    <div class="container position-relative" style="z-index:2;">
+
+        <!-- Info cards -->
+        <div class="ct-cards">
+
+            <!-- 1. Office -->
+            <article class="ct-card ct-reveal" style="--delay:0ms; --c:#198754;">
+                <span class="ct-shine"></span>
+                <div class="ct-ico"><i class="bi bi-geo-alt-fill"></i></div>
+                <h5>Our Office</h5>
+                <p class="ct-addr">
+                    Village: Tala, Post: Tala,<br>
+                    Upazila: Tala, District: Satkhira
+                </p>
+            </article>
+
+            <!-- 2. Phone -->
+            <article class="ct-card ct-reveal" style="--delay:90ms; --c:#0d6efd;">
+                <span class="ct-shine"></span>
+                <div class="ct-ico"><i class="bi bi-telephone-fill"></i></div>
+                <h5>Call Us</h5>
+                <a href="tel:+8801711608288" class="ct-link"><i class="bi bi-phone"></i> +8801711608288</a>
+                <a href="tel:+8801313046006" class="ct-link"><i class="bi bi-telephone"></i> +880 1313-046006</a>
+            </article>
+
+            <!-- 3. Email -->
+            <article class="ct-card ct-reveal" style="--delay:180ms; --c:#f59e0b;">
+                <span class="ct-shine"></span>
+                <div class="ct-ico"><i class="bi bi-envelope-fill"></i></div>
+                <h5>Email Us</h5>
+                <a href="mailto:info@creedbd.org" class="ct-link"><i class="bi bi-at"></i>info@creedbd.org</a>
+                <a href="mailto:info@creedbd.org" class="ct-link"><i class="bi bi-at"></i> info@creedbd.org</a>
+            </article>
+
+            <!-- 4. Social -->
+            <article class="ct-card ct-reveal" style="--delay:270ms; --c:#9333ea;">
+                <span class="ct-shine"></span>
+                <div class="ct-ico"><i class="bi bi-share-fill"></i></div>
+                <h5>Follow Us</h5>
+                <div class="ct-social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="ct-soc ct-fb" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="ct-soc ct-yt" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Form + Map -->
+        <div class="row g-3 g-lg-4 align-items-stretch">
+
+            <!-- Form -->
+            <div class="col-lg-6 ct-reveal" style="--delay:0ms;">
+                <div class="ct-panel h-100">
+                    <div class="ct-panel-head">
+                        <span class="ct-panel-ico"><i class="bi bi-chat-dots-fill"></i></span>
+                        <div>
+                            <h3>Send Us a Message</h3>
+                            <p>Fill out the form below and we will get back to you shortly.</p>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <form action="contact-us.htmlstore" method="POST" id="ctForm" class="ct-form">
+                        <input type="hidden" name="_token" value="g7FK7xgZvruGZg5vukDOuhETdxpRajZR8sec4R6T" autocomplete="off">
+                        <div class="ct-field">
+                            <label for="ctName">Your Name <b>*</b></label>
+                            <div class="ct-input">
+                                <i class="bi bi-person-fill"></i>
+                                <input type="text" id="ctName" name="name" value="" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+
+                        <div class="ct-field">
+                            <label for="ctEmail">Your Email <b>*</b></label>
+                            <div class="ct-input">
+                                <i class="bi bi-envelope-fill"></i>
+                                <input type="email" id="ctEmail" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+
+                        <div class="ct-field">
+                            <label for="ctSubject">Subject</label>
+                            <div class="ct-input">
+                                <i class="bi bi-tag-fill"></i>
+                                <input type="text" id="ctSubject" name="subject" value="" placeholder="Enter subject">
+                            </div>
+                        </div>
+
+                        <div class="ct-field">
+                            <label for="ctMessage">Your Message <b>*</b></label>
+                            <div class="ct-input ct-input-area">
+                                <i class="bi bi-chat-left-text-fill"></i>
+                                <textarea id="ctMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="ct-submit" id="ctSubmit">
+                            <span class="ct-submit-text">Send Message <i class="bi bi-send-fill"></i></span>
+                            <span class="ct-submit-load"><i class="ct-spin"></i> Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-lg-6 ct-reveal" style="--delay:120ms;">
+                <div class="ct-panel ct-panel-map h-100">
+                    <div class="ct-map-head">
+                        <h4><span class="ct-panel-ico ct-ico-sm"><i class="bi bi-map-fill"></i></span> Find Us on Map</h4>
+                        <a href="https://maps.app.goo.gl/D6dMkXACPqo2UZgg6" target="_blank" rel="noopener" class="ct-open">
+                            <span>Open in App</span> <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="ct-map">
+                        <span class="ct-map-pulse"></span>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14710.2014815259!2d89.2558!3d22.7562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff5109f0868f0f%3A0x6e8e87d8a9b3a9!2sTala%2C%20Satkhira!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Office location map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .ct-hero, .ct-main { --g1: #0b4d26; --g2: #157a3e; --g3: #1fa35a; }
+
+    /* ================= HERO ================= */
+    .ct-hero {
+        position: relative; overflow: hidden; color: #fff; text-align: center;
+        padding: clamp(48px, 9vw, 100px) 0 clamp(90px, 14vw, 150px);
+        background: linear-gradient(135deg, #0b4d26, #157a3e, #0b4d26);
+        background-size: 200% 200%;
+        animation: ctGradBg 12s ease infinite;
+    }
+    .ct-blob { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; }
+    .ct-blob-1 { width: 320px; height: 320px; background: #1fa35a; opacity: .45; top: -110px; left: -90px; animation: ctDrift1 14s ease-in-out infinite alternate; }
+    .ct-blob-2 { width: 280px; height: 280px; background: #ffd54a; opacity: .18; bottom: -90px; right: -60px; animation: ctDrift2 16s ease-in-out infinite alternate; }
+    .ct-ring { position: absolute; border: 2px solid rgba(255,255,255,.22); border-radius: 50%; pointer-events: none; }
+    .ct-ring-1 { width: 54px; height: 54px; top: 22%; right: 10%; animation: ctFloat 7s ease-in-out infinite; }
+    .ct-ring-2 { width: 30px; height: 30px; top: 58%; left: 8%; animation: ctFloat 9s ease-in-out infinite reverse; }
+    .ct-ring-3 { width: 96px; height: 96px; bottom: 22%; right: 28%; border-style: dashed; animation: ctSpin 22s linear infinite; }
+
+    .ct-tag {
+        display: inline-flex; align-items: center; gap: 8px;
+        font-size: clamp(11px, 2.8vw, 12.5px); font-weight: 800; letter-spacing: .14em;
+        padding: 8px 17px; border-radius: 999px; margin-bottom: 16px;
+        color: #3a2a00; background: linear-gradient(90deg, #ffc107, #ffd54a);
+        box-shadow: 0 8px 20px rgba(255,193,7,.35);
+        animation: ctFadeDown .8s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .ct-dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: #0b4d26; }
+    .ct-dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #0b4d26; animation: ctPing 1.8s ease-out infinite; }
+    .ct-title { font-weight: 800; font-size: clamp(2.1rem, 8vw, 4rem); line-height: 1.1; margin: 0 0 14px; color: #fff; animation: ctFadeDown .9s .1s cubic-bezier(.2,.8,.2,1) both; }
+    .ct-title span { background: linear-gradient(90deg, #ffd54a, #fff, #9be7b8, #ffd54a); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ctGrad 6s linear infinite; }
+    .ct-sub { margin: 0 auto; max-width: 600px; padding: 0 10px; color: rgba(255,255,255,.85); font-size: clamp(.92rem, 3vw, 1.1rem); animation: ctFadeDown 1s .2s cubic-bezier(.2,.8,.2,1) both; }
+    .ct-wave { position: absolute; left: 0; bottom: -1px; width: 100%; height: clamp(34px, 6vw, 70px); display: block; }
+
+    /* ================= MAIN ================= */
+    .ct-main { position: relative; overflow: hidden; background: linear-gradient(180deg, #f1f6f3, #eef3f8); padding: 0 0 clamp(40px, 7vw, 80px); }
+    .ct-main-blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .15; pointer-events: none; }
+    .ct-main-blob-1 { width: 340px; height: 340px; background: var(--g1); top: 20%; left: -110px; animation: ctDrift1 18s ease-in-out infinite alternate; }
+    .ct-main-blob-2 { width: 320px; height: 320px; background: #0d6efd; bottom: 0; right: -100px; animation: ctDrift2 20s ease-in-out infinite alternate; }
+
+    .ct-reveal { opacity: 0; transform: translateY(34px) scale(.97); }
+    .ct-reveal.is-visible { animation: ctReveal .75s cubic-bezier(.2,.8,.2,1) forwards; animation-delay: var(--delay, 0ms); }
+
+    /* ---- info cards ---- */
+    .ct-cards {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 2.4vw, 22px);
+        margin-top: calc(-1 * clamp(44px, 8vw, 80px)); margin-bottom: clamp(24px, 5vw, 48px);
+        position: relative; z-index: 6;
+    }
+    .ct-card {
+        position: relative; overflow: hidden; text-align: center; min-width: 0;
+        background: rgba(255,255,255,.96); border: 1px solid #fff; border-radius: 24px;
+        padding: clamp(22px, 3vw, 32px) clamp(16px, 2vw, 22px);
+        box-shadow: 0 14px 36px rgba(15,40,30,.1);
+        transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease;
+    }
+    .ct-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--c); }
+    .ct-card::after { content: ""; position: absolute; width: 150px; height: 150px; right: -60px; bottom: -60px; border-radius: 50%; background: var(--c); opacity: .08; transition: transform .6s ease; }
+    .ct-card:hover { transform: translateY(-10px); box-shadow: 0 26px 50px rgba(15,40,30,.17); }
+    .ct-card:hover::after { transform: scale(1.9); }
+    .ct-shine { position: absolute; top: 0; left: -80%; width: 50%; height: 100%; z-index: 3; pointer-events: none; transform: skewX(-20deg); background: linear-gradient(100deg, transparent, rgba(255,255,255,.6), transparent); }
+    .ct-card:hover .ct-shine, .ct-panel:hover .ct-shine { animation: ctShine .9s ease; }
+
+    .ct-ico {
+        position: relative; z-index: 1; display: grid; place-items: center;
+        width: 66px; height: 66px; margin: 0 auto 16px; border-radius: 22px;
+        font-size: 26px; color: #fff; background: var(--c);
+        box-shadow: 0 12px 24px color-mix(in srgb, var(--c) 45%, transparent);
+        transition: transform .5s cubic-bezier(.2,.8,.2,1);
+    }
+    .ct-ico::after { content: ""; position: absolute; inset: -7px; border-radius: 26px; border: 2px dashed color-mix(in srgb, var(--c) 45%, transparent); animation: ctSpin 14s linear infinite; }
+    .ct-card:hover .ct-ico { transform: translateY(-4px) rotate(-8deg) scale(1.08); }
+    .ct-card h5 { position: relative; z-index: 1; font-weight: 800; font-size: 1.15rem; color: #0f1d24; margin: 0 0 12px; }
+    .ct-addr { position: relative; z-index: 1; margin: 0; color: #5f6f7a; font-size: .92rem; line-height: 1.75; }
+
+    .ct-link {
+        position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+        text-decoration: none; color: #4b5b66; font-size: .9rem; font-weight: 600;
+        padding: 8px 10px; margin-top: 6px; border-radius: 12px; background: #f4f7f9;
+        overflow-wrap: anywhere; word-break: break-word; line-height: 1.35;
+        transition: all .3s;
+    }
+    .ct-link i { flex: 0 0 auto; color: var(--c); }
+    .ct-link:hover { color: #fff; background: var(--c); transform: translateY(-2px); box-shadow: 0 8px 16px color-mix(in srgb, var(--c) 40%, transparent); }
+    .ct-link:hover i { color: #fff; }
+
+    .ct-social { position: relative; z-index: 1; display: flex; justify-content: center; gap: 14px; margin-top: 4px; }
+    .ct-soc {
+        display: grid; place-items: center; width: 52px; height: 52px; border-radius: 18px;
+        font-size: 24px; color: #fff; text-decoration: none;
+        transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+    }
+    .ct-fb { background: linear-gradient(135deg, #1877f2, #4a9bff); box-shadow: 0 10px 20px rgba(24,119,242,.35); }
+    .ct-yt { background: linear-gradient(135deg, #e11d48, #ff4d6d); box-shadow: 0 10px 20px rgba(225,29,72,.35); }
+    .ct-soc:hover { color: #fff; transform: translateY(-6px) rotate(-8deg) scale(1.1); }
+
+    /* ---- panels ---- */
+    .ct-panel {
+        position: relative; overflow: hidden;
+        background: rgba(255,255,255,.96); border: 1px solid #fff; border-radius: 26px;
+        padding: clamp(18px, 4vw, 38px);
+        box-shadow: 0 12px 36px rgba(15,40,30,.09);
+    }
+    .ct-panel::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: linear-gradient(90deg, var(--g1), var(--g3), #ffc107); }
+    .ct-panel-head { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+    .ct-panel-ico { flex: 0 0 auto; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 17px; font-size: 22px; color: #fff; background: linear-gradient(135deg, var(--g2), var(--g3)); box-shadow: 0 10px 20px rgba(21,122,62,.32); }
+    .ct-ico-sm { display: inline-grid; width: 38px; height: 38px; border-radius: 12px; font-size: 16px; vertical-align: middle; margin-right: 8px; }
+    .ct-panel-head h3 { margin: 0 0 3px; font-weight: 800; font-size: clamp(1.15rem, 4.5vw, 1.55rem); color: #0f1d24; }
+    .ct-panel-head p { margin: 0; color: #6b7a84; font-size: clamp(.82rem, 2.8vw, .92rem); }
+
+    /* ---- alerts ---- */
+    .ct-alert {
+        display: flex; align-items: center; gap: 10px; border: 0; border-radius: 16px;
+        padding: 13px 44px 13px 16px; margin-bottom: 18px; font-weight: 600; font-size: .92rem;
+        color: #0b6b3a; background: #e6f7ee; border-left: 5px solid #1fa35a;
+        animation: ctPop .5s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .ct-alert i { font-size: 1.15rem; }
+    .ct-alert-err { color: #b42318; background: #fdecec; border-left-color: #e11d48; }
+
+    /* ---- form ---- */
+    .ct-form { display: grid; gap: 16px; position: relative; z-index: 1; }
+    .ct-field label { display: block; margin-bottom: 7px; font-weight: 700; font-size: .88rem; color: #26363f; }
+    .ct-field label b { color: #e11d48; }
+    .ct-input {
+        position: relative; display: flex; align-items: center;
+        background: #f4f8f6; border: 2px solid transparent; border-radius: 16px;
+        transition: border-color .3s, box-shadow .3s, background .3s, transform .3s;
+    }
+    .ct-input > i { flex: 0 0 auto; padding: 0 4px 0 16px; color: #8a98a2; font-size: 15px; transition: color .3s, transform .3s; }
+    .ct-input input, .ct-input textarea {
+        flex: 1 1 auto; min-width: 0; width: 100%; border: 0; outline: 0; background: transparent;
+        padding: 14px 16px 14px 10px; font-size: 16px; color: #14232b; font-family: inherit;
+    }
+    .ct-input textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+    .ct-input-area { align-items: flex-start; }
+    .ct-input-area > i { padding-top: 17px; }
+    .ct-input:focus-within { background: #fff; border-color: var(--g3); box-shadow: 0 0 0 5px rgba(31,163,90,.15); transform: translateY(-1px); }
+    .ct-input:focus-within > i { color: var(--g2); transform: scale(1.18); }
+    .ct-input input::placeholder, .ct-input textarea::placeholder { color: #a3afb7; }
+
+    .ct-submit {
+        position: relative; overflow: hidden; width: 100%; border: 0; cursor: pointer;
+        padding: 16px; margin-top: 4px; border-radius: 16px;
+        font-weight: 800; font-size: 1rem; letter-spacing: .06em; text-transform: uppercase; color: #fff;
+        background: linear-gradient(135deg, #0b4d26, #157a3e, #1fa35a); background-size: 200% 200%;
+        box-shadow: 0 14px 28px rgba(11,77,38,.32);
+        transition: transform .3s, box-shadow .3s;
+        animation: ctGradBg 6s ease infinite;
+    }
+    .ct-submit::after { content: ""; position: absolute; top: 0; left: -80%; width: 50%; height: 100%; transform: skewX(-20deg); background: linear-gradient(100deg, transparent, rgba(255,255,255,.4), transparent); animation: ctShineLoop 3.4s ease-in-out infinite; }
+    .ct-submit:hover { transform: translateY(-3px); box-shadow: 0 20px 36px rgba(11,77,38,.4); }
+    .ct-submit:hover .ct-submit-text i { transform: translateX(6px) rotate(-8deg); }
+    .ct-submit-text i { display: inline-block; margin-left: 6px; transition: transform .35s; }
+    .ct-submit-load { display: none; align-items: center; justify-content: center; gap: 10px; }
+    .ct-submit.is-loading { pointer-events: none; opacity: .9; }
+    .ct-submit.is-loading .ct-submit-text { display: none; }
+    .ct-submit.is-loading .ct-submit-load { display: inline-flex; }
+    .ct-spin { width: 18px; height: 18px; border-radius: 50%; border: 3px solid rgba(255,255,255,.4); border-top-color: #fff; animation: ctSpin .8s linear infinite; }
+
+    /* ---- map ---- */
+    .ct-panel-map { display: flex; flex-direction: column; padding: clamp(14px, 3vw, 26px); }
+    .ct-map-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 6px 0 16px; }
+    .ct-map-head h4 { margin: 0; font-weight: 800; font-size: clamp(1.05rem, 4vw, 1.3rem); color: #0f1d24; display: flex; align-items: center; }
+    .ct-open {
+        display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+        font-size: .85rem; font-weight: 700; color: var(--g2);
+        padding: 8px 16px; border-radius: 999px; border: 2px solid rgba(31,163,90,.4); background: #fff;
+        transition: all .3s;
+    }
+    .ct-open:hover { color: #fff; background: linear-gradient(135deg, var(--g2), var(--g3)); border-color: transparent; gap: 12px; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(21,122,62,.3); }
+    .ct-map { position: relative; flex: 1 1 auto; min-height: clamp(280px, 70vw, 380px); border-radius: 20px; overflow: hidden; box-shadow: inset 0 0 0 1px #dbe5df, 0 8px 22px rgba(15,40,30,.1); background: #e2e8f0; }
+    .ct-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    .ct-map-pulse { position: absolute; z-index: 0; inset: 0; background: linear-gradient(110deg, #e6ece9 30%, #f4f8f6 50%, #e6ece9 70%); background-size: 200% 100%; animation: ctSkeleton 1.6s linear infinite; }
+
+    /* ================= KEYFRAMES ================= */
+    @keyframes ctFadeDown { from { opacity: 0; transform: translateY(-22px); } to { opacity: 1; transform: none; } }
+    @keyframes ctReveal { to { opacity: 1; transform: none; } }
+    @keyframes ctPop { from { opacity: 0; transform: scale(.94) translateY(-8px); } to { opacity: 1; transform: none; } }
+    @keyframes ctDrift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(60px,40px) scale(1.15); } }
+    @keyframes ctDrift2 { from { transform: translate(0,0) scale(1); } to { transform: translate(-60px,-30px) scale(1.2); } }
+    @keyframes ctFloat { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-18px) rotate(10deg); } }
+    @keyframes ctPing { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3); opacity: 0; } }
+    @keyframes ctGradBg { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    @keyframes ctGrad { to { background-position: 300% 0; } }
+    @keyframes ctSpin { to { transform: rotate(360deg); } }
+    @keyframes ctShine { to { left: 140%; } }
+    @keyframes ctShineLoop { 0%,60% { left: -80%; } 100% { left: 140%; } }
+    @keyframes ctSkeleton { to { background-position: -200% 0; } }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 991.98px) {
+        .ct-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 575.98px) {
+        .ct-ring-1, .ct-ring-2 { display: none; }
+        .ct-cards { grid-template-columns: 1fr; }
+        .ct-card { padding: 22px 18px; }
+        .ct-card:hover { transform: translateY(-4px); }
+        .ct-ico { width: 60px; height: 60px; font-size: 24px; }
+        .ct-panel { border-radius: 22px; }
+        .ct-panel-head { align-items: flex-start; }
+        .ct-panel-ico { width: 46px; height: 46px; font-size: 19px; border-radius: 15px; }
+        .ct-map-head { flex-direction: column; align-items: stretch; }
+        .ct-open { justify-content: center; }
+    }
+    @media (hover: none) {
+        .ct-card:hover { transform: none; box-shadow: 0 14px 36px rgba(15,40,30,.1); }
+        .ct-card:hover .ct-ico, .ct-soc:hover { transform: none; }
+        .ct-card:active, .ct-submit:active { transform: scale(.98); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+        .ct-reveal { opacity: 1; transform: none; }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Scroll reveal
+        var items = document.querySelectorAll('.ct-reveal');
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+            items.forEach(function (el) { io.observe(el); });
+        } else {
+            items.forEach(function (el) { el.classList.add('is-visible'); });
+        }
+
+        // Submit loading state (only when form is valid)
+        var form = document.getElementById('ctForm');
+        var btn = document.getElementById('ctSubmit');
+        if (form && btn) {
+            form.addEventListener('submit', function () {
+                if (form.checkValidity()) { btn.classList.add('is-loading'); }
+            });
+        }
+    });
+</script>
+    </main>
+
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+    <footer class="up-foot">
+        <span class="up-foot-orb o1"></span>
+        <span class="up-foot-orb o2"></span>
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-12 col-lg-4 reveal" style="--d: 0;">
+                    <a href="index.html" class="d-inline-flex align-items-center gap-3 mb-3 flex-wrap">
+                        <span class="up-foot-logo">
+                            <img src="images/logo.png" alt="CREED Logo">
+                        </span>
+                    </a>
+                    <p class="up-foot-about mb-3">
+                        Centre for Rehabilitation Education Earning Development (CREED) is a registered non-governmental, voluntary social welfare organization established in 1987, working for the socio-economic empowerment of marginalized communities across Bangladesh.
+                    </p>
+                    <div class="up-foot-box">
+                        <small class="d-block fw-bold mb-1" style="color: var(--up-gold);">Official Registrations</small>
+                        <small class="text-white d-block">
+                            • MRA License No: 01079-03171-00358 (30.11.2008)<br>
+                            • NGO Affairs Bureau Reg: 805 (13.02.1994)<br>
+                            • Dept. of Social Services Reg: Dha-02293 (17.06.1989)
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 reveal" style="--d: 1;">
+                    <h6>About Us</h6>
+                    <ul>
+                        <li><a href="#">About CREED</a></li>
+                        <li><a href="#">Background</a></li>
+                        <li><a href="#">Objectives &amp; Goals</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Executive Committee</a></li>
+                        <li><a href="#">Organogram</a></li>
+                        <li><a href="#">Founder &amp; CEO Message</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal" style="--d: 2;">
+                    <h6>Activities</h6>
+                    <ul>
+                        <li><a href="#">Micro Credit Program</a></li>
+                        <li><a href="#">Formal Primary Education</a></li>
+                        <li><a href="#">Distribution of Tube-Well</a></li>
+                        <li><a href="#">Animal Husbandry (AHDP)</a></li>
+                        <li><a href="#">Geographical Coverage</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="support-us.html">Donate Us (GFSC)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 reveal" style="--d: 3;">
+                    <h6>Head Office</h6>
+                    <div class="up-foot-contact">
+                        <p><i class="bi bi-geo-alt"></i> Navana Siddique Sorrento, House#289, 290, 290/1 (4th Floor), Road#8/A, West Dhanmondi, Dhaka-1209, Bangladesh</p>
+                        <p><i class="bi bi-telephone"></i> <a href="tel:+8801711608288" style="opacity: 1;">+880 1711-608288</a></p>
+                        <p><i class="bi bi-phone"></i> <a href="tel:+8801313046006" style="opacity: 1;">+880 1313-046006</a></p>
+                        <p><i class="bi bi-envelope"></i> <a href="mailto:info@creedbd.org" style="opacity: 1; word-break: break-all;">info@creedbd.org</a></p>
+                        <p><i class="bi bi-globe"></i> <a href="https://www.creedbd.org/" target="_blank" rel="noopener" style="opacity: 1;">www.creedbd.org</a></p>
+                    </div>
+                    <div class="mt-3 d-flex gap-2">
+                        <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/" class="social-btn" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="contact-us.html" class="social-btn" title="Contact Us"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up-foot-bottom d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div>
+                    &copy; 2026 CREED. All rights reserved.
+                </div>
+                <div class="ra-dev-credit">
+                    Developed By <a href="http://www.royaltechbd.com/" target="_blank" rel="noopener">Royal Technologies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- উপরে যাওয়ার বাটন -->
+    <button type="button" class="up-totop" id="upToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>

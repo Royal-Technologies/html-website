@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREED | Centre for Rehabilitation Education Earning Development</title>
+  <meta name="description" content="A non-governmental, voluntary, social welfare organization dedicated to poverty alleviation, microcredit empowerment for women, and education since 1987.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts: Figtree, Plus Jakarta Sans, Fraunces & Hind Siliguri (As used in Unnayan Prochesta) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons (from Unnayan Prochesta) & FontAwesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Unnayan Prochesta Menu & Ticker Stylesheet -->
+  <link rel="stylesheet" href="assets/css/unnayan-menu.css">
+
+  <!-- Tailwind CSS CDN for Modern Responsive Layouts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Figtree"', '"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Fraunces"', 'serif'],
+            bengali: ['"Hind Siliguri"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#0b4d26', /* Unnayan Prochesta forest green */
+              800: '#073b1c',
+              900: '#04230f',
+            },
+            upGold: '#c9a24a',
+            upForest: '#0b4d26',
+            upDeep: '#073b1c',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .hero-overlay {
+      background: linear-gradient(135deg, rgba(7, 59, 28, 0.94) 0%, rgba(4, 35, 15, 0.90) 60%, rgba(15, 23, 42, 0.88) 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -10px rgba(11, 77, 38, 0.18);
+    }
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    /* Range Slider Styling */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #0b4d26;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(11, 77, 38, 0.5);
+      border: 3px solid #c9a24a;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased font-sans selection:bg-[#0b4d26] selection:text-white overflow-x-hidden w-full relative">
+
+  <!-- =========================================================
+       ১. টপ বার (UNNAYAN PROCHESTA STYLE)
+       ========================================================= -->
+  <div class="up-top">
+    <div class="container">
+      <div class="flex items-center gap-4 text-xs">
+        <a class="font-semibold flex items-center gap-1.5" href="#branches">
+          <i class="bi bi-geo-alt-fill gold"></i>
+          <span>Our Branches (২৩টি উপজেলা)</span>
+        </a>
+        <a class="text-nowrap hidden sm:flex items-center gap-1.5" href="tel:+8801711608288">
+          <i class="bi bi-telephone-fill gold"></i>
+          <span>+880 1711-608288</span>
+        </a>
+        <a class="text-nowrap hidden md:flex items-center gap-1.5 text-slate-300" href="mailto:info@creedbd.org">
+          <i class="bi bi-envelope-fill gold"></i>
+          <span>info@creedbd.org</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-3 text-xs">
+        <span class="hidden lg:inline text-slate-300 border-r border-white/20 pr-3">
+          MRA Lic: <strong class="text-amber-300">01079-03171-00358</strong>
+        </span>
+        <a href="#news" class="hidden sm:inline">Notice &amp; MRA</a>
+        <a href="#calculator" class="hidden md:inline">Loan Calculator</a>
+        <a href="#contact" class="up-support">
+          <i class="bi bi-heart-fill"></i>
+          <span>Support Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       ২. স্টিকি হেডার = নোটিশ টিকার + নেভবার (UNNAYAN PROCHESTA STYLE)
+       ========================================================= -->
+  <header class="up-header" id="upHeader">
+
+    <!-- নোটিশ টিকার (মার্কি) -->
+    <div class="up-ticker" id="upTicker" role="region" aria-label="Urgent notices">
+      <div class="container">
+        
+        <span class="tk-label">
+          <span class="tk-dot"></span>
+          <i class="bi bi-megaphone-fill"></i>
+          <span class="hidden sm:inline">জরুরী বিজ্ঞপ্তি</span>
+          <span class="sm:hidden">নোটিশ</span>
+        </span>
+
+        <div class="tk-view" id="tkView">
+          <div class="tk-track" id="tkTrack">
+            <div class="tk-group" id="tkGroup">
+              
+              <a href="#news" class="tk-item">
+                <i class="bi bi-pin-angle-fill"></i>
+                <span class="tk-title">এমআরএ (MRA)-এর সাথে সিআইবি (CIB) চুক্তি স্বাক্ষর সম্পন্ন করলো ক্রিড (CREED)</span>
+                <span class="tk-badge">১৭ এপ্রিল ২০২৫</span>
+              </a>
+
+              <a href="#st-martin" class="tk-item">
+                <i class="bi bi-pin-angle-fill"></i>
+                <span class="tk-title">সেন্ট মার্টিন প্রবাল দ্বীপে ক্রিড আনুষ্ঠানিক প্রাথমিক বিদ্যালয়ের ২৩+ বছর পূর্তি</span>
+                <span class="tk-badge">শিক্ষা কর্মসূচি</span>
+              </a>
+
+              <a href="#impact" class="tk-item">
+                <i class="bi bi-pin-angle-fill"></i>
+                <span class="tk-title">সর্বমোট বিতরণকৃত ক্ষুদ্রঋণ ৳৬২.৮+ কোটি এবং রিয়ালাইজেশন হার ৯৮.৭১%</span>
+                <span class="tk-badge">আর্থিক স্থায়িত্ব</span>
+              </a>
+
+              <a href="#branches" class="tk-item">
+                <i class="bi bi-pin-angle-fill"></i>
+                <span class="tk-title">গাজীপুর ও টাঙ্গাইল জোনে ১৬৫টি সক্রিয় সঞ্চয় দলের মাধ্যমে নারী ক্ষমতায়ন</span>
+                <span class="tk-badge">নারী ক্ষমতায়ন</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tk-tools">
+          <button class="tk-btn" id="tkToggle" type="button" aria-label="Pause notices">
+            <i class="bi bi-pause-fill"></i>
+          </button>
+          <a href="#news" class="tk-all hidden sm:inline">সব নোটিশ</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- মূল নেভবার (CLEAN, ELEGANT & BALANCED) -->
+    <nav class="up-nav" aria-label="Main navigation">
+      <div class="container">
+
+        <!-- Brand Logo (Pure Image, No duplicate text) -->
+        <a class="up-brand" href="#" aria-label="CREED Home">
+          <img src="assets/images/logo.png" alt="CREED Logo" style="height: 48px; width: auto; object-fit: contain;" onerror="this.onerror=null; this.src='assets/images/favicon.png';">
+        </a>
+
+        <!-- Desktop Navigation Menu (Directly modeled from https://www.creedbd.org/) -->
+        <ul class="up-menu">
+          
+          <!-- 1. Home -->
+          <li>
+            <a class="up-link is-active" href="#">Home</a>
+          </li>
+
+          <!-- 2. About Us Mega Menu -->
+          <li>
+            <a class="up-link" href="#about" aria-haspopup="true">
+              About Us <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="up-mega" style="--w: 880px; --cols: 3;">
+              <div class="up-mega-grid">
+                <div style="--k: 0;">
+                  <h6 class="up-gtitle">About CREED</h6>
+                  <ul class="up-glinks">
+                    <li><a href="#about" class="is-key">Background</a></li>
+                    <li><a href="#about">Philosophy</a></li>
+                    <li><a href="#about">Objectives</a></li>
+                    <li><a href="#about">Goals</a></li>
+                    <li><a href="#about">Target Group</a></li>
+                    <li><a href="#about">Legal Status</a></li>
+                    <li><a href="#about">Management</a></li>
+                    <li><a href="#about">Source of Funds</a></li>
+                    <li><a href="#branches">Geographical Coverage</a></li>
+                    <li><a href="#branches">Location Map</a></li>
+                  </ul>
+                </div>
+                <div style="--k: 1;">
+                  <h6 class="up-gtitle">Reports</h6>
+                  <ul class="up-glinks">
+                    <li><a href="https://www.creedbd.org/annual-reports/" target="_blank" class="is-key">Annual Reports</a></li>
+                    <li><a href="https://www.creedbd.org/audit-report/" target="_blank">Audit Report</a></li>
+                    <li><a href="https://www.creedbd.org/research-studies/" target="_blank">Research &amp; Studies</a></li>
+                    <li><a href="https://www.creedbd.org/others-report/" target="_blank">Others</a></li>
+                  </ul>
+                </div>
+                <div style="--k: 2;">
+                  <h6 class="up-gtitle">Leadership &amp; Case Studies</h6>
+                  <ul class="up-glinks">
+                    <li><a href="#founder" class="is-key">Message of Founder &amp; CEO</a></li>
+                    <li><a href="https://www.creedbd.org/case-studies-on-microcredit-performance/" target="_blank">Case Studies</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3. Activities Mega Menu -->
+          <li>
+            <a class="up-link" href="#programs" aria-haspopup="true">
+              Activities <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="up-mega" style="--w: 880px; --cols: 3;">
+              <div class="up-mega-grid">
+                <div style="--k: 0;">
+                  <h6 class="up-gtitle">Present Activities</h6>
+                  <ul class="up-glinks">
+                    <li><a href="#programs" class="is-key">Micro Credit Program</a></li>
+                    <li><a href="#st-martin" class="is-key">Formal Primary Education At St. Martin</a></li>
+                    <li><a href="#programs">Distribution of Tube-Well</a></li>
+                    <li><a href="https://www.creedbd.org/networking-agencies/" target="_blank">Networking Agencies</a></li>
+                    <li><a href="https://www.creedbd.org/food-security-network-in-bangladesh-fsnb/" target="_blank">Global Food Security Campaign (GFSC)</a></li>
+                  </ul>
+                </div>
+                <div style="--k: 1;">
+                  <h6 class="up-gtitle">Future Activities</h6>
+                  <ul class="up-glinks">
+                    <li><a href="https://www.creedbd.org/future-activities/" target="_blank" class="is-key">Future Activities</a></li>
+                  </ul>
+                </div>
+                <div style="--k: 2;">
+                  <h6 class="up-gtitle">Previous Activities</h6>
+                  <ul class="up-glinks">
+                    <li><a href="https://www.creedbd.org/previous-activities/" target="_blank" class="is-key">Previous Activities</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 4. Others Dropdown Menu -->
+          <li style="position: relative;">
+            <a class="up-link" href="#" aria-haspopup="true">
+              Others <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="up-dropdown">
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://www.creedbd.org/privacy-policy/" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://www.creedbd.org/terms-and-conditions/" target="_blank">Terms And Conditions</a></li>
+              <li><a href="#gallery">Images Gallery</a></li>
+              <li><a href="#news">Blog</a></li>
+              <li><a href="https://www.creedbd.org/videos-gallery/" target="_blank">Videos Gallery</a></li>
+            </ul>
+          </li>
+
+          <!-- 5. Donate Us -->
+          <li>
+            <a class="up-link" href="https://www.creedbd.org/donate-us/" target="_blank">Donate Us</a>
+          </li>
+
+          <!-- 6. GFSC -->
+          <li>
+            <a class="up-link" href="https://www.creedbd.org/food-security-network-in-bangladesh-fsnb/" target="_blank">GFSC</a>
+          </li>
+
+          <!-- 7. Branches -->
+          <li>
+            <a class="up-link" href="#branches">Branches</a>
+          </li>
+
+        </ul>
+
+        <!-- Right Side CTA Pill Button -->
+        <div class="hidden lg:flex items-center">
+          <button onclick="openInquiryModal()" class="up-nav-btn">
+            <span>Inquire Loan</span>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="up-burger lg:hidden" id="upBurger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="upDrawer">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+
+      <!-- স্ক্রল প্রগ্রেস বার -->
+      <div class="up-progress" aria-hidden="true"><span id="upProg"></span></div>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       ৩. মোবাইল ড্রয়ার মেনু (https://www.creedbd.org/ অনুযায়ী)
+       ========================================================= -->
+  <div class="up-drawer" id="upDrawer" aria-hidden="true">
+    <div class="up-drawer-inner">
+      <div id="mNav">
+        
+        <!-- 1. Home -->
+        <div class="m-section m-item" style="--i: 0;">
+          <a class="m-head" href="#">
+            <span class="m-ico"><i class="bi bi-house-door-fill"></i></span>
+            <span>Home</span>
+          </a>
+        </div>
+
+        <!-- 2. About Us -->
+        <div class="m-section m-item" style="--i: 1;">
+          <button class="m-head" type="button" data-target="msec-about" aria-expanded="false">
+            <span class="m-ico"><i class="bi bi-people-fill"></i></span>
+            <span>About Us</span>
+            <i class="bi bi-chevron-down m-chev"></i>
+          </button>
+          <div id="msec-about" class="m-panel" style="display: none;">
+            <div class="m-links">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 pt-2 pb-1 block">About CREED</span>
+              <a href="#about">Background</a>
+              <a href="#about">Philosophy</a>
+              <a href="#about">Objectives</a>
+              <a href="#about">Goals</a>
+              <a href="#about">Target Group</a>
+              <a href="#about">Legal Status</a>
+              <a href="#about">Management</a>
+              <a href="#about">Source of Funds</a>
+              <a href="#branches">Geographical Coverage</a>
+              <a href="#branches">Location Map</a>
+
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 pt-3 pb-1 block">Reports</span>
+              <a href="https://www.creedbd.org/annual-reports/" target="_blank">Annual Reports</a>
+              <a href="https://www.creedbd.org/audit-report/" target="_blank">Audit Report</a>
+              <a href="https://www.creedbd.org/research-studies/" target="_blank">Research &amp; Studies</a>
+              <a href="https://www.creedbd.org/others-report/" target="_blank">Others</a>
+
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 pt-3 pb-1 block">Leadership &amp; Case Studies</span>
+              <a href="#founder">Message of Founder &amp; CEO</a>
+              <a href="https://www.creedbd.org/case-studies-on-microcredit-performance/" target="_blank">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Activities -->
+        <div class="m-section m-item" style="--i: 2;">
+          <button class="m-head" type="button" data-target="msec-activities" aria-expanded="false">
+            <span class="m-ico"><i class="bi bi-grid-fill"></i></span>
+            <span>Activities</span>
+            <i class="bi bi-chevron-down m-chev"></i>
+          </button>
+          <div id="msec-activities" class="m-panel" style="display: none;">
+            <div class="m-links">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 pt-2 pb-1 block">Present Activities</span>
+              <a href="#programs">Micro Credit Program</a>
+              <a href="#st-martin">Formal Primary Education At St. Martin</a>
+              <a href="#programs">Distribution of Tube-Well</a>
+              <a href="https://www.creedbd.org/networking-agencies/" target="_blank">Networking Agencies</a>
+              <a href="https://www.creedbd.org/food-security-network-in-bangladesh-fsnb/" target="_blank">Global Food Security Campaign (GFSC)</a>
+
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 pt-3 pb-1 block">Future &amp; Previous Activities</span>
+              <a href="https://www.creedbd.org/future-activities/" target="_blank">Future Activities</a>
+              <a href="https://www.creedbd.org/previous-activities/" target="_blank">Previous Activities</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Others -->
+        <div class="m-section m-item" style="--i: 3;">
+          <button class="m-head" type="button" data-target="msec-others" aria-expanded="false">
+            <span class="m-ico"><i class="bi bi-three-dots"></i></span>
+            <span>Others</span>
+            <i class="bi bi-chevron-down m-chev"></i>
+          </button>
+          <div id="msec-others" class="m-panel" style="display: none;">
+            <div class="m-links">
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+              <a href="https://www.creedbd.org/privacy-policy/" target="_blank">Privacy Policy</a>
+              <a href="https://www.creedbd.org/terms-and-conditions/" target="_blank">Terms And Conditions</a>
+              <a href="#gallery">Images Gallery</a>
+              <a href="#news">Blog</a>
+              <a href="https://www.creedbd.org/videos-gallery/" target="_blank">Videos Gallery</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Donate Us -->
+        <div class="m-section m-item" style="--i: 4;">
+          <a class="m-head" href="https://www.creedbd.org/donate-us/" target="_blank">
+            <span class="m-ico"><i class="bi bi-heart-fill text-[#dc2626]"></i></span>
+            <span>Donate Us</span>
+          </a>
+        </div>
+
+        <!-- 6. GFSC -->
+        <div class="m-section m-item" style="--i: 5;">
+          <a class="m-head" href="https://www.creedbd.org/food-security-network-in-bangladesh-fsnb/" target="_blank">
+            <span class="m-ico"><i class="bi bi-globe-americas"></i></span>
+            <span>GFSC</span>
+          </a>
+        </div>
+
+        <!-- 7. Branches -->
+        <div class="m-section m-item" style="--i: 6;">
+          <a class="m-head" href="#branches">
+            <span class="m-ico"><i class="bi bi-geo-alt-fill"></i></span>
+            <span>Branches</span>
+          </a>
+        </div>
+
+        <div class="mt-4 space-y-2">
+          <a href="#calculator" class="m-cta" onclick="document.getElementById('upBurger').click()">
+            <i class="bi bi-calculator"></i>
+            <span>Calculate Loan &amp; Savings</span>
+          </a>
+          <div class="m-quick">
+            <a href="tel:+8801711608288"><i class="bi bi-telephone-fill"></i> Call Hotline</a>
+            <a href="#branches"><i class="bi bi-map-fill"></i> Find Branch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       ৪. হিরো সেকশন (GRAMEEN AMERICA CONCEPT)
+       ========================================================= -->
+  <section class="relative bg-slate-900 overflow-hidden min-h-[600px] lg:min-h-[660px] flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/hero-1.jpg" alt="CREED Microcredit Community" class="w-full h-full object-cover object-center filter brightness-[0.70] contrast-[1.05]">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <div class="absolute inset-0 bg-[radial-gradient(#c9a24a_1px,transparent_1px)] [background-size:24px_24px] opacity-15 pointer-events-none"></div>
+
+    <div class="relative z-10 container py-16 lg:py-20 text-white">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-semibold text-amber-300 backdrop-blur">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>Empowering Grassroots Women &amp; Families Since 1987</span>
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.18]">
+            Fueling Grassroots Potential with <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-[#c9a24a]">Affordable Microcredit</span> &amp; Education.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
+            For over 38 years, CREED has partnered with marginalized families across Bangladesh—delivering zero-collateral microloans to women entrepreneurs, running dedicated primary education on remote St. Martin Island, and fostering sustainable socio-economic self-reliance.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button onclick="openInquiryModal()" class="px-6 py-3.5 rounded-xl bg-[#c9a24a] hover:bg-[#b58e38] text-slate-950 font-extrabold text-sm sm:text-base shadow-lg transition flex items-center gap-2.5">
+              <span>Inquire About A Loan</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
+            <a href="#programs" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm sm:text-base transition flex items-center gap-2">
+              <span>Our Programs</span>
+              <i class="bi bi-compass"></i>
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-slate-300">
+            <div class="flex items-center gap-2">
+              <i class="bi bi-shield-check text-amber-400 text-base"></i>
+              <span><strong>90%+</strong> Women Borrowers</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-graph-up-arrow text-emerald-400 text-base"></i>
+              <span><strong>98.71%</strong> Realization Rate</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-bank text-amber-300 text-base"></i>
+              <span>MRA Reg: <strong>01079-03171-00358</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 text-slate-900 shadow-2xl border border-white/40 relative">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+              <span class="text-xs uppercase font-extrabold tracking-wider text-[#0b4d26]">Regulatory Milestone</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900">Signed 2025</span>
+            </div>
+
+            <div class="mt-4 space-y-3">
+              <div class="rounded-xl overflow-hidden border border-slate-200 aspect-video relative">
+                <img src="assets/images/mra-agreement.jpeg" alt="CREED and MRA Signing Ceremony" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/85 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur">
+                  Signing Event at MRA
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug">
+                CREED and MRA Sign CIB Agreement
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                On 17th April 2025, Executive Secretary Md. Sulaiman Khan signed the Credit Information Bureau agreement with the Microcredit Regulatory Authority to elevate transparency and borrower integrity.
+              </p>
+              <a href="#news" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0b4d26] hover:text-[#073b1c]">
+                <span>Read Full Announcement</span>
+                <i class="bi bi-arrow-right text-[11px]"></i>
+              </a>
+            </div>
+
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-between">
+              <div>
+                <p class="text-[11px] font-medium text-slate-600">Join a savings group:</p>
+                <p class="text-xs font-bold text-[#0b4d26]">165+ Groups Active</p>
+              </div>
+              <button onclick="openInquiryModal()" class="px-3 py-1.5 rounded-lg bg-[#0b4d26] hover:bg-[#073b1c] text-white text-xs font-semibold shadow">
+                Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ৫. ইমপ্যাক্ট মেট্রিক্স বার (GRAMEEN AMERICA SIGNATURE)
+       ========================================================= -->
+  <section id="impact" class="relative -mt-10 lg:-mt-12 z-20 container">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-200/90 p-6 sm:p-8 lg:p-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Measurable Grassroots Impact</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Transforming Lives Through Cumulative Scale
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Audited and documented performance across our microcredit, education, and community programs.
+        </p>
+      </div>
+
+      <!-- ২ রোতে ৬টি ইমপ্যাক্ট মেট্রিক্স কার্ড (৩ কলাম x ২ রো) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        
+        <!-- Card 1: ৳62.8Cr+ -->
+        <div class="bg-slate-50/90 hover:bg-emerald-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-[#0b4d26]/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-[#0b4d26] text-xl mb-3 group-hover:scale-110 group-hover:bg-[#0b4d26] group-hover:text-white transition-all duration-300">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b4d26]">
+            <span class="counter" data-target="62.8" data-dec="1" data-pre="৳" data-suf="Cr+">৳0.0Cr+</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Disbursed Loans</p>
+          <p class="text-xs text-slate-500 mt-1">BDT 628.9M+ (~$7.96M USD total distributed)</p>
+        </div>
+
+        <!-- Card 2: 35,750+ -->
+        <div class="bg-slate-50/90 hover:bg-emerald-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-[#0b4d26]/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-slate-800 text-xl mb-3 group-hover:scale-110 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900">
+            <span class="counter" data-target="35750" data-dec="0" data-pre="" data-suf="+">0+</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Loans Disbursed</p>
+          <p class="text-xs text-slate-500 mt-1">Direct support to ultra-poor households</p>
+        </div>
+
+        <!-- Card 3: 90%+ -->
+        <div class="bg-slate-50/90 hover:bg-emerald-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-[#0b4d26]/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-emerald-600 text-xl mb-3 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+            <i class="bi bi-gender-female"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-600">
+            <span class="counter" data-target="90" data-dec="0" data-pre="" data-suf="%+">0%+</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Women Loaners</p>
+          <p class="text-xs text-slate-500 mt-1">32,239+ women entrepreneurs empowered</p>
+        </div>
+
+        <!-- Card 4: 98.71% -->
+        <div class="bg-slate-50/90 hover:bg-amber-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-amber-500/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-amber-600 text-xl mb-3 group-hover:scale-110 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+            <i class="bi bi-patch-check-fill"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-amber-600">
+            <span class="counter" data-target="98.71" data-dec="2" data-pre="" data-suf="%">0.00%</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Realization Rate</p>
+          <p class="text-xs text-slate-500 mt-1">Exceptional recovery; defaulters only ~1.29%</p>
+        </div>
+
+        <!-- Card 5: 165+ -->
+        <div class="bg-slate-50/90 hover:bg-emerald-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-[#0b4d26]/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-slate-800 text-xl mb-3 group-hover:scale-110 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <i class="bi bi-diagram-3-fill"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900">
+            <span class="counter" data-target="165" data-dec="0" data-pre="" data-suf="+">0+</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Savings Groups</p>
+          <p class="text-xs text-slate-500 mt-1">BDT 32.6M+ saved across group networks</p>
+        </div>
+
+        <!-- Card 6: 38+ -->
+        <div class="bg-slate-50/90 hover:bg-emerald-50/40 rounded-2xl p-6 sm:p-7 border border-slate-100 hover:border-[#0b4d26]/25 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col items-center text-center group">
+          <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center text-[#0b4d26] text-xl mb-3 group-hover:scale-110 group-hover:bg-[#0b4d26] group-hover:text-white transition-all duration-300">
+            <i class="bi bi-shield-fill-check"></i>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b4d26]">
+            <span class="counter" data-target="38" data-dec="0" data-pre="" data-suf="+">0+</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mt-2">Years of Trust</p>
+          <p class="text-xs text-slate-500 mt-1">Dedicated social welfare since 1987</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ৬. এবাউট ক্রিড (WHO WE ARE & MISSION)
+       ========================================================= -->
+  <section id="about" class="py-20 lg:py-28 bg-[#F8FAFC]">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -top-4 -left-4 w-full h-full rounded-2xl bg-[#0b4d26]/15 -z-10 transform -rotate-1"></div>
+            
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="assets/images/welcome-empower.png" alt="CREED Empowering Women" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='assets/images/microfinance.jpg';">
+            </div>
+
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-slate-900 text-white p-4 sm:p-5 rounded-xl shadow-xl max-w-[220px] border border-slate-700">
+              <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+                <i class="bi bi-flag-fill"></i> Founded 1987
+              </div>
+              <p class="text-xs text-slate-300 mt-1 font-medium">
+                Started in Rayer Bazar slum by Md. Sulaiman Khan with personal contributions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-2">
+            <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">About CREED</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              A Dedicated Catalyst for Socio-Economic Self-Reliance
+            </h2>
+          </div>
+
+          <p class="text-base text-slate-700 leading-relaxed">
+            <strong>Centre for Rehabilitation Education Earning Development (CREED)</strong> is an absolutely non-governmental, non-political, and non-profitable voluntary organization whole-heartedly dedicated to rendering service to distressed and vulnerable humanity.
+          </p>
+
+          <p class="text-sm text-slate-600 leading-relaxed">
+            From its beginning in the Rayer Bazar slum of Hazaribagh, Dhaka in 1987, CREED has expanded its field operations to <strong>23 Upazilas/Thanas across 15 districts and 5 divisions</strong>, fostering sustainable livelihoods, primary schooling in deep-sea islands, and women micro-entrepreneurship.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white border border-slate-200 card-hover">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-[#0b4d26] flex items-center justify-center font-bold text-lg mb-3">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Financial Inclusion</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Organizing ultra-poor women into disciplined savings groups with capital access.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 card-hover">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg mb-3">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Island Education</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Running 5-grade formal primary school at isolated St. Martin Coral Island.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 card-hover">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-lg mb-3">
+                <i class="bi bi-tree-fill"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Husbandry &amp; Skills</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Poultry rearing, plant nursery, cattle breeding, and small trade vocational training.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center gap-3 text-xs text-slate-500">
+            <span class="font-bold text-slate-700">Official Registrations:</span>
+            <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">
+              Social Services: <strong>Dha-02293</strong>
+            </span>
+            <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">
+              NGO Affairs Bureau: <strong>#805</strong>
+            </span>
+            <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">
+              MRA License: <strong>01079-03171-00358</strong>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ৭. মূল কর্মসূচি (CORE PROGRAMS)
+       ========================================================= -->
+  <section id="programs" class="py-20 bg-white border-y border-slate-200">
+    <div class="container">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">What We Do</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+            Empowerment Through Integrated Programs
+          </h2>
+          <p class="text-sm text-slate-600 mt-1.5 max-w-2xl">
+            CREED combines microcredit with primary education, technical skills, and clean water infrastructure to build enduring pathways out of extreme poverty.
+          </p>
+        </div>
+
+        <button onclick="openInquiryModal()" class="self-start md:self-auto px-5 py-2.5 rounded-lg bg-[#0b4d26] hover:bg-[#073b1c] text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+          <span>Inquire About Programs</span>
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/microfinance.jpg" alt="CREED Microcredit Program" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 bg-[#0b4d26] text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow">
+                Flagship Program
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Microcredit &amp; Savings</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Operating across 165+ groups with declining balance interest (25%), weekly savings of ৳20+, 2-week grace periods, and zero collateral requirements.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-700 mb-4 font-medium">
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Zero collateral required</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> 13-week financial training</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> 98.71% recovery efficiency</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+            <a href="#calculator" class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1.5">
+              <span>Calculate Installment</span>
+              <i class="bi bi-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/education.jpg" alt="St. Martin Island Primary Education" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow">
+                Coral Island Focus
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-xl text-slate-900 mb-2">St. Martin School</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Established in 1998 with permanent CIDA campus built in 2002. Serving over 1,400 children in an isolated coral island located 32km into the Bay of Bengal.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-700 mb-4 font-medium">
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> 5 full primary classes</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> 100% remote island coverage</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> 23+ years unbroken running</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+            <a href="#st-martin" class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1.5">
+              <span>View School Story</span>
+              <i class="bi bi-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/husbandry.jpg" alt="Animal Husbandry Development Program" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow">
+                Livelihood Training
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Animal Husbandry (AHDP)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                7-day practical training in poultry rearing, cattle fattening, seed nurseries, and fisheries to ensure borrowers achieve profitable enterprise returns.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-700 mb-4 font-medium">
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Veterinary &amp; feed guidance</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Seed &amp; kitchen garden setup</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Direct market linking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+            <button onclick="openInquiryModal('Animal Husbandry Training')" class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1.5">
+              <span>Inquire for Training</span>
+              <i class="bi bi-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="assets/images/gallery-4.jpg" alt="Safe Water & Tube-Well Program" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow">
+                WASH &amp; Health
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Safe Water &amp; Tube-Wells</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Deep tube-well installations, arsenic risk awareness, and weekly health and hygiene talks during village group meetings.
+              </p>
+              <ul class="space-y-1.5 text-xs text-slate-700 mb-4 font-medium">
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Deep tube-well distribution</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Arsenic testing drives</li>
+                <li class="flex items-center gap-2"><i class="bi bi-check2 text-emerald-600 font-bold"></i> Child health &amp; nutrition talks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-100">
+            <a href="#contact" class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1.5">
+              <span>Community Initiatives</span>
+              <i class="bi bi-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ৮. দ্য ক্রিড মডেল (৫-ধাপ পদ্ধতি)
+       ========================================================= -->
+  <section id="methodology" class="py-20 lg:py-28 bg-[#04230f] text-white relative overflow-hidden">
+    <div class="container relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-amber-300">Methodology Blueprint</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight mt-1">
+          The CREED 5-Step Empowerment Model
+        </h2>
+        <p class="text-sm text-slate-300 mt-2">
+          Modeled on disciplined peer-lending and intensive capacity development to turn vulnerability into self-reliance.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 lg:gap-6">
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-amber-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-full bg-amber-400/20 text-amber-300 font-extrabold flex items-center justify-center text-sm border border-amber-400/40">01</span>
+              <i class="bi bi-people text-slate-400"></i>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2">Group Formation</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              15–30 ultra-poor women form a democratic savings group, electing their own President, Secretary, and Cashier.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-amber-300 font-semibold">
+            Peer Cohesion
+          </div>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-amber-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-full bg-emerald-400/20 text-emerald-300 font-extrabold flex items-center justify-center text-sm border border-emerald-400/40">02</span>
+              <i class="bi bi-calendar-check text-slate-400"></i>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2">13-Week Mentorship</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Supervisors attend weekly meetings. 5-day human resource training on accounting, rights, and group dynamics.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-emerald-300 font-semibold">
+            Trust &amp; Literacy
+          </div>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-amber-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-full bg-amber-400/20 text-amber-300 font-extrabold flex items-center justify-center text-sm border border-amber-400/40">03</span>
+              <i class="bi bi-lightbulb text-slate-400"></i>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2">Feasibility &amp; Skills</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Assessing market demand and providing 7-day skills training in poultry, nursery, or trade before disbursement.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-amber-300 font-semibold">
+            Practical Viability
+          </div>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-amber-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-full bg-blue-400/20 text-blue-300 font-extrabold flex items-center justify-center text-sm border border-blue-400/40">04</span>
+              <i class="bi bi-cash-coin text-slate-400"></i>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2">Disbursement</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Collateral-free microloan release with a 2-week grace period before weekly declining balance repayment starts.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-blue-300 font-semibold">
+            Zero Collateral
+          </div>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-amber-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-full bg-teal-400/20 text-teal-300 font-extrabold flex items-center justify-center text-sm border border-teal-400/40">05</span>
+              <i class="bi bi-graph-up-arrow text-slate-400"></i>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2">Savings &amp; Solvency</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Mandatory weekly savings of ৳20+. Members graduate out of poverty with 98.71% historical repayment rate.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-teal-300 font-semibold">
+            5,900+ Solvent Alums
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ৯. লোন ও সঞ্চয় ক্যালকুলেটর
+       ========================================================= -->
+  <section id="calculator" class="py-20 lg:py-24 bg-[#F8FAFC]">
+    <div class="container">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+          <div class="mb-6">
+            <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Financial Tool</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+              Microcredit Repayment &amp; Savings Calculator
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+              Estimate weekly installments based on MRA/PKSF-approved declining balance method and mandatory weekly savings.
+            </p>
+          </div>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex justify-between items-center">
+              <label for="loan-amount" class="text-sm font-bold text-slate-800">
+                Loan Amount (ঋণ পরিমাণ)
+              </label>
+              <span class="text-lg font-display font-extrabold text-[#0b4d26] bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-200">
+                ৳<span id="display-amount">25,000</span>
+              </span>
+            </div>
+            <input type="range" id="loan-amount" min="10000" max="100000" step="5000" value="25000" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
+            <div class="flex justify-between text-[11px] text-slate-400">
+              <span>৳10,000 (Min)</span>
+              <span>৳50,000</span>
+              <span>৳100,000 (Max)</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex justify-between items-center">
+              <label class="text-sm font-bold text-slate-800">
+                Repayment Duration (পরিশোধ মেয়াদ)
+              </label>
+              <div class="flex gap-2">
+                <button type="button" onclick="setWeeks(26)" id="btn-26" class="px-3 py-1.5 rounded-lg border text-xs font-bold text-slate-600 transition">26 Weeks (6 Mos)</button>
+                <button type="button" onclick="setWeeks(52)" id="btn-52" class="px-3 py-1.5 rounded-lg bg-[#0b4d26] text-white text-xs font-bold transition">52 Weeks (1 Year)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3 mb-6">
+            <div class="flex justify-between items-center">
+              <label for="weekly-savings" class="text-sm font-bold text-slate-800">
+                Weekly Mandatory Savings (সাপ্তাহিক সঞ্চয়)
+              </label>
+              <span class="text-sm font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">
+                ৳<span id="display-savings">50</span> / week
+              </span>
+            </div>
+            <input type="range" id="weekly-savings" min="20" max="500" step="10" value="50" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
+            <div class="flex justify-between text-[11px] text-slate-400">
+              <span>৳20 (Min Policy)</span>
+              <span>৳250</span>
+              <span>৳500</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-gradient-to-br from-[#073b1c] to-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl border border-emerald-800">
+          <div class="border-b border-emerald-800/80 pb-4 mb-6">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-300">Estimated Repayment Plan</span>
+            <h3 class="font-display text-2xl font-bold mt-1">Loan Summary</h3>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+              <span class="text-slate-300">Principal Amount:</span>
+              <span class="font-bold text-lg text-white">৳<span id="summary-principal">25,000</span></span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+              <span class="text-slate-300">Repayment Cycle:</span>
+              <span class="font-bold text-white"><span id="summary-weeks">52</span> Weeks</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+              <span class="text-slate-300">Weekly Installment:</span>
+              <span class="font-extrabold text-2xl text-emerald-300 font-display">৳<span id="summary-installment">545</span></span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+              <span class="text-slate-300">Accumulated Savings:</span>
+              <span class="font-bold text-amber-300">৳<span id="summary-savings-total">2,600</span></span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-slate-300">Grace Period:</span>
+              <span class="font-bold text-slate-200">2 Weeks Post-Disbursement</span>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-emerald-800/80">
+            <button onclick="openInquiryModalWithAmount()" class="w-full py-3.5 rounded-xl bg-[#c9a24a] hover:bg-[#b58e38] text-slate-950 font-extrabold text-sm transition shadow-lg flex items-center justify-center gap-2">
+              <span>Apply / Inquire With This Amount</span>
+              <i class="bi bi-arrow-right"></i>
+            </button>
+            <p class="text-center text-[11px] text-slate-400 mt-2.5">
+              No hidden fees • Direct field supervision
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১০. সেন্ট মার্টিন দ্বীপ শিক্ষা প্রকল্প
+       ========================================================= -->
+  <section id="st-martin" class="py-20 lg:py-28 bg-white border-b border-slate-200">
+    <div class="container">
+      
+      <div class="bg-gradient-to-br from-[#073b1c] via-[#04230f] to-slate-900 rounded-3xl overflow-hidden text-white shadow-2xl border border-emerald-900">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          
+          <div class="lg:col-span-7 p-8 sm:p-12 lg:p-16 flex flex-col justify-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-amber-300 w-max">
+              <i class="bi bi-geo-fill"></i> St. Martin Island Educational Mission
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold leading-tight">
+              Bringing The Light of Education to St. Martin Island
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+              Saint Martin is a fragile coral island in the deep waters of the Bay of Bengal, 32 km from Teknaf mainland. For generations, over 8,000 residents and 1,400 children lacked formal education, with 60% of children in the island’s south completely ignored.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300">
+              <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                <span class="block text-amber-400 font-bold text-base mb-1">1998 Experimental School</span>
+                <span>Initiated non-formal literacy with high community participation.</span>
+              </div>
+              <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                <span class="block text-emerald-300 font-bold text-base mb-1">2002 CIDA Partnership</span>
+                <span>Constructed 2 formal school buildings offering 5 complete primary grades.</span>
+              </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic border-l-2 border-amber-400 pl-4">
+              "Over 23 continuous years, this school has transformed island life so that every family and child can access primary learning."
+            </p>
+
+            <div class="pt-2 flex flex-wrap gap-4">
+              <button onclick="openInquiryModal('St. Martin Education Support')" class="px-5 py-2.5 rounded-lg bg-[#c9a24a] hover:bg-[#b58e38] text-slate-950 font-bold text-xs sm:text-sm transition flex items-center gap-2">
+                <span>Support Island Education</span>
+                <i class="bi bi-heart-fill text-xs text-red-700"></i>
+              </button>
+              <a href="#gallery" class="px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm transition">
+                View School Photos
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative min-h-[300px] lg:min-h-full">
+            <img src="assets/images/education.jpg" alt="CREED St. Martin School Children" class="w-full h-full object-cover">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১১. সংবাদ ও প্রাতিষ্ঠানিক চুক্তি (MRA & NEWS)
+       ========================================================= -->
+  <section id="news" class="py-20 lg:py-24 bg-[#F8FAFC]">
+    <div class="container">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Governance &amp; Milestones</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+            Institutional News &amp; Updates
+          </h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Official announcements, regulatory compliance, and community progress reports.
+          </p>
+        </div>
+        <a href="#about" class="text-xs sm:text-sm font-bold text-[#0b4d26] hover:underline flex items-center gap-1.5">
+          <span>Explore Legal Reports</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="aspect-video overflow-hidden relative">
+              <img src="assets/images/mra-agreement.jpeg" alt="CREED and MRA Sign CIB Agreement" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 bg-[#0b4d26] text-white text-[10px] font-bold px-2 py-0.5 rounded">Regulatory Agreement</span>
+            </div>
+            <div class="p-6">
+              <div class="text-[11px] font-bold text-slate-400 mb-2">April 17, 2025 • Dhaka MRA Office</div>
+              <h3 class="font-display font-bold text-lg text-slate-900 leading-snug mb-2">
+                CREED and MRA Sign Historic CIB Agreement
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Executive Secretary Md. Sulaiman Khan formally signed the Credit Information Bureau (CIB) agreement with MRA high officials to integrate CREED into the national credit database.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <span class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1 cursor-pointer" onclick="openNewsModal('mra')">
+              <span>Read Full Report</span>
+              <i class="bi bi-arrow-right text-[11px]"></i>
+            </span>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="aspect-video overflow-hidden relative">
+              <img src="assets/images/gallery-1.jpg" alt="PKSF Partnership" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[10px] font-bold px-2 py-0.5 rounded">Partnership Growth</span>
+            </div>
+            <div class="p-6">
+              <div class="text-[11px] font-bold text-slate-400 mb-2">Partner Since 1998 • Microfinance</div>
+              <h3 class="font-display font-bold text-lg text-slate-900 leading-snug mb-2">
+                Sustained Capital Channeling Through PKSF Partnership
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Partnering with Palli Karma-Shahayak Foundation (PKSF) to deploy affordable credit for dairy farming, plant nurseries, and cottage industries in Gazipur and Tangail.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <span class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1 cursor-pointer" onclick="openNewsModal('pksf')">
+              <span>Learn More</span>
+              <i class="bi bi-arrow-right text-[11px]"></i>
+            </span>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="aspect-video overflow-hidden relative">
+              <img src="assets/images/gallery-2.jpg" alt="St. Martin Island School Report" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">Education Report</span>
+            </div>
+            <div class="p-6">
+              <div class="text-[11px] font-bold text-slate-400 mb-2">Milestone • Field Report</div>
+              <h3 class="font-display font-bold text-lg text-slate-900 leading-snug mb-2">
+                23 Years of Unbroken Learning at Coral Island School
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Celebrating over two decades of educating children on St. Martin Island, preparing local youth with literacy, basic digital skills, and environmental conservation awareness.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <span class="text-xs font-bold text-[#0b4d26] hover:underline inline-flex items-center gap-1 cursor-pointer" onclick="openNewsModal('school')">
+              <span>View Island Story</span>
+              <i class="bi bi-arrow-right text-[11px]"></i>
+            </span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১২. প্রতিষ্ঠাতার বার্তা
+       ========================================================= -->
+  <section id="founder" class="py-20 bg-white border-b border-slate-200">
+    <div class="container">
+      
+      <div class="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12 lg:p-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-4 text-center lg:text-left">
+            <div class="inline-block relative">
+              <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden shadow-xl border-4 border-white mx-auto">
+                <img src="assets/images/ceo.jpg" alt="Mohammad Sulaiman Khan, Founder & CEO" class="w-full h-full object-cover">
+              </div>
+              <div class="mt-4">
+                <h4 class="font-display font-extrabold text-xl text-slate-900">Mohammad Sulaiman Khan</h4>
+                <p class="text-xs font-bold text-[#0b4d26] uppercase tracking-wider">Founder &amp; Executive Secretary / CEO</p>
+                <p class="text-[11px] text-slate-500 mt-0.5">Dedicated to Grassroots Humanity Since 1987</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 space-y-4">
+            <div class="text-[#0b4d26] text-3xl">
+              <i class="bi bi-quote"></i>
+            </div>
+            
+            <h3 class="font-display text-2xl sm:text-3xl font-bold text-slate-900">
+              "A Trustful Bridge of Friendship Between CREED and Our Borrowers"
+            </h3>
+
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed italic">
+              "In our Bangladesh, the people of rural areas have long suffered from lack of capital and low pricing for their agricultural products. As a voluntary organization, CREED does not boast great accolades—rather, we have built an ideal atmosphere of friendship and mutual trust between our field officers and loan receivers."
+            </p>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "We leave no stone unturned to keep abreast of modern development science. We are totally sincere in our endeavors and our very best efforts are applied at all times to achieve our goals through honest, dedicated work."
+            </p>
+
+            <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                <span class="text-xs font-semibold text-slate-700">Committed to Grassroots Dignity &amp; Poverty Alleviation</span>
+              </div>
+              <button onclick="openInquiryModal('Message to Founder & CEO')" class="px-4 py-2 rounded-lg border border-slate-300 text-xs font-bold text-slate-700 hover:border-[#0b4d26] hover:text-[#0b4d26] transition">
+                Send Direct Message
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১৩. ফটো গ্যালারি
+       ========================================================= -->
+  <section id="gallery" class="py-20 lg:py-24 bg-[#F8FAFC]">
+    <div class="container">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Visual Journey</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          Moments from the Grassroots Field
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Real scenes from our women's savings circles, St. Martin island school, and animal husbandry training.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-1.jpg" alt="Microfinance Group Meeting" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Weekly Savings Circle</span>
+            <span class="text-[10px] text-slate-300">Gazipur Field Branch</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-2.jpg" alt="Primary School Students" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">St. Martin School Children</span>
+            <span class="text-[10px] text-slate-300">Coral Island Center</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-3.jpg" alt="Livelihood Training" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Animal Husbandry Workshop</span>
+            <span class="text-[10px] text-slate-300">Poultry &amp; Cattle Care</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-4.jpg" alt="Safe Drinking Water Project" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Deep Tube-Well Distribution</span>
+            <span class="text-[10px] text-slate-300">Pure Water Initiative</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-5.jpg" alt="Community Health Drive" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Community Health Drive</span>
+            <span class="text-[10px] text-slate-300">Maternal &amp; Child Care</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-6.jpg" alt="Grassroots Field Audit" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Grassroots Field Audit</span>
+            <span class="text-[10px] text-slate-300">Pubail &amp; Kaliganj</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-7.jpg" alt="Cottage Enterprise" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Cottage Enterprise</span>
+            <span class="text-[10px] text-slate-300">Women Artisan Support</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img src="assets/images/gallery-8.jpg" alt="Agri-Nursery Initiatives" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white text-xs">
+            <span class="font-bold">Agri-Nursery Initiatives</span>
+            <span class="text-[10px] text-slate-300">Tangail Operations</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১৪. শাখা নেটওয়ার্ক (BRANCHES)
+       ========================================================= -->
+  <section id="branches" class="py-20 bg-white border-y border-slate-200">
+    <div class="container">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Network Presence</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          Our Operational Coverage &amp; Branch Offices
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          CREED operates across 23 Upazilas/Thanas of 15 districts in 5 divisions, with dedicated field hubs managing 165+ community groups.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-[#04230f] text-white shadow-lg border border-emerald-900 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">Headquarters</span>
+              <i class="bi bi-building"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Dhaka Central Office</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Navana Siddique Sorrento, House #289-290 (4th Floor), Road #8/A, West Dhanmondi, Dhaka-1209.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-300">
+              <p><i class="bi bi-telephone-fill text-amber-400 mr-2"></i> +880 1711-608288</p>
+              <p><i class="bi bi-telephone-fill text-amber-400 mr-2"></i> +880 1313-046002</p>
+              <p><i class="bi bi-envelope-fill text-amber-400 mr-2"></i> info@creedbd.org</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-amber-300 font-semibold">
+            Executive &amp; Regulatory Coordination
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white text-slate-800 shadow-sm border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-900">Zone-1 Hub</span>
+              <i class="bi bi-geo-alt-fill text-[#0b4d26]"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Fuldi &amp; Kaligonj Branch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Village: Uttar Fuldi, Union: Bakterpur, Upazila: Kaligonj, District: Gazipur.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600">
+              <p><strong>Zonal Manager:</strong> Md. Sarour Morshed Khan</p>
+              <p><i class="bi bi-telephone-fill text-[#0b4d26] mr-2"></i> 01313-046004</p>
+              <p><i class="bi bi-people-fill text-[#0b4d26] mr-2"></i> 71+ Active Savings Groups</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] text-[#0b4d26] font-bold">
+            99.43% Realization Rate
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white text-slate-800 shadow-sm border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-900">Branch Office</span>
+              <i class="bi bi-geo-alt-fill text-blue-700"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Pubail Sadar Branch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Pubail Station Road, Gazipur Sadar Upazila, Gazipur District.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600">
+              <p><strong>Focus:</strong> Agri-trading &amp; small enterprise loans</p>
+              <p><i class="bi bi-people-fill text-blue-700 mr-2"></i> 43+ Savings Groups</p>
+              <p><i class="bi bi-cash-stack text-blue-700 mr-2"></i> 919+ Enrolled Members</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] text-blue-700 font-bold">
+            96.41% Realization Rate
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white text-slate-800 shadow-sm border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900">Branch Office</span>
+              <i class="bi bi-geo-alt-fill text-amber-700"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Notan Kahela Branch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Notan Kahela Bazar, Upazila: Mirzapur, District: Tangail.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600">
+              <p><strong>Focus:</strong> Dairy, weaving &amp; seed nursery</p>
+              <p><i class="bi bi-people-fill text-amber-700 mr-2"></i> 30+ Savings Groups</p>
+              <p><i class="bi bi-cash-stack text-amber-700 mr-2"></i> 666+ Members</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] text-amber-700 font-bold">
+            99.21% Realization Rate
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১৫. লোন আবেদন ও সরাসরি যোগাযোগ ফর্ম
+       ========================================================= -->
+  <section id="contact" class="py-20 lg:py-24 bg-[#F8FAFC]">
+    <div class="container">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Connect With CREED</span>
+            <h2 class="font-display text-3xl font-extrabold text-slate-900 mt-1">
+              Inquire About A Loan or Partner With Us
+            </h2>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Whether you are an aspiring woman entrepreneur seeking to join an active savings group, or an institutional partner wishing to support our St. Martin primary school, our team is at your service.
+            </p>
+          </div>
+
+          <div class="space-y-4 text-sm text-slate-700">
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-[#0b4d26] flex items-center justify-center font-bold shrink-0">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Head Office Location</h4>
+                <p class="text-xs text-slate-600 mt-0.5">
+                  Navana Siddique Sorrento, House #289-290 (4th Floor), Road #8/A, West Dhanmondi, Dhaka-1209, Bangladesh.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-[#0b4d26] flex items-center justify-center font-bold shrink-0">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Telephone &amp; Hotline</h4>
+                <p class="text-xs text-slate-600 mt-0.5">+880 1711-608288 | +880 1313-046002</p>
+                <p class="text-[11px] text-slate-500 mt-0.5">Saturday to Thursday (9:00 AM – 5:00 PM)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold shrink-0">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Official Email Channels</h4>
+                <p class="text-xs text-slate-600 mt-0.5">info@creedbd.org | creedgfsc@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs text-emerald-950 leading-relaxed">
+            <span class="font-bold">Transparent Non-Profit Practice:</span> CREED does not charge unauthorized broker fees or demand asset collateral for standard microfinance savings groups.
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div class="mb-6">
+            <h3 class="font-display font-bold text-2xl text-slate-900">
+              Submit Direct Inquiry
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+              Fill out the form below and our field supervisor or zonal office will connect with you.
+            </p>
+          </div>
+
+          <form id="home-contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                  Full Name (পূর্ণ নাম) *
+                </label>
+                <input type="text" id="contact-name" required placeholder="আপনার নাম লিখুন" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm">
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                  Mobile Number (মোবাইল নম্বর) *
+                </label>
+                <input type="tel" id="contact-phone" required placeholder="017XX-XXXXXX" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-email" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                  Email Address (ইমেইল)
+                </label>
+                <input type="email" id="contact-email" placeholder="name@example.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm">
+              </div>
+              <div>
+                <label for="contact-program" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                  Program of Interest (কার্যক্রম) *
+                </label>
+                <select id="contact-program" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm bg-white">
+                  <option value="Microcredit Loan">Microcredit Loan (ক্ষুদ্রঋণ ও সঞ্চয়)</option>
+                  <option value="Savings Group Admission">Join A Savings Group (সঞ্চয় দল)</option>
+                  <option value="Animal Husbandry Training">Animal Husbandry &amp; Skills Training</option>
+                  <option value="St. Martin Island School">St. Martin School Support / Donation</option>
+                  <option value="Tube-Well / Water Project">Tube-Well Distribution / Water</option>
+                  <option value="General Inquiry">General Partnership Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-branch" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                Preferred Area / District (কাঙ্ক্ষিত এলাকা) *
+              </label>
+              <select id="contact-branch" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm bg-white">
+                <option value="Gazipur - Kaligonj / Fuldi">Gazipur - Kaligonj / Fuldi</option>
+                <option value="Gazipur - Pubail / Sadar">Gazipur - Pubail / Sadar</option>
+                <option value="Tangail - Mirzapur / Notan Kahela">Tangail - Mirzapur / Notan Kahela</option>
+                <option value="Dhaka - West Dhanmondi / Rayer Bazar">Dhaka - West Dhanmondi / Rayer Bazar</option>
+                <option value="Cox's Bazar - Teknaf / St. Martin Island">Cox's Bazar - Teknaf / St. Martin Island</option>
+                <option value="Other Area">Other Rural or Peri-urban Area</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+                Your Message / Proposal (বিস্তারিত তথ্য) *
+              </label>
+              <textarea id="contact-message" rows="3" required placeholder="Please describe your enterprise activity or inquiry..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0b4d26] text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-[#0b4d26] hover:bg-[#073b1c] text-white font-bold text-sm shadow transition flex items-center justify-center gap-2">
+              <i class="bi bi-send-fill text-xs"></i>
+              <span>Send Message to CREED</span>
+            </button>
+
+            <div id="form-feedback" class="hidden p-3.5 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-semibold text-center border border-emerald-200">
+              Thank you! Your message has been recorded. Our team will contact you shortly.
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ১৬. ফুটার (UNNAYAN PROCHESTA STYLE WITH ROYAL TECHNOLOGIES CREDIT)
+       ========================================================= -->
+  <footer class="up-foot">
+    <span class="up-foot-orb o1"></span>
+    <span class="up-foot-orb o2"></span>
+    
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <a href="#" class="d-inline-flex align-items-center gap-3 mb-2 flex-wrap">
+            <span class="up-foot-logo">
+              <img src="assets/images/logo.png" alt="CREED Logo" onerror="this.onerror=null; this.src='assets/images/favicon.png';">
+            </span>
+          </a>
+          <p class="up-foot-about text-xs sm:text-sm">
+            <strong>Centre for Rehabilitation Education Earning Development (CREED)</strong> is a voluntary, non-governmental, social welfare organization established in 1987. Wholeheartedly dedicated to empowering rural women through group microfinance, educating island children, and reducing vulnerability.
+          </p>
+          <div class="up-foot-box text-xs">
+            <small class="block font-bold mb-1" style="color: var(--up-gold);">Official Accreditations &amp; Licenses</small>
+            <small class="text-white block opacity-90">• Microcredit Regulatory Authority (MRA) Lic: <strong>01079-03171-00358</strong></small>
+            <small class="text-white block opacity-90">• NGO Affairs Bureau, Prime Minister's Office Reg: <strong>#805</strong></small>
+            <small class="text-white block opacity-90">• Department of Social Services Reg: <strong>Dha-02293</strong></small>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="#about">About CREED</a></li>
+            <li><a href="#programs">Microcredit Program</a></li>
+            <li><a href="#st-martin">St. Martin School</a></li>
+            <li><a href="#methodology">5-Step Model</a></li>
+            <li><a href="#branches">Branch Network</a></li>
+            <li><a href="#calculator">Loan Calculator</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2">
+          <h6>Core Programs</h6>
+          <ul>
+            <li><a href="#programs">Women Savings Groups</a></li>
+            <li><a href="#programs">Animal Husbandry</a></li>
+            <li><a href="#programs">Water &amp; Sanitation</a></li>
+            <li><a href="#news">CIB Agreement</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#contact">Loan Inquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h6>Central Office</h6>
+          <div class="up-foot-contact text-xs space-y-2">
+            <p><i class="bi bi-geo-alt-fill gold"></i> <span>Navana Siddique Sorrento, House #289-290 (4th Floor), Road #8/A, West Dhanmondi, Dhaka-1209.</span></p>
+            <p><i class="bi bi-telephone-fill gold"></i> <span>+880 1711-608288 / +880 1313-046002</span></p>
+            <p><i class="bi bi-envelope-fill gold"></i> <span>info@creedbd.org / creedgfsc@gmail.com</span></p>
+          </div>
+
+          <div class="mt-4 flex gap-2">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#contact" class="social-btn" title="Contact Us"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ফুটার বটম বার: Developed By Royal Technologies -->
+      <div class="up-foot-bottom text-center">
+        <p class="mb-0">
+          &copy; 2026 CREED (Centre for Rehabilitation Education Earning Development). All Rights Reserved. | 
+          Developed By <a href="http://www.royaltechbd.com/" target="_blank" rel="noopener">Royal Technologies</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- উপরে যাওয়ার বাটন -->
+  <button type="button" class="up-totop" id="upToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- লোন আবেদন ও সংবাদ বিস্তারিত মোডাল (High z-index: 99999 to always stay above header) -->
+  <div id="inquiry-modal" class="fixed inset-0 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/85 backdrop-blur-md overflow-y-auto" style="z-index: 99999; display: none;" onclick="if(event.target === this) closeInquiryModal()">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 my-auto">
+      
+      <button onclick="closeInquiryModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 rounded-lg text-lg">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div class="mb-5">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-[#0b4d26]">Quick Application</span>
+        <h3 class="font-display font-bold text-2xl text-slate-900 mt-1">Inquire About A Loan</h3>
+        <p class="text-xs text-slate-600 mt-1">
+          Our zonal supervisor will schedule a meeting to explain the savings group procedure and verify admission.
+        </p>
+      </div>
+
+      <form id="modal-form" onsubmit="handleModalSubmit(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Applicant Name (আবেদনকারীর নাম) *</label>
+          <input type="text" id="modal-name" required placeholder="আপনার নাম লিখুন" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0b4d26]">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile (ফোন নম্বর) *</label>
+            <input type="tel" id="modal-phone" required placeholder="017XX-XXXXXX" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0b4d26]">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Intended Loan (৳) *</label>
+            <input type="text" id="modal-amount" value="25,000" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0b4d26] font-semibold">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Area / Upazila (উপজেলা/এলাকা) *</label>
+          <select id="modal-area" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0b4d26] bg-white">
+            <option>Gazipur - Kaligonj / Fuldi</option>
+            <option>Gazipur - Pubail / Sadar</option>
+            <option>Tangail - Mirzapur / Notan Kahela</option>
+            <option>Dhaka - West Dhanmondi / Rayer Bazar</option>
+            <option>Cox's Bazar - Teknaf / St. Martin</option>
+            <option>Other Area</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Enterprise Purpose (ব্যবসায়ের ধরন)</label>
+          <input type="text" id="modal-purpose" placeholder="e.g. হাঁস-মুরগি পালন, গাভী পালন, শাকসবজি চাষ, খুচরা ব্যবসা" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0b4d26]">
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-[#0b4d26] hover:bg-[#073b1c] text-white font-bold text-sm shadow transition">
+          Submit Loan Inquiry
+        </button>
+
+        <div id="modal-feedback" class="hidden p-3 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-bold text-center border border-emerald-200">
+          Thank you! We will reach out to you within 24–48 hours.
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="news-modal" class="fixed inset-0 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/85 backdrop-blur-md overflow-y-auto" style="z-index: 99999; display: none;" onclick="if(event.target === this) closeNewsModal()">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 max-h-[90vh] overflow-y-auto my-auto">
+      <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 rounded-lg text-lg">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div id="news-modal-content" class="space-y-4"></div>
+    </div>
+  </div>
+
+  <!-- Unnayan Prochesta Menu & Ticker Controller -->
+  <script src="assets/js/unnayan-menu.js"></script>
+
+  <!-- Interactive Scripts (Calculator & Modals) -->
+  <script>
+    const inquiryModal = document.getElementById('inquiry-modal');
+    const newsModal = document.getElementById('news-modal');
+
+    function openInquiryModal(defaultPurpose = '') {
+      inquiryModal.style.display = 'flex';
+      inquiryModal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      if (defaultPurpose) {
+        document.getElementById('modal-purpose').value = defaultPurpose;
+      }
+    }
+
+    function closeInquiryModal() {
+      inquiryModal.style.display = 'none';
+      inquiryModal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function openInquiryModalWithAmount() {
+      const amount = document.getElementById('loan-amount').value;
+      document.getElementById('modal-amount').value = Number(amount).toLocaleString('en-IN');
+      openInquiryModal();
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-feedback').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('home-contact-form').reset();
+      }, 3000);
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      document.getElementById('modal-feedback').classList.remove('hidden');
+      setTimeout(() => {
+        closeInquiryModal();
+        document.getElementById('modal-form').reset();
+        document.getElementById('modal-feedback').classList.add('hidden');
+      }, 2500);
+    }
+
+    // Loan Calculator
+    let currentWeeks = 52;
+    const loanSlider = document.getElementById('loan-amount');
+    const savingsSlider = document.getElementById('weekly-savings');
+
+    function updateCalculator() {
+      if (!loanSlider || !savingsSlider) return;
+      const amount = parseInt(loanSlider.value);
+      const savings = parseInt(savingsSlider.value);
+
+      document.getElementById('display-amount').innerText = amount.toLocaleString('en-IN');
+      document.getElementById('display-savings').innerText = savings.toLocaleString('en-IN');
+
+      const interestRate = (currentWeeks === 52) ? 0.13 : 0.07;
+      const totalRepay = amount * (1 + interestRate);
+      const weeklyInstallment = Math.round(totalRepay / currentWeeks);
+      const totalSavings = savings * currentWeeks;
+
+      document.getElementById('summary-principal').innerText = amount.toLocaleString('en-IN');
+      document.getElementById('summary-weeks').innerText = currentWeeks;
+      document.getElementById('summary-installment').innerText = weeklyInstallment.toLocaleString('en-IN');
+      document.getElementById('summary-savings-total').innerText = totalSavings.toLocaleString('en-IN');
+    }
+
+    function setWeeks(weeks) {
+      currentWeeks = weeks;
+      const btn26 = document.getElementById('btn-26');
+      const btn52 = document.getElementById('btn-52');
+
+      if (weeks === 26) {
+        btn26.className = "px-3 py-1.5 rounded-lg bg-[#0b4d26] text-white text-xs font-bold transition";
+        btn52.className = "px-3 py-1.5 rounded-lg border text-xs font-bold text-slate-600 transition";
+      } else {
+        btn52.className = "px-3 py-1.5 rounded-lg bg-[#0b4d26] text-white text-xs font-bold transition";
+        btn26.className = "px-3 py-1.5 rounded-lg border text-xs font-bold text-slate-600 transition";
+      }
+      updateCalculator();
+    }
+
+    if (loanSlider && savingsSlider) {
+      loanSlider.addEventListener('input', updateCalculator);
+      savingsSlider.addEventListener('input', updateCalculator);
+      updateCalculator();
+    }
+
+    // =========================================================
+    // 3. ULTRA-SMOOTH ANIMATED NUMBERS COUNTER (Count-Up)
+    // =========================================================
+    function initImpactCounters() {
+      const counters = document.querySelectorAll('.counter[data-target]');
+      if (!counters.length) return;
+
+      function formatNumber(num, dec) {
+        if (dec > 0) {
+          return num.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        }
+        return Math.round(num).toLocaleString('en-US');
+      }
+
+      function startCountUp(el) {
+        if (el.dataset.animated === 'true') return;
+        el.dataset.animated = 'true';
+
+        const target = parseFloat(el.getAttribute('data-target')) || 0;
+        const dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+        const pre = el.getAttribute('data-pre') || '';
+        const suf = el.getAttribute('data-suf') || '';
+        const duration = 1800; // 1.8 seconds duration
+        let startTime = null;
+
+        function animateFrame(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progress = Math.min((timestamp - startTime) / duration, 1);
+          // Ease-out cubic curve for natural, satisfying deceleration
+          const easeOut = 1 - Math.pow(1 - progress, 3);
+          const currentVal = target * easeOut;
+
+          el.textContent = pre + formatNumber(currentVal, dec) + suf;
+
+          if (progress < 1) {
+            requestAnimationFrame(animateFrame);
+          } else {
+            el.textContent = pre + formatNumber(target, dec) + suf;
+          }
+        }
+
+        requestAnimationFrame(animateFrame);
+      }
+
+      function runAllCounters() {
+        counters.forEach(startCountUp);
+      }
+
+      // IntersectionObserver for trigger when scrolled into view
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              runAllCounters();
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -20px 0px' });
+
+        const impactSection = document.getElementById('impact');
+        if (impactSection) {
+          observer.observe(impactSection);
+        } else {
+          counters.forEach(el => observer.observe(el));
+        }
+
+        // Check if section is already in viewport on page load
+        setTimeout(() => {
+          if (impactSection) {
+            const rect = impactSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              runAllCounters();
+              observer.disconnect();
+            }
+          }
+        }, 120);
+      } else {
+        runAllCounters();
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initImpactCounters);
+    } else {
+      initImpactCounters();
+    }
+
+    const newsData = {
+      mra: {
+        title: "CREED and MRA Sign CIB Agreement",
+        date: "April 17, 2025",
+        img: "assets/images/mra-agreement.jpeg",
+        desc: "On 17th April 2025, the Microcredit Regulatory Authority (MRA) organized a milestone event at their headquarters in Dhaka to sign agreements integrating licensed microfinance institutions with the Credit Information Bureau (CIB).<br><br>Representing CREED, Executive Secretary Md. Sulaiman Khan signed the CIB agreement on behalf of CREED with the high officials of MRA. This collaboration marks an essential step toward enhancing credit discipline, borrower protection, and sectoral transparency across Bangladesh."
+      },
+      pksf: {
+        title: "Continuous Microfinance Partnership with PKSF",
+        date: "Established 1998",
+        img: "assets/images/gallery-1.jpg",
+        desc: "Palli Karma-Shahayak Foundation (PKSF) has been one of CREED's primary institutional partners since 1998.<br><br>Through PKSF funding and technical oversight, CREED has disbursed over ৳62.8 Crore to more than 35,000 borrowers across rural and peri-urban Gazipur and Tangail. Over 90% of all beneficiaries are women engaged in poultry rearing, cattle fattening, and small trade."
+      },
+      school: {
+        title: "23 Years of Formal Primary Education at St. Martin Island",
+        date: "Initiated 1998, Formalized 2002",
+        img: "assets/images/education.jpg",
+        desc: "St. Martin Island lies 32 km off Teknaf in deep oceanic water. For decades, the local population had virtually no educational facilities.<br><br>CREED established an experimental school in 1998. With financial backing from CIDA in 2002, CREED constructed two permanent school buildings with 5 primary classes. Today, the school ensures that 1,400+ island children receive uninterrupted primary education and life skills."
+      }
+    };
+
+    function openNewsModal(key) {
+      const item = newsData[key];
+      if (!item) return;
+      const container = document.getElementById('news-modal-content');
+      container.innerHTML = `
+        <div class="rounded-xl overflow-hidden aspect-video border border-slate-200">
+          <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover">
+        </div>
+        <div class="text-[11px] font-bold text-[#0b4d26]">${item.date}</div>
+        <h3 class="font-display font-bold text-xl text-slate-900">${item.title}</h3>
+        <div class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.desc}</div>
+        <div class="pt-4 border-t border-slate-200">
+          <button onclick="closeNewsModal()" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-xs font-bold">Close</button>
+        </div>
+      `;
+      newsModal.style.display = 'flex';
+      newsModal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeNewsModal() {
+      newsModal.style.display = 'none';
+      newsModal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    window.addEventListener('click', (e) => {
+      if (e.target === inquiryModal) closeInquiryModal();
+      if (e.target === newsModal) closeNewsModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeInquiryModal();
+        closeNewsModal();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1182 @@
+﻿<!-- ফাইলের লোকেশন: resources/views/welcome.blade.php -->
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#073b1c">
+    <title>CREED | Centre for Rehabilitation Education Earning Development</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/fabicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 & Icons -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <!-- Vite -->
+    
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="css/home.css?v=3.2">
+        </head>
+<body>
+
+    <!-- ===================== টপ বার ===================== -->
+    <!-- [Royal Addons: Header Top Bar] -->
+        <!-- ===================== হেডলাইন টপ বার ===================== -->
+    <div class="up-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <a class="fw-semibold" href="#">
+                    <i class="bi bi-geo-alt-fill gold me-1"></i>Our Branches
+                </a>
+                <a class="text-nowrap d-none d-sm-inline" href="tel:+8801711608288">
+                    <i class="bi bi-telephone-fill gold me-1"></i>+880 1711-608288
+                </a>
+                <span class="text-white-50 d-none d-lg-inline">|</span>
+                <a class="text-nowrap d-none d-lg-inline text-white-50" href="tel:+8801313046006">
+                    <i class="bi bi-headset gold me-1"></i>+880 1313-046006
+                </a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="d-none d-md-inline">News &amp; Events</a>
+                <a href="#" class="d-none d-md-inline">Notices</a>
+                <a href="#" class="d-none d-md-inline">Careers</a>
+                <a href="support-us.html" class="up-support">
+                    <i class="bi bi-heart-fill text-danger"></i> Donate Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== মূল হেডার (টিকার + ন্যাভ-বার) ===================== -->
+    <header class="up-header" id="upHeader">
+
+        <!-- জরুরী বিজ্ঞপ্তি টিকার -->
+        <div class="up-ticker is-ready" id="upTicker" role="region" aria-label="Urgent notices">
+            <div class="container">
+                <span class="tk-label">
+                    <span class="tk-dot"></span>
+                    <i class="bi bi-megaphone-fill"></i>
+                    <span class="d-none d-sm-inline">জরুরী বিজ্ঞপ্তি</span>
+                    <span class="d-sm-none">বিজ্ঞপ্তি</span>
+                </span>
+
+                <div class="tk-view" id="tkView">
+                    <div class="tk-track" id="tkTrack">
+                        <div class="tk-group" id="tkGroup">
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">এমআরএ</span>
+                                <span class="tk-title">মাইক্রোক্রেডিট রেগুলেটরি অথরিটি (MRA) এর সাথে সিআইবি (CIB) চুক্তি স্বাক্ষর সম্পন্ন করেছে ক্রীড (CREED)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">সেন্ট মার্টিন কোরাল দ্বীপে দীর্ঘ ২৩+ বছর ধরে ১,৪০০+ সুবিধাবঞ্চিত শিশুর মাঝে শিক্ষার আলো বিস্তার</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <span class="tk-badge">ক্ষুদ্রঋণ</span>
+                                <span class="tk-title">তৃণমূল নারীদের স্বাবলম্বনে ক্ষুদ্রঋণ ও সঞ্চয় কর্মসূচি (আদায় হার ৯৮.৭১%, বিতরণ ৳৩৬২.৮+ কোটি)</span>
+                            </a>
+                            <a href="#" class="tk-item">
+                                <i class="bi bi-pin-angle-fill"></i>
+                                <span class="tk-title">প্রাণিসম্পদ উন্নয়ন প্রকল্প (AHDP) ও নিরাপদ সুপেয় পানি নিশ্চিতকরণে নলকূপ বিতরণ কার্যক্রম চলমান</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tk-tools d-none d-sm-flex align-items-center gap-2">
+                    <button type="button" class="tk-btn" id="tkToggle" aria-label="Pause notices">
+                        <i class="bi bi-pause-fill"></i>
+                    </button>
+                    <a href="#" class="tk-all">সকল বিজ্ঞপ্তি</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- মূল ন্যাভ-বার (লগো + মেনু) -->
+        <nav class="up-nav" aria-label="Main navigation">
+            <div class="container">
+
+                <a class="up-brand" href="index.html" aria-label="CREED - Home">
+                    <img src="images/logo.png" alt="CREED Logo" width="260" height="62" decoding="async" fetchpriority="high">
+                </a>
+
+                <!-- ডেস্কটপ মেনু (Strictly from https://www.creedbd.org/ - Pure clean text, NO icons) -->
+                <ul class="up-menu">
+                    <li>
+                        <a href="index.html" class="up-link">Home</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            About Us <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 960px; --cols: 3;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Identity &amp; Foundation</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">About CREED</a></li>
+                                        <li><a href="#">Background</a></li>
+                                        <li><a href="#">Philosophy</a></li>
+                                        <li><a href="#">Objectives</a></li>
+                                        <li><a href="#">Goals</a></li>
+                                        <li><a href="#">Target Group</a></li>
+                                        <li><a href="#">Legal Status</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Governance &amp; Reach</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Management</a></li>
+                                        <li><a href="#">Executive Committee</a></li>
+                                        <li><a href="#">Organogram</a></li>
+                                        <li><a href="#">Source of Funds</a></li>
+                                        <li><a href="#">Geographical Coverage</a></li>
+                                        <li><a href="#">Location Map</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 2;">
+                                    <h6 class="up-gtitle">Reports &amp; Leadership</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Message of Founder &amp; CEO</a></li>
+                                        <li><a href="#">Case Studies (Microcredit)</a></li>
+                                        <li><a href="#">Annual Reports</a></li>
+                                        <li><a href="#">Audit Report</a></li>
+                                        <li><a href="#">Research &amp; Studies</a></li>
+                                        <li><a href="#">CREED-MRA CIB Agreement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Activities <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 880px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Present Activities</h6>
+                                    <ul class="up-glinks">
+                                        <li>
+                                            <a href="#" class="is-key">Micro Credit Program</a>
+                                            <ul class="up-sub">
+                                                <li><a href="#">Jagoron Program</a></li>
+                                                <li><a href="#">Buniad Program</a></li>
+                                                <li><a href="#">Aogrosor Program</a></li>
+                                                <li><a href="#">Sahos Program</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Formal Primary Education At St. Martin</a></li>
+                                        <li><a href="#">Distribution of Tube-Well</a></li>
+                                        <li><a href="#">Animal Husbandry Development (AHDP)</a></li>
+                                        <li><a href="#">Networking Agencies</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Campaigns &amp; Events</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="support-us.html">Global Food Security Campaign (GFSC)</a></li>
+                                        <li><a href="#">Future Activities</a></li>
+                                        <li><a href="#">Previous Activities</a></li>
+                                        <li><a href="#">CREED &amp; MRA CIB Agreement</a></li>
+                                        <li><a href="#">Beneficiary Success Stories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#">Branches</a>
+                    </li>
+                    <li>
+                        <a class="up-link" href="#" aria-haspopup="true">
+                            Others <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="up-mega" style="--w: 520px; --cols: 2;">
+                            <div class="up-mega-grid">
+                                <div style="--k: 0;">
+                                    <h6 class="up-gtitle">Media &amp; Gallery</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Images Gallery</a></li>
+                                        <li><a href="#">Videos Gallery</a></li>
+                                        <li><a href="#">News &amp; Events</a></li>
+                                        <li><a href="#">Press Releases</a></li>
+                                    </ul>
+                                </div>
+                                <div style="--k: 1;">
+                                    <h6 class="up-gtitle">Information</h6>
+                                    <ul class="up-glinks">
+                                        <li><a href="#">Career Opportunities</a></li>
+                                        <li><a href="#">Official Notices</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="support-us.html">Donate Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="up-link text-success fw-bold" href="support-us.html">
+                            <i class="bi bi-heart-fill text-danger me-1"></i>Donate Us
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- মোবাইল টগল বাটন -->
+                <button class="up-burger d-lg-none" id="upBurger" type="button"
+                        aria-label="Toggle menu" aria-expanded="false" aria-controls="upDrawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <!-- স্ক্রল প্রগ্রেস -->
+            <div class="up-progress" aria-hidden="true"><span id="upProg"></span></div>
+        </nav>
+    </header>
+
+    <!-- ===================== মোবাইল মেনু (স্লাইড-ইন ড্রয়ার) ===================== -->
+    <div class="up-drawer" id="upDrawer" aria-hidden="true">
+        <div class="up-drawer-inner">
+            <div id="mNav">
+                <div class="m-section m-item" style="--i: 0;">
+                    <a href="index.html" class="m-head text-decoration-none">
+                        <span class="m-ico"><i class="bi bi-house-door"></i></span>
+                        <span>Home</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 1;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-0" aria-expanded="false" aria-controls="msec-0">
+                        <span class="m-ico"><i class="bi bi-info-circle"></i></span>
+                        <span>About Us</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-0" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-0">
+                            <div class="m-gtitle">Identity &amp; Foundation</div>
+                            <div class="m-links">
+                                <a href="#">About CREED</a>
+                                <a href="#">Background</a>
+                                <a href="#">Philosophy</a>
+                                <a href="#">Objectives &amp; Goals</a>
+                                <a href="#">Target Group</a>
+                                <a href="#">Legal Status</a>
+                            </div>
+                            <div class="m-gtitle">Governance &amp; Structure</div>
+                            <div class="m-links">
+                                <a href="#">Management</a>
+                                <a href="#">Executive Committee</a>
+                                <a href="#">Organogram</a>
+                                <a href="#">Message of Founder &amp; CEO</a>
+                                <a href="#">Source of Funds</a>
+                                <a href="#">Geographical Coverage</a>
+                            </div>
+                            <div class="m-gtitle">Reports &amp; Studies</div>
+                            <div class="m-links">
+                                <a href="#">Case Studies (Microcredit)</a>
+                                <a href="#">Annual Reports</a>
+                                <a href="#">Audit Report</a>
+                                <a href="#">Research &amp; Studies</a>
+                                <a href="#">CREED-MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 2;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-1" aria-expanded="false" aria-controls="msec-1">
+                        <span class="m-ico"><i class="bi bi-grid"></i></span>
+                        <span>Activities</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-1" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-1">
+                            <div class="m-gtitle">Present Activities</div>
+                            <div class="m-links">
+                                <a href="#">Micro Credit Program (Jagoron)</a>
+                                <a href="#">Buniad (Ultra-Poor)</a>
+                                <a href="#">Aogrosor (Microenterprise)</a>
+                                <a href="#">Sahos (Emergency)</a>
+                                <a href="#">Formal Primary Education At St. Martin</a>
+                                <a href="#">Distribution of Tube-Well</a>
+                                <a href="#">Animal Husbandry Development (AHDP)</a>
+                                <a href="#">Networking Agencies</a>
+                            </div>
+                            <div class="m-gtitle">Campaigns &amp; Events</div>
+                            <div class="m-links">
+                                <a href="support-us.html">Global Food Security Campaign (GFSC)</a>
+                                <a href="#">Future Activities</a>
+                                <a href="#">Previous Activities</a>
+                                <a href="#">CREED &amp; MRA CIB Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 3;">
+                    <a class="m-head text-decoration-none" href="#">
+                        <span class="m-ico"><i class="bi bi-geo-alt"></i></span>
+                        <span>Branches</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+
+                <div class="m-section m-item" style="--i: 4;">
+                    <button class="m-head" type="button" data-bs-toggle="collapse" data-bs-target="#msec-2" aria-expanded="false" aria-controls="msec-2">
+                        <span class="m-ico"><i class="bi bi-journal-richtext"></i></span>
+                        <span>Others</span>
+                        <i class="bi bi-chevron-down m-chev"></i>
+                    </button>
+                    <div id="msec-2" class="collapse" data-bs-parent="#mNav">
+                        <div class="m-panel" id="mp-2">
+                            <div class="m-gtitle">Media &amp; Gallery</div>
+                            <div class="m-links">
+                                <a href="#">Images Gallery</a>
+                                <a href="#">Videos Gallery</a>
+                                <a href="#">News &amp; Events</a>
+                                <a href="#">Press Releases</a>
+                                <a href="#">Official Notices</a>
+                            </div>
+                            <div class="m-gtitle">Information</div>
+                            <div class="m-links">
+                                <a href="#">Career Opportunities</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="support-us.html">Donate Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-section m-item" style="--i: 5;">
+                    <a class="m-head text-decoration-none" href="contact-us.html">
+                        <span class="m-ico"><i class="bi bi-envelope-paper"></i></span>
+                        <span>Contact Us</span>
+                        <i class="bi bi-arrow-right-short m-chev" style="font-size: 1.3rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="m-item" style="--i: 6;">
+                <a class="m-cta" href="support-us.html"><i class="bi bi-heart-fill text-danger"></i> Donate Us</a>
+                <div class="m-quick">
+                    <a href="tel:+8801711608288"><i class="bi bi-telephone-fill"></i> Call us</a>
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> Branches</a>
+                </div>
+            </div>
+
+            <div class="m-social">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="contact-us.html" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        
+
+
+<div class="hp">
+
+    
+    <!-- [Royal Addons Widget: General Slider / Content Slider (royalslidergeneral)] -->
+        <section class="hp-hero">
+        <div class="hp-blob b1"></div>
+        <div class="hp-blob b2"></div>
+
+        <div class="container position-relative">
+            <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500" style="--hp-int: 5500ms;">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center g-4 g-lg-5 hp-slide-row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <h1 class="hp-hero-title hp-in" style="--n: 1;">Empowering Underprivileged Communities with Dignity &amp; Self-Reliance</h1>
+                                <p class="hp-lead hp-in" style="--n: 2;">Centre for Rehabilitation Education Earning Development (CREED) is a registered non-governmental organization established in 1987, operating 21 branch offices and empowering 35,750+ grassroots families across Bangladesh.</p>
+                                <div class="d-flex flex-wrap gap-3 hp-in" style="--n: 3;">
+                                    <a href="#" class="hp-btn hp-btn-green">
+                                        Discover More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                    <a href="support-us.html" class="hp-btn hp-btn-ghost">
+                                        <i class="bi bi-heart-fill text-danger"></i> Donate Us
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hp-collage">
+                                    <div class="hp-ph big hp-in-zoom" style="--k: 1;">
+                                        <img src="images/hero-1.jpg" alt="CREED Beneficiary" class="hp-kb">
+                                    </div>
+                                    <div class="hp-ph small hp-float" style="--k: 2; --fd: 0s;">
+                                        <img src="images/education.jpg" alt="St. Martin Island Primary Education">
+                                    </div>
+                                    <div class="hp-ph small hp-float" style="--k: 3; --fd: -2.5s;">
+                                        <img src="images/husbandry.jpg" alt="Animal Husbandry Project">
+                                    </div>
+                                    <div class="hp-badge">
+                                        <i class="bi bi-heart-pulse-fill"></i>
+                                        <span>Serving communities<br>since 1987</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Royal Features / 2-Col Info Box (royalfeatures)] -->
+        <section class="hp-sec bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6" data-rv="left">
+                    <div class="hp-stats">
+                        <span class="hp-ring-deco r1"></span>
+                        <span class="hp-ring-deco r2"></span>
+                        <div class="hp-stat">
+                            <i class="bi bi-building"></i>
+                            <div class="hp-num" data-count="21" data-suf="">21</div>
+                            <div class="hp-stat-label">Branches</div>
+                        </div>
+                        <div class="hp-stat">
+                            <i class="bi bi-person-badge"></i>
+                            <div class="hp-num" data-count="185" data-suf="+">185+</div>
+                            <div class="hp-stat-label">Staff &amp; Organizers</div>
+                        </div>
+                        <div class="hp-stat">
+                            <i class="bi bi-house-door-fill"></i>
+                            <div class="hp-num" data-count="35750" data-suf="+">35,750+</div>
+                            <div class="hp-stat-label">Borrowers</div>
+                        </div>
+                        <div class="hp-stat">
+                            <i class="bi bi-cash-coin"></i>
+                            <div class="hp-num" data-count="362" data-suf=".8+ Cr">৳362.8+ Cr</div>
+                            <div class="hp-stat-label">Disbursed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1" data-rv="right">
+                    <span class="hp-chip"><i class="bi bi-info-circle-fill"></i> Who we are</span>
+                    <h2 class="hp-title">Overview of CREED</h2>
+                    <p class="hp-text">
+                        Centre for Rehabilitation Education Earning Development (CREED) is a registered voluntary non-governmental development organization established in 1987. Founded by Mohammad Sulaiman Khan alongside dedicated social workers, CREED envisions an exploitation-free, self-reliant society where underprivileged families live with dignity, self-respect, and economic security.
+                    </p>
+                    <p class="hp-text">
+                        CREED operates with full regulatory compliance under licenses from the Microcredit Regulatory Authority (MRA License No. 01079-03171-00358), NGO Affairs Bureau (Reg. No. 805), Department of Social Services (Reg. No. Dha-02293), and Registrar of Joint Stock Companies &amp; Societies.
+                    </p>
+                    <a href="#" class="hp-btn hp-btn-green mt-2">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Profile Card / Team (royalprofilecard)] -->
+        <section class="hp-sec hp-message">
+        <div class="container">
+            <div class="hp-msg-card" data-rv="zoom">
+                <div class="row align-items-center g-4 g-md-5">
+                    <div class="col-md-4 col-lg-3 text-center">
+                        <div class="hp-ring">
+                            <img src="images/ceo.jpg" alt="Mohammad Sulaiman Khan - Founder &amp; CEO" onerror="this.src='images/ceo.jpg'">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <i class="bi bi-quote hp-quote-mark"></i>
+                        <div class="hp-msg-text is-clamped" id="hpMsg">
+                            <p>Since our inception in 1987, CREED has been firmly devoted to alleviating poverty and nurturing self-reliance among underprivileged and marginalized families in Bangladesh. True empowerment emerges when grassroots communities gain access to financial capital, practical education, safe drinking water, and agricultural support.</p>
+                            <p>Operating through 21 branch offices across Munshiganj, Narayanganj, Cox's Bazar, and other regions, our disciplined microcredit programs have disbursed over ৳362.8 Crore with an exemplary 98.71% recovery rate. In tandem, our dedicated primary school in St. Martin Coral Island has provided free schooling to more than 1,400 vulnerable children over the last 23+ years.</p>
+                            <p>We extend our deepest gratitude to the Microcredit Regulatory Authority (MRA), NGO Affairs Bureau, government agencies, development partners, and our diligent field workers. Above all, we salute our resilient beneficiaries whose relentless dedication turns hope into enduring progress.</p>
+                        </div>
+                        <button type="button" class="hp-more d-md-none" id="hpMsgBtn">Read full message <i class="bi bi-chevron-down"></i></button>
+                        <h6 class="hp-sign">— Mohammad Sulaiman Khan, Founder &amp; CEO, CREED</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Royal Features / Services Grid (royalfeatures)] -->
+            <!-- [Royal Addons Widget: Royal Features / Services Grid (royalfeatures)] -->
+    <section class="hp-sec hp-pillars">
+        <div class="container position-relative">
+            <div class="hp-head text-center" data-rv="up">
+                <span class="hp-chip"><i class="bi bi-stars"></i> What we do</span>
+                <h2 class="hp-title">Our Eight Pillars</h2>
+                <p class="hp-sub mx-auto">
+                    CREED works to improve the lives of marginalized communities across Bangladesh through eight key areas of sustainable development.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 0;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-currency-dollar"></i></div>
+                        <h3 class="hp-pillar-title">Inclusive Finance</h3>
+                        <p class="hp-pillar-desc">Expanding access to financial services for low-income and marginalized communities.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Jagoron &amp; Buniad microcredit</li>
+                            <li style="--j: 1;">Financial literacy training</li>
+                            <li style="--j: 2;">Women-led village samities</li>
+                            <li style="--j: 3;">98.71% recovery discipline</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 1;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-briefcase"></i></div>
+                        <h3 class="hp-pillar-title">Enterprise Development</h3>
+                        <p class="hp-pillar-desc">Promoting small and micro enterprises to strengthen local rural economies.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Aogrosor enterprise loans</li>
+                            <li style="--j: 1;">Access to business capital</li>
+                            <li style="--j: 2;">Market linkage support</li>
+                            <li style="--j: 3;">Tailoring, carpentry &amp; trades</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 2;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-flower1"></i></div>
+                        <h3 class="hp-pillar-title">Animal Husbandry (AHDP)</h3>
+                        <p class="hp-pillar-desc">Livestock development and cattle fattening for household income security.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Cattle fattening projects</li>
+                            <li style="--j: 1;">Veterinary care &amp; vaccination</li>
+                            <li style="--j: 2;">Dairy farm inputs &amp; training</li>
+                            <li style="--j: 3;">Livelihood resilience</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 3;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-globe-americas"></i></div>
+                        <h3 class="hp-pillar-title">Food Security (GFSC)</h3>
+                        <p class="hp-pillar-desc">Campaigning for global and local food security and sustainable agriculture.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Global Food Security Campaign</li>
+                            <li style="--j: 1;">Sustainable crop farming</li>
+                            <li style="--j: 2;">Homestead vegetable gardens</li>
+                            <li style="--j: 3;">Nutrition for rural families</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 0;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-mortarboard-fill"></i></div>
+                        <h3 class="hp-pillar-title">Island Primary Education</h3>
+                        <p class="hp-pillar-desc">Providing free formal education to vulnerable children on St. Martin Island.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">23+ years continuous schooling</li>
+                            <li style="--j: 1;">Over 1,400 students educated</li>
+                            <li style="--j: 2;">Free books, bags &amp; stationery</li>
+                            <li style="--j: 3;">Dedicated island teachers</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 1;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-droplet-fill"></i></div>
+                        <h3 class="hp-pillar-title">Tube-Well &amp; Safe Water</h3>
+                        <p class="hp-pillar-desc">Ensuring access to clean, safe drinking water across underserved communities.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Deep tube-well distribution</li>
+                            <li style="--j: 1;">Arsenic-free drinking water</li>
+                            <li style="--j: 2;">Waterborne disease reduction</li>
+                            <li style="--j: 3;">Community maintenance support</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 2;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-person-up"></i></div>
+                        <h3 class="hp-pillar-title">Ultra-Poor Graduation</h3>
+                        <p class="hp-pillar-desc">Lifting the ultra-poor from extreme vulnerability through integrated support.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Buniad program coverage</li>
+                            <li style="--j: 1;">Productive asset transfers</li>
+                            <li style="--j: 2;">Subsistence safety nets</li>
+                            <li style="--j: 3;">Step-by-step graduation</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3" data-rv="up" style="--d: 3;">
+                    <article class="hp-pillar h-100">
+                        <div class="hp-pillar-ic"><i class="bi bi-shield-check"></i></div>
+                        <h3 class="hp-pillar-title">Disaster Relief &amp; Sahos</h3>
+                        <p class="hp-pillar-desc">Strengthening community resilience against economic and environmental shocks.</p>
+                        <ul class="hp-pillar-list">
+                            <li style="--j: 0;">Sahos emergency financial loans</li>
+                            <li style="--j: 1;">Post-flood recovery support</li>
+                            <li style="--j: 2;">Emergency livelihood aid</li>
+                            <li style="--j: 3;">Resilient community networks</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: User Counter / Stats Timeline (royalusercounter)] -->
+            <!-- [Royal Addons Widget: User Counter / Stats Timeline (royalusercounter)] -->
+    <section class="hp-sec hp-impact">
+        <div class="container">
+            <div class="hp-head text-center" data-rv="up">
+                <span class="hp-chip"><i class="bi bi-graph-up-arrow"></i> Our impact</span>
+                <h2 class="hp-title">Change you can measure</h2>
+                <p class="hp-sub mx-auto">Decades of dedicated service have created measurable change across Bangladesh.</p>
+            </div>
+
+            <div class="hp-tl" id="hpTl">
+                <div class="hp-row " data-rv="left">
+                    <div class="hp-node"><i class="bi bi-cash-coin"></i></div>
+                    <div class="hp-card">
+                        <span class="hp-card-label">Total Loan Disbursed</span>
+                        <div class="hp-card-num hp-num"
+                             data-count="362" data-dec="0"
+                             data-pre="BDT " data-suf=".8+ Crore">BDT 362.8+ Crore</div>
+                        <p class="mb-0">Supporting microfinance borrowers &amp; rural enterprise growth.</p>
+                    </div>
+                </div>
+                <div class="hp-row alt" data-rv="right">
+                    <div class="hp-node"><i class="bi bi-people-fill"></i></div>
+                    <div class="hp-card">
+                        <span class="hp-card-label">Total Borrowers &amp; Members</span>
+                        <div class="hp-card-num hp-num"
+                             data-count="35750" data-dec="0"
+                             data-pre="" data-suf="+">35,750+</div>
+                        <p class="mb-0">Serving grassroots families across rural &amp; peri-urban areas.</p>
+                    </div>
+                </div>
+                <div class="hp-row " data-rv="left">
+                    <div class="hp-node"><i class="bi bi-percent"></i></div>
+                    <div class="hp-card">
+                        <span class="hp-card-label">Loan Recovery Rate</span>
+                        <div class="hp-card-num hp-num"
+                             data-count="98.71" data-dec="2"
+                             data-pre="" data-suf="%">98.71%</div>
+                        <p class="mb-0">Demonstrating financial discipline and high community trust.</p>
+                    </div>
+                </div>
+                <div class="hp-row alt" data-rv="right">
+                    <div class="hp-node"><i class="bi bi-building"></i></div>
+                    <div class="hp-card">
+                        <span class="hp-card-label">Branch Offices</span>
+                        <div class="hp-card-num hp-num"
+                             data-count="21" data-dec="0"
+                             data-pre="" data-suf=" Branches">21 Branches</div>
+                        <p class="mb-0">Extensive branch network delivering doorstep financial services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Post Grid / Post Carousel (royalpostgrid)] -->
+            <section class="hp-sec hp-stories">
+        <div class="container">
+            <div class="hp-head text-center" data-rv="up">
+                <span class="hp-chip"><i class="bi bi-chat-heart-fill"></i> Success stories</span>
+                <h2 class="hp-title">Voices from the field</h2>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5 col-md-5" data-rv="left" style="min-width: 0;">
+                    <div class="nav flex-md-column nav-pills hp-pills" id="story-tab" role="tablist">
+                        <button class="nav-link active w-100 text-start" style="max-width: 100%; overflow: hidden;"
+                                id="tab-4" data-bs-toggle="pill"
+                                data-bs-target="#story-4" type="button" role="tab">
+                            <span class="d-flex align-items-center gap-3 text-start w-100" style="min-width: 0;">
+                                <img src="images/microfinance.jpg" class="hp-avatar flex-shrink-0" alt="Shorifa Begum">
+                                <span class="overflow-hidden flex-grow-1" style="min-width: 0;">
+                                    <strong class="d-block text-truncate" style="max-width: 100%;">Shorifa Begum: From Landless Hardship to 4 Dairy Cows</strong>
+                                    <small class="d-block text-truncate" style="max-width: 100%;">North Fuldi • Dairy Enterprise</small>
+                                </span>
+                            </span>
+                        </button>
+                        <button class="nav-link w-100 text-start" style="max-width: 100%; overflow: hidden;"
+                                id="tab-5" data-bs-toggle="pill"
+                                data-bs-target="#story-5" type="button" role="tab">
+                            <span class="d-flex align-items-center gap-3 text-start w-100" style="min-width: 0;">
+                                <img src="images/gallery-2.jpg" class="hp-avatar flex-shrink-0" alt="Asia Khanom">
+                                <span class="overflow-hidden flex-grow-1" style="min-width: 0;">
+                                    <strong class="d-block text-truncate" style="max-width: 100%;">Asia Khanom: Overcoming Barriers Through Tailoring</strong>
+                                    <small class="d-block text-truncate" style="max-width: 100%;">Fuldi • Tailoring &amp; Garments</small>
+                                </span>
+                            </span>
+                        </button>
+                        <button class="nav-link w-100 text-start" style="max-width: 100%; overflow: hidden;"
+                                id="tab-6" data-bs-toggle="pill"
+                                data-bs-target="#story-6" type="button" role="tab">
+                            <span class="d-flex align-items-center gap-3 text-start w-100" style="min-width: 0;">
+                                <img src="images/gallery-3.jpg" class="hp-avatar flex-shrink-0" alt="Momen">
+                                <span class="overflow-hidden flex-grow-1" style="min-width: 0;">
+                                    <strong class="d-block text-truncate" style="max-width: 100%;">Momen: Rural Furniture &amp; Carpentry Workshop</strong>
+                                    <small class="d-block text-truncate" style="max-width: 100%;">Aogrosor Microenterprise Beneficiary</small>
+                                </span>
+                            </span>
+                        </button>
+                        <button class="nav-link w-100 text-start" style="max-width: 100%; overflow: hidden;"
+                                id="tab-7" data-bs-toggle="pill"
+                                data-bs-target="#story-7" type="button" role="tab">
+                            <span class="d-flex align-items-center gap-3 text-start w-100" style="min-width: 0;">
+                                <img src="images/gallery-4.jpg" class="hp-avatar flex-shrink-0" alt="Banessa">
+                                <span class="overflow-hidden flex-grow-1" style="min-width: 0;">
+                                    <strong class="d-block text-truncate" style="max-width: 100%;">Banessa: Vegetable Farming &amp; Food Security</strong>
+                                    <small class="d-block text-truncate" style="max-width: 100%;">Munshiganj • Agro-Livelihood</small>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-7" data-rv="right" style="min-width: 0;">
+                    <div class="tab-content h-100" id="story-tabContent">
+                        <div class="tab-pane fade h-100 show active" id="story-4" role="tabpanel">
+                            <div class="hp-story-card">
+                                <div>
+                                    <i class="bi bi-quote hp-quote-mark"></i>
+                                    <p class="hp-story-text">"Shorifa Begum of village North Fuldi joined CREED's Micro Credit Programme when traditional lenders refused to assist her impoverished family. With four consecutive loan cycles, she hired agricultural land for paddy cultivation and established a flourishing dairy unit of four healthy cows, supplying fresh milk daily to the local market."</p>
+                                </div>
+                                <div class="hp-story-foot">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Shorifa Begum: From Landless Hardship to 4 Dairy Cows</h6>
+                                        <small class="text-muted text-capitalize">Village North Fuldi • Micro Credit Program</small>
+                                    </div>
+                                    <a href="#" class="hp-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade h-100" id="story-5" role="tabpanel">
+                            <div class="hp-story-card">
+                                <div>
+                                    <i class="bi bi-quote hp-quote-mark"></i>
+                                    <p class="hp-story-text">"Asia of village Fuldi started sewing garments at home to support her elderly parents and siblings. Joining CREED enabled her to buy modern sewing machines and bulk fabrics. She now mentors young women in her village and is a respected community voice advocating for women's development."</p>
+                                </div>
+                                <div class="hp-story-foot">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Asia Khanom: Overcoming Barriers Through Tailoring</h6>
+                                        <small class="text-muted text-capitalize">Village Fuldi • Microenterprise</small>
+                                    </div>
+                                    <a href="#" class="hp-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade h-100" id="story-6" role="tabpanel">
+                            <div class="hp-story-card">
+                                <div>
+                                    <i class="bi bi-quote hp-quote-mark"></i>
+                                    <p class="hp-story-text">"Starting with only simple hand tools, Momen utilized CREED's Aogrosor enterprise loans to invest in electric woodworking machinery. His workshop now supplies customized furniture to neighboring bazaars and employs three local apprentices."</p>
+                                </div>
+                                <div class="hp-story-foot">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Momen: Rural Furniture &amp; Carpentry Workshop</h6>
+                                        <small class="text-muted text-capitalize">Aogrosor Enterprise Beneficiary</small>
+                                    </div>
+                                    <a href="#" class="hp-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade h-100" id="story-7" role="tabpanel">
+                            <div class="hp-story-card">
+                                <div>
+                                    <i class="bi bi-quote hp-quote-mark"></i>
+                                    <p class="hp-story-text">"Through seasonal agro loans and agricultural advice from CREED, Banessa converted her homestead fallow land into a productive vegetable farm and poultry shed, securing reliable nutrition for her family and generating steady market revenue."</p>
+                                </div>
+                                <div class="hp-story-foot">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Banessa: Vegetable Farming &amp; Food Security</h6>
+                                        <small class="text-muted text-capitalize">Munshiganj • Agro-Livelihood</small>
+                                    </div>
+                                    <a href="#" class="hp-link">
+                                        Read More <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        <section class="hp-sec bg-white">
+        <div class="container">
+            <div class="hp-head" data-rv="up">
+                <h2 class="hp-title mt-0">CREED Institutional Milestones &amp; Media Spotlight</h2>
+                <span class="hp-bar"></span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4" data-rv="zoom" style="--d: 0;">
+                    <div class="hp-video">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/mra-agreement.jpeg" alt="CREED and MRA Sign CIB Agreement" style="object-fit: cover; width: 100%; height: 100%; border-radius: 8px;">
+                        </div>
+                        <p class="hp-video-title">CREED &amp; MRA Historic CIB Agreement Signing Ceremony</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-rv="zoom" style="--d: 1;">
+                    <div class="hp-video">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/education.jpg" alt="St. Martin Island Primary School" style="object-fit: cover; width: 100%; height: 100%; border-radius: 8px;">
+                        </div>
+                        <p class="hp-video-title">St. Martin Coral Island Primary School — 23+ Years of Continuous Learning</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-rv="zoom" style="--d: 2;">
+                    <div class="hp-video">
+                        <div class="ratio ratio-16x9">
+                            <img src="images/husbandry.jpg" alt="Animal Husbandry Project" style="object-fit: cover; width: 100%; height: 100%; border-radius: 8px;">
+                        </div>
+                        <p class="hp-video-title">Animal Husbandry Development Program (AHDP) — Cattle Fattening</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-rv="up">
+                <a href="#" class="hp-btn hp-btn-green">
+                    <i class="bi bi-images me-1"></i> View Photo Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Featured Card / Media Grid (royalfeaturedcard)] -->
+        <section class="hp-sec hp-press">
+        <div class="container">
+            <div class="hp-head" data-rv="up">
+                <h2 class="hp-title mt-0">Latest News &amp; Institutional Updates</h2>
+                <span class="hp-bar"></span>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4" data-rv="up" style="--d: 0;">
+                    <article class="hp-press-card h-100">
+                        <div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="hp-press-logo">
+                                    <i class="bi bi-newspaper fs-3 text-success"></i>
+                                </div>
+                                <h3 class="hp-press-title clamp-2">CREED &amp; MRA Sign CIB Agreement to Integrate Microcredit Information</h3>
+                            </div>
+                            <p class="hp-press-date"><i class="bi bi-calendar3"></i> 17 April 2025</p>
+                            <p class="hp-press-desc clamp-3">In a milestone step toward institutional modernization and transparent financial governance, CREED signed the official Credit Information Bureau (CIB) agreement with the Microcredit Regulatory Authority (MRA) at their central auditorium.</p>
+                        </div>
+                        <a href="#" class="hp-link">
+                            Read More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-rv="up" style="--d: 1;">
+                    <article class="hp-press-card h-100">
+                        <div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="hp-press-logo">
+                                    <i class="bi bi-mortarboard-fill fs-3 text-primary"></i>
+                                </div>
+                                <h3 class="hp-press-title clamp-2">St. Martin Island School Celebrates New Academic Year Book Distribution</h3>
+                            </div>
+                            <p class="hp-press-date"><i class="bi bi-calendar3"></i> 15 January 2025</p>
+                            <p class="hp-press-desc clamp-3">Over 1,400 textbooks, stationery kits, and school uniforms were distributed to students of CREED Formal Primary School on the isolated coral island of St. Martin, reaffirming our commitment to island education.</p>
+                        </div>
+                        <a href="#" class="hp-link">
+                            Read More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-rv="up" style="--d: 2;">
+                    <article class="hp-press-card h-100">
+                        <div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="hp-press-logo">
+                                    <i class="bi bi-piggy-bank-fill fs-3 text-warning"></i>
+                                </div>
+                                <h3 class="hp-press-title clamp-2">Animal Husbandry Development Program (AHDP): Veterinary Support Camp</h3>
+                            </div>
+                            <p class="hp-press-date"><i class="bi bi-calendar3"></i> 28 November 2024</p>
+                            <p class="hp-press-desc clamp-3">CREED organized comprehensive livestock vaccination and fodder training camps across 5 branch areas, helping rural smallholders safeguard cattle health and optimize dairy yields.</p>
+                        </div>
+                        <a href="#" class="hp-link">
+                            Read More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-rv="up">
+                <a href="#" class="hp-btn hp-btn-green">
+                    View All Updates <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- [Royal Addons Widget: Image Carousel / Marquee (royalimagecarousel)] -->
+    <section class="hp-sec hp-partners">
+        <div class="container text-center" data-rv="up">
+            <span class="hp-chip"><i class="bi bi-diagram-3-fill"></i> Our partners</span>
+            <h2 class="hp-title">Strategic Affiliations &amp; Regulatory Bodies</h2>
+            <p class="hp-sub mx-auto mb-5">Working in close collaboration with government authorities and development agencies to drive sustainable change.</p>
+        </div>
+
+                    <div class="hp-marquee">
+                <div class="hp-track left">
+                                                                        <div class="hp-pcard" >
+                                                                    <img src="storage/partners/HyG2CiR9PmghJEnJjBJmpwTcyXDQ4iVEKstTkvlE.png" alt="PKSF" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/zQvwSo2uFniENFo1WPNM512Eq4JWynhTiqzdYj1s.png" alt="ZDFSWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/V13Srm8BcDMm3eNWa8Lbi2LoJ2wW4WjRAWTb5wmw.png" alt="SDWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/PNUpj1tHNSQTi04FVchBCNCe7c7LYiBNUMGPSa3o.png" alt="WER" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/HyG2CiR9PmghJEnJjBJmpwTcyXDQ4iVEKstTkvlE.png" alt="PKSF" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/zQvwSo2uFniENFo1WPNM512Eq4JWynhTiqzdYj1s.png" alt="ZDFSWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/V13Srm8BcDMm3eNWa8Lbi2LoJ2wW4WjRAWTb5wmw.png" alt="SDWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/PNUpj1tHNSQTi04FVchBCNCe7c7LYiBNUMGPSa3o.png" alt="WER" loading="lazy">
+                                                            </div>
+                                                                                                <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/HyG2CiR9PmghJEnJjBJmpwTcyXDQ4iVEKstTkvlE.png" alt="PKSF" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/zQvwSo2uFniENFo1WPNM512Eq4JWynhTiqzdYj1s.png" alt="ZDFSWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/V13Srm8BcDMm3eNWa8Lbi2LoJ2wW4WjRAWTb5wmw.png" alt="SDWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/PNUpj1tHNSQTi04FVchBCNCe7c7LYiBNUMGPSa3o.png" alt="WER" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/HyG2CiR9PmghJEnJjBJmpwTcyXDQ4iVEKstTkvlE.png" alt="PKSF" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/zQvwSo2uFniENFo1WPNM512Eq4JWynhTiqzdYj1s.png" alt="ZDFSWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/V13Srm8BcDMm3eNWa8Lbi2LoJ2wW4WjRAWTb5wmw.png" alt="SDWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/PNUpj1tHNSQTi04FVchBCNCe7c7LYiBNUMGPSa3o.png" alt="WER" loading="lazy">
+                                                            </div>
+                                                            </div>
+            </div>
+                    <div class="hp-marquee">
+                <div class="hp-track right">
+                                                                        <div class="hp-pcard" >
+                                                                    <img src="storage/partners/ny0s9wch5WxzjY6sDEqaxk4l1uV4EJLG0JZMSBi6.png" alt="SDFWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/JEGx0d76i7RlnZ2Q1iLSDV8SuDtBYbJkKnlBXawA.png" alt="ASDAWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/97bsG9lF9H74UgfAoSXz67K0dxY7GTZNx6pjDx0N.png" alt="SADFWA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/MPBPBP6FrcDq7FZvoBGNHtVTPPAp4JEbFcHo63eb.png" alt="SADFA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/ny0s9wch5WxzjY6sDEqaxk4l1uV4EJLG0JZMSBi6.png" alt="SDFWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/JEGx0d76i7RlnZ2Q1iLSDV8SuDtBYbJkKnlBXawA.png" alt="ASDAWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/97bsG9lF9H74UgfAoSXz67K0dxY7GTZNx6pjDx0N.png" alt="SADFWA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard" >
+                                                                    <img src="storage/partners/MPBPBP6FrcDq7FZvoBGNHtVTPPAp4JEbFcHo63eb.png" alt="SADFA" loading="lazy">
+                                                            </div>
+                                                                                                <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/ny0s9wch5WxzjY6sDEqaxk4l1uV4EJLG0JZMSBi6.png" alt="SDFWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/JEGx0d76i7RlnZ2Q1iLSDV8SuDtBYbJkKnlBXawA.png" alt="ASDAWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/97bsG9lF9H74UgfAoSXz67K0dxY7GTZNx6pjDx0N.png" alt="SADFWA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/MPBPBP6FrcDq7FZvoBGNHtVTPPAp4JEbFcHo63eb.png" alt="SADFA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/ny0s9wch5WxzjY6sDEqaxk4l1uV4EJLG0JZMSBi6.png" alt="SDFWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/JEGx0d76i7RlnZ2Q1iLSDV8SuDtBYbJkKnlBXawA.png" alt="ASDAWE" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/97bsG9lF9H74UgfAoSXz67K0dxY7GTZNx6pjDx0N.png" alt="SADFWA" loading="lazy">
+                                                            </div>
+                                                    <div class="hp-pcard"  aria-hidden="true" >
+                                                                    <img src="storage/partners/MPBPBP6FrcDq7FZvoBGNHtVTPPAp4JEbFcHo63eb.png" alt="SADFA" loading="lazy">
+                                                            </div>
+                                                            </div>
+            </div>
+            </section>
+
+    
+    <!-- [Royal Addons Widget: Call To Action Box (royalcalltoactionbox)] -->
+            <!-- [Royal Addons Widget: Call To Action Box (royalcalltoactionbox)] -->
+    <section class="hp-sec pt-0 hp-cta-wrap">
+        <div class="container">
+            <div class="hp-cta" data-rv="zoom">
+                <span class="hp-heart" style="left: 8%;  --s: 18px; --t: 7s;   --dl: 0s;"><i class="bi bi-heart-fill"></i></span>
+                <span class="hp-heart" style="left: 22%; --s: 26px; --t: 9s;   --dl: 2s;"><i class="bi bi-heart-fill"></i></span>
+                <span class="hp-heart" style="left: 46%; --s: 16px; --t: 8s;   --dl: 4s;"><i class="bi bi-heart-fill"></i></span>
+                <span class="hp-heart" style="left: 68%; --s: 24px; --t: 10s;  --dl: 1s;"><i class="bi bi-heart-fill"></i></span>
+                <span class="hp-heart" style="left: 86%; --s: 18px; --t: 7.5s; --dl: 3s;"><i class="bi bi-heart-fill"></i></span>
+
+                <div class="position-relative">
+                    <span class="hp-chip hp-chip-gold"><i class="bi bi-heart-fill text-danger"></i> Partner with us</span>
+                    <h2 class="hp-cta-title">Partner With CREED to Fuel Grassroots Potential</h2>
+                    <p class="hp-cta-text">
+                        Join us in our mission to empower marginalized communities, educate island children, and build self-reliant rural enterprises across Bangladesh.
+                    </p>
+                    <a href="support-us.html" class="hp-btn hp-btn-gold hp-pulse">
+                        <i class="bi bi-heart-fill text-danger"></i> Donate Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+
+
+    </main>
+
+    <!-- ===================== ফুটার ===================== -->
+    <!-- [Royal Addons Widget: Copyright & Elementor Footer (royalcopyright)] -->
+        <!-- ===================== ফুটার ===================== -->
+        <!-- ===================== ফুটার ===================== -->
+    <footer class="up-foot">
+        <span class="up-foot-orb o1"></span>
+        <span class="up-foot-orb o2"></span>
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-12 col-lg-4 reveal" style="--d: 0;">
+                    <a href="index.html" class="d-inline-flex align-items-center gap-3 mb-3 flex-wrap">
+                        <span class="up-foot-logo">
+                            <img src="images/logo.png" alt="CREED Logo">
+                        </span>
+                    </a>
+                    <p class="up-foot-about mb-3">
+                        Centre for Rehabilitation Education Earning Development (CREED) is a registered non-governmental, voluntary social welfare organization established in 1987, working for the socio-economic empowerment of marginalized communities across Bangladesh.
+                    </p>
+                    <div class="up-foot-box">
+                        <small class="d-block fw-bold mb-1" style="color: var(--up-gold);">Official Registrations</small>
+                        <small class="text-white d-block">
+                            • MRA License No: 01079-03171-00358 (30.11.2008)<br>
+                            • NGO Affairs Bureau Reg: 805 (13.02.1994)<br>
+                            • Dept. of Social Services Reg: Dha-02293 (17.06.1989)
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 reveal" style="--d: 1;">
+                    <h6>About Us</h6>
+                    <ul>
+                        <li><a href="#">About CREED</a></li>
+                        <li><a href="#">Background</a></li>
+                        <li><a href="#">Objectives &amp; Goals</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Executive Committee</a></li>
+                        <li><a href="#">Organogram</a></li>
+                        <li><a href="#">Founder &amp; CEO Message</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal" style="--d: 2;">
+                    <h6>Activities</h6>
+                    <ul>
+                        <li><a href="#">Micro Credit Program</a></li>
+                        <li><a href="#">Formal Primary Education</a></li>
+                        <li><a href="#">Distribution of Tube-Well</a></li>
+                        <li><a href="#">Animal Husbandry (AHDP)</a></li>
+                        <li><a href="#">Geographical Coverage</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="support-us.html">Donate Us (GFSC)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 reveal" style="--d: 3;">
+                    <h6>Head Office</h6>
+                    <div class="up-foot-contact">
+                        <p><i class="bi bi-geo-alt"></i> Navana Siddique Sorrento, House#289, 290, 290/1 (4th Floor), Road#8/A, West Dhanmondi, Dhaka-1209, Bangladesh</p>
+                        <p><i class="bi bi-telephone"></i> <a href="tel:+8801711608288" style="opacity: 1;">+880 1711-608288</a></p>
+                        <p><i class="bi bi-phone"></i> <a href="tel:+8801313046006" style="opacity: 1;">+880 1313-046006</a></p>
+                        <p><i class="bi bi-envelope"></i> <a href="mailto:info@creedbd.org" style="opacity: 1; word-break: break-all;">info@creedbd.org</a></p>
+                        <p><i class="bi bi-globe"></i> <a href="https://www.creedbd.org/" target="_blank" rel="noopener" style="opacity: 1;">www.creedbd.org</a></p>
+                    </div>
+                    <div class="mt-3 d-flex gap-2">
+                        <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/" class="social-btn" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="contact-us.html" class="social-btn" title="Contact Us"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up-foot-bottom d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div>
+                    &copy; 2026 CREED. All rights reserved.
+                </div>
+                <div class="ra-dev-credit">
+                    Developed By <a href="http://www.royaltechbd.com/" target="_blank" rel="noopener">Royal Technologies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- উপরে যাওয়ার বাটন -->
+    <button type="button" class="up-totop" id="upToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>

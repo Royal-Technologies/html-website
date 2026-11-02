@@ -1,0 +1,402 @@
+:root {
+            --up-forest: #0b4d26;
+            --up-deep: #073b1c;
+            --up-gold: #c9a24a;
+            --up-ink: #14261b;
+            --up-muted: #5c6e63;
+            --up-mist: #f1f5f2;
+            --up-line: rgba(11, 77, 38, .14);
+            --up-ease: cubic-bezier(.2, .7, .2, 1);
+            --up-nav-h: 80px;
+        }
+
+        /* স্ক্রলবার আসা-যাওয়ায় পেজ যেন না কাঁপে */
+        html { scrollbar-gutter: stable; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Figtree', 'Hind Siliguri', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background-color: #f8fafc;
+            color: var(--up-ink);
+            overflow-x: hidden;
+        }
+        body.up-lock { overflow: hidden; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--up-gold); outline-offset: 2px; border-radius: 6px; }
+
+        /* =========================================================
+           টপ বার (স্ক্রলে উপরে চলে যায়, স্টিকি নয়)
+           ========================================================= */
+        .up-top { background: var(--up-deep); color: #fff; font-size: 13px; }
+        .up-top .container { min-height: 38px; }
+        .up-top a { color: #fff; text-decoration: none; opacity: .9; transition: opacity .2s, color .2s; }
+        .up-top a:hover { opacity: 1; color: var(--up-gold); }
+        .up-top i.gold { color: var(--up-gold); }
+        .up-support {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--up-gold); color: #2b2108 !important; opacity: 1 !important;
+            font-weight: 700; padding: 3px 12px; border-radius: 999px;
+        }
+        .up-support:hover { background: #dcb65c; color: #2b2108 !important; }
+        .up-support .bi-heart-fill { animation: upBeat 1.8s ease-in-out infinite; }
+        @keyframes upBeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.25); } 30% { transform: scale(1); } 45% { transform: scale(1.15); } }
+
+        /* =========================================================
+           স্টিকি হেডার = নোটিশ টিকার + নেভবার
+           (উচ্চতা কখনো বদলায় না, তাই স্ক্রলে কাঁপে না)
+           ========================================================= */
+        .up-header { position: sticky; top: 0; z-index: 1030; background: #fff; transition: box-shadow .3s ease; }
+        .up-header.is-scrolled { box-shadow: 0 12px 30px -14px rgba(7, 59, 28, .5); }
+        .up-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; pointer-events: none; }
+        .up-progress span {
+            display: block; height: 100%; width: 100%; transform-origin: left; transform: scaleX(0);
+            background: linear-gradient(90deg, var(--up-forest), #34c76b, var(--up-gold)); will-change: transform;
+        }
+
+        /* ---------- নোটিশ টিকার ---------- */
+        .up-ticker {
+            position: relative; overflow: hidden; color: #fff;
+            background: linear-gradient(90deg, #04230f 0%, #0b4d26 50%, #04230f 100%);
+            border-bottom: 1px solid rgba(201, 162, 74, .45);
+        }
+        .up-ticker::after {                       /* মাঝে মাঝে হালকা আলোর ঝলক, চোখ টানে */
+            content: ""; position: absolute; top: 0; bottom: 0; left: -30%; width: 22%;
+            background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .13), transparent);
+            transform: skewX(-20deg); animation: tkShine 7s ease-in-out infinite; pointer-events: none;
+        }
+        @keyframes tkShine { 0%, 55% { left: -30%; } 100% { left: 130%; } }
+        .up-ticker .container { display: flex; align-items: center; gap: 10px; height: 46px; position: relative; z-index: 1; }
+
+        .tk-label {
+            flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
+            padding: 6px 13px; border-radius: 999px; font-weight: 800; font-size: .8rem; white-space: nowrap;
+            font-family: 'Hind Siliguri', 'Figtree', sans-serif;
+            background: linear-gradient(135deg, #ef4444, #b91c1c); color: #fff;
+            animation: tkPulse 2.2s ease-out infinite;
+        }
+        .tk-label .tk-dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: tkBlink 1.1s ease-in-out infinite; }
+        @keyframes tkPulse { 0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, .65); } 70% { box-shadow: 0 0 0 11px rgba(239, 68, 68, 0); } 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); } }
+        @keyframes tkBlink { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+
+        .tk-view {
+            position: relative; flex: 1 1 auto; min-width: 0; overflow: hidden; height: 100%;
+            display: flex; align-items: center;
+            -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+                    mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+        }
+        .tk-track { display: flex; align-items: center; width: max-content; will-change: transform; animation: tkMove var(--tk-dur, 40s) linear infinite; }
+        .up-ticker.is-ready .tk-track { animation: tkMove var(--tk-dur, 40s) linear infinite; }
+        .up-ticker.is-paused .tk-track,
+        .tk-view:hover .tk-track,
+        .tk-view:focus-within .tk-track,
+        .tk-view.is-touch .tk-track { animation-play-state: paused; }
+        @keyframes tkMove { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+        .tk-group { display: flex; align-items: center; flex: 0 0 auto; }
+
+        .tk-item {
+            display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; position: relative;
+            padding: 0 26px; color: #fff; text-decoration: none;
+            font-family: 'Hind Siliguri', 'Figtree', sans-serif; font-weight: 600; font-size: 1rem; line-height: 46px;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, .35); transition: color .2s;
+        }
+        .tk-item::after {                         /* আইটেমের মাঝের বিভাজক */
+            content: ""; position: absolute; right: 0; top: 50%; width: 7px; height: 7px; margin-top: -3.5px;
+            background: var(--up-gold); border-radius: 2px; transform: rotate(45deg); opacity: .85;
+        }
+        .tk-item:hover { color: #ffd978; }
+        .tk-item:hover .tk-title { text-decoration: underline; text-underline-offset: 4px; }
+        .tk-item .bi-pin-angle-fill { color: #ffd54a; }
+        .tk-badge {
+            font-size: .68rem; font-weight: 800; padding: 2px 8px; border-radius: 999px; line-height: 1.5;
+            background: var(--up-gold); color: #2b2108; text-shadow: none;
+        }
+        .tk-empty { font-family: 'Hind Siliguri', sans-serif; font-size: .92rem; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        .tk-tools { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; }
+        .tk-btn {
+            width: 30px; height: 30px; border: 1px solid rgba(255, 255, 255, .35); border-radius: 50%;
+            background: rgba(255, 255, 255, .1); color: #fff; display: grid; place-items: center; font-size: .8rem;
+            transition: background .2s, color .2s;
+        }
+        .tk-btn:hover { background: var(--up-gold); color: #2b2108; }
+        .tk-all {
+            color: #fff; text-decoration: none; font-weight: 700; font-size: .78rem; white-space: nowrap;
+            padding: 5px 12px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .35); transition: .2s;
+        }
+        .tk-all:hover { background: #fff; color: var(--up-forest); }
+
+        /* ---------- মূল নেভবার ---------- */
+        .up-nav { position: relative; height: var(--up-nav-h); background: #fff; border-bottom: 1px solid var(--up-line); }
+        .up-nav .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .up-brand { flex: 0 1 auto; min-width: 0; display: flex; align-items: center; }
+        .up-brand img {
+            height: 62px; width: auto; max-width: min(300px, 66vw); object-fit: contain; display: block;
+            image-rendering: -webkit-optimize-contrast;
+            transform-origin: left center; transition: transform .35s var(--up-ease);
+        }
+        .up-brand:hover img { transform: scale(1.04); }
+
+        /* ---------- ডেস্কটপ মেনু ---------- */
+        .up-menu { display: none; height: 100%; margin: 0; padding: 0; list-style: none; }
+        @media (min-width: 992px) { .up-menu { display: flex; } }
+        .up-menu > li { display: flex; align-items: stretch; }
+        .up-link {
+            position: relative; display: flex; align-items: center; gap: 6px;
+            padding: 0 15px; font-weight: 600; font-size: .95rem;
+            color: var(--up-ink); text-decoration: none; transition: color .2s;
+        }
+        .up-link::after {
+            content: ""; position: absolute; left: 15px; right: 15px; bottom: 0; height: 3px;
+            background: var(--up-gold); border-radius: 3px 3px 0 0;
+            transform: scaleX(0); transition: transform .3s var(--up-ease);
+        }
+        .up-link .bi-chevron-down { font-size: .65rem; transition: transform .3s; }
+        .up-menu > li:hover > .up-link,
+        .up-menu > li.open > .up-link,
+        .up-link.is-active { color: var(--up-forest); }
+        .up-menu > li:hover > .up-link::after,
+        .up-menu > li.open > .up-link::after,
+        .up-link.is-active::after { transform: scaleX(1); }
+        .up-menu > li:hover .bi-chevron-down,
+        .up-menu > li.open .bi-chevron-down { transform: rotate(180deg); }
+
+        /* ---------- মেগা মেনু (বন্ধ হওয়ার আগে সামান্য দেরি, তাই মাউস একটু সরলেও ঝিলিক দেয় না) ---------- */
+        .up-mega {
+            position: absolute; top: 100%; left: 50%;
+            width: min(var(--w, 900px), 94vw);
+            padding: 28px 32px 30px;
+            background: #fff; border-top: 3px solid var(--up-forest);
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 30px 60px -20px rgba(7, 59, 28, .35);
+            opacity: 0; visibility: hidden;
+            transform: translate(-50%, 10px);
+            transition: opacity .22s ease .12s, transform .3s var(--up-ease) .12s, visibility 0s linear .34s;
+            z-index: 1040;
+        }
+        .up-menu > li:hover > .up-mega,
+        .up-menu > li:focus-within > .up-mega,
+        .up-menu > li.open > .up-mega {
+            opacity: 1; visibility: visible; transform: translate(-50%, 0);
+            transition-delay: 0s;
+        }
+        .up-mega-grid { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 26px 40px; }
+        .up-menu > li:hover > .up-mega .up-mega-grid > div { animation: upCol .5s var(--up-ease) both; animation-delay: calc(var(--k, 0) * 45ms); }
+        @keyframes upCol { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+        .up-gtitle {
+            font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.02rem;
+            color: var(--up-forest); margin: 0 0 10px; padding-bottom: 9px;
+            border-bottom: 1px solid var(--up-line);
+        }
+        .up-glinks { list-style: none; margin: 0; padding: 0; }
+        .up-glinks a {
+            display: flex; align-items: center; gap: 6px; padding: 5px 0;
+            font-size: .92rem; color: #3d4f44; text-decoration: none;
+            transition: color .2s, transform .2s;
+        }
+        .up-glinks a:hover { color: var(--up-forest); transform: translateX(4px); }
+        .up-glinks a.is-current { color: var(--up-forest); font-weight: 700; }
+        .up-glinks a.is-key { color: var(--up-forest); font-weight: 600; }
+        .up-sub { list-style: none; margin: 2px 0 8px 4px; padding: 0 0 0 14px; border-left: 2px solid var(--up-gold); }
+        .up-sub a { font-size: .88rem; padding: 3px 0; }
+
+        /* ---------- মোবাইল বার্গার (X-এ রূপান্তর হয়) ---------- */
+        .up-burger {
+            position: relative; flex: 0 0 46px; width: 46px; height: 46px; border: 0; border-radius: 14px;
+            background: rgba(11, 77, 38, .08); transition: background .3s;
+        }
+        .up-burger:hover { background: rgba(11, 77, 38, .14); }
+        .up-burger span {
+            position: absolute; left: 13px; right: 13px; height: 2.5px; border-radius: 3px;
+            background: var(--up-forest); transition: transform .35s var(--up-ease), opacity .2s, top .35s var(--up-ease);
+        }
+        .up-burger span:nth-child(1) { top: 15px; }
+        .up-burger span:nth-child(2) { top: 22px; right: 19px; }
+        .up-burger span:nth-child(3) { top: 29px; }
+        .up-burger.is-open { background: var(--up-forest); }
+        .up-burger.is-open span { background: #fff; }
+        .up-burger.is-open span:nth-child(1) { top: 22px; transform: rotate(45deg); }
+        .up-burger.is-open span:nth-child(2) { opacity: 0; transform: translateX(-10px); }
+        .up-burger.is-open span:nth-child(3) { top: 22px; transform: rotate(-45deg); }
+
+        /* =========================================================
+           মোবাইল মেনু প্যানেল (সেকশন আকারে)
+           ========================================================= */
+        .up-drawer {
+            position: fixed; left: 0; right: 0; bottom: 0; top: 0;
+            z-index: 1025; background: var(--up-mist);
+            overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+            padding: 18px 16px calc(28px + env(safe-area-inset-bottom, 0px));
+            opacity: 0; visibility: hidden;
+            clip-path: inset(0 0 100% 0);
+            transition: clip-path .5s var(--up-ease), opacity .3s ease, visibility .5s;
+        }
+        .up-drawer.is-open { opacity: 1; visibility: visible; clip-path: inset(0 0 0 0); }
+        .up-drawer-inner { max-width: 560px; margin: 0 auto; }
+        @media (min-width: 992px) { .up-drawer { display: none; } }
+
+        .m-item { opacity: 0; }
+        .up-drawer.is-open .m-item {
+            animation: mIn .5s var(--up-ease) both;
+            animation-delay: calc(var(--i, 0) * 65ms + 120ms);
+        }
+        @keyframes mIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+        .m-section {
+            background: #fff; border: 1px solid var(--up-line);
+            border-radius: 18px; margin-bottom: 12px; overflow: hidden;
+            transition: box-shadow .3s, border-color .3s;
+        }
+        .m-section.is-expanded { border-color: rgba(11, 77, 38, .35); box-shadow: 0 14px 30px -18px rgba(7, 59, 28, .5); }
+
+        .m-head {
+            width: 100%; display: flex; align-items: center; gap: 14px; min-height: 60px;
+            padding: 10px 16px; border: 0; background: none; text-align: left;
+            font-weight: 700; font-size: 1.02rem; color: var(--up-ink); text-decoration: none;
+        }
+        .m-ico {
+            width: 40px; height: 40px; flex: 0 0 40px; border-radius: 13px;
+            display: grid; place-items: center; font-size: 1.1rem;
+            background: rgba(11, 77, 38, .09); color: var(--up-forest);
+            transition: background .3s, color .3s, transform .3s var(--up-ease);
+        }
+        .m-head[aria-expanded="true"] .m-ico,
+        a.m-head:active .m-ico { background: var(--up-forest); color: #fff; transform: scale(1.08); }
+        .m-head.is-active { color: var(--up-forest); }
+        .m-chev { margin-left: auto; font-size: .85rem; color: var(--up-muted); transition: transform .35s var(--up-ease); }
+        .m-head[aria-expanded="true"] .m-chev { transform: rotate(180deg); color: var(--up-forest); }
+
+        .m-panel { padding: 2px 16px 16px; }
+        .m-gtitle { font-family: 'Fraunces', serif; font-weight: 600; font-size: .95rem; color: var(--up-forest); margin: 14px 0 4px; }
+        .m-gtitle:first-child { margin-top: 4px; }
+
+        .m-links { display: flex; flex-direction: column; }
+        .m-links a {
+            display: flex; align-items: center; gap: 8px; padding: 11px 2px;
+            color: #34463b; text-decoration: none; font-size: .96rem;
+            border-bottom: 1px dashed var(--up-line);
+        }
+        .m-links a:last-child { border-bottom: 0; }
+        .m-links a::before { content: ""; width: 6px; height: 6px; border-radius: 50%; flex: 0 0 6px; background: var(--up-gold); opacity: .8; }
+        .m-links a:active, .m-links a:hover { color: var(--up-forest); }
+        .m-links a.is-current { color: var(--up-forest); font-weight: 700; }
+        .m-links a.is-key { color: var(--up-forest); font-weight: 600; }
+        .m-childlist { margin: 0 0 6px 3px; padding-left: 14px; border-left: 2px solid var(--up-gold); }
+        .m-childlist a { font-size: .92rem; padding: 9px 2px; }
+        .m-childlist a::before { background: var(--up-forest); width: 5px; height: 5px; flex-basis: 5px; }
+
+        .m-sub { border: 1px solid var(--up-line); border-radius: 14px; margin-top: 10px; overflow: hidden; background: #fafcfb; }
+        .m-sub-head {
+            width: 100%; display: flex; align-items: center; justify-content: space-between; min-height: 50px;
+            padding: 10px 14px; border: 0; background: none; text-align: left;
+            font-weight: 600; font-size: .96rem; color: var(--up-ink);
+        }
+        .m-sub-head .m-plus {
+            width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+            background: rgba(11, 77, 38, .09); color: var(--up-forest); font-size: .75rem;
+            transition: transform .35s var(--up-ease), background .3s, color .3s;
+        }
+        .m-sub-head[aria-expanded="true"] { color: var(--up-forest); }
+        .m-sub-head[aria-expanded="true"] .m-plus { transform: rotate(45deg); background: var(--up-forest); color: #fff; }
+        .m-sub .m-links { padding: 0 14px 10px; }
+
+        .collapse.show .m-links > * { animation: mIn2 .4s var(--up-ease) both; }
+        @keyframes mIn2 { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: none; } }
+        .collapse.show .m-links > :nth-child(2) { animation-delay: 40ms; }
+        .collapse.show .m-links > :nth-child(3) { animation-delay: 80ms; }
+        .collapse.show .m-links > :nth-child(4) { animation-delay: 120ms; }
+        .collapse.show .m-links > :nth-child(5) { animation-delay: 160ms; }
+        .collapse.show .m-links > :nth-child(6) { animation-delay: 200ms; }
+        .collapse.show .m-links > :nth-child(n+7) { animation-delay: 240ms; }
+
+        .m-cta {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            width: 100%; padding: 14px; border-radius: 16px; text-decoration: none;
+            background: var(--up-gold); color: #2b2108; font-weight: 700;
+            box-shadow: 0 14px 26px -16px rgba(201, 162, 74, .9);
+        }
+        .m-quick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .m-quick a {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 12px 8px; border-radius: 14px; text-decoration: none; font-weight: 600; font-size: .92rem;
+            background: #fff; color: var(--up-forest); border: 1px solid var(--up-line);
+        }
+        .m-social { display: flex; justify-content: center; gap: 12px; margin-top: 18px; }
+        .m-social a {
+            width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+            background: var(--up-forest); color: #fff; text-decoration: none; font-size: 1.1rem;
+        }
+
+        /* =========================================================
+           ফুটার
+           ========================================================= */
+        .up-foot {
+            position: relative; overflow: hidden; margin-top: 72px; padding: 70px 0 22px;
+            background: linear-gradient(180deg, var(--up-deep), #052a14);
+            color: #dbe6df; font-size: 14.5px;
+        }
+        .up-foot::before {
+            content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--up-gold), #e6cd8d 50%, var(--up-gold));
+        }
+        .up-foot-orb { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .22; pointer-events: none; animation: upFloat 14s ease-in-out infinite; }
+        .up-foot-orb.o1 { width: 320px; height: 320px; top: -100px; right: -60px; background: #1fa75a; }
+        .up-foot-orb.o2 { width: 240px; height: 240px; bottom: -90px; left: -50px; background: var(--up-gold); animation-delay: -6s; }
+        @keyframes upFloat { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-24px, 22px); } }
+        .up-foot .container { position: relative; z-index: 1; }
+        .up-foot h6 {
+            position: relative; font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.05rem;
+            color: #fff; margin-bottom: 18px; padding-bottom: 10px;
+        }
+        .up-foot h6::after { content: ""; position: absolute; left: 0; bottom: 0; width: 34px; height: 3px; border-radius: 3px; background: var(--up-gold); }
+        .up-foot ul { list-style: none; padding: 0; margin: 0; }
+        .up-foot li { margin-bottom: 9px; }
+        .up-foot a { color: #dbe6df; text-decoration: none; opacity: .8; transition: color .2s, opacity .2s, padding .2s; }
+        .up-foot ul a:hover { color: var(--up-gold); opacity: 1; padding-left: 5px; }
+        .up-foot-about { line-height: 1.75; color: #b7c8bd; }
+        .up-foot-logo { display: inline-grid; place-items: center; padding: 8px 12px; background: #fff; border-radius: 14px; box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .6); }
+        .up-foot-logo img { height: 46px; width: auto; max-width: 200px; object-fit: contain; display: block; }
+        .up-foot-box { padding: 14px 16px; border-radius: 14px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .1); }
+        .up-foot-contact p { display: flex; gap: 10px; margin-bottom: 10px; opacity: .9; }
+        .up-foot-contact i { color: var(--up-gold); }
+        .social-btn {
+            width: 42px; height: 42px; display: inline-grid; place-items: center; border-radius: 50%;
+            background: rgba(255, 255, 255, .1); color: #fff !important; opacity: 1 !important;
+            transition: background .3s, transform .3s var(--up-ease), color .3s;
+        }
+        .social-btn:hover { background: var(--up-gold); color: #2b2108 !important; transform: translateY(-4px); }
+        .up-foot-bottom { margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); color: #9fb3a6; }
+
+        .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s var(--up-ease); transition-delay: calc(var(--d, 0) * 100ms); }
+        .reveal.in { opacity: 1; transform: none; }
+
+        /* ---------- উপরে যাওয়ার বাটন ---------- */
+        .up-totop {
+            position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+            width: 48px; height: 48px; border: 0; border-radius: 50%;
+            background: var(--up-forest); color: #fff; font-size: 1.1rem;
+            box-shadow: 0 12px 24px -10px rgba(7, 59, 28, .7);
+            opacity: 0; visibility: hidden; transform: translateY(14px);
+            transition: opacity .3s, transform .3s var(--up-ease), visibility .3s, background .2s;
+            z-index: 1020;
+        }
+        .up-totop:hover { background: var(--up-gold); color: #2b2108; }
+        .up-totop.show { opacity: 1; visibility: visible; transform: none; }
+
+        /* ---------- ছোট স্ক্রিন ---------- */
+        @media (max-width: 991.98px) {
+            :root { --up-nav-h: 72px; }
+            .up-brand img { height: 54px; }
+        }
+        @media (max-width: 575.98px) {
+            :root { --up-nav-h: 68px; }
+            .up-brand img { height: 50px; max-width: 64vw; }
+            .up-ticker .container { height: 42px; gap: 8px; }
+            .tk-label { padding: 5px 10px; font-size: .74rem; }
+            .tk-item { font-size: .92rem; padding: 0 20px; line-height: 42px; }
+            .tk-btn { width: 28px; height: 28px; }
+            .up-foot { padding-top: 52px; }
+        }
+
+        /* মোশন কমাতে চাইলে সব অ্যানিমেশন বন্ধ, টিকার হাতে স্ক্রল করা যাবে */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+            .m-item, .reveal { opacity: 1 !important; transform: none !important; }
+            .tk-view { overflow-x: auto; -webkit-mask-image: none; mask-image: none; scrollbar-width: none; }
+        }
