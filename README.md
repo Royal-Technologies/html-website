@@ -7,6 +7,7 @@ A curated collection of modern, responsive, and production-ready static HTML web
 ## 📂 Included Websites
 
 ### 1. `dentist1` — DentCare Pro (Modern Family & Dental Implant Clinic)
+- **Live Demo:** [https://royal-technologies.github.io/html-website/dentist1/](https://royal-technologies.github.io/html-website/dentist1/)
 - **Concept:** Full-service family and implant dental clinic with a friendly, trustworthy medical aesthetic.
 - **Header Style:** **Royal Elementor Theme Header Style 2** (`template-parts/headerstyle2.php` + `header-top.php`):
   - Top Bar with 24/7 emergency hotline, email, clinic address, and credentials.
@@ -22,6 +23,7 @@ A curated collection of modern, responsive, and production-ready static HTML web
   - `royalaccordion` — Accessible dental FAQ accordion.
 
 ### 2. `dentist2` — LuminaSmile (Boutique Cosmetic Dentistry & Smile Architecture)
+- **Live Demo:** [https://royal-technologies.github.io/html-website/dentist2/](https://royal-technologies.github.io/html-website/dentist2/)
 - **Concept:** High-end boutique aesthetic dental studio in Manhattan specializing in porcelain veneers, laser whitening, and Digital Smile Design (DSD).
 - **Header Style:** **Royal Elementor Theme Header Style 4** (`template-parts/headerstyle4.php` + `header-top.php`):
   - Top announcement bar with complimentary 3D smile scan offer and patient portal link.
@@ -34,6 +36,7 @@ A curated collection of modern, responsive, and production-ready static HTML web
   - `royalform` — Private suite consultation booking with treatment selector and modal confirmation.
 
 ### 3. `dentist3` — ApexOrtho & Maxillofacial Dental Surgery Center
+- **Live Demo:** [https://royal-technologies.github.io/html-website/dentist3/](https://royal-technologies.github.io/html-website/dentist3/)
 - **Concept:** Tri-state surgical center of excellence for robotic-guided dental implants, maxillofacial surgery, and orthodontic bite correction.
 - **Header Style:** **Royal Elementor Theme Header Style 1 / 3** (`template-parts/headerstyle1.php` + `header-top.php`):
   - Emergency top bar with 24/7 acute trauma dispatch hotline and 3-branch switcher.
@@ -51,18 +54,22 @@ A curated collection of modern, responsive, and production-ready static HTML web
 ### Previous Websites
 
 #### 4. `creed1` — CREED (Single-Page Edition)
+- **Live Demo:** [https://royal-technologies.github.io/html-website/creed1/](https://royal-technologies.github.io/html-website/creed1/)
 - **Organization:** Centre for Rehabilitation Education Earning Development (CREED)
 - **Technologies:** HTML5, CSS3, JavaScript, Font Awesome, Bootstrap Icons.
 
 #### 5. `creed2` — CREED (Multi-Page Portal)
+- **Live Demo:** [https://royal-technologies.github.io/html-website/creed2/](https://royal-technologies.github.io/html-website/creed2/)
 - **Organization:** Centre for Rehabilitation Education Earning Development (CREED)
 - **Technologies:** HTML5, CSS3, JavaScript, Bootstrap 5, Bootstrap Icons.
 
 #### 6. `MithilaPolymer` — Mithila Polymer Industries Ltd
+- **Live Demo:** [https://royal-technologies.github.io/html-website/MithilaPolymer/](https://royal-technologies.github.io/html-website/MithilaPolymer/)
 - **Organization:** Mithila Polymer Industries Ltd
 - **Technologies:** HTML5, Tailwind CSS, JavaScript.
 
 #### 7. `rds` — Rural Development Sangstha (RDS)
+- **Live Demo:** [https://royal-technologies.github.io/html-website/rds/](https://royal-technologies.github.io/html-website/rds/)
 - **Organization:** Rural Development Sangstha (RDS)
 - **Technologies:** HTML5, CSS3, JavaScript, Bootstrap 5, Bootstrap Icons, Royal Mega Menu.
 
