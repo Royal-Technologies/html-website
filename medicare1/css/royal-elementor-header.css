@@ -1,0 +1,312 @@
+/* Royal Elementor Header Style 2 - LifeCare General Hospital */
+:root {
+  --color1st: #1a56db;
+  --color2nd: #f59e0b;
+  --color1st-dark: #1e40af;
+  --color1st-light: #eff6ff;
+  --header_top_bg_color: #0f172a;
+  --header_top_text_color: #cbd5e1;
+  --header_bg_color: #ffffff;
+  --header_text_color: #1e293b;
+  --header_height: 72px;
+  --header_top_height: 40px;
+  --transition: all 0.3s ease;
+}
+
+/* ===================== TOP BAR ===================== */
+.headertop {
+  background: var(--header_top_bg_color);
+  height: var(--header_top_height);
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: var(--header_top_text_color);
+  position: relative;
+  z-index: 1001;
+}
+.headertop .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.headertop .ht-left,
+.headertop .ht-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.headertop a {
+  color: var(--header_top_text_color);
+  text-decoration: none;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.headertop a:hover { color: var(--color2nd); }
+.headertop i { font-size: 14px; }
+.headertop .ht-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255,255,255,0.15);
+}
+
+/* ===================== MAIN HEADER ===================== */
+.header {
+  background: var(--header_bg_color);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+.header.scrolled {
+  background: #0f172a;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+.header.scrolled .royalmenu > ul > li > a { color: #e2e8f0; }
+.header.scrolled .royalmenu > ul > li > a:hover { color: var(--color2nd); }
+.header.scrolled .logo-text { color: #fff; }
+.header.scrolled .logo-sub { color: #94a3b8; }
+
+.header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header_height);
+}
+
+/* Logo */
+.header .site-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.header .logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color1st);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.header .logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color1st);
+  line-height: 1.1;
+  transition: var(--transition);
+}
+.header .logo-sub {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+/* ===================== DESKTOP MENU ===================== */
+.desktopmenu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.royalmenu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.royalmenu > ul > li {
+  position: relative;
+}
+.royalmenu > ul > li > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 16px;
+  color: var(--header_text_color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.royalmenu > ul > li > a:hover,
+.royalmenu > ul > li.active > a {
+  color: var(--color1st);
+  background: var(--color1st-light);
+}
+.royalmenu > ul > li > a .arrow {
+  font-size: 11px;
+  transition: transform 0.3s;
+}
+.royalmenu > ul > li:hover > a .arrow { transform: rotate(180deg); }
+
+/* Dropdown */
+.royalmenu .dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  padding: 8px 0;
+  border-top: 3px solid var(--color1st);
+  list-style: none;
+  margin: 0;
+}
+.royalmenu > ul > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: calc(100% + 4px);
+}
+.royalmenu .dropdown li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.royalmenu .dropdown li a:hover {
+  color: var(--color1st);
+  background: var(--color1st-light);
+  padding-left: 24px;
+}
+.royalmenu .dropdown li a i { color: var(--color1st); font-size: 15px; }
+
+/* ===================== ACTION BUTTONS ===================== */
+.royal-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.royal-action-btn .btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color2nd);
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--transition);
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(245,158,11,0.35);
+}
+.royal-action-btn .btn-cta:hover {
+  background: #d97706;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245,158,11,0.45);
+}
+
+/* Hamburger */
+#navigation-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: var(--transition);
+  background: transparent;
+  border: none;
+}
+#navigation-icon:hover { background: var(--color1st-light); }
+#navigation-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--header_text_color);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+.header.scrolled #navigation-icon span { background: #e2e8f0; }
+#navigation-icon.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+#navigation-icon.active span:nth-child(2) { opacity: 0; }
+#navigation-icon.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ===================== MOBILE MENU ===================== */
+.mobile-menu {
+  display: none;
+  background: #0f172a;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-menu.open { display: block; }
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-menu ul li a {
+  display: block;
+  padding: 12px 24px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: var(--transition);
+}
+.mobile-menu ul li a:hover { color: var(--color2nd); background: rgba(255,255,255,0.03); }
+.mobile-menu .mobile-sub { display: none; background: rgba(0,0,0,0.2); }
+.mobile-menu .mobile-sub.open { display: block; }
+.mobile-menu .mobile-sub li a { padding-left: 40px; font-size: 14px; }
+.mobile-menu .m-dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu .m-dropdown-toggle i { transition: transform 0.3s; }
+.mobile-menu .m-dropdown-toggle.open i { transform: rotate(180deg); }
+.mobile-cta {
+  padding: 16px 24px;
+}
+.mobile-cta a {
+  display: block;
+  text-align: center;
+  background: var(--color2nd);
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  border-radius: 8px;
+  padding: 12px 24px !important;
+  border-bottom: none !important;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 991px) {
+  .desktopmenu { display: none !important; }
+  .royal-action-btn .btn-cta { display: none; }
+  #navigation-icon { display: flex; }
+  .headertop .ht-left { display: none; }
+}
+@media (max-width: 575px) {
+  .headertop { display: none; }
+  .header .logo-text { font-size: 17px; }
+}

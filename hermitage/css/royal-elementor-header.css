@@ -1,0 +1,464 @@
+/**
+ * Royal Elementor Theme - Header Style 2 Stylesheet
+ * Compatible with: Royal Elementor Theme (template-parts/headerstyle2.php & header-top.php)
+ * & Royal Addons for Elementor
+ * Site: Hermitage Certification Group
+ * Author: Royal Technologies
+ */
+
+:root {
+  --color1st: #1e3a5f;
+  --color2nd: #c9a84c;
+  --header_top_bg_color: #0f2440;
+  --header_top_text_color: #cbd5e1;
+  --header_bg_color: #ffffff;
+  --header_text_color: #1e293b;
+  --menu_color: #1e293b;
+  --menu_hover_color: #c9a84c;
+  --menu_active_color: #c9a84c;
+  --submenu_bg: #ffffff;
+  --submenu_border: #e2e8f0;
+  --action_btn_bg: #c9a84c;
+  --action_btn_color: #ffffff;
+  --action_btn_hover_bg: #b08a35;
+}
+
+/* ==========================================================================
+   Header Top Bar (.headertop) — matches header-top.php
+   ========================================================================== */
+.headertop {
+  background: var(--header_top_bg_color);
+  color: var(--header_top_text_color);
+  font-size: 12.5px;
+  line-height: 1.5;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.headertop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.headertop a {
+  color: var(--header_top_text_color);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop a:hover { color: var(--color2nd); }
+
+.headertop .topleft,
+.headertop .topright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-accred-badge {
+  background: rgba(201,168,76,0.18);
+  color: var(--color2nd);
+  border: 1px solid rgba(201,168,76,0.4);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ==========================================================================
+   Middle Header (.header) — headerstyle2.php logo + meta row
+   ========================================================================== */
+.header {
+  background: var(--header_bg_color);
+  padding: 16px 0;
+  border-bottom: 1px solid #e8edf3;
+  position: relative;
+}
+
+.header .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-icon-box {
+  width: 52px;
+  height: 52px;
+  background: var(--color1st);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--color2nd);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(30,58,95,0.25);
+}
+
+.logo-text-wrap .site-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color1st);
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+
+.logo-text-wrap .site-name span {
+  color: var(--color2nd);
+}
+
+.logo-text-wrap .site-tagline {
+  font-size: 11px;
+  color: #64748b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Header Meta Info */
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  justify-content: center;
+}
+
+.header-info-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-info-icon {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: var(--color1st);
+  flex-shrink: 0;
+}
+
+.header-info-block .info-label {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.header-info-block .info-value {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color1st);
+  line-height: 1.2;
+}
+
+/* Royal Action Button — matches royal_header_action_button() */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--action_btn_bg);
+  color: var(--action_btn_color) !important;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.15s, box-shadow 0.25s;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(201,168,76,0.35);
+  flex-shrink: 0;
+}
+
+.royal-action-btn:hover {
+  background: var(--action_btn_hover_bg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,168,76,0.45);
+}
+
+/* ==========================================================================
+   Desktop Navigation (.desktopmenu) — headerstyle2 nav bar
+   ========================================================================== */
+.desktopmenu {
+  background: var(--color1st);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s;
+}
+
+.desktopmenu.scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.desktopmenu .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Royal Menu — matches .royalmenu in headerstyle2.php */
+.royalmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2px;
+}
+
+.royalmenu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.royalmenu > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 3px;
+  background: var(--color2nd);
+  border-radius: 3px 3px 0 0;
+  transition: left 0.25s, right 0.25s;
+}
+
+.royalmenu > li:hover > a,
+.royalmenu > li.current-menu-item > a {
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+.royalmenu > li:hover > a::after,
+.royalmenu > li.current-menu-item > a::after {
+  left: 10px;
+  right: 10px;
+}
+
+/* Dropdown arrow for parent items */
+.royalmenu > li.menu-item-has-children > a .caret {
+  font-size: 10px;
+  transition: transform 0.2s;
+  opacity: 0.7;
+}
+
+.royalmenu > li.menu-item-has-children:hover > a .caret {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* Sub-menu */
+.royalmenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  background: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  border-top: 3px solid var(--color2nd);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.22s, transform 0.22s;
+  z-index: 1000;
+}
+
+.royalmenu li.menu-item-has-children {
+  position: relative;
+}
+
+.royalmenu li.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.royalmenu .sub-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, padding-left 0.18s;
+}
+
+.royalmenu .sub-menu li a:hover {
+  background: #f8fafc;
+  color: var(--color1st);
+  padding-left: 26px;
+}
+
+.royalmenu .sub-menu li a i {
+  font-size: 13px;
+  color: var(--color2nd);
+  flex-shrink: 0;
+}
+
+/* Navigation Icon (mobile toggle) — matches #navigation-icon */
+#navigation-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+#navigation-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Nav Search */
+.nav-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-search-form {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+
+.nav-search-form:focus-within {
+  background: rgba(255,255,255,0.18);
+}
+
+.nav-search-form input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 7px 12px;
+  width: 180px;
+}
+
+.nav-search-form input::placeholder { color: rgba(255,255,255,0.5); }
+
+.nav-search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  padding: 7px 12px;
+  transition: color 0.2s;
+}
+
+.nav-search-form button:hover { color: var(--color2nd); }
+
+/* ==========================================================================
+   Mobile Responsive
+   ========================================================================== */
+@media (max-width: 991px) {
+  #navigation-icon { display: flex; }
+
+  .royalmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--color1st);
+    padding: 12px 0 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    z-index: 998;
+  }
+
+  .royalmenu.mobile-open { display: flex; }
+
+  .royalmenu > li > a { padding: 13px 24px; }
+  .royalmenu > li > a::after { display: none; }
+
+  .royalmenu .sub-menu {
+    position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+    box-shadow: none;
+    border: none;
+    border-left: 3px solid var(--color2nd);
+    border-radius: 0;
+    background: rgba(0,0,0,0.2);
+    padding: 4px 0;
+    display: none;
+  }
+
+  .royalmenu li.menu-item-has-children.open .sub-menu { display: block; }
+
+  .royalmenu .sub-menu li a { color: rgba(255,255,255,0.8); padding: 9px 16px 9px 32px; }
+  .royalmenu .sub-menu li a:hover { background: rgba(255,255,255,0.08); padding-left: 36px; color: #fff; }
+
+  .header-meta { display: none; }
+  .header .container { justify-content: space-between; }
+  .nav-search-wrap { display: none; }
+}
+
+@media (max-width: 600px) {
+  .headertop .topright { display: none; }
+  .logo-text-wrap .site-tagline { display: none; }
+}
