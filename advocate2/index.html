@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexTrial Advocates – Criminal Defense & Civil Rights Trial Lawyers</title>
+  <meta name="description" content="Aggressive federal and state criminal defense counsel in New York. Former prosecutors protecting your freedom, reputation, and constitutional rights.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23dc2626'><path d='M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6ZM18 16.5C18 17.5 15.31 18.5 12 18.5C8.69 18.5 6 17.5 6 16.5V15.5C6 14.5 8.69 13.5 12 13.5C15.31 13.5 18 14.5 18 15.5V16.5Z'/></svg>">
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Royal Elementor Theme Header & Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/header-top.php]
+       Top Notification Bar with 24/7 Arrest Bail Line & Immediate Jail Visits
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <span class="bail-alert-pill">
+          <span class="dot"></span> 24/7 Emergency Arrest & Bail Response
+        </span>
+        <a href="tel:+18889115297" style="color: #ffffff; font-weight: 700;">
+          <i class="bi bi-telephone-fill text-danger"></i> +1 (888) 911-LAWS
+        </a>
+      </div>
+      <div class="topright tablethide">
+        <span><i class="bi bi-shield-lock-fill text-danger"></i> Immediate Jail & Arraignment Visits Across NY & NJ</span>
+        <a href="#triage"><i class="bi bi-clock-history"></i> Immediate Intake</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/headerstyle4.php]
+       Modern Unified Inline Header (Logo + Royal Menu + Royal Action Button + Rightpanel)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo Warper -->
+      <div id="logowarper">
+        <a href="index.html" class="branding-link">
+          <div class="defense-logo-badge">
+            <i class="fa-solid fa-gavel"></i>
+          </div>
+          <div class="site-branding-text">
+            <h1 class="site-title">Apex<span>Trial</span></h1>
+            <p class="site-description">Criminal Defense & Trial Chambers</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right Area: Navigation + Royal Action Button + Mobile Toggle + Panel -->
+      <div class="right">
+        <!-- Desktop Navigation with Royal Menu Classes -->
+        <div class="desktopmenu">
+          <ul class="royalmenu">
+            <li class="current-menu-item"><a href="#home">Home</a></li>
+            <li><a href="#chambers">Chambers</a></li>
+            <li class="menu-item-has-children">
+              <a href="#defense">Defense Areas</a>
+              <ul class="sub-menu">
+                <li><a href="#defense"><i class="bi bi-shield-shaded text-danger"></i> White Collar & Fraud</a></li>
+                <li><a href="#defense"><i class="bi bi-shield-shaded text-danger"></i> Federal Criminal Defense</a></li>
+                <li><a href="#defense"><i class="bi bi-shield-shaded text-danger"></i> DUI & Vehicular Crimes</a></li>
+                <li><a href="#defense"><i class="bi bi-shield-shaded text-danger"></i> Civil Rights & Police Misconduct</a></li>
+                <li><a href="#defense"><i class="bi bi-shield-shaded text-danger"></i> Post-Conviction Appeals</a></li>
+              </ul>
+            </li>
+            <li><a href="#triage">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Royal Action Button (matches royal_header_action_button()) -->
+        <a href="#triage" class="royal-action-btn">
+          <i class="bi bi-exclamation-octagon-fill"></i> Emergency Defense
+        </a>
+
+        <!-- Right Panel with Quick Action Icons -->
+        <div class="rightpanel">
+          <a href="tel:+18889115297" class="panel-btn" title="Call Defense Desk"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+
+        <!-- Mobile Navigation Hamburger -->
+        <div class="navigation-icon desktophide" id="navigationIcon" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-navigation-overlay" id="mobileNavigationOverlay"></div>
+  <div class="mobile-navigation-drawer" id="mobileNavigationDrawer">
+    <div class="mobile-drawer-header">
+      <h3 class="site-title" style="font-size: 20px;">Apex<span>Trial</span></h3>
+      <button class="mobile-drawer-close" aria-label="Close Drawer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#chambers">Chambers</a></li>
+      <li><a href="#defense">Defense Areas</a></li>
+      <li><a href="#triage">Emergency Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="#triage" class="btn-crimson" style="width: 100%; justify-content: center;">
+        Emergency Defense
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO SECTION (Royal Addons: royalsliderlanding / royalheadingdual)
+       ========================================================================== -->
+  <section class="hero-defense" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-pill-red">
+            <i class="bi bi-shield-exclamation"></i> Relentless Criminal Trial Lawyers
+          </div>
+          <h1 class="hero-title">
+            Your Freedom Is On The Line. <span>We Don't Back Down.</span>
+          </h1>
+          <p class="hero-desc">
+            When you are facing felony charges, federal grand jury indictments, or catastrophic civil rights violations, you need aggressive trial counsel with a proven track record of jury acquittals and case dismissals.
+          </p>
+          <div class="hero-actions">
+            <a href="#triage" class="btn-crimson">
+              <i class="bi bi-telephone-inbound-fill"></i> Immediate Defense Intake
+            </a>
+            <a href="#defense" class="btn-outline-red">
+              <i class="bi bi-shield-check"></i> View Case Victories
+            </a>
+          </div>
+          <div class="hero-stats-row">
+            <div>
+              <div class="h-stat-num">500+</div>
+              <div class="h-stat-label">Dismissals & Acquittals</div>
+            </div>
+            <div>
+              <div class="h-stat-num">24/7</div>
+              <div class="h-stat-label">Jail & Arraignment Response</div>
+            </div>
+            <div>
+              <div class="h-stat-num">100%</div>
+              <div class="h-stat-label">Confidential Privilege</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-img-box">
+            <img src="images/hero.jpg" alt="Scale of justice in dramatic court lighting" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. QUICK FEATURES (Royal Addons: royalfeatures)
+       ========================================================================== -->
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-lightning-charge-fill"></i></div>
+          <div>
+            <h4>Immediate Response</h4>
+            <p>On-scene presence within 60 minutes of police arrest or interrogation.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-person-badge-fill"></i></div>
+          <div>
+            <h4>Former Prosecutors</h4>
+            <p>We know how the state builds its cases and how to systematically dismantle them.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-folder-check"></i></div>
+          <div>
+            <h4>Independent Forensics</h4>
+            <p>Private investigators, digital forensics experts, and ballistics specialists.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-lock-fill"></i></div>
+          <div>
+            <h4>Ironclad Privilege</h4>
+            <p>Total discretion to protect your reputation, business, and livelihood.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT CHAMBERS (Royal Addons: royalprofilecard)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="chambers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Chambers Profile</span>
+        <h2 class="section-title">Courtroom Warriors Who <span>Never Settle Easy</span></h2>
+        <p class="section-desc">We prepare every single case as if it is heading straight to a jury trial. This aggressive posture gives our clients maximum leverage.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <img src="images/courtroom.jpg" alt="Law library and courtroom setting" style="width: 100%; height: 380px; object-fit: cover; border-radius: 18px; box-shadow: 0 15px 35px rgba(0,0,0,0.12);" />
+        </div>
+        <div>
+          <h3 style="font-size: 26px; font-weight: 800; margin-bottom: 16px;">The ApexTrial Difference</h3>
+          <p style="font-size: 15px; color: #475569; margin-bottom: 16px;">
+            Prosecutors know which defense attorneys fold into plea bargains and which ones fight tooth and nail in the courtroom. At ApexTrial Advocates, our reputation as relentless trial lawyers precedes us into every hearing.
+          </p>
+          <p style="font-size: 15px; color: #475569; margin-bottom: 24px;">
+            Whether challenging unconstitutional police searches, suppressing wiretap evidence, or cross-examining government witnesses, our trial record speaks for itself.
+          </p>
+          <a href="#triage" class="btn-crimson">
+            <i class="bi bi-shield-shaded"></i> Request Emergency Case Review
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. DEFENSE PRACTICE AREAS (Royal Addons: royalservices)
+       ========================================================================== -->
+  <section class="section" id="defense">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Defense Areas</span>
+        <h2 class="section-title">Aggressive Defense <span>In High-Stakes Cases</span></h2>
+        <p class="section-desc">From complex federal indictments to severe state felony allegations, we provide unyielding representation.</p>
+      </div>
+
+      <div class="defense-grid">
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>White Collar & Fraud</h3>
+          <p>Securities fraud, wire fraud, healthcare fraud, tax evasion, embezzlement, and SEC/DOJ parallel enforcement defense.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-building-flag"></i></div>
+          <h3>Federal Criminal Defense</h3>
+          <p>Representation across federal district courts for conspiracy, racketeering (RICO), drug trafficking, and cybercrime charges.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-car-burst"></i></div>
+          <h3>DUI & Vehicular Crimes</h3>
+          <p>Defending misdemeanor and felony DWI/DUI, vehicular assault, breathalyzer calibration challenges, and license revocation.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-handcuffs"></i></div>
+          <h3>Civil Rights & Police Brutality</h3>
+          <p>Federal Section 1983 litigation for unlawful arrests, excessive force, false imprisonment, and malicious prosecution claims.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Violent Crimes & Self Defense</h3>
+          <p>Assault, homicide, weapons possession, and domestic allegations with full forensic and ballistics reconstruction.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="defense-card">
+          <div class="d-icon-box"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>Appeals & Habeas Corpus</h3>
+          <p>Overturning wrongful convictions, sentence reductions, state appellate arguments, and federal habeas corpus petitions.</p>
+          <a href="#triage" class="defense-link">Explore Defense <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. 4-STEP DEFENSE STRATEGY (Royal Addons: royaltimeline)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="blueprint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tactical Blueprint</span>
+        <h2 class="section-title">Our 4-Step <span>Trial Defense Blueprint</span></h2>
+        <p class="section-desc">Every criminal accusation requires immediate, decisive counter-action before evidence disappears.</p>
+      </div>
+
+      <div class="strategy-grid">
+        <div class="strategy-step">
+          <div class="step-number">01</div>
+          <h4>Pre-Charge Intervention</h4>
+          <p>Intervene with prosecutors to prevent formal charges or secure pre-indictment dismissal.</p>
+        </div>
+        <div class="strategy-step">
+          <div class="step-number">02</div>
+          <h4>Independent Investigation</h4>
+          <p>Deploy private investigators to preserve security footage, subpoena records, and interview key witnesses.</p>
+        </div>
+        <div class="strategy-step">
+          <div class="step-number">03</div>
+          <h4>Suppression Motions</h4>
+          <p>Challenge unlawful Fourth and Fifth Amendment violations to exclude illegally seized evidence.</p>
+        </div>
+        <div class="strategy-step">
+          <div class="step-number">04</div>
+          <h4>Aggressive Trial Defense</h4>
+          <p>Masterful jury selection, ferocious cross-examination, and relentless advocacy for complete acquittal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. TRIAL ATTORNEYS (Royal Addons: royalteam)
+       ========================================================================== -->
+  <section class="section" id="attorneys">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Defense Counsel</span>
+        <h2 class="section-title">Meet Our <span>Trial Advocates</span></h2>
+        <p class="section-desc">Former prosecutors and seasoned trial lawyers recognized by Super Lawyers and the National Trial Lawyers Top 100.</p>
+      </div>
+
+      <div class="attorneys-grid">
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-1.jpg" alt="Vincent Cross, Esq." />
+          </div>
+          <div class="attorney-body">
+            <h4>Vincent Cross, Esq.</h4>
+            <div class="attorney-title">Managing Trial Partner</div>
+            <p>Former Senior Assistant District Attorney with over 100 jury trials taken to verdict across state and federal courts.</p>
+          </div>
+        </div>
+
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-2.jpg" alt="Leila Sterling, JD" />
+          </div>
+          <div class="attorney-body">
+            <h4>Leila Sterling, JD</h4>
+            <div class="attorney-title">Civil Rights & Appellate Lead</div>
+            <p>Nationally recognized constitutional lawyer securing major multi-million dollar police misconduct verdicts.</p>
+          </div>
+        </div>
+
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-3.jpg" alt="Dominic Torres, Esq." />
+          </div>
+          <div class="attorney-body">
+            <h4>Dominic Torres, Esq.</h4>
+            <div class="attorney-title">White Collar & Federal Counsel</div>
+            <p>Specialist in DOJ/SEC investigations, grand jury defense, asset forfeiture, and complex financial litigation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. EMERGENCY DEFENSE INTAKE (Royal Addons: royalform)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="triage">
+    <div class="container">
+      <div class="defense-form-grid">
+        <div class="defense-form-card">
+          <span class="section-subtitle">24/7 Defense Intake</span>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Emergency Defense Request</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-bottom: 26px;">
+            Immediate attention for ongoing arrests, warrants, or grand jury subpoenas.
+          </p>
+
+          <form id="urgentDefenseForm">
+            <div class="d-form-grid">
+              <div>
+                <label class="d-label" for="defName">Defendant / Contact Name *</label>
+                <input type="text" id="defName" class="d-input" placeholder="Alexander Drake" required />
+              </div>
+              <div>
+                <label class="d-label" for="defPhone">Emergency Phone *</label>
+                <input type="tel" id="defPhone" class="d-input" placeholder="+1 (555) 987-6543" required />
+              </div>
+              <div>
+                <label class="d-label" for="defCharge">Accusation / Legal Stage *</label>
+                <select id="defCharge" class="d-input" required>
+                  <option value="" disabled selected>Select Current Situation</option>
+                  <option value="Active Police Interrogation / Arrest">Active Police Interrogation / Arrest</option>
+                  <option value="Arraignment / Bail Hearing Pending">Arraignment / Bail Hearing Pending</option>
+                  <option value="Federal Indictment / Target Letter">Federal Indictment / Target Letter</option>
+                  <option value="DUI / DWI Felony Arrest">DUI / DWI Felony Arrest</option>
+                  <option value="Civil Rights Violation / Excessive Force">Civil Rights Violation / Excessive Force</option>
+                </select>
+              </div>
+              <div>
+                <label class="d-label" for="defLocation">Detention Facility / County</label>
+                <input type="text" id="defLocation" class="d-input" placeholder="e.g. Manhattan Central Booking" />
+              </div>
+              <div class="d-full">
+                <label class="d-label" for="defNotes">Urgent Case Details</label>
+                <textarea id="defNotes" class="d-input" rows="3" placeholder="Do not admit guilt. State charges, court date, or immediate bail deadline..."></textarea>
+              </div>
+              <div class="d-full">
+                <button type="submit" class="btn-crimson" style="width: 100%; justify-content: center; padding: 16px;">
+                  <i class="bi bi-shield-fill-exclamation"></i> Send Emergency Defense Alert
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="defense-urgent-panel">
+          <div>
+            <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 8px;">Know Your Rights If Arrested</h3>
+            <p style="font-size: 13.5px; color: #cbd5e1; line-height: 1.6;">Follow these golden rules to avoid compromising your defense:</p>
+            <ul class="rights-list">
+              <li>
+                <i class="bi bi-x-octagon-fill"></i>
+                <div><strong>Do Not Answer Questions:</strong> Politely state: <em>"I am invoking my right to remain silent and I want my attorney present."</em></div>
+              </li>
+              <li>
+                <i class="bi bi-x-octagon-fill"></i>
+                <div><strong>Do Not Consent to Searches:</strong> State clearly: <em>"I do not consent to any search of my person, phone, vehicle, or home."</em></div>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <div><strong>Demand Your Phone Call:</strong> Contact ApexTrial Advocates immediately before answering any interrogation questions.</div>
+              </li>
+            </ul>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.08); padding: 18px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 11px; text-transform: uppercase; color: #f87171; font-weight: 700; letter-spacing: 0.1em;">24/7 Rapid Defense Dispatch</div>
+            <a href="tel:+18889115297" style="font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: none; display: block; margin-top: 4px;">+1 (888) 911-LAWS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. FAQ (Royal Addons: royalaccordion)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Criminal Defense FAQ</span>
+        <h2 class="section-title">Critical Legal <span>Inquiries</span></h2>
+        <p class="section-desc">Understanding bail hearings, attorney intervention, and constitutional rights.</p>
+      </div>
+
+      <div class="faq-box">
+        <div class="faq-row active">
+          <button class="faq-btn">
+            <span>Can a lawyer get me out of jail before the arraignment?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Yes. When retained immediately, our attorneys coordinate directly with precinct detectives, the District Attorney's office, and bail bondsmen to secure early desk appearance tickets (DAT) or present strong bail applications at central booking.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-btn">
+            <span>What if police interrogated me without reading my Miranda rights?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            If law enforcement conducts a custodial interrogation without advising you of your Miranda rights, we file pre-trial suppression motions to throw out any incriminating statements, confessions, or derivative evidence.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-btn">
+            <span>Why is having a former prosecutor an advantage?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Former prosecutors have evaluated hundreds of police arrest files. We anticipate the state's tactics, spot evidentiary weaknesses in police reports, and negotiate from a position of absolute trial readiness.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER (Royal Elementor Theme Style)
+       ========================================================================== -->
+  <footer class="apex-defense-footer">
+    <div class="container">
+      <div class="f-grid">
+        <div class="f-col">
+          <h3 class="site-title" style="color: #ffffff; font-size: 22px; margin-bottom: 12px;">Apex<span>Trial</span></h3>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.7;">
+            Premier criminal defense and civil rights trial law firm protecting liberties across New York and federal courts.
+          </p>
+        </div>
+
+        <div class="f-col">
+          <h4>Defense Practice</h4>
+          <ul class="f-links">
+            <li><a href="#defense">White Collar Crimes</a></li>
+            <li><a href="#defense">Federal Indictments</a></li>
+            <li><a href="#defense">DUI Defense</a></li>
+            <li><a href="#defense">Civil Rights Litigation</a></li>
+            <li><a href="#defense">Criminal Appeals</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>Chambers</h4>
+          <ul class="f-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chambers">About Chambers</a></li>
+            <li><a href="#blueprint">Defense Strategy</a></li>
+            <li><a href="#attorneys">Trial Counsel</a></li>
+            <li><a href="#faq">Your Rights FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>Emergency Dispatch</h4>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-telephone-fill text-danger"></i> 24/7 Bail Line: +1 (888) 911-LAWS
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 16px;">
+            <i class="bi bi-envelope-fill text-danger"></i> defense@apextrial.com
+          </p>
+          <a href="#triage" class="btn-crimson" style="padding: 10px 18px; font-size: 13px;">
+            Emergency Defense
+          </a>
+        </div>
+      </div>
+
+      <div class="f-bottom">
+        <p>&copy; 2026 ApexTrial Advocates. Built for Royal Elementor Theme & Royal Addons. Powered by <a href="https://www.royaltechbd.com/" target="_blank">Royal Technologies</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Confirmation -->
+  <div class="modal-overlay" id="defenseModal">
+    <div class="modal-card">
+      <div style="width: 60px; height: 60px; background: #fef2f2; color: #dc2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 16px auto; border: 1px solid #fee2e2;">
+        <i class="bi bi-shield-fill-check"></i>
+      </div>
+      <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Defense Alert Dispatched</h3>
+      <p style="font-size: 15px; color: #475569; margin-bottom: 14px;">
+        Thank you, <strong id="modalDefendantName">Client</strong>. Your urgent defense request regarding <span id="modalChargeType" style="color: #dc2626; font-weight: 700;">Situation</span> has been routed to our on-call trial partner.
+      </p>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 22px;">
+        An attorney will call you back within 15 minutes to initiate immediate legal intervention.
+      </p>
+      <button class="btn-crimson" id="closeDefenseModal" style="width: 100%; justify-content: center;">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

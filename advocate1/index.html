@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JusticeShield Law Firm – Corporate & Commercial Litigation</title>
+  <meta name="description" content="Premier corporate law firm and commercial litigation counsel in New York. Protecting your business assets, contracts, and shareholder interests.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c59b27'><path d='M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6ZM18 16.5C18 17.5 15.31 18.5 12 18.5C8.69 18.5 6 17.5 6 16.5V15.5C6 14.5 8.69 13.5 12 13.5C15.31 13.5 18 14.5 18 15.5V16.5Z'/></svg>">
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Theme Header & Custom Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/header-top.php]
+       Header Top Bar with 24/7 Legal Helpline, Email & Accreditation
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <a href="tel:+18005555291">
+          <i class="bi bi-telephone-fill"></i> +1 (800) 555-LAWS
+        </a>
+        <a href="mailto:counsel@justiceshield.com">
+          <i class="bi bi-envelope-fill"></i> counsel@justiceshield.com
+        </a>
+        <span class="tablethide" style="font-size: 12.5px; opacity: 0.85;">
+          <i class="bi bi-geo-alt-fill text-warning"></i> 60 Wall Street, 28th Floor, New York, NY
+        </span>
+      </div>
+      <div class="topright">
+        <span class="top-badge-legal">
+          <i class="bi bi-award-fill"></i> New York Bar Accredited
+        </span>
+        <div class="top-social">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/headerstyle2.php]
+       Middle Header with Firm Crest Logo, Contact Badges, and Action Button
+       ========================================================================== -->
+  <header class="header custom-header-style-2">
+    <div class="container">
+      <div class="header-flex-wrapper">
+        <div class="header-left">
+          <a href="index.html" class="branding-link">
+            <div class="logo-crest">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="site-branding-text">
+              <h1 class="site-title">Justice<span>Shield</span></h1>
+              <p class="site-description">Attorneys & Counselors at Law</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="header-right tablethide">
+          <div class="contact-info-wrapper">
+            <div class="contact-detail phone">
+              <div class="detail-icon">
+                <i class="bi bi-telephone-outbound-fill"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Direct Legal Desk</span>
+                <a href="tel:+18005555291">+1 (800) 555-5291</a>
+              </div>
+            </div>
+            <div class="contact-detail email">
+              <div class="detail-icon">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Consultation Hours</span>
+                <span class="detail-value">Mon - Fri: 8am - 7pm</span>
+              </div>
+            </div>
+          </div>
+          <!-- Royal Action Button (matches royal_header_action_button()) -->
+          <div class="header-action-button">
+            <a href="#consultation" class="btn-request-proposal">
+              <i class="bi bi-briefcase-fill"></i> Free Consultation
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-menu-trigger desktophide tabletshow">
+          <div class="navigation-icon" id="navigationIcon" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       [ROYAL THEME NAV: template-parts/headerstyle2.php - Navigation Menu]
+       Desktop Menu with Royal Menu styles, Dropdown & Live Search
+       ========================================================================== -->
+  <nav class="desktopmenu custom-nav-style-2">
+    <div class="container">
+      <div class="nav-menu-wrapper">
+        <ul class="royalmenu">
+          <li class="current-menu-item"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="menu-item-has-children">
+            <a href="#practices">Practice Areas</a>
+            <ul class="sub-menu">
+              <li><a href="#practices"><i class="bi bi-chevron-right text-warning"></i> Corporate & Business Law</a></li>
+              <li><a href="#practices"><i class="bi bi-chevron-right text-warning"></i> Commercial Litigation</a></li>
+              <li><a href="#practices"><i class="bi bi-chevron-right text-warning"></i> Mergers & Acquisitions</a></li>
+              <li><a href="#practices"><i class="bi bi-chevron-right text-warning"></i> Intellectual Property</a></li>
+              <li><a href="#practices"><i class="bi bi-chevron-right text-warning"></i> Employment & Labor Law</a></li>
+            </ul>
+          </li>
+          <li><a href="#consultation">Contact</a></li>
+        </ul>
+
+        <div class="menu-search-wrapper">
+          <form role="search" method="get" class="menu-search-form" onsubmit="event.preventDefault();">
+            <input type="search" class="menu-search-field" placeholder="Search legal topics..." aria-label="Search" />
+            <button type="submit" class="menu-search-submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-navigation-overlay" id="mobileNavigationOverlay"></div>
+  <div class="mobile-navigation-drawer" id="mobileNavigationDrawer">
+    <div class="mobile-drawer-header">
+      <h3 class="site-title" style="font-size: 20px; color: #ffffff;">Justice<span>Shield</span></h3>
+      <button class="mobile-drawer-close" aria-label="Close Menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#practices">Practice Areas</a></li>
+      <li><a href="#consultation">Contact & Consultation</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="#consultation" class="btn-gold" style="width: 100%; justify-content: center;">
+        Schedule Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO SECTION (Royal Addons: royalsliderlanding / royalheadingdual)
+       ========================================================================== -->
+  <section class="hero-law" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge-gold">
+            <i class="bi bi-shield-shaded"></i> Nationally Ranked Commercial Litigators
+          </div>
+          <h1 class="hero-title">
+            Fierce Advocacy. <br>
+            <span>Uncompromising</span> Justice.
+          </h1>
+          <p class="hero-desc">
+            For over 25 years, JusticeShield Law Firm has represented Fortune 500 corporations, emerging tech startups, and visionary entrepreneurs through high-stakes commercial disputes and complex corporate transactions.
+          </p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn-gold">
+              <i class="bi bi-file-earmark-lock2-fill"></i> Request Case Evaluation
+            </a>
+            <a href="#practices" class="btn-outline-white">
+              <i class="bi bi-card-checklist"></i> Explore Practice Areas
+            </a>
+          </div>
+          <div class="hero-stats-row">
+            <div>
+              <div class="h-stat-num">98.4%</div>
+              <div class="h-stat-label">Trial Success Rate</div>
+            </div>
+            <div>
+              <div class="h-stat-num">$150M+</div>
+              <div class="h-stat-label">Recovered for Clients</div>
+            </div>
+            <div>
+              <div class="h-stat-num">25+</div>
+              <div class="h-stat-label">Years of Precedent</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-img-box">
+            <img src="images/hero.jpg" alt="Senior corporate advocate in modern executive office" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. QUICK FEATURES (Royal Addons: royalfeatures)
+       ========================================================================== -->
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-bank2"></i></div>
+          <div>
+            <h4>Trial Tested</h4>
+            <p>Proven track record in federal, appellate, and international arbitration.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-shield-check"></i></div>
+          <div>
+            <h4>Strategic Counsel</h4>
+            <p>Proactive risk mitigation and tailored deal structuring for companies.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-file-earmark-check"></i></div>
+          <div>
+            <h4>Clear Billing</h4>
+            <p>Predictable retainer arrangements and performance-driven fee models.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="f-icon-box"><i class="bi bi-headset"></i></div>
+          <div>
+            <h4>Direct Partner Access</h4>
+            <p>Senior partners directly lead your case, never handed off to juniors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT FIRM (Royal Addons: royalprofilecard)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="images/about.jpg" alt="Law books, gavel, and legal scales" />
+          <div class="about-badge-card">
+            <div class="num">25+</div>
+            <div class="txt">Years of Legal Mastery</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="section-subtitle">Firm Profile</span>
+          <h2 style="font-size: 34px; font-weight: 800; margin-bottom: 18px;">Built on Integrity, Driven by Results</h2>
+          <p style="font-size: 15.5px; color: #475569; margin-bottom: 16px;">
+            Founded in 2001, JusticeShield Law Firm provides elite corporate advisory and ferocious trial advocacy. Our team consists of former federal prosecutors, Ivy League graduates, and seasoned arbitrators.
+          </p>
+          <p style="font-size: 15.5px; color: #475569; margin-bottom: 24px;">
+            We understand that legal battles are commercial decisions. That's why we pair courtroom mastery with business acumen to achieve favorable settlements and landmark verdicts.
+          </p>
+
+          <ul class="about-points">
+            <li><i class="bi bi-check-circle-fill"></i> American College of Trial Lawyers Fellows</li>
+            <li><i class="bi bi-check-circle-fill"></i> Chambers USA Band 1 Ranked Litigators</li>
+            <li><i class="bi bi-check-circle-fill"></i> Comprehensive Cross-Border Capabilities</li>
+            <li><i class="bi bi-check-circle-fill"></i> Complete Client Confidentiality Protocol</li>
+          </ul>
+
+          <a href="#consultation" class="btn-gold">
+            <i class="bi bi-chat-quote-fill"></i> Schedule Partner Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. PRACTICE AREAS (Royal Addons: royalservices)
+       ========================================================================== -->
+  <section class="section" id="practices">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Core Capabilities</span>
+        <h2 class="section-title">Specialized <span>Practice Areas</span></h2>
+        <p class="section-desc">Comprehensive legal counsel tailored to corporate entities, executive boards, and individual stakeholders.</p>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Corporate & Business Law</h3>
+          <p>Entity formation, shareholder governance, vendor contracts, corporate restructuring, and regulatory compliance advisory.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h3>Commercial Litigation</h3>
+          <p>Breach of contract claims, fiduciary duty disputes, partner buyouts, fraud defense, and emergency injunction proceedings.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3>Mergers & Acquisitions</h3>
+          <p>Full-cycle M&A representation: legal due diligence, purchase agreements, antitrust clearance, and post-merger integration.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Intellectual Property</h3>
+          <p>Patent prosecution, trademark registration, trade secret enforcement, copyright licensing, and IP infringement litigation.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-users-gear"></i></div>
+          <h3>Employment & Executive Labor</h3>
+          <p>Executive severance negotiations, non-compete enforcement, workplace investigations, and wage-and-hour defense.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="practice-card">
+          <div class="p-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+          <h3>Commercial Real Estate</h3>
+          <p>Commercial leasing, land acquisition, zoning variances, construction contracts, and property title dispute resolution.</p>
+          <a href="#consultation" class="practice-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. ATTORNEYS TEAM (Royal Addons: royalteam)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="attorneys">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Legal Minds</span>
+        <h2 class="section-title">Our Managing <span>Partners</span></h2>
+        <p class="section-desc">Seasoned courtroom litigators and transaction strategists dedicated to your organization's success.</p>
+      </div>
+
+      <div class="attorneys-grid">
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-1.jpg" alt="Harrison Vance, Esq." />
+          </div>
+          <div class="attorney-body">
+            <h4>Harrison Vance, Esq.</h4>
+            <div class="attorney-title">Senior Managing Partner</div>
+            <p>Harvard Law alumnus with 25+ years litigating Fortune 100 commercial disputes and federal court matters.</p>
+          </div>
+        </div>
+
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-2.jpg" alt="Eleanor Sterling, JD" />
+          </div>
+          <div class="attorney-body">
+            <h4>Eleanor Sterling, JD</h4>
+            <div class="attorney-title">Head of Corporate & M&A</div>
+            <p>Advisor on over $4.2B in mid-market mergers, cross-border acquisitions, and private equity investments.</p>
+          </div>
+        </div>
+
+        <div class="attorney-card">
+          <div class="attorney-img">
+            <img src="images/attorney-3.jpg" alt="Marcus Thorne, LLM" />
+          </div>
+          <div class="attorney-body">
+            <h4>Marcus Thorne, LLM</h4>
+            <div class="attorney-title">Lead Trial Litigator</div>
+            <p>Former federal prosecutor specializing in commercial fraud, white-collar defense, and international arbitration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. CASE EVALUATION (Royal Addons: royalform)
+       ========================================================================== -->
+  <section class="section" id="consultation">
+    <div class="container">
+      <div class="eval-section-grid">
+        <div class="eval-form-box">
+          <span class="section-subtitle">Confidential Intake</span>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Request a Case Evaluation</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-bottom: 26px;">
+            All communications are strictly covered under attorney-client privilege.
+          </p>
+
+          <form id="caseEvalForm">
+            <div class="eval-grid">
+              <div>
+                <label class="eval-label" for="clientName">Full Name *</label>
+                <input type="text" id="clientName" class="eval-input" placeholder="David Vance" required />
+              </div>
+              <div>
+                <label class="eval-label" for="clientCompany">Company / Entity</label>
+                <input type="text" id="clientCompany" class="eval-input" placeholder="Vance Global Holdings" />
+              </div>
+              <div>
+                <label class="eval-label" for="clientPhone">Direct Phone *</label>
+                <input type="tel" id="clientPhone" class="eval-input" placeholder="+1 (555) 234-5678" required />
+              </div>
+              <div>
+                <label class="eval-label" for="clientPracticeArea">Legal Matter *</label>
+                <select id="clientPracticeArea" class="eval-input" required>
+                  <option value="" disabled selected>Select Practice Area</option>
+                  <option value="Commercial Litigation">Commercial Litigation</option>
+                  <option value="Corporate Law & Contracts">Corporate Law & Contracts</option>
+                  <option value="Mergers & Acquisitions">Mergers & Acquisitions</option>
+                  <option value="Intellectual Property Dispute">Intellectual Property Dispute</option>
+                  <option value="Employment & Labor">Employment & Labor</option>
+                  <option value="Emergency Injunction">Emergency Injunction</option>
+                </select>
+              </div>
+              <div class="eval-full">
+                <label class="eval-label" for="caseSummary">Brief Description of the Matter</label>
+                <textarea id="caseSummary" class="eval-input" rows="3" placeholder="Provide background on opposing party, dispute value, or urgent deadlines..."></textarea>
+              </div>
+              <div class="eval-full">
+                <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; padding: 16px;">
+                  <i class="bi bi-shield-lock-fill"></i> Submit Privileged Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="eval-side-panel">
+          <div>
+            <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 12px;">Our Client Commitment</h3>
+            <p style="font-size: 13.5px; color: #cbd5e1; line-height: 1.6;">When you retain JusticeShield Law Firm, you receive:</p>
+            <ul class="eval-promise-list">
+              <li><i class="bi bi-shield-fill-check"></i> Strict Attorney-Client Confidentiality</li>
+              <li><i class="bi bi-clock-fill"></i> Same-Day Callback from Senior Counsel</li>
+              <li><i class="bi bi-file-earmark-ruled"></i> Clear Fee Structure with No Surprise Billings</li>
+              <li><i class="bi bi-award-fill"></i> Proven Track Record with Over $150M Recovered</li>
+            </ul>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.08); padding: 20px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 11.5px; text-transform: uppercase; color: #c59b27; font-weight: 700; letter-spacing: 0.1em;">24/7 Urgent Legal Helpline</div>
+            <a href="tel:+18005555291" style="font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: none; display: block; margin-top: 4px;">+1 (800) 555-LAWS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. REVIEWS (Royal Addons: royalreview)
+       ========================================================================== -->
+  <section class="section section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Proven Precedents</span>
+        <h2 class="section-title">Client Case <span>Victories</span></h2>
+        <p class="section-desc">What executives, corporate counsel, and founders say about our representation.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="r-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="r-quote">"Harrison Vance and his litigation team defended our SaaS company against a $24M trade secret claim. They secured a complete dismissal before trial. Unmatched legal instincts."</p>
+          <div class="r-author">
+            <h5>Robert Langford</h5>
+            <span>CEO, CloudScale Technologies</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="r-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="r-quote">"Eleanor Sterling navigated our cross-border acquisition with surgical precision. Her contract foresight saved us millions during closing. The best corporate counsel in New York."</p>
+          <div class="r-author">
+            <h5>Samantha Reynolds</h5>
+            <span>Managing Director, Apex Capital</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="r-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="r-quote">"When an urgent partnership buyout turned contentious, Marcus Thorne resolved the shareholder impasse within 3 weeks without damaging our brand reputation."</p>
+          <div class="r-author">
+            <h5>Arthur Pendelton</h5>
+            <span>Founder, Manhattan Logistics Group</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. LEGAL FAQ (Royal Addons: royalaccordion)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Questions & Answers</span>
+        <h2 class="section-title">Legal Retainer <span>FAQ</span></h2>
+        <p class="section-desc">Important information regarding case intake, fee models, and representation agreements.</p>
+      </div>
+
+      <div class="faq-box">
+        <div class="faq-row active">
+          <button class="faq-btn">
+            <span>What happens during our initial consultation?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            During your initial consultation, a senior partner reviews your case facts, contracts, and relevant evidence under complete confidentiality. We identify immediate legal risks, assess dispute exposure, and provide strategic next steps.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-btn">
+            <span>What fee arrangements does JusticeShield offer?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            We offer transparent fee models tailored to the matter: hourly billing with detailed itemized invoices, monthly flat-fee corporate general counsel retainers, and hybrid contingency structures for qualifying commercial claims.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-btn">
+            <span>How fast can you file an emergency preliminary injunction?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            For critical matters involving asset dissipation, trade secret theft, or contract breaches, our rapid-response litigation unit can draft and file an Order to Show Cause and Temporary Restraining Order (TRO) within 24 to 48 hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER (Royal Elementor Theme Style)
+       ========================================================================== -->
+  <footer class="royal-law-footer">
+    <div class="container">
+      <div class="f-grid">
+        <div class="f-col">
+          <h3 class="site-title" style="color: #ffffff; font-size: 22px; margin-bottom: 12px;">Justice<span>Shield</span></h3>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.7;">
+            Commercial trial attorneys and corporate advisors providing sophisticated representation across New York and federal jurisdictions.
+          </p>
+        </div>
+
+        <div class="f-col">
+          <h4>Practice Areas</h4>
+          <ul class="f-links">
+            <li><a href="#practices">Corporate Law</a></li>
+            <li><a href="#practices">Commercial Litigation</a></li>
+            <li><a href="#practices">Mergers & Acquisitions</a></li>
+            <li><a href="#practices">Intellectual Property</a></li>
+            <li><a href="#practices">Labor & Employment</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>The Firm</h4>
+          <ul class="f-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Firm</a></li>
+            <li><a href="#attorneys">Managing Partners</a></li>
+            <li><a href="#faq">Client FAQ</a></li>
+            <li><a href="#consultation">Free Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>New York Chambers</h4>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-geo-alt-fill text-warning"></i> 60 Wall St, 28th Fl, New York, NY 10005
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-telephone-fill text-warning"></i> +1 (800) 555-5291
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 16px;">
+            <i class="bi bi-envelope-fill text-warning"></i> counsel@justiceshield.com
+          </p>
+          <a href="#consultation" class="btn-gold" style="padding: 10px 18px; font-size: 13px;">
+            Schedule Case Review
+          </a>
+        </div>
+      </div>
+
+      <div class="f-bottom">
+        <p>&copy; 2026 JusticeShield Law Firm. Built for Royal Elementor Theme & Royal Addons. Powered by <a href="https://www.royaltechbd.com/" target="_blank">Royal Technologies</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Confirmation -->
+  <div class="modal-overlay" id="evalModal">
+    <div class="modal-card">
+      <div style="width: 60px; height: 60px; background: #fefce8; color: #c59b27; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 16px auto; border: 1px solid #fef08a;">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Privileged Intake Received</h3>
+      <p style="font-size: 15px; color: #475569; margin-bottom: 14px;">
+        Thank you, <strong id="modalClientName">Counsel</strong>. Your privileged inquiry regarding <span id="modalArea" style="color: #c59b27; font-weight: 700;">Legal Matter</span> has been assigned to a senior partner.
+      </p>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 22px;">
+        Our chambers will contact you within 2 business hours for a conflict check and consultation scheduling.
+      </p>
+      <button class="btn-gold" id="closeEvalModal" style="width: 100%; justify-content: center;">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
