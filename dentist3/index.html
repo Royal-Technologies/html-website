@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexOrtho & Maxillofacial Dental Surgery Center</title>
+  <meta name="description" content="Advanced orthodontic bite correction, 3D computer-guided dental implants, and hospital-grade maxillofacial surgery.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'><path d='M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z'/></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Royal Elementor Theme Header & Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/header-top.php]
+       Top Bar with 24/7 Trauma Emergency Hotline & Multi-Branch Switcher
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <span class="emergency-live-pill">
+          <span class="pulse-dot"></span> 24/7 Acute Dental Trauma Dispatch
+        </span>
+        <a href="tel:+12125558800" style="font-weight: 700; color: #ffffff;">
+          <i class="bi bi-telephone-fill text-danger"></i> +1 (212) 555-8800
+        </a>
+      </div>
+      <div class="topright tablethide">
+        <span><i class="bi bi-geo-alt-fill text-teal"></i> 3 New York City Centers: Downtown • Midtown • North Point</span>
+        <a href="#branches"><i class="bi bi-clock-fill"></i> Branch Hours</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/headerstyle1.php]
+       Branding Header Area (Logo + Quick Contacts)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <!-- Center/Left: Branding -->
+      <div class="center">
+        <a href="index.html" class="branding-link">
+          <div class="logo-icon-surgical">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+          <div class="site-branding-text">
+            <h1 class="site-title">Apex<span>Ortho</span> & Surgery</h1>
+            <p class="site-description">Advanced Orthodontics & Maxillofacial Care</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right: Fast Triage & Direct Consult Info -->
+      <div class="right tablethide">
+        <div class="clinic-quick-contact">
+          <div class="quick-icon">
+            <i class="bi bi-hospital"></i>
+          </div>
+          <div class="quick-info">
+            <span class="quick-label">Surgical Coordinator</span>
+            <a href="tel:+12125558801">+1 (212) 555-8801</a>
+          </div>
+        </div>
+
+        <div class="clinic-quick-contact">
+          <div class="quick-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <div class="quick-info">
+            <span class="quick-label">Board Certified</span>
+            <span style="font-size: 14.5px; font-weight: 700; color: #0f172a;">AAOMS & AAO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Hamburger Trigger -->
+      <div class="navigation-icon desktophide" id="navigationIcon" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       [ROYAL THEME NAV: template-parts/headerstyle1.php - Full-Width Menu Bar]
+       Streamlined Desktop Navigation with Royal Action Button
+       ========================================================================== -->
+  <nav class="desktopmenu">
+    <div class="container">
+      <ul class="royalmenu">
+        <li class="current-menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item-has-children">
+          <a href="#specialties">Specialties</a>
+          <ul class="sub-menu">
+            <li><a href="#specialties"><i class="bi bi-arrow-right-short text-teal"></i> 3D Guided Implants</a></li>
+            <li><a href="#specialties"><i class="bi bi-arrow-right-short text-teal"></i> Wisdom Tooth Extraction</a></li>
+            <li><a href="#specialties"><i class="bi bi-arrow-right-short text-teal"></i> Damon Braces & Aligners</a></li>
+            <li><a href="#specialties"><i class="bi bi-arrow-right-short text-teal"></i> TMJ & Jaw Surgery</a></li>
+            <li><a href="#specialties"><i class="bi bi-arrow-right-short text-teal"></i> Bone Grafting & Sinus Lift</a></li>
+          </ul>
+        </li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#surgeons">Surgeons</a></li>
+        <li><a href="#triage">Contact</a></li>
+      </ul>
+
+      <!-- Royal Action Button (matches royal_header_action_button()) -->
+      <a href="#triage" class="royal-action-btn">
+        <i class="bi bi-calendar2-plus"></i> Schedule Surgery
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-navigation-overlay" id="mobileNavigationOverlay"></div>
+  <div class="mobile-navigation-drawer" id="mobileNavigationDrawer">
+    <div class="mobile-drawer-header">
+      <h3 class="site-title" style="font-size: 20px; color: #ffffff;">Apex<span>Ortho</span></h3>
+      <button class="mobile-drawer-close" aria-label="Close Drawer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#specialties">Specialties</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#branches">Branches</a></li>
+      <li><a href="#surgeons">Surgeons</a></li>
+      <li><a href="#triage">Contact & Triage</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="#triage" class="btn-teal" style="width: 100%; justify-content: center;">
+        Schedule Surgery
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO SECTION & INTERACTIVE SYMPTOM MATCHER
+       ========================================================================== -->
+  <section class="hero-surgical" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge-surgical">
+            <i class="bi bi-shield-plus"></i> Center of Surgical & Orthodontic Excellence
+          </div>
+          <h1 class="hero-title">
+            Advanced Precision In <br>
+            <span class="text-teal">Orthodontics & Oral Surgery.</span>
+          </h1>
+          <p class="hero-desc">
+            Equipped with 3D CBCT tomographic imaging, piezosurgery micro-vibrations, and computer-guided implant robotics. Restoring complex bites and dental structures with minimal recovery time.
+          </p>
+          <div class="hero-actions">
+            <a href="#triage" class="btn-teal">
+              <i class="bi bi-calendar-check"></i> Book Surgical Consult
+            </a>
+            <a href="#branches" class="btn-outline-white">
+              <i class="bi bi-geo-alt"></i> Find Nearest Branch
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Symptom Matcher Widget -->
+        <div class="symptom-card">
+          <h3><i class="bi bi-search-heart text-teal"></i> Treatment Quick-Finder</h3>
+          <p>Select your primary symptom or clinical requirement to view recommended treatment pathways:</p>
+          <div class="symptom-chips">
+            <span class="symptom-chip active" data-symptom="crowding">Severe Crowding / Misalignment</span>
+            <span class="symptom-chip" data-symptom="wisdom">Impacted Wisdom Teeth</span>
+            <span class="symptom-chip" data-symptom="implant">Missing Tooth / Failed Root</span>
+            <span class="symptom-chip" data-symptom="tmj">Jaw Clicking & TMJ Pain</span>
+          </div>
+          <div class="symptom-match-box" id="symptomMatchText">
+            <strong>Selected:</strong> Recommended: Damon Clear Braces or Invisalign Platinum Aligners (12-18 Months)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ADVANCED TECHNOLOGY SHOWCASE (Royal Addons: royalfeatures)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="technology">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Surgical Innovations</span>
+        <h2 class="section-title">Ultra-Precise <span>Diagnostic Technology</span></h2>
+        <p class="section-desc">We leverage hospital-grade 3D surgical diagnostics to ensure predictable, minimally invasive treatments.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="bi bi-radar"></i></div>
+          <h4>3D CBCT Scanner</h4>
+          <p>High-resolution 3D volumetric scans showing bone density, nerve canals, and sinus floors with 90% lower radiation.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="bi bi-magic"></i></div>
+          <h4>Intraoral Trios Scan</h4>
+          <p>Scans full dental arches in 45 seconds with sub-millimeter precision, eliminating gag-inducing putty impressions.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="bi bi-soundwave"></i></div>
+          <h4>Piezosurgery System</h4>
+          <p>Ultrasonic micro-vibrations cut bone selectively without damaging delicate soft tissue, blood vessels, or nerves.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon"><i class="bi bi-cpu"></i></div>
+          <h4>Dynamic Guided Surgery</h4>
+          <p>GPS-like optical tracking guides implant drill angle and depth in real-time, eliminating freehand guesswork.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SPECIALIZED SURGICAL SERVICES (Royal Addons: royalservices)
+       ========================================================================== -->
+  <section class="section" id="specialties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Clinical Specialties</span>
+        <h2 class="section-title">Specialized Surgical & <span>Orthodontic Care</span></h2>
+        <p class="section-desc">Comprehensive oral surgery and advanced orthodontic treatments delivered by dual board-certified specialists.</p>
+      </div>
+
+      <div class="surgical-services-grid">
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-tooth"></i></div>
+          <span class="spec-tag">Implantology</span>
+          <h3>3D Guided Dental Implants</h3>
+          <p>Robotic-assisted placement of Swiss titanium & zirconia implants with bone graft integration and same-day provisional teeth.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore Implants <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="spec-tag">Maxillofacial</span>
+          <h3>Wisdom Teeth Extraction</h3>
+          <p>Gentle extraction of deeply impacted third molars under IV conscious sedation, preventing nerve impingement and cyst formation.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore Surgery <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-bars-staggered"></i></div>
+          <span class="spec-tag">Orthodontics</span>
+          <h3>Damon System & Clear Aligners</h3>
+          <p>Low-friction self-ligating brackets and custom transparent aligners designed to correct severe crossbites, overbites, and open bites.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore Ortho <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-bone"></i></div>
+          <span class="spec-tag">Reconstruction</span>
+          <h3>Bone Graft & Sinus Augmentation</h3>
+          <p>Regenerating lost jaw bone volume using recombinant growth factors (PRP/PRF) to prepare a solid foundation for permanent implants.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore Grafting <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-head-side-virus"></i></div>
+          <span class="spec-tag">Therapy</span>
+          <h3>TMJ Disorder & Sleep Apnea</h3>
+          <p>Neuromuscular joint decompression, custom night splints, and minimally invasive arthrocentesis for chronic jaw pain relief.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore TMJ Care <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="surgical-service-card">
+          <div class="s-icon-box"><i class="fa-solid fa-syringe"></i></div>
+          <span class="spec-tag">Comfort Care</span>
+          <h3>IV Sedation & Sleep Dentistry</h3>
+          <p>Board-certified anesthesiologist administered intravenous sedation ensuring complete pain-free comfort for anxious surgical patients.</p>
+          <a href="#triage" style="font-size: 13.5px; font-weight: 700; color: #0d9488; text-decoration: none;">Explore Sedation <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SEVERE BITE BEFORE & AFTER (Royal Addons: royalimagecompare)
+       ========================================================================== -->
+  <section class="section section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Clinical Outcomes</span>
+        <h2 class="section-title">Severe Bite <span>Correction Case</span></h2>
+        <p class="section-desc">Slide to see severe Class II overbite and anterior crowding resolved with orthodontic alignment and implant rehabilitation.</p>
+      </div>
+
+      <div class="ortho-compare-box">
+        <div class="compare-wrapper" id="orthoCompareSlider">
+          <div class="compare-img compare-before" style="background-image: url('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="compare-img compare-after" id="orthoCompareAfter">
+            <div class="compare-img-inner" style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80');"></div>
+          </div>
+          <div class="compare-handle" id="orthoCompareHandle">
+            <i class="bi bi-arrows-expand-vertical" style="transform: rotate(90deg);"></i>
+          </div>
+        </div>
+        <p style="text-align: center; font-size: 13.5px; color: #64748b; margin-top: 14px; margin-bottom: 0;">
+          <i class="bi bi-hand-index-thumb"></i> Drag the teal slider horizontally to compare pre-op and post-op surgical results
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. MULTI-BRANCH CLINIC LOCATOR (Royal Addons: royalbrancheslocator)
+       ========================================================================== -->
+  <section class="section section-bg-teal" id="branches">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Convenient Locations</span>
+        <h2 class="section-title">Find Your <span>Nearest Surgical Center</span></h2>
+        <p class="section-desc">Select an ApexOrtho branch to view surgical suite hours, address, direct phone, and practicing surgeons.</p>
+      </div>
+
+      <div class="branches-nav">
+        <button class="branch-tab-btn active" data-branch="downtown">Downtown Financial District</button>
+        <button class="branch-tab-btn" data-branch="midtown">Midtown Manhattan Pavilion</button>
+        <button class="branch-tab-btn" data-branch="northpoint">North Point Trauma Suite</button>
+      </div>
+
+      <div class="branch-content-card">
+        <div class="branch-info">
+          <h3 id="branchTitle">Downtown Surgical & Implant Center</h3>
+          <ul class="branch-details-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span id="branchAddress">100 Broadway, Suite 1400, Financial District, NY 10005</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+12125558801" id="branchPhone" style="color: #0f172a; font-weight: 700; text-decoration: none;">+1 (212) 555-8801</a>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span id="branchHours">Mon-Fri 7:30 AM – 6:30 PM | Sat 8:00 AM – 3:00 PM</span>
+            </li>
+            <li>
+              <i class="bi bi-person-badge-fill"></i>
+              <span id="branchSurgeons">Dr. Arthur Sterling, DDS & Dr. Maya Lin, MS</span>
+            </li>
+          </ul>
+          <a href="#triage" class="btn-teal">
+            <i class="bi bi-calendar-event"></i> Book at this Center
+          </a>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="ApexOrtho surgical facility" style="width: 100%; height: 260px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. SURGEONS TEAM (Royal Addons: royalteam)
+       ========================================================================== -->
+  <section class="section" id="surgeons">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Board Certified Clinicians</span>
+        <h2 class="section-title">Our Surgical <span>Leadership</span></h2>
+        <p class="section-desc">Surgeons holding double degrees in medicine and dentistry with specialized hospital residency training.</p>
+      </div>
+
+      <div class="surgeons-grid">
+        <div class="surgeon-card">
+          <div class="surgeon-img-box">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Arthur Sterling" />
+          </div>
+          <div class="surgeon-body">
+            <h4>Dr. Arthur Sterling, DDS, MD</h4>
+            <div class="surgeon-creds">Chief Oral & Maxillofacial Surgeon</div>
+            <p>Fellow of the American College of Surgeons with 20+ years specializing in complex bone grafting and robotic-guided full-arch implants.</p>
+          </div>
+        </div>
+
+        <div class="surgeon-card">
+          <div class="surgeon-img-box">
+            <img src="https://images.unsplash.com/photo-1594824813576-96b541315b7a?auto=format&fit=crop&w=600&q=80" alt="Dr. Maya Lin" />
+          </div>
+          <div class="surgeon-body">
+            <h4>Dr. Maya Lin, MS, DMD</h4>
+            <div class="surgeon-creds">Director of Orthodontics</div>
+            <p>Columbia Orthodontics graduate specializing in accelerated surgical orthodontics, impacted canine extrusion, and Damon bracket systems.</p>
+          </div>
+        </div>
+
+        <div class="surgeon-card">
+          <div class="surgeon-img-box">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Dr. Tariq Rahman" />
+          </div>
+          <div class="surgeon-body">
+            <h4>Dr. Tariq Rahman, DMD</h4>
+            <div class="surgeon-creds">Craniofacial & TMJ Specialist</div>
+            <p>Pioneer in non-surgical TMJ arthrocentesis, splint deprogramming, and sleep-related obstructive airway expansion therapies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. SURGICAL CONSULTATION & TRIAGE (Royal Addons: royalform)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="triage">
+    <div class="container">
+      <div class="triage-grid">
+        <div class="triage-form-card">
+          <span class="section-subtitle">Fast-Track Triage</span>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Schedule Surgical Consultation</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-bottom: 26px;">Submit your consultation request. Urgent trauma cases are triaged immediately.</p>
+
+          <form id="triageForm">
+            <div class="t-form-grid">
+              <div>
+                <label class="t-label" for="tName">Patient Name *</label>
+                <input type="text" id="tName" class="t-input" placeholder="Michael Vance" required />
+              </div>
+              <div>
+                <label class="t-label" for="tPhone">Direct Phone *</label>
+                <input type="tel" id="tPhone" class="t-input" placeholder="+1 (555) 345-6789" required />
+              </div>
+              <div>
+                <label class="t-label" for="tProcedure">Surgical Specialty *</label>
+                <select id="tProcedure" class="t-input" required>
+                  <option value="" disabled selected>Select Clinical Need</option>
+                  <option value="3D Guided Dental Implants">3D Guided Dental Implants</option>
+                  <option value="Wisdom Teeth Extraction">Wisdom Teeth Extraction</option>
+                  <option value="Orthodontics & Braces">Orthodontic Bite Correction</option>
+                  <option value="TMJ Therapy & Splint">TMJ Joint Disorder</option>
+                  <option value="Bone Grafting">Bone Graft / Sinus Augmentation</option>
+                  <option value="Emergency Tooth Trauma">Emergency Dental Trauma</option>
+                </select>
+              </div>
+              <div>
+                <label class="t-label" for="tUrgency">Urgency Level *</label>
+                <select id="tUrgency" class="t-input" required>
+                  <option value="Standard Consultation">Standard Consultation (This Week)</option>
+                  <option value="Priority within 48h">Priority (Within 48 Hours)</option>
+                  <option value="Acute Same-Day Emergency">Acute Same-Day Emergency</option>
+                </select>
+              </div>
+              <div class="t-span-2">
+                <label class="t-label" for="tNotes">Clinical Notes & Symptoms</label>
+                <textarea id="tNotes" class="t-input" rows="3" placeholder="Describe symptoms, swelling, past dental history, or referral notes..."></textarea>
+              </div>
+              <div class="t-span-2">
+                <button type="submit" class="btn-teal" style="width: 100%; justify-content: center; padding: 16px;">
+                  <i class="bi bi-send-check"></i> Submit Triage Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="emergency-info-panel">
+          <div>
+            <h3 style="font-size: 22px; color: #ffffff; margin-bottom: 8px;">Dental Trauma Emergency Protocol</h3>
+            <p style="font-size: 13.5px; color: #cbd5e1; line-height: 1.6;">Follow these immediate measures if you experience dental or facial trauma:</p>
+            <ul class="emergency-guide-list">
+              <li>
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div>
+                  <strong>Knocked-Out Adult Tooth:</strong> Keep tooth moist in cold milk or saliva. Do not scrub the root. Arrive within 60 minutes for re-implantation.
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div>
+                  <strong>Severe Facial Swelling:</strong> Indicates an active spreading infection. Contact our on-call trauma surgeon immediately.
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div>
+                  <strong>Broken Orthodontic Wire:</strong> Cover sharp end with orthodontic wax. Do not cut wire yourself.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div style="background: rgba(255,255,255,0.08); padding: 18px; border-radius: 12px; text-align: center;">
+            <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #2dd4bf; font-weight: 700;">24/7 Trauma Helpline</span>
+            <div style="font-size: 22px; font-weight: 800; color: #ffffff; margin-top: 4px;">+1 (212) 555-8800</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CLINICAL FAQ (Royal Addons: royalaccordion)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Patient Guidance</span>
+        <h2 class="section-title">Oral Surgery & Ortho <span>FAQ</span></h2>
+        <p class="section-desc">Essential information on surgical healing, anesthesia options, and orthodontic care.</p>
+      </div>
+
+      <div class="c-faq-container">
+        <div class="c-faq-item active">
+          <button class="c-faq-q">
+            <span>What type of anesthesia is used during oral surgery?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="c-faq-a">
+            We provide multiple tiers of comfort: local computerized numbing, nitrous oxide laughing gas, and Board-Certified IV conscious sedation. With IV sedation, you enter a deeply relaxed twilight sleep and wake with no memory of the procedure.
+          </div>
+        </div>
+
+        <div class="c-faq-item">
+          <button class="c-faq-q">
+            <span>How long is the recovery after wisdom teeth removal?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="c-faq-a">
+            Thanks to our ultrasonic piezosurgery technology and PRF healing membranes, acute recovery takes just 2 to 3 days. Most patients return to school or desk work within 48 to 72 hours.
+          </div>
+        </div>
+
+        <div class="c-faq-item">
+          <button class="c-faq-q">
+            <span>Can adults get braces or aligners effectively?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="c-faq-a">
+            Absolutely! Over 40% of our orthodontic patients are adults. Modern clear aligners and discreet Damon clear brackets gently move teeth into alignment at any age with healthy bone support.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER (Royal Elementor Theme Style)
+       ========================================================================== -->
+  <footer class="apex-footer">
+    <div class="container">
+      <div class="a-footer-grid">
+        <div class="a-footer-col">
+          <h3 class="site-title" style="color: #ffffff; font-size: 22px; margin-bottom: 12px;">Apex<span>Ortho</span> & Surgery</h3>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.7;">
+            Tri-state regional center of excellence for maxillofacial reconstructive surgery, computer-guided dental implants, and adult orthodontic alignment.
+          </p>
+        </div>
+
+        <div class="a-footer-col">
+          <h4>Surgical Specialties</h4>
+          <ul class="a-footer-links">
+            <li><a href="#specialties">3D Guided Implants</a></li>
+            <li><a href="#specialties">Wisdom Teeth Extraction</a></li>
+            <li><a href="#specialties">Damon Clear Braces</a></li>
+            <li><a href="#specialties">Sinus Lift & Bone Graft</a></li>
+            <li><a href="#specialties">TMJ Neuromuscular Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="a-footer-col">
+          <h4>Our Centers</h4>
+          <ul class="a-footer-links">
+            <li><a href="#branches">Downtown Surgery Center</a></li>
+            <li><a href="#branches">Midtown Orthodontic Pavilion</a></li>
+            <li><a href="#branches">North Point Trauma Unit</a></li>
+            <li><a href="#technology">Diagnostic 3D Technology</a></li>
+            <li><a href="#surgeons">Board Certified Surgeons</a></li>
+          </ul>
+        </div>
+
+        <div class="a-footer-col">
+          <h4>Emergency Dispatch</h4>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-telephone-fill text-teal"></i> 24/7 Hotline: +1 (212) 555-8800
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 16px;">
+            <i class="bi bi-envelope-fill text-teal"></i> triage@apexorthosurgery.com
+          </p>
+          <a href="#triage" class="btn-teal" style="font-size: 13px; padding: 10px 18px;">
+            Fast-Track Consultation
+          </a>
+        </div>
+      </div>
+
+      <div class="a-footer-bottom">
+        <p>&copy; 2026 ApexOrtho & Maxillofacial Surgery Center. Built for Royal Elementor Theme & Royal Addons for Elementor. Crafted by <a href="https://www.royaltechbd.com/" target="_blank">Royal Technologies</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-wrapper" id="triageModal">
+    <div class="modal-content-box">
+      <div style="width: 60px; height: 60px; background: #f0fdfa; color: #0d9488; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 16px auto; border: 1px solid #ccfbf1;">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Triage Request Received</h3>
+      <p style="font-size: 15px; color: #475569; margin-bottom: 14px;">
+        Thank you, <strong id="triagePatientName">Patient</strong>. Your request for <span id="triageCaseSummary" style="color: #0d9488; font-weight: 700;">Procedure</span> has been submitted to our clinical triage officer.
+      </p>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 22px;">
+        A nurse coordinator will review your case and contact you shortly with scheduled appointment times.
+      </p>
+      <button class="btn-teal" id="closeTriageModal" style="width: 100%; justify-content: center;">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

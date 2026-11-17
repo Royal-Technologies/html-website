@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentCare Pro – Modern Family & Dental Implant Clinic</title>
+  <meta name="description" content="Experience pain-free dental care, cosmetic smile makeovers, and precision dental implants with board-certified dentists.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'><path d='M19.5 7.5C18 5 15.5 3 12 3S6 5 4.5 7.5C3.3 9.5 3.3 12 4.5 14.5C5.8 17.2 8 21 10 21C11.5 21 11.5 19 12 19C12.5 19 12.5 21 14 21C16 21 18.2 17.2 19.5 14.5C20.7 12 20.7 9.5 19.5 7.5Z'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Theme Header & Custom Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/header-top.php]
+       Header Top Bar with Contact Info, Emergency Hotline, and Working Hours
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <a href="tel:+18005553368">
+          <i class="bi bi-telephone-fill"></i> +1 (800) 555-DENT
+        </a>
+        <a href="mailto:care@dentcarepro.com">
+          <i class="bi bi-envelope-fill"></i> care@dentcarepro.com
+        </a>
+        <span class="clinic-address">
+          <i class="bi bi-geo-alt-fill"></i> 742 Evergreen Terrace, Medical District, NY
+        </span>
+      </div>
+      <div class="topright">
+        <span class="top-badge">
+          <i class="bi bi-shield-check"></i> Certified Dental Clinic
+        </span>
+        <div class="top-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/headerstyle2.php]
+       Middle Header with Logo, Phone/Email info badges, and Action Button
+       ========================================================================== -->
+  <header class="header custom-header-style-2">
+    <div class="container">
+      <div class="header-flex-wrapper">
+        <!-- Header Left: Logo Branding -->
+        <div class="header-left">
+          <a href="index.html" class="branding-link">
+            <div class="logo-badge">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <div class="site-branding-text">
+              <h1 class="site-title">Dent<span>Care</span> Pro</h1>
+              <p class="site-description">Family & Implant Dental Studio</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Header Right: Contact details + Royal Action Button -->
+        <div class="header-right tablethide">
+          <div class="contact-info-wrapper">
+            <div class="contact-detail phone">
+              <div class="detail-icon">
+                <i class="bi bi-telephone-outbound"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">24/7 Dental Emergency</span>
+                <a href="tel:+18005553368">+1 (800) 555-3368</a>
+              </div>
+            </div>
+            <div class="contact-detail email">
+              <div class="detail-icon">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Opening Hours</span>
+                <span class="detail-value">Mon - Sat: 8am - 8pm</span>
+              </div>
+            </div>
+          </div>
+          <!-- Royal Action Button (matches royal_header_action_button()) -->
+          <div class="header-action-button">
+            <a href="#appointment" class="btn-request-proposal">
+              <i class="bi bi-calendar2-check"></i> Book Appointment
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Trigger -->
+        <div class="mobile-menu-trigger desktophide tabletshow">
+          <div class="navigation-icon" id="navigationIcon" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       [ROYAL THEME NAV: template-parts/headerstyle2.php - Navigation Menu]
+       Desktop Menu with Royal Menu styles, Dropdown & Live Search
+       ========================================================================== -->
+  <nav class="desktopmenu custom-nav-style-2">
+    <div class="container">
+      <div class="nav-menu-wrapper">
+        <ul class="royalmenu">
+          <li class="current-menu-item"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="menu-item-has-children">
+            <a href="#services">Treatments</a>
+            <ul class="sub-menu">
+              <li><a href="#services"><i class="bi bi-check2-circle text-primary"></i> General Dentistry</a></li>
+              <li><a href="#services"><i class="bi bi-check2-circle text-primary"></i> Dental Implants</a></li>
+              <li><a href="#services"><i class="bi bi-check2-circle text-primary"></i> Teeth Whitening</a></li>
+              <li><a href="#services"><i class="bi bi-check2-circle text-primary"></i> Invisalign Braces</a></li>
+              <li><a href="#services"><i class="bi bi-check2-circle text-primary"></i> Pediatric Care</a></li>
+            </ul>
+          </li>
+          <li><a href="#team">Our Doctors</a></li>
+          <li><a href="#appointment">Contact</a></li>
+        </ul>
+
+        <div class="menu-search-wrapper">
+          <form role="search" method="get" class="menu-search-form" onsubmit="event.preventDefault();">
+            <input type="search" class="menu-search-field" placeholder="Search treatment..." aria-label="Search" />
+            <button type="submit" class="menu-search-submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-navigation-overlay" id="mobileNavigationOverlay"></div>
+  <div class="mobile-navigation-drawer" id="mobileNavigationDrawer">
+    <div class="mobile-drawer-header">
+      <div class="site-branding-text">
+        <h3 class="site-title" style="font-size: 20px;">Dent<span>Care</span> Pro</h3>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close Menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Treatments</a></li>
+      <li><a href="#team">Our Doctors</a></li>
+      <li><a href="#appointment">Contact & Appointment</a></li>
+    </ul>
+    <div class="mobile-drawer-contact">
+      <a href="#appointment" class="btn-primary" style="width: 100%; justify-content: center; margin-bottom: 12px;">
+        Book Appointment
+      </a>
+      <p style="font-size: 13px; color: #64748b; margin: 0; text-align: center;">
+        <i class="bi bi-telephone-fill"></i> +1 (800) 555-3368
+      </p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO SECTION (Royal Addons: royalsliderlanding / royalheadingdual)
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="bi bi-award-fill"></i> #1 Rated Dental Practice in NY
+          </div>
+          <h1 class="hero-title">
+            Healthy Teeth, <br>
+            <span class="text-gradient">Confident Smiles</span> <br>
+            For The Whole Family.
+          </h1>
+          <p class="hero-desc">
+            We provide gentle, modern, and comprehensive dental solutions — from routine preventive checkups to advanced 3D-guided dental implants and cosmetic makeovers.
+          </p>
+          <div class="hero-actions">
+            <a href="#appointment" class="btn-primary">
+              <i class="bi bi-calendar-event"></i> Schedule Your Visit
+            </a>
+            <a href="#services" class="btn-secondary">
+              <i class="bi bi-play-circle"></i> Explore Treatments
+            </a>
+          </div>
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">18k+</span>
+              <span class="stat-label">Happy Patients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Years of Excellence</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">99.4%</span>
+              <span class="stat-label">Implant Success</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <div class="hero-main-img-box">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Dentist consulting smiling patient in modern clinic" />
+          </div>
+          <!-- Floating Trust Badge -->
+          <div class="floating-trust-pill">
+            <div class="pill-icon">
+              <i class="bi bi-shield-fill-check"></i>
+            </div>
+            <div>
+              <p class="pill-title">100% Pain-Free Guarantee</p>
+              <p class="pill-subtitle">Gentle computerized anesthesia</p>
+            </div>
+          </div>
+          <!-- Floating Rating Badge -->
+          <div class="floating-rating-pill">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <span class="rating-score">4.9/5 (1,240+ Reviews)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. QUICK FEATURES (Royal Addons: royalfeatures)
+       ========================================================================== -->
+  <section class="quick-features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <div>
+            <h4>Emergency Care</h4>
+            <p>Same-day relief for severe toothache, broken crowns, or trauma.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div>
+            <h4>3D Digital Scanning</h4>
+            <p>No messy impressions. Ultra-precise digital 3D intraoral scans.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="bi bi-feather"></i>
+          </div>
+          <div>
+            <h4>Painless Dentistry</h4>
+            <p>Sedation options and gentle touch designed for anxious patients.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="bi bi-credit-card-2-front"></i>
+          </div>
+          <div>
+            <h4>Insurance Friendly</h4>
+            <p>Direct billing with major providers & 0% flexible financing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT CLINIC & DOCTOR (Royal Addons: royalprofilecard / royalfeatures)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-stack">
+          <img class="about-main-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Lead Dentist Dr. Sophia Vance" />
+          <div class="about-experience-card">
+            <span class="exp-years">18+</span>
+            <span class="exp-text">Years Clinical Experience</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-subtitle">Meet Our Lead Clinician</span>
+          <h3>Dr. Sophia Vance, DDS, FICOI</h3>
+          <p>
+            Welcome to DentCare Pro. As a Fellow of the International Congress of Oral Implantologists, Dr. Sophia Vance and our multidisciplinary team combine cutting-edge dental technology with compassionate, patient-first care.
+          </p>
+          <p>
+            Whether you need a routine preventative cleaning, Invisalign clear braces, or full-arch dental implants, we tailor every treatment plan specifically to your oral health and aesthetic goals.
+          </p>
+          <ul class="check-list">
+            <li><i class="bi bi-check-circle-fill"></i> Harvard Dental School Graduate</li>
+            <li><i class="bi bi-check-circle-fill"></i> Over 6,500 Dental Implants Placed</li>
+            <li><i class="bi bi-check-circle-fill"></i> Certified Invisalign Elite Provider</li>
+            <li><i class="bi bi-check-circle-fill"></i> Hospital-Grade Sterilization Protocols</li>
+          </ul>
+          <a href="#appointment" class="btn-primary">
+            <i class="bi bi-chat-heart"></i> Book a Consultation with Dr. Vance
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SERVICES (Royal Addons: royalservices / royalservicelist)
+       ========================================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Clinical Services</span>
+        <h2 class="section-title">Complete Dental Care <span>Under One Roof</span></h2>
+        <p class="section-desc">From preventative maintenance to complex oral rehabilitation, our dental experts use latest techniques for long-lasting results.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+          <h3>General & Preventative</h3>
+          <p>Comprehensive oral checkups, digital low-radiation X-rays, ultrasonic cleanings, and proactive gum disease therapy.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent, natural-looking titanium and zirconia implants to restore missing teeth with lifetime durability and function.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional laser and Philips Zoom in-office whitening that lifts deep stains up to 8 shades in just a single 60-minute session.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Porcelain Veneers</h3>
+          <p>Custom ultra-thin ceramic veneers handcrafted to fix chips, gaps, alignment flaws, and discoloration for a Hollywood smile.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Invisalign Clear Braces</h3>
+          <p>Discreet, comfortable, and removable clear aligners to gently straighten crooked teeth without unsightly metal wires.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <h3>Pediatric Dentistry</h3>
+          <p>Fun, stress-free dental care created especially for kids, including fluoride varnishes, cavity sealants, and positive habits.</p>
+          <a href="#appointment" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. BEFORE & AFTER SLIDER (Royal Addons: royalimagecompare)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="transformation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real Clinical Results</span>
+        <h2 class="section-title">Smile Transformations <span>Before & After</span></h2>
+        <p class="section-desc">Drag the interactive slider horizontally to see the dramatic real-life transformation achieved with our aesthetic veneers and whitening treatment.</p>
+      </div>
+
+      <div class="before-after-container">
+        <div class="compare-wrapper" id="compareSlider">
+          <!-- Before Image (Discolored & misaligned) -->
+          <div class="compare-img compare-before" style="background-image: url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80');">
+            <span class="compare-label label-before">Before Treatment</span>
+          </div>
+          <!-- After Image (Bright & aligned) -->
+          <div class="compare-img compare-after" id="compareAfter">
+            <div class="compare-img-inner" style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80');"></div>
+            <span class="compare-label label-after">After Smile Makeover</span>
+          </div>
+          <!-- Drag Handle -->
+          <div class="compare-handle" id="compareHandle">
+            <i class="bi bi-arrows-expand-vertical" style="transform: rotate(90deg);"></i>
+          </div>
+        </div>
+        <p style="text-align: center; font-size: 13.5px; color: #64748b; margin-top: 14px; margin-bottom: 0;">
+          <i class="bi bi-hand-index-thumb"></i> Click and drag the blue slider or touch on mobile to compare results
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. CLINICAL TEAM (Royal Addons: royalteam)
+       ========================================================================== -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Specialist Doctors</span>
+        <h2 class="section-title">Meet Our <span>Dental Experts</span></h2>
+        <p class="section-desc">Our multidisciplinary specialists bring decades of combined experience, continual education, and genuine dedication.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team 1 -->
+        <div class="team-card">
+          <div class="team-image-box">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sophia Vance" />
+          </div>
+          <div class="team-info">
+            <h4>Dr. Sophia Vance</h4>
+            <div class="team-designation">Lead Dental Surgeon & Implantologist</div>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team 2 -->
+        <div class="team-card">
+          <div class="team-image-box">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Marcus Bennett" />
+          </div>
+          <div class="team-info">
+            <h4>Dr. Marcus Bennett</h4>
+            <div class="team-designation">Orthodontics & Invisalign Specialist</div>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team 3 -->
+        <div class="team-card">
+          <div class="team-image-box">
+            <img src="https://images.unsplash.com/photo-1594824813576-96b541315b7a?auto=format&fit=crop&w=600&q=80" alt="Dr. Elena Rostova" />
+          </div>
+          <div class="team-info">
+            <h4>Dr. Elena Rostova</h4>
+            <div class="team-designation">Cosmetic Dentist & Smile Architect</div>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Team 4 -->
+        <div class="team-card">
+          <div class="team-image-box">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Dr. David Chen" />
+          </div>
+          <div class="team-info">
+            <h4>Dr. David Chen</h4>
+            <div class="team-designation">Endodontist & Root Canal Expert</div>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. PRICING & MEMBERSHIP (Royal Addons: royalpricingtable)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Affordable Dental Plans</span>
+        <h2 class="section-title">Transparent <span>Treatment Packages</span></h2>
+        <p class="section-desc">Clear pricing with no surprise costs. We also accept all PPO insurances and provide 0% APR financing options.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Package 1 -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">Preventive Care</h3>
+          <div class="pricing-price">$99 <span>/ visit</span></div>
+          <p style="font-size: 13.5px; color: #64748b; margin-bottom: 20px;">Ideal for new patients seeking routine dental maintenance.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill check"></i> Comprehensive Oral Examination</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Full-Mouth Digital Low-Dose X-Rays</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Ultrasonic Hygiene Cleaning</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Oral Cancer Screening</li>
+            <li style="color: #94a3b8;"><i class="bi bi-x-circle text-muted"></i> Laser Teeth Whitening</li>
+          </ul>
+          <a href="#appointment" class="btn-secondary" style="justify-content: center;">Book Checkup</a>
+        </div>
+
+        <!-- Package 2 (Featured) -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Most Popular</span>
+          <h3 class="pricing-name">Smile Glow Makeover</h3>
+          <div class="pricing-price">$349 <span>/ session</span></div>
+          <p style="font-size: 13.5px; color: #64748b; margin-bottom: 20px;">Transform dull or stained teeth into a brilliant, sparkling smile.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill check"></i> Philips Zoom In-Office Whitening</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Up to 8 Shades Whiter in 60 Mins</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Enamel Strengthening Fluoride Gel</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Custom Home Touch-Up Whitening Trays</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Sensitivity Relief Post-Treatment</li>
+          </ul>
+          <a href="#appointment" class="btn-primary" style="justify-content: center;">Get Glowing Smile</a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">Dental Implant Restor</h3>
+          <div class="pricing-price">$1,499 <span>/ tooth</span></div>
+          <p style="font-size: 13.5px; color: #64748b; margin-bottom: 20px;">Permanent restoration for missing teeth with lifetime warranty.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill check"></i> 3D CBCT Surgical Diagnostic Scan</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Premium Titanium Implant Post</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Custom Zirconia Abutment & Crown</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Pain-Free Surgical Placement</li>
+            <li><i class="bi bi-check-circle-fill check"></i> Lifetime Structural Warranty</li>
+          </ul>
+          <a href="#appointment" class="btn-secondary" style="justify-content: center;">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. APPOINTMENT BOOKING & HOURS (Royal Addons: royalform + royalopeninghours)
+       ========================================================================== -->
+  <section class="section" id="appointment">
+    <div class="container">
+      <div class="booking-hours-grid">
+        <!-- Booking Form -->
+        <div class="booking-form-card">
+          <span class="section-subtitle">Online Reservation</span>
+          <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Book an Appointment</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-bottom: 28px;">Choose your preferred time slot and doctor. Our clinical coordinator will instantly confirm your visit.</p>
+
+          <form id="dentistBookingForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="patientName">Full Name *</label>
+                <input type="text" id="patientName" class="form-control" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="patientPhone">Phone Number *</label>
+                <input type="tel" id="patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="patientEmail">Email Address</label>
+                <input type="email" id="patientEmail" class="form-control" placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="patientService">Dental Service *</label>
+                <select id="patientService" class="form-control" required>
+                  <option value="" disabled selected>Select Treatment</option>
+                  <option value="General Checkup & Cleaning">General Checkup & Cleaning</option>
+                  <option value="Dental Implants Consultation">Dental Implants Consultation</option>
+                  <option value="Teeth Whitening">Teeth Whitening Special</option>
+                  <option value="Invisalign Orthodontics">Invisalign Clear Braces</option>
+                  <option value="Root Canal Treatment">Root Canal Therapy</option>
+                  <option value="Emergency Toothache Relief">Emergency Toothache Relief</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="patientDate">Preferred Date *</label>
+                <input type="date" id="patientDate" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="patientTime">Preferred Time *</label>
+                <select id="patientTime" class="form-control" required>
+                  <option value="09:00 AM">09:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="02:00 PM">02:00 PM</option>
+                  <option value="04:30 PM">04:30 PM</option>
+                  <option value="06:00 PM">06:00 PM</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="patientNotes">Notes or Specific Symptoms</label>
+                <textarea id="patientNotes" class="form-control" rows="3" placeholder="Tell us if you have tooth pain, sensitivity, or dental anxiety..."></textarea>
+              </div>
+              <div class="form-group full-width">
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px;">
+                  <i class="bi bi-check-circle-fill"></i> Confirm Appointment Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Opening Hours Widget -->
+        <div class="hours-card">
+          <div>
+            <h3>Clinic Operating Hours</h3>
+            <p style="font-size: 13.5px; opacity: 0.85; margin-bottom: 24px;">We provide extended evening and weekend hours to fit your busy lifestyle.</p>
+            <ul class="hours-table">
+              <li data-day="monday"><span>Monday</span> <span>08:00 AM – 08:00 PM</span></li>
+              <li data-day="tuesday"><span>Tuesday</span> <span>08:00 AM – 08:00 PM</span></li>
+              <li data-day="wednesday"><span>Wednesday</span> <span>08:00 AM – 08:00 PM</span></li>
+              <li data-day="thursday"><span>Thursday</span> <span>08:00 AM – 08:00 PM</span></li>
+              <li data-day="friday"><span>Friday</span> <span>08:00 AM – 07:00 PM</span></li>
+              <li data-day="saturday"><span>Saturday</span> <span>09:00 AM – 04:00 PM</span></li>
+              <li data-day="sunday"><span>Sunday</span> <span>Emergency On-Call Only</span></li>
+            </ul>
+          </div>
+
+          <div class="emergency-callout">
+            <h4><i class="bi bi-telephone-inbound-fill"></i> Dental Emergency?</h4>
+            <p style="font-size: 13px; margin-bottom: 10px; color: #cbd5e1;">Severe pain, knocked out tooth, or swelling? We accept urgent walk-ins.</p>
+            <a href="tel:+18005553368" class="emergency-phone">+1 (800) 555-DENT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. PATIENT REVIEWS (Royal Addons: royalreview / royaltestimonialcarousel)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Patient Testimonials</span>
+        <h2 class="section-title">What Our Patients <span>Say About Us</span></h2>
+        <p class="section-desc">Over 1,200 verified 5-star Google and Yelp reviews from patients who regained their confidence.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-quote">"I had severe dental phobia for years until I visited Dr. Sophia Vance. Her gentle approach and pain-free injections completely changed my outlook. My new implant feels 100% natural!"</p>
+          <div class="reviewer-profile">
+            <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Sarah Jenkins" />
+            <div class="reviewer-meta">
+              <h5>Sarah Jenkins</h5>
+              <span>Dental Implant Patient</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-quote">"Completed my Invisalign treatment with Dr. Marcus Bennett in just 7 months. The 3D scan simulation was accurate down to the millimeter. I can't stop smiling in photos now!"</p>
+          <div class="reviewer-profile">
+            <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="David Sterling" />
+            <div class="reviewer-meta">
+              <h5>David Sterling</h5>
+              <span>Invisalign Orthodontics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-quote">"Did the Zoom laser teeth whitening before my wedding day. It jumped 7 shades brighter in under an hour without any pain or sensitivity. Everyone praised how radiant my teeth looked!"</p>
+          <div class="reviewer-profile">
+            <img class="reviewer-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Jessica Miller" />
+            <div class="reviewer-meta">
+              <h5>Jessica Miller</h5>
+              <span>Laser Whitening Patient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FAQ ACCORDION (Royal Addons: royalaccordion)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-desc">Here are the common questions our patients ask regarding dental appointments, insurance, and pain management.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Are dental implant procedures painful?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Not at all. The procedure is performed under targeted local computerized anesthesia or sedation. Most patients report feeling only light vibration, and post-operative discomfort is comparable to having a tooth filled.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which dental insurance plans do you accept?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            We accept nearly all major PPO insurance providers including Delta Dental, Cigna, MetLife, Aetna, Guardian, and BlueCross BlueShield. Our staff will file all claims directly to maximize your benefits.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How often should I come in for a routine cleaning?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            The American Dental Association recommends a professional cleaning and examination every six months. Patients with active gum disease or high cavity risk may benefit from visits every 3 to 4 months.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does the teeth whitening effect last?</span>
+            <i class="bi bi-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Professional in-office whitening results typically last 1 to 3 years depending on dietary habits (coffee, red wine, tea consumption) and maintaining good daily oral hygiene with touch-up trays.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FOOTER (Royal Elementor Theme Footer Style 1)
+       ========================================================================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-widget">
+          <div class="header-left" style="margin-bottom: 18px;">
+            <div class="branding-link">
+              <div class="logo-badge" style="width: 44px; height: 44px; font-size: 20px;">
+                <i class="fa-solid fa-tooth"></i>
+              </div>
+              <div class="site-branding-text">
+                <h3 class="site-title" style="color: #ffffff; font-size: 20px;">Dent<span>Care</span> Pro</h3>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.7;">
+            DentCare Pro is committed to delivering exceptional dental care, pain-free treatments, and radiant smiles for children, adults, and seniors.
+          </p>
+          <div class="top-social" style="gap: 14px; margin-top: 18px;">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook" style="font-size: 18px; color: #94a3b8;"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram" style="font-size: 18px; color: #94a3b8;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size: 18px; color: #94a3b8;"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube" style="font-size: 18px; color: #94a3b8;"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="bi bi-chevron-right"></i> About Clinic</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> All Treatments</a></li>
+            <li><a href="#transformation"><i class="bi bi-chevron-right"></i> Before & After</a></li>
+            <li><a href="#team"><i class="bi bi-chevron-right"></i> Medical Team</a></li>
+            <li><a href="#pricing"><i class="bi bi-chevron-right"></i> Pricing & Insurance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Dental Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Dental Implants</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Invisalign Braces</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Cosmetic Veneers</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Laser Whitening</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Root Canal Therapy</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> Emergency Dental</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Clinic Location</h4>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 12px;">
+            <i class="bi bi-geo-alt-fill text-primary"></i> 742 Evergreen Terrace, Medical District, NY 10001
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 12px;">
+            <i class="bi bi-telephone-fill text-primary"></i> +1 (800) 555-3368
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 16px;">
+            <i class="bi bi-envelope-fill text-primary"></i> care@dentcarepro.com
+          </p>
+          <a href="#appointment" class="btn-primary" style="font-size: 13px; padding: 10px 18px;">
+            Schedule Visit Now
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DentCare Pro. Crafted for Royal Elementor Theme & Royal Addons for Elementor. Developed by <a href="https://www.royaltechbd.com/" target="_blank">Royal Technologies</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Booking Confirmation Modal -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+      <div class="modal-icon">
+        <i class="bi bi-calendar2-check-fill"></i>
+      </div>
+      <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Appointment Requested!</h3>
+      <p style="font-size: 15px; color: #475569; margin-bottom: 16px;">
+        Thank you, <strong id="modalPatientName">Patient</strong>. Your appointment request for <span id="modalAppointmentDetails" style="color: #0284c7; font-weight: 700;">Dental Service</span> has been received.
+      </p>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 24px;">
+        Our clinical desk will call you within 15 minutes to confirm your reservation and send appointment details to your email.
+      </p>
+      <button class="btn-primary" id="closeModalBtn" style="width: 100%; justify-content: center;">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

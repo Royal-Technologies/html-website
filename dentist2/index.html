@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuminaSmile – Boutique Cosmetic Dentistry & Smile Architecture</title>
+  <meta name="description" content="Artisan porcelain veneers, laser teeth whitening, and digital smile design in a tranquil, luxury private dental suite.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c59b27'><path d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'/></svg>">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Royal Elementor Theme Header & Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/header-top.php]
+       Top Notification Bar with Special Offer & Direct Contact
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <span class="top-promo-pill">
+          <i class="bi bi-stars"></i> Complimentary 3D Digital Smile Simulation Available This Month
+        </span>
+        <span class="tablethide" style="font-size: 12.5px; opacity: 0.85;">
+          <i class="bi bi-geo-alt-fill text-warning"></i> 520 Madison Ave, 18th Floor, Manhattan, NY
+        </span>
+      </div>
+      <div class="topright">
+        <a href="tel:+18887645300"><i class="bi bi-telephone-fill"></i> +1 (888) SMILE-00</a>
+        <a href="#consultation" class="tablethide"><i class="bi bi-shield-lock-fill"></i> VIP Patient Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       [ROYAL THEME HEADER: template-parts/headerstyle4.php]
+       Modern Unified Inline Header (Logo + Royal Menu + Royal Action Button + Rightpanel)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo Warper -->
+      <div id="logowarper">
+        <a href="index.html" class="branding-link">
+          <div class="logo-icon-gold">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <div class="site-branding-text">
+            <h1 class="site-title">Lumina<span>Smile</span></h1>
+            <p class="site-description">Boutique Aesthetic Dentistry</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right Area: Navigation + Royal Action Button + Mobile Toggle + Panel -->
+      <div class="right">
+        <!-- Desktop Navigation with Royal Menu Classes -->
+        <div class="desktopmenu">
+          <ul class="royalmenu">
+            <li class="current-menu-item"><a href="#home">Home</a></li>
+            <li><a href="#philosophy">Studio</a></li>
+            <li class="menu-item-has-children">
+              <a href="#treatments">Services</a>
+              <ul class="sub-menu">
+                <li><a href="#treatments"><i class="bi bi-gem text-warning"></i> Porcelain Veneers</a></li>
+                <li><a href="#treatments"><i class="bi bi-gem text-warning"></i> Laser Whitening</a></li>
+                <li><a href="#treatments"><i class="bi bi-gem text-warning"></i> Clear Aligners</a></li>
+                <li><a href="#treatments"><i class="bi bi-gem text-warning"></i> Composite Bonding</a></li>
+                <li><a href="#treatments"><i class="bi bi-gem text-warning"></i> Full Smile Makeover</a></li>
+              </ul>
+            </li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#consultation">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Royal Action Button (matches royal_header_action_button()) -->
+        <a href="#consultation" class="royal-action-btn">
+          <i class="bi bi-stars"></i> Book Consultation
+        </a>
+
+        <!-- Right Panel with Quick Action Icons -->
+        <div class="rightpanel">
+          <a href="tel:+18887645300" class="panel-btn" title="Call Concierge"><i class="bi bi-telephone"></i></a>
+        </div>
+
+        <!-- Mobile Navigation Hamburger -->
+        <div class="navigation-icon desktophide" id="navigationIcon" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-navigation-overlay" id="mobileNavigationOverlay"></div>
+  <div class="mobile-navigation-drawer" id="mobileNavigationDrawer">
+    <div class="mobile-drawer-header">
+      <h3 class="site-title" style="font-size: 22px;">Lumina<span>Smile</span></h3>
+      <button class="mobile-drawer-close" aria-label="Close Drawer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#philosophy">Studio</a></li>
+      <li><a href="#treatments">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#consultation">Contact & Booking</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="#consultation" class="btn-luxury" style="width: 100%; justify-content: center;">
+        Book Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO SECTION (Royal Addons: royalsliderlanding / royalheadinggradient)
+       ========================================================================== -->
+  <section class="hero-cosmetic" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-pill-gold">
+            <i class="bi bi-patch-check-fill"></i> World-Class Cosmetic Smile Design
+          </div>
+          <h1 class="hero-title">
+            Architecting <em>Flawless</em> Smiles With Artistic Precision.
+          </h1>
+          <p class="hero-desc">
+            Experience bespoke aesthetic dentistry in a private, spa-inspired setting. Using 3D Digital Smile Design and hand-layered ceramic veneers, we craft radiant smiles that look effortlessly natural.
+          </p>
+          <div class="hero-btn-group">
+            <a href="#consultation" class="btn-luxury">
+              <i class="bi bi-stars"></i> Schedule Private Consultation
+            </a>
+            <a href="#gallery" class="btn-luxury-outline">
+              <i class="bi bi-eye"></i> View Transformations
+            </a>
+          </div>
+          <div class="hero-stats-strip">
+            <div class="h-stat">
+              <h4>14,000+</h4>
+              <p>Porcelain Veneers Placed</p>
+            </div>
+            <div class="h-stat">
+              <h4>100%</h4>
+              <p>Custom Shaded Ceramics</p>
+            </div>
+            <div class="h-stat">
+              <h4>99.8%</h4>
+              <p>Patient Satisfaction</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-box">
+          <img class="hero-curved-img" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Beautiful radiant smile after cosmetic dentistry" />
+          <div class="floating-award-pill">
+            <div class="award-icon">
+              <i class="bi bi-trophy-fill"></i>
+            </div>
+            <div>
+              <h5 style="margin: 0; font-size: 15px; font-weight: 800; color: #0a192f;">American Academy of Cosmetic Dentistry</h5>
+              <p style="margin: 0; font-size: 12.5px; color: #64748b;">Accredited Member & Master Ceramist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. PHILOSOPHY & TECH (Royal Addons: royalfeatures / royalcalltoactionbox)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="philosophy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Lumina Distinction</span>
+        <h2 class="section-title">Where Medical Science Meets <span>Aesthetic Artistry</span></h2>
+        <p class="section-desc">We reject the 'one-size-fits-all' dental approach. Every smile is tailored to complement your facial symmetry, lip dynamics, and complexion.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+        <div style="background: #f8fafc; padding: 32px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center;">
+          <div style="width: 54px; height: 54px; margin: 0 auto 20px auto; background: #e0f2fe; color: #0284c7; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px;">
+            <i class="bi bi-camera"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Digital Smile Design (DSD)</h3>
+          <p style="font-size: 14px; color: #64748b; margin: 0;">Preview your exact new smile in 3D high-definition photographs before any dental work ever starts.</p>
+        </div>
+
+        <div style="background: #f8fafc; padding: 32px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center;">
+          <div style="width: 54px; height: 54px; margin: 0 auto 20px auto; background: #fefce8; color: #c59b27; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px;">
+            <i class="bi bi-gem"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Master Ceramists</h3>
+          <p style="font-size: 14px; color: #64748b; margin: 0;">Our porcelain veneers are hand-painted layer-by-layer in Switzerland with natural optical translucency.</p>
+        </div>
+
+        <div style="background: #f8fafc; padding: 32px; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center;">
+          <div style="width: 54px; height: 54px; margin: 0 auto 20px auto; background: #ecfdf5; color: #059669; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px;">
+            <i class="bi bi-cup-hot"></i>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Private Spa Suites</h3>
+          <p style="font-size: 14px; color: #64748b; margin: 0;">Noise-canceling headphones, warm lavender scented towels, and Netflix streaming for total relaxation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SIGNATURE TREATMENTS (Royal Addons: royalservices)
+       ========================================================================== -->
+  <section class="section" id="treatments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Curated Treatments</span>
+        <h2 class="section-title">Our Signature <span>Cosmetic Solutions</span></h2>
+        <p class="section-desc">Designed to deliver show-stopping transformations while conserving your natural tooth structure.</p>
+      </div>
+
+      <div class="treatments-grid">
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>Porcelain Veneers</h3>
+          <p>Micro-thin ceramic shells meticulously shaped and bonded to close gaps, correct misalignment, and create everlasting brilliance.</p>
+          <a href="#consultation" class="treatment-cta">Discover Veneers <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Enlighten Laser Whitening</h3>
+          <p>Guaranteed B1 shade results. Combines gentle in-clinic laser excitation with customized active desensitizing home trays.</p>
+          <a href="#consultation" class="treatment-cta">Explore Whitening <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Composite Bonding</h3>
+          <p>Single-appointment artistic sculpturing with high-gloss resin to seamlessly repair small chips, minor overlaps, and edge wear.</p>
+          <a href="#consultation" class="treatment-cta">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Invisalign Clear Aligners</h3>
+          <p>Discreet orthodontics designed specifically for adult professionals. Straighten teeth comfortably without brackets or food limits.</p>
+          <a href="#consultation" class="treatment-cta">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Laser Gum Lift</h3>
+          <p>Harmonize gummy smiles with precise dental laser sculpting, creating beautiful tooth proportions with instant healing.</p>
+          <a href="#consultation" class="treatment-cta">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="treatment-card">
+          <div class="treatment-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3>Full Mouth Rehabilitation</h3>
+          <p>Complete aesthetic and functional rejuvenation restoring collapsed bite, worn enamel, and jaw balance with luxury restorations.</p>
+          <a href="#consultation" class="treatment-cta">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. BEFORE & AFTER GALLERY (Royal Addons: royalimagecompare)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real Smile Makeovers</span>
+        <h2 class="section-title">See The <span>Art of Transformation</span></h2>
+        <p class="section-desc">Experience the subtle nuance and radiant beauty of our 8-unit porcelain veneer makeover.</p>
+      </div>
+
+      <div class="smile-compare-box">
+        <div class="compare-wrapper" id="smileCompareSlider">
+          <div class="compare-img compare-before" style="background-image: url('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=80');">
+            <span class="compare-badge badge-before">Before Treatment</span>
+          </div>
+          <div class="compare-img compare-after" id="smileCompareAfter">
+            <div class="compare-img-inner" style="background-image: url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80');"></div>
+            <span class="compare-badge badge-after">After Porcelain Veneers</span>
+          </div>
+          <div class="compare-handle" id="smileCompareHandle">
+            <i class="bi bi-chevron-bar-expand" style="transform: rotate(90deg);"></i>
+          </div>
+        </div>
+        <p style="text-align: center; font-size: 13.5px; color: #64748b; margin-top: 14px; margin-bottom: 0;">
+          <i class="bi bi-arrows-expand"></i> Slide horizontally to reveal the porcelain veneer transformation
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. 4-STEP SMILE JOURNEY (Royal Addons: royaltimeline)
+       ========================================================================== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Seamless Experience</span>
+        <h2 class="section-title">Your 4-Step <span>Smile Journey</span></h2>
+        <p class="section-desc">From initial digital preview to your grand reveal, we ensure an enjoyable and transparent experience.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h4>3D Digital Scan</h4>
+          <p>We capture optical 3D scans and facial photos with no unpleasant silicone impressions.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h4>Smile Trial Preview</h4>
+          <p>Test-drive your temporary 3D smile mockup directly in your mouth before crafting the porcelain.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h4>Artisan Fabrication</h4>
+          <p>Master dental technicians custom-layer each ceramic unit to replicate natural light optics.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h4>The Grand Reveal</h4>
+          <p>Permanent bonding under microscopic magnification and celebration of your confident smile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. SPECIALISTS (Royal Addons: royalteam)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="specialists">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Smile Architects</span>
+        <h2 class="section-title">Meet Our <span>Master Clinicians</span></h2>
+        <p class="section-desc">Renowned aesthetic dentists recognized globally for natural, harmonic smile creations.</p>
+      </div>
+
+      <div class="specialists-grid">
+        <div class="specialist-card">
+          <div class="specialist-img-box">
+            <img src="https://images.unsplash.com/photo-1594824813576-96b541315b7a?auto=format&fit=crop&w=600&q=80" alt="Dr. Alistair Montgomery" />
+          </div>
+          <div class="specialist-body">
+            <h4>Dr. Vivienne Montgomery</h4>
+            <div class="specialist-role">Founder & Master Smile Architect</div>
+            <p class="specialist-bio">AACD Accredited Fellow with over 16 years specializing exclusively in minimally invasive porcelain veneers.</p>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-img-box">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Julian Cross" />
+          </div>
+          <div class="specialist-body">
+            <h4>Dr. Julian Cross</h4>
+            <div class="specialist-role">Lead Orthodontist & Aligner Specialist</div>
+            <p class="specialist-bio">Pioneer in accelerated clear aligners and micro-aesthetic gum harmonizing laser therapies.</p>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-img-box">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Celine Fontaine" />
+          </div>
+          <div class="specialist-body">
+            <h4>Dr. Celine Fontaine</h4>
+            <div class="specialist-role">Artisan Restorative Ceramist</div>
+            <p class="specialist-bio">Specialist in biomimetic composite bonding, micro-abrasion, and teeth shade harmonization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. VIP MEMBERSHIP (Royal Addons: royalpricingtable)
+       ========================================================================== -->
+  <section class="section" id="membership">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Concierge Membership</span>
+        <h2 class="section-title">Curated <span>Smile Memberships</span></h2>
+        <p class="section-desc">Maintain radiant oral health and aesthetic brilliance year-round with our exclusive privileges.</p>
+      </div>
+
+      <div class="membership-grid">
+        <div class="member-plan">
+          <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 6px;">Lumina Radiance</h3>
+          <div class="plan-price">$49 <span>/ month</span></div>
+          <p style="font-size: 13.5px; color: #64748b; margin-bottom: 24px;">Year-round preventive care and sparkle maintenance.</p>
+          <ul class="plan-features">
+            <li><i class="bi bi-check2 text-primary"></i> 2 Ultrasonic Prophy Cleanings Yearly</li>
+            <li><i class="bi bi-check2 text-primary"></i> 3D Oral Scan & Cancer Screening</li>
+            <li><i class="bi bi-check2 text-primary"></i> Complimentary Touch-Up Whitening Gel</li>
+            <li><i class="bi bi-check2 text-primary"></i> 15% Savings on Aesthetic Treatments</li>
+          </ul>
+          <a href="#consultation" class="btn-luxury-outline" style="justify-content: center;">Select Membership</a>
+        </div>
+
+        <div class="member-plan vip">
+          <span class="plan-badge">Most Exclusive</span>
+          <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 6px;">Signature Concierge</h3>
+          <div class="plan-price">$99 <span>/ month</span></div>
+          <p style="font-size: 13.5px; color: #cbd5e1; margin-bottom: 24px;">For those who demand uncompromising smile perfection.</p>
+          <ul class="plan-features">
+            <li><i class="bi bi-check2 text-warning"></i> 4 Hydro-Air Aesthetic Cleanings Yearly</li>
+            <li><i class="bi bi-check2 text-warning"></i> Unlimited In-Office Laser Whitening</li>
+            <li><i class="bi bi-check2 text-warning"></i> VIP Private Suite Priority Booking</li>
+            <li><i class="bi bi-check2 text-warning"></i> 25% Off Porcelain Veneer Makeovers</li>
+            <li><i class="bi bi-check2 text-warning"></i> 24/7 Dedicated Concierge Hotline</li>
+          </ul>
+          <a href="#consultation" class="btn-luxury" style="justify-content: center;">Join VIP Concierge</a>
+        </div>
+
+        <div class="member-plan">
+          <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 6px;">Invisalign Elite</h3>
+          <div class="plan-price">$139 <span>/ month</span></div>
+          <p style="font-size: 13.5px; color: #64748b; margin-bottom: 24px;">All-inclusive clear aligner treatment with 0% APR.</p>
+          <ul class="plan-features">
+            <li><i class="bi bi-check2 text-primary"></i> Comprehensive Invisalign Aligners</li>
+            <li><i class="bi bi-check2 text-primary"></i> AI Remote Progress Monitoring</li>
+            <li><i class="bi bi-check2 text-primary"></i> Post-Treatment Vivera Retainers (3 Sets)</li>
+            <li><i class="bi bi-check2 text-primary"></i> Post-Alignment Teeth Whitening</li>
+          </ul>
+          <a href="#consultation" class="btn-luxury-outline" style="justify-content: center;">Select Membership</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CONSULTATION FORM (Royal Addons: royalform + royalopeninghours)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="consultation">
+    <div class="container">
+      <div class="booking-section-grid">
+        <div class="consult-form-box">
+          <span class="section-subtitle">Private Consultation</span>
+          <h2 style="font-size: 30px; font-weight: 700; margin-bottom: 8px;">Begin Your Smile Transformation</h2>
+          <p style="font-size: 14.5px; color: #64748b; margin-bottom: 28px;">Reserve your one-on-one session with our master cosmetic dentists in Manhattan.</p>
+
+          <form id="consultForm">
+            <div class="c-form-grid">
+              <div>
+                <label class="c-label" for="cName">Your Name *</label>
+                <input type="text" id="cName" class="c-input" placeholder="Victoria Sterling" required />
+              </div>
+              <div>
+                <label class="c-label" for="cPhone">Contact Phone *</label>
+                <input type="tel" id="cPhone" class="c-input" placeholder="+1 (555) 789-0123" required />
+              </div>
+              <div>
+                <label class="c-label" for="cEmail">Email Address</label>
+                <input type="email" id="cEmail" class="c-input" placeholder="victoria@example.com" />
+              </div>
+              <div>
+                <label class="c-label" for="cTreatment">Desired Transformation *</label>
+                <select id="cTreatment" class="c-input" required>
+                  <option value="" disabled selected>Select Procedure</option>
+                  <option value="Porcelain Veneers">Handcrafted Porcelain Veneers</option>
+                  <option value="Laser Teeth Whitening">Laser Teeth Whitening</option>
+                  <option value="Invisalign Clear Aligners">Invisalign Clear Aligners</option>
+                  <option value="Composite Bonding">Artistic Composite Bonding</option>
+                  <option value="Full Smile Makeover">Full Mouth Smile Makeover</option>
+                  <option value="Virtual Smile Assessment">Virtual 3D Consultation</option>
+                </select>
+              </div>
+              <div class="c-span-2">
+                <label class="c-label" for="cNotes">What Would You Like to Improve About Your Smile?</label>
+                <textarea id="cNotes" class="c-input" rows="3" placeholder="Color, gaps, symmetry, chips, or alignment goals..."></textarea>
+              </div>
+              <div class="c-span-2">
+                <button type="submit" class="btn-luxury" style="width: 100%; justify-content: center; padding: 16px;">
+                  <i class="bi bi-stars"></i> Request VIP Consultation
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="suite-info-box">
+          <div>
+            <img class="suite-img" src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80" alt="Luxury dental private suite" />
+            <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Private Clinical Suites</h3>
+            <p style="font-size: 13.5px; color: #64748b; line-height: 1.6; margin-bottom: 16px;">
+              Designed with bespoke Italian acoustic paneling, panoramic Manhattan skyline views, and medical air filtration for ultimate comfort.
+            </p>
+          </div>
+          <div style="border-top: 1px solid #e2e8f0; padding-top: 16px;">
+            <p style="font-size: 13.5px; color: #0a192f; margin: 0 0 6px 0;">
+              <strong>Hours:</strong> Mon - Fri 9:00 AM – 7:00 PM | Sat by Appointment
+            </p>
+            <p style="font-size: 13.5px; color: #0a192f; margin: 0;">
+              <strong>Concierge:</strong> +1 (888) SMILE-00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. COSMETIC FAQ (Royal Addons: royalaccordion)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Common Inquiries</span>
+        <h2 class="section-title">Cosmetic Dentistry <span>FAQ</span></h2>
+        <p class="section-desc">Clear answers to your aesthetic treatment and longevity questions.</p>
+      </div>
+
+      <div class="faq-box">
+        <div class="faq-row active">
+          <button class="faq-q">
+            <span>How long do porcelain veneers typically last?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            When crafted by master ceramists and maintained with routine checkups, porcelain veneers last 15 to 25+ years. Because dental porcelain does not stain or discolor like natural enamel, your smile stays sparkling white permanently.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-q">
+            <span>Does getting porcelain veneers damage my natural teeth?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            At LuminaSmile, we utilize ultra-thin micro-prep and no-prep techniques. Only a fraction of a millimeter (less than the thickness of a contact lens) of outer enamel is lightly buffed to ensure an flush, natural transition at the gumline.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-q">
+            <span>Can I preview my new smile before proceeding?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            Yes! Our 3D Digital Smile Design protocol includes a physical 'Trial Smile Mockup'. We temporarily clip the provisional smile over your natural teeth so you can see your new smile in photos, video, and in the mirror before making any final decisions.
+          </div>
+        </div>
+
+        <div class="faq-row">
+          <button class="faq-q">
+            <span>Do you offer payment plans or financing?</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            Absolutely. We partner with healthcare lenders like CareCredit, LendingClub, and Proceed Finance to offer 0% APR financing up to 24 months, making smile makeovers comfortably affordable.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. LUXURY FOOTER (Royal Elementor Theme Footer Style)
+       ========================================================================== -->
+  <footer class="lumina-footer">
+    <div class="container">
+      <div class="l-footer-grid">
+        <div class="l-footer-col">
+          <h3 class="site-title" style="color: #ffffff; font-size: 24px; margin-bottom: 14px;">Lumina<span>Smile</span></h3>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.7;">
+            Manhattan's premier cosmetic dental practice dedicated to harmonizing facial aesthetics, oral health, and confident smiles.
+          </p>
+          <div style="display: flex; gap: 14px; margin-top: 18px;">
+            <a href="#" style="color: #94a3b8; font-size: 18px;"><i class="bi bi-instagram"></i></a>
+            <a href="#" style="color: #94a3b8; font-size: 18px;"><i class="bi bi-facebook"></i></a>
+            <a href="#" style="color: #94a3b8; font-size: 18px;"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="l-footer-col">
+          <h4>Aesthetic Services</h4>
+          <ul class="l-footer-links">
+            <li><a href="#treatments">Porcelain Veneers</a></li>
+            <li><a href="#treatments">Laser Whitening</a></li>
+            <li><a href="#treatments">Invisalign Clear Braces</a></li>
+            <li><a href="#treatments">Composite Bonding</a></li>
+            <li><a href="#treatments">Laser Gum Contouring</a></li>
+          </ul>
+        </div>
+
+        <div class="l-footer-col">
+          <h4>Studio & Concierge</h4>
+          <ul class="l-footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#philosophy">The Lumina Distinction</a></li>
+            <li><a href="#gallery">Smile Gallery</a></li>
+            <li><a href="#process">Treatment Journey</a></li>
+            <li><a href="#membership">VIP Memberships</a></li>
+          </ul>
+        </div>
+
+        <div class="l-footer-col">
+          <h4>Manhattan Studio</h4>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-geo-alt-fill text-warning"></i> 520 Madison Ave, 18th Fl, New York, NY 10022
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 10px;">
+            <i class="bi bi-telephone-fill text-warning"></i> +1 (888) SMILE-00
+          </p>
+          <p style="font-size: 14px; color: #94a3b8; margin-bottom: 16px;">
+            <i class="bi bi-envelope-fill text-warning"></i> concierge@luminasmile.com
+          </p>
+          <a href="#consultation" class="btn-luxury" style="padding: 10px 20px; font-size: 13px;">
+            Book VIP Consultation
+          </a>
+        </div>
+      </div>
+
+      <div class="l-footer-bottom">
+        <p>&copy; 2026 LuminaSmile Boutique Dental Studio. Built for Royal Elementor Theme & Royal Addons. Powered by <a href="https://www.royaltechbd.com/" target="_blank">Royal Technologies</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Feedback -->
+  <div class="modal-overlay" id="consultModal">
+    <div class="modal-card">
+      <div style="width: 60px; height: 60px; background: #fefce8; color: #c59b27; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 16px auto; border: 1px solid #fef08a;">
+        <i class="bi bi-stars"></i>
+      </div>
+      <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">VIP Consultation Requested</h3>
+      <p style="font-size: 15px; color: #475569; margin-bottom: 14px;">
+        Thank you, <strong id="modalClientName">Client</strong>. Your inquiry regarding <span id="modalPackage" style="color: #00b4d8; font-weight: 700;">Procedure</span> has been forwarded to our clinical concierge.
+      </p>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 24px;">
+        Our treatment coordinator will reach out today with available private suite times and 3D preview options.
+      </p>
+      <button class="btn-luxury" id="closeConsultModal" style="width: 100%; justify-content: center;">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
