@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaVista Cruises â€” Luxury Cruise Experiences</title>
+<link rel="stylesheet" href="css/royal-elementor-header.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="headertop">
+  <div class="container">
+    <div class="headertop-left">
+      <span>âš“ Sailing since 1998</span>
+      <span>ðŸ“ž 1-800-AQUA-VIS</span>
+      <span>âœ‰ sail@aquavistacruises.com</span>
+    </div>
+    <div class="headertop-right">
+      <a href="#">My Booking</a>
+      <a href="#contact">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<header class="header headerstyle4">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <span style="font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;color:#fff;letter-spacing:1px;">âš“ AquaVista</span>
+      </a>
+    </div>
+    <nav class="desktopmenu">
+      <ul class="royalmenu">
+        <li><a href="#cruises">Cruises</a></li>
+        <li><a href="#cabins">Cabins</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="royal-action-btn">
+      <button id="navigation-icon" aria-label="Menu">â˜°</button>
+      <button class="btn-primary" onclick="document.getElementById('bookingModal').classList.add('active')">Book a Cruise</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="document.getElementById('mobileNav').classList.remove('active')">âœ•</button>
+  <ul>
+    <li><a href="#cruises">Cruises</a></li>
+    <li><a href="#cabins">Cabins</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg">
+    <img src="images/hero.jpg" alt="Luxury Cruise" class="hero-img" onerror="this.style.background='#0a1628'">
+    <div class="hero-overlay"></div>
+  </div>
+  <!-- Wave SVG bottom -->
+  <div class="wave-bottom">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:80px">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/>
+    </svg>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="hero-badge">âš“ 50+ Destinations Â· 15 Luxury Vessels</span>
+      <h1>Sail Into<br><span class="gold">Extraordinary.</span></h1>
+      <p>Luxury cruise experiences across the world's most breathtaking waters. Unmatched service, unforgettable moments.</p>
+      <div class="hero-btns">
+        <a href="#cruises" class="btn-gold">Explore Cruises</a>
+        <a href="#experience" class="btn-outline-white">Our Experience</a>
+      </div>
+    </div>
+    <div class="booking-widget" style="margin-top:40px">
+      <h3>ðŸ” Find Your Perfect Cruise</h3>
+      <div class="widget-row">
+        <div class="widget-field"><label>Departure Port</label><select><option>Any Port</option><option>Miami, FL</option><option>Barcelona, Spain</option><option>Sydney, Australia</option><option>Dubai, UAE</option></select></div>
+        <div class="widget-field"><label>Destination</label><select><option>Any Destination</option><option>Mediterranean</option><option>Caribbean</option><option>Alaska</option><option>Aegean Sea</option></select></div>
+        <div class="widget-field"><label>Travel Date</label><input type="date"></div>
+        <div class="widget-field"><label>Guests</label><input type="number" min="1" max="10" value="2" placeholder="2"></div>
+        <div class="widget-field"><label>&nbsp;</label><button class="search-btn">Search â†’</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-box"><span class="num">50+</span><span class="label">Destinations Worldwide</span></div>
+      <div class="stat-box"><span class="num">15</span><span class="label">Luxury Vessels</span></div>
+      <div class="stat-box"><span class="num">25K+</span><span class="label">Happy Passengers</span></div>
+      <div class="stat-box"><span class="num">28yr</span><span class="label">At Sea Since 1998</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CRUISE PACKAGES -->
+<section id="cruises" class="cruises-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Set Sail</span>
+      <h2>Signature Cruise Packages</h2>
+      <p>Hand-crafted itineraries for the discerning traveller</p>
+    </div>
+    <div class="royalportfolio cruises-grid">
+      <div class="cruise-card">
+        <img src="images/cruise-1.jpg" alt="Mediterranean Dream" onerror="this.style.height='220px';this.style.background='#1e3a5f'">
+        <div class="cruise-body">
+          <span class="dest-badge">ðŸŒŠ Mediterranean</span>
+          <h3>Mediterranean Dream</h3>
+          <div class="cruise-meta"><span>â± 12 Days</span><span>ðŸš¢ AquaVista Monarch</span></div>
+          <div class="cruise-price">From $3,999<span>/per person</span></div>
+          <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="cruise-btn">Book This Cruise</a>
+        </div>
+      </div>
+      <div class="cruise-card">
+        <img src="images/cruise-2.jpg" alt="Caribbean Paradise" onerror="this.style.height='220px';this.style.background='#1e3a5f'">
+        <div class="cruise-body">
+          <span class="dest-badge">ðŸ Caribbean</span>
+          <h3>Caribbean Paradise</h3>
+          <div class="cruise-meta"><span>â± 7 Days</span><span>ðŸš¢ AquaVista Pearl</span></div>
+          <div class="cruise-price">From $2,499<span>/per person</span></div>
+          <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="cruise-btn">Book This Cruise</a>
+        </div>
+      </div>
+      <div class="cruise-card">
+        <img src="images/cruise-3.jpg" alt="Alaska Discovery" onerror="this.style.height='220px';this.style.background='#1e3a5f'">
+        <div class="cruise-body">
+          <span class="dest-badge">ðŸ” Alaska</span>
+          <h3>Alaska Discovery</h3>
+          <div class="cruise-meta"><span>â± 10 Days</span><span>ðŸš¢ AquaVista Horizon</span></div>
+          <div class="cruise-price">From $4,299<span>/per person</span></div>
+          <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="cruise-btn">Book This Cruise</a>
+        </div>
+      </div>
+      <div class="cruise-card">
+        <img src="images/cruise-4.jpg" alt="Aegean Odyssey" onerror="this.style.height='220px';this.style.background='#1e3a5f'">
+        <div class="cruise-body">
+          <span class="dest-badge">â›µ Aegean Sea</span>
+          <h3>Aegean Odyssey</h3>
+          <div class="cruise-meta"><span>â± 14 Days</span><span>ðŸš¢ AquaVista Monarch</span></div>
+          <div class="cruise-price">From $5,499<span>/per person</span></div>
+          <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="cruise-btn">Book This Cruise</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR FLEET / royalcardmaker -->
+<section id="cabins" class="fleet-section">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">Our Fleet</span>
+      <h2>The AquaVista Fleet</h2>
+      <p>Three magnificent vessels, each a floating luxury resort</p>
+    </div>
+    <div class="royalcardmaker vessel-grid">
+      <div class="vessel-card">
+        <div class="vessel-icon">ðŸš¢</div>
+        <h3>AquaVista Monarch</h3>
+        <ul class="vessel-specs">
+          <li>1,200 guests capacity</li>
+          <li>15 decks of luxury</li>
+          <li>12 restaurants & bars</li>
+          <li>Full spa & wellness center</li>
+          <li>Casino & live theatre</li>
+        </ul>
+        <a href="#contact" class="cruise-btn" style="display:block;text-align:center;text-decoration:none">View Cabins</a>
+      </div>
+      <div class="vessel-card">
+        <div class="vessel-icon">âš“</div>
+        <h3>AquaVista Pearl</h3>
+        <ul class="vessel-specs">
+          <li>800 guests capacity</li>
+          <li>12 decks of elegance</li>
+          <li>8 restaurants & lounges</li>
+          <li>Infinity pool & spa</li>
+          <li>Sports deck & fitness</li>
+        </ul>
+        <a href="#contact" class="cruise-btn" style="display:block;text-align:center;text-decoration:none">View Cabins</a>
+      </div>
+      <div class="vessel-card">
+        <div class="vessel-icon">ðŸŒŠ</div>
+        <h3>AquaVista Horizon</h3>
+        <ul class="vessel-specs">
+          <li>650 guests capacity</li>
+          <li>10 decks, boutique feel</li>
+          <li>6 specialty dining venues</li>
+          <li>Private balconies</li>
+          <li>Exclusive shore excursions</li>
+        </ul>
+        <a href="#contact" class="cruise-btn" style="display:block;text-align:center;text-decoration:none">View Cabins</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ON-BOARD EXPERIENCE / royalservices -->
+<section id="experience" class="amenities-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">On Board</span>
+      <h2>The AquaVista Experience</h2>
+      <p>Every moment on board is designed for extraordinary living</p>
+    </div>
+    <div class="royalservices amenities-grid">
+      <div class="amenity-card"><span class="amenity-icon">ðŸ½</span><h3>Fine Dining</h3><p>12 world-class restaurants from Michelin-inspired chefs. Included in your package.</p></div>
+      <div class="amenity-card"><span class="amenity-icon">ðŸŽ­</span><h3>Live Entertainment</h3><p>Broadway-calibre shows, live music, comedy and cultural performances nightly.</p></div>
+      <div class="amenity-card"><span class="amenity-icon">ðŸŠ</span><h3>Pool & Spa</h3><p>Heated infinity pools, award-winning spa, and wellness retreats at every port.</p></div>
+      <div class="amenity-card"><span class="amenity-icon">ðŸŽ°</span><h3>Casino & Lounge</h3><p>Full-service casino, cocktail bars, and rooftop sky lounge with ocean views.</p></div>
+      <div class="amenity-card"><span class="amenity-icon">âš½</span><h3>Sports Deck</h3><p>Tennis, basketball, climbing wall, and a state-of-the-art fitness centre.</p></div>
+      <div class="amenity-card"><span class="amenity-icon">ðŸŒ…</span><h3>Shore Excursions</h3><p>Curated guided tours at every port â€” history, adventure, culture, and cuisine.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CABIN PRICING / royalpricingtable -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Choose Your Cabin</span>
+      <h2>Cabin Classes</h2>
+      <p>Every cabin delivers luxury â€” choose your level of indulgence</p>
+    </div>
+    <div class="royalpricingtable pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Interior Cabin</div>
+        <div class="plan-price">$1,999<span>/pp</span></div>
+        <ul class="plan-features">
+          <li>âœ… Comfortable twin or king bed</li>
+          <li>âœ… Full dining access</li>
+          <li>âœ… Entertainment included</li>
+          <li>âœ… 24hr room service</li>
+          <li>âŒ Ocean view</li>
+          <li>âŒ Private balcony</li>
+        </ul>
+        <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="btn-navy">Book Now</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Ocean View</div>
+        <div class="plan-price">$2,999<span>/pp</span></div>
+        <ul class="plan-features">
+          <li>âœ… King bed with ocean views</li>
+          <li>âœ… Full dining + specialty restaurant</li>
+          <li>âœ… Entertainment + spa access</li>
+          <li>âœ… 24hr room service</li>
+          <li>âœ… Panoramic ocean window</li>
+          <li>âŒ Private balcony</li>
+        </ul>
+        <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="btn-navy">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">Luxury Suite</div>
+        <div class="plan-price">$4,999<span>/pp</span></div>
+        <ul class="plan-features">
+          <li>âœ… King bed + private balcony</li>
+          <li>âœ… Unlimited dining & drinks</li>
+          <li>âœ… Full spa, gym & priority access</li>
+          <li>âœ… Butler service</li>
+          <li>âœ… Shore excursion credit ($500)</li>
+          <li>âœ… VIP boarding & disembarkation</li>
+        </ul>
+        <a href="#" onclick="document.getElementById('bookingModal').classList.add('active');return false" class="btn-navy">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING PROCESS / royaltimeline -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">How It Works</span>
+      <h2>Your Journey Begins Here</h2>
+    </div>
+    <div class="royaltimeline timeline-steps">
+      <div class="timeline-item"><div class="timeline-num">01</div><h3>Choose Your Cruise</h3><p>Browse our itineraries and select the destination that calls to you.</p></div>
+      <div class="timeline-item"><div class="timeline-num">02</div><h3>Select Your Cabin</h3><p>Pick from Interior, Ocean View, or Suite â€” all with exclusive amenities.</p></div>
+      <div class="timeline-item"><div class="timeline-num">03</div><h3>Confirm & Pay</h3><p>Secure your booking with a 20% deposit. Balance due 60 days before sailing.</p></div>
+      <div class="timeline-item"><div class="timeline-num">04</div><h3>Embark & Enjoy</h3><p>Arrive at port, board your vessel, and let AquaVista take care of everything.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREW TEAM / royalteam -->
+<section class="crew-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">The Crew</span>
+      <h2>Your Dedicated Crew</h2>
+      <p>World-class professionals dedicated to your comfort and safety</p>
+    </div>
+    <div class="royalteam crew-grid">
+      <div class="crew-card">
+        <img src="images/team-1.jpg" alt="Captain Elena Vasquez" onerror="this.src='https://ui-avatars.com/api/?name=Elena+Vasquez&size=200&background=c9a84c&color=0a1628'">
+        <h3>Captain Elena Vasquez</h3>
+        <p class="crew-role">Master of AquaVista Monarch</p>
+        <p class="crew-bio">25 years at sea, certified by the Royal Naval College. Captain Vasquez has navigated over 300 voyages across five oceans.</p>
+      </div>
+      <div class="crew-card">
+        <img src="images/team-2.jpg" alt="Chef Marco Bianchi" onerror="this.src='https://ui-avatars.com/api/?name=Marco+Bianchi&size=200&background=0d9488&color=fff'">
+        <h3>Chef Marco Bianchi</h3>
+        <p class="crew-role">Executive Head Chef</p>
+        <p class="crew-bio">Former Michelin-starred restaurateur from Florence. Marco leads a team of 60 chefs serving 1,200 guests daily with impeccable cuisine.</p>
+      </div>
+      <div class="crew-card">
+        <img src="images/team-3.jpg" alt="Sophie Laurent" onerror="this.src='https://ui-avatars.com/api/?name=Sophie+Laurent&size=200&background=0a1628&color=fff'">
+        <h3>Sophie Laurent</h3>
+        <p class="crew-role">Activities & Excursions Director</p>
+        <p class="crew-bio">Fluent in 5 languages, Sophie designs unforgettable shore excursions and on-board events that become the highlight of every voyage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS / royalreview -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">Passenger Stories</span>
+      <h2>Life on Board AquaVista</h2>
+    </div>
+    <div class="royalreview reviews-grid">
+      <div class="review-card">
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>"The Mediterranean cruise was the most magical 12 days of our lives. The food, the service, the destinations â€” everything was flawless. We're already booked for next year."</p>
+        <div class="reviewer">
+          <img src="https://ui-avatars.com/api/?name=Robert+Clarke&size=48&background=c9a84c&color=0a1628" alt="Robert Clarke">
+          <div><strong>Robert Clarke</strong><small>Mediterranean Dream, Suite Class</small></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>"We celebrated our anniversary on the Caribbean cruise. The butler service was extraordinary â€” they remembered every small detail and made us feel like royalty."</p>
+        <div class="reviewer">
+          <img src="https://ui-avatars.com/api/?name=Yuki+Tanaka&size=48&background=0d9488&color=fff" alt="Yuki Tanaka">
+          <div><strong>Yuki Tanaka</strong><small>Caribbean Paradise, Ocean View</small></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>"Chef Marco's dining experience alone is worth the price of the ticket. I've dined in top restaurants worldwide, and the AquaVista kitchen rivals them all â€” at sea!"</p>
+        <div class="reviewer">
+          <img src="https://ui-avatars.com/api/?name=Diana+Reeves&size=48&background=0a1628&color=c9a84c" alt="Diana Reeves">
+          <div><strong>Diana Reeves</strong><small>Aegean Odyssey, Luxury Suite</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section-simple" style="background:#f8fafc;padding:80px 0">
+  <div class="container" style="text-align:center">
+    <span class="section-tag">Set Sail</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:2.4rem;color:#0a1628;margin:16px 0 20px">Ready to Sail?</h2>
+    <p style="color:#64748b;font-size:1.1rem;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto">Our cruise specialists are standing by to help you plan the perfect voyage.</p>
+    <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
+      <button onclick="document.getElementById('bookingModal').classList.add('active')" class="btn-gold" style="font-size:1.1rem;padding:16px 40px">Book a Cruise â†’</button>
+      <a href="tel:18002782847" class="btn-outline-white" style="font-size:1.1rem;padding:16px 40px;border:2px solid #0a1628;color:#0a1628;border-radius:4px;text-decoration:none;font-weight:600">ðŸ“ž Call Us Free</a>
+    </div>
+    <p style="margin-top:28px;color:#94a3b8;font-size:0.9rem">ðŸ“§ sail@aquavistacruises.com &nbsp;|&nbsp; Available 7 days a week, 8AMâ€“10PM</p>
+  </div>
+</section>
+
+<!-- BOOKING MODAL / royalform -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('bookingModal').classList.remove('active')">âœ•</button>
+    <h3>âš“ Book Your AquaVista Cruise</h3>
+    <div class="royalform">
+      <form>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Robert Clarke" required></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" placeholder="robert@email.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+1 (555) 000-0000" required></div>
+          <div class="form-group"><label>Number of Guests *</label><input type="number" min="1" max="10" value="2" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Select Cruise *</label><select required><option value="">Choose a Cruise</option><option>Mediterranean Dream (12 days)</option><option>Caribbean Paradise (7 days)</option><option>Alaska Discovery (10 days)</option><option>Aegean Odyssey (14 days)</option></select></div>
+          <div class="form-group"><label>Cabin Class *</label><select required><option value="">Select Cabin</option><option>Interior Cabin â€” from $1,999pp</option><option>Ocean View â€” from $2,999pp</option><option>Luxury Suite â€” from $4,999pp</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Preferred Travel Date *</label><input type="date" required></div>
+          <div class="form-group"><label>Departure Port *</label><select required><option value="">Select Port</option><option>Miami, FL</option><option>Barcelona, Spain</option><option>Sydney, Australia</option><option>Dubai, UAE</option></select></div>
+        </div>
+        <div class="form-group full"><label>Special Requests</label><textarea placeholder="Dietary requirements, accessibility needs, anniversary or special occasion..."></textarea></div>
+        <button type="submit" class="submit-btn">âš“ Request My Cruise Booking</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>âš“ AquaVista Cruises</h4>
+        <p>Luxury cruise experiences across the world's most breathtaking waters since 1998. 50+ destinations, 15 vessels.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#cruises">Cruise Packages</a></li>
+          <li><a href="#cabins">Cabin Classes</a></li>
+          <li><a href="#experience">On Board</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#cruises">Mediterranean</a></li>
+          <li><a href="#cruises">Caribbean</a></li>
+          <li><a href="#cruises">Alaska</a></li>
+          <li><a href="#cruises">Aegean Sea</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>ðŸ“ž 1-800-AQUA-VIS<br>âœ‰ sail@aquavistacruises.com<br>ðŸ• 7 days, 8AMâ€“10PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AquaVista Cruises. Powered by <a href="https://www.royaltechbd.com" target="_blank">Royal Technologies</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Modal close on overlay click
+  document.getElementById('bookingModal').addEventListener('click', function(e){
+    if(e.target === this) this.classList.remove('active');
+  });
+</script>
+</body>
+</html>
+

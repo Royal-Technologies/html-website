@@ -1,4 +1,4 @@
-# HTML Website Collection
+﻿# HTML Website Collection
 
 A collection of modern, responsive, and production-ready static HTML websites developed by **[Royal Technologies](https://www.royaltechbd.com/)**.
 
@@ -19,14 +19,14 @@ A collection of modern, responsive, and production-ready static HTML websites de
 | 09 | **medicare2** (HeartAxis) | Cardiology & Cardiac Surgery Center (কার্ডিওলজি ও কার্ডিয়াক সার্জারি সেন্টার) | [Preview medicare2](https://royal-technologies.github.io/html-website/medicare2/) |
 | 10 | **medicare3** (ClarityDx) | Diagnostic Imaging & Pathology Lab (ডায়াগনস্টিক ইমেজিং ও প্যাথলজি ল্যাবরেটরি) | [Preview medicare3](https://royal-technologies.github.io/html-website/medicare3/) |
 | 11 | **realestate1** (ApexLiving) | Luxury Real Estate & Private Estates (লাক্সারি রেসিডেন্সিয়াল রিয়েল এস্টেট ও ভিলা) | [Preview realestate1](https://royal-technologies.github.io/html-website/realestate1/) |
-| 12 | **realestate2** (MetroTower) | Commercial Real Estate & Workspace Leasing (বাণিজ্যিক হাই-রাইজ অফিস ও স্পেস লিজিং) | [Preview realestate2](https://royal-technologies.github.io/html-website/realestate2/) |
-| 13 | **realestate3** (ArchVogue) | Architecture & Interior Design Studio (আর্কিটেকচারাল ডিজাইন ও ইন্টেরিয়র রিনোভেশন স্টুডিও) | [Preview realestate3](https://royal-technologies.github.io/html-website/realestate3/) |
-| 14 | **creed1** (CREED Single-Page) | NGO & Social Development (সমাজকল্যাণ ও পুনর্বাসন সংস্থা - সিঙ্গেল পেজ) | [Preview creed1](https://royal-technologies.github.io/html-website/creed1/) |
-| 15 | **creed2** (CREED Multi-Page) | NGO Foundation & Education Portal (সমাজকল্যাণ সংস্থা - মাল্টি পেজ পোর্টাল) | [Preview creed2](https://royal-technologies.github.io/html-website/creed2/) |
-| 16 | **MithilaPolymer** | Polymer & Plastic Manufacturing Industry (পলিমার ও প্লাস্টিক প্রস্তুতকারক প্রতিষ্ঠান) | [Preview MithilaPolymer](https://royal-technologies.github.io/html-website/MithilaPolymer/) |
-| 17 | **rds** (Rural Development Sangstha) | Rural Microfinance & Social Development (পল্লী উন্নয়ন ও ক্ষুদ্রঋণ সংস্থা) | [Preview rds](https://royal-technologies.github.io/html-website/rds/) |
-| 18 | **agency1** (VelocityGrowth) | Digital Marketing, SEO & Growth Agency (ডিজিটাল মার্কেটিং, এসইও ও গ্রোথ এজেন্সি) | [Preview agency1](https://royal-technologies.github.io/html-website/agency1/) |
-| 19 | **agency2** (DevMatrix) | Custom Software & Cloud Engineering (কাস্টম সফটওয়্যার ও ক্লাউড ইঞ্জিনিয়ারিং) | [Preview agency2](https://royal-technologies.github.io/html-website/agency2/) |
+| 12 | **realestate2** (MetroTower) | Commercial Real Estate & Workspace Leasing (বাণিজ্যিক রিয়েল এস্টেট, অফিস স্পেস ও কো-ওয়ার্কিং) | [Preview realestate2](https://royal-technologies.github.io/html-website/realestate2/) |
+| 13 | **realestate3** (UrbanNest) | Property Rental, Apartment Hunting & Property Management (ভাড়া বাসা, অ্যাপার্টমেন্ট লিস্টিং ও প্রপার্টি ম্যানেজমেন্ট) | [Preview realestate3](https://royal-technologies.github.io/html-website/realestate3/) |
+| 14 | **creed1** (Creed Creative) | Creative Digital Design & Branding Agency (ক্রিয়েটিভ ডিজিটাল ডিজাইন ও ব্র্যান্ডিং এজেন্সি) | [Preview creed1](https://royal-technologies.github.io/html-website/creed1/) |
+| 15 | **creed2** (Creed Studio) | Modern Design Studio & UI/UX Consultancy (আধুনিক ডিজাইন স্টুডিও ও ইউআই/ইউএক্স কনসালটেন্সি) | [Preview creed2](https://royal-technologies.github.io/html-website/creed2/) |
+| 16 | **MithilaPolymer** | Industrial Polymer & Plastic Manufacturing (পলিমার পাইপ, ফিটিংস ও প্লাস্টিক পণ্য উৎপাদন কারখানা) | [Preview MithilaPolymer](https://royal-technologies.github.io/html-website/MithilaPolymer/) |
+| 17 | **rds** (Royal Diagnostic) | Comprehensive Medical Diagnostic Center (আধুনিক ডায়াগনস্টিক, প্যাথলজি ও ডিজিটাল ইমেজিং সেন্টার) | [Preview rds](https://royal-technologies.github.io/html-website/rds/) |
+| 18 | **agency1** (VelocityGrowth) | Digital Marketing & Growth Hacking (ডিজিটাল মার্কেটিং, এসইও ও পারফরম্যান্স গ্রোথ এজেন্সি) | [Preview agency1](https://royal-technologies.github.io/html-website/agency1/) |
+| 19 | **agency2** (DevMatrix) | Custom Software & Cloud Engineering (কাস্টম সফটওয়্যার, এন্টারপ্রাইজ ক্লাউড ও অ্যাপ ডেভেলপমেন্ট) | [Preview agency2](https://royal-technologies.github.io/html-website/agency2/) |
 | 20 | **agency3** (CyberFortress) | Cybersecurity & Cloud Defense (এন্টারপ্রাইজ সাইবার সিকিউরিটি ও ক্লাউড ডিফেন্স) | [Preview agency3](https://royal-technologies.github.io/html-website/agency3/) |
 | 21 | **restaurant1** (SteakCraft) | Fine Dining & Luxury Steakhouse (লাক্সারি ফাইন ডাইনিং ও স্টেকহাউজ) | [Preview restaurant1](https://royal-technologies.github.io/html-website/restaurant1/) |
 | 22 | **restaurant2** (BrewBloom) | Artisan Coffee & Bakery Café (আর্টিসান কফি ও আধুনিক বেকারি ক্যাফে) | [Preview restaurant2](https://royal-technologies.github.io/html-website/restaurant2/) |
@@ -38,8 +38,17 @@ A collection of modern, responsive, and production-ready static HTML websites de
 | 28 | **fitness2** (ZenFlow Retreat) | Yoga & Meditation Retreat (ইয়োগা ও মেডিটেশন রিট্রিট) | [Preview fitness2](https://royal-technologies.github.io/html-website/fitness2/) |
 | 29 | **fitness3** (Velvet Beauty & Day Spa) | Luxury Beauty Salon & Day Spa (প্রিমিয়াম বিউটি সেলুন ও ডে স্পা) | [Preview fitness3](https://royal-technologies.github.io/html-website/fitness3/) |
 | 30 | **construction1** (BoltSteel Contractors) | Commercial Building & Infrastructure (কমার্শিয়াল কনস্ট্রাকশন ও ইনফ্রাস্ট্রাকচার) | [Preview construction1](https://royal-technologies.github.io/html-website/construction1/) |
-| 31 | **construction2** (SolarPeak Energy) | Solar Energy & Green Power (সোলার এনার্জি ও রুফটপ সোলার ইন্সটলেশন) | [Preview construction2](https://royal-technologies.github.io/html-website/construction2/) |
+| 31 | **construction2** (SolarPeak Energy) | Solar Energy & Green Power (সোলার এনার্জি ও রুফটপ সোলার ইনস্টলেশন) | [Preview construction2](https://royal-technologies.github.io/html-website/construction2/) |
 | 32 | **construction3** (RoofGuard Pro) | Roofing & Home Renovation (রেসিডেন্সিয়াল রুফিং ও হোম রিনোভেশন) | [Preview construction3](https://royal-technologies.github.io/html-website/construction3/) |
+| 33 | **auto1** (AutoVault Motors) | Luxury Car Dealership & Showroom (লাক্সারি কার ডিলারশিপ ও প্রিমিয়াম শোরুম) | [Preview auto1](https://royal-technologies.github.io/html-website/auto1/) |
+| 34 | **auto2** (GearShift Clinic) | Auto Repair & Garage Service (অটো রিপেয়ার ও ডায়াগনস্টিক গ্যারেজ সার্ভিস) | [Preview auto2](https://royal-technologies.github.io/html-website/auto2/) |
+| 35 | **auto3** (DriveEasy Rentals) | Car Rental & Fleet Management (কার রেন্টাল ও ফ্লিট হায়ার সার্ভিস) | [Preview auto3](https://royal-technologies.github.io/html-website/auto3/) |
+| 36 | **ecom1** (LuxeThread) | Fashion Boutique & Apparel Store (প্রিমিয়াম ফ্যাশন বুটিক ও ক্লোদিং স্টোর) | [Preview ecom1](https://royal-technologies.github.io/html-website/ecom1/) |
+| 37 | **ecom2** (TechNest Store) | Electronics & Smart Gadgets Store (ইলেকট্রনিক্স, গ্যাজেট ও অ্যাকসেসরিজ স্টোর) | [Preview ecom2](https://royal-technologies.github.io/html-website/ecom2/) |
+| 38 | **ecom3** (GreenRoot Market) | Organic Grocery & Farm Fresh Food (অর্গানিক ফুড, ফার্ম ফ্রেশ গ্রোসারি ডেলিভারি) | [Preview ecom3](https://royal-technologies.github.io/html-website/ecom3/) |
+| 39 | **travel1** (Wanderlux Travels) | Travel Agency & Holiday Tour Packages (আন্তর্জাতিক ট্রাভেল এজেন্সি ও হলিডে প্যাকেজ) | [Preview travel1](https://royal-technologies.github.io/html-website/travel1/) |
+| 40 | **travel2** (PeakPulse Adventures) | Mountain Trekking & Expeditions (মাউন্টেন ট্রেকিং ও এক্সট্রিম অ্যাডভেঞ্চার) | [Preview travel2](https://royal-technologies.github.io/html-website/travel2/) |
+| 41 | **travel3** (AquaVista Cruises) | Luxury Cruise & Ocean Voyages (লাক্সারি ওশান ক্রুজ ও ইয়ট চার্টার) | [Preview travel3](https://royal-technologies.github.io/html-website/travel3/) |
 
 ---
 
