@@ -1,0 +1,995 @@
+/**
+ * RoofGuard Pro - Main Stylesheet
+ * Compatible with Royal Addons for Elementor
+ * Author: Royal Technologies
+ */
+
+:root {
+  --charcoal: #1f2937;
+  --charcoal-dark: #111827;
+  --blue: #2563eb;
+  --blue-dark: #1d4ed8;
+  --blue-tint: #eff6ff;
+  --orange: #f97316;
+  --orange-hover: #ea580c;
+  --light-bg: #f8fafc;
+  --text-main: #374151;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 2px 6px rgba(17, 24, 39, 0.06);
+  --shadow-md: 0 10px 25px -5px rgba(17, 24, 39, 0.1);
+  --shadow-lg: 0 20px 35px -10px rgba(17, 24, 39, 0.18);
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--charcoal);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 55px auto;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--blue-tint);
+  color: var(--blue);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.35);
+}
+
+.btn-orange:hover {
+  background: var(--orange-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn-blue:hover {
+  background: var(--blue-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline-white:hover {
+  background: #ffffff;
+  color: var(--blue);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 82vh;
+  background: url('../images/hero.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 95px 0 115px 0;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(17, 24, 39, 0.92) 0%, rgba(37, 99, 235, 0.78) 60%, rgba(37, 99, 235, 0.55) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249, 115, 22, 0.25);
+  border: 1px solid rgba(249, 115, 22, 0.65);
+  color: #ffedd5;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 52px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.12;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hero-title span {
+  color: #fed7aa;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 34px;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Quick Trust Badges Bar
+   ========================================================================== */
+.trust-bar {
+  background: #ffffff;
+  margin-top: -42px;
+  position: relative;
+  z-index: 5;
+  padding-bottom: 30px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trust-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--blue);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.trust-card:hover {
+  transform: translateY(-4px);
+  border-top-color: var(--orange);
+}
+
+.trust-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--blue-tint);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.trust-card:hover .trust-icon {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.trust-card h4 {
+  font-size: 15.5px;
+  margin-bottom: 3px;
+}
+
+.trust-card p {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Services Section (royalservices)
+   ========================================================================== */
+.royalservices {
+  background: #ffffff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 34px 28px;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  background: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue);
+}
+
+.service-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: var(--blue);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: var(--orange);
+}
+
+.service-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.service-link {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-card:hover .service-link {
+  color: var(--orange);
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Before & After Renovation Slider (royalimagecompare)
+   ========================================================================== */
+.compare-section {
+  background: var(--charcoal);
+  color: #ffffff;
+}
+
+.compare-section .section-title {
+  color: #ffffff;
+}
+
+.compare-section .section-desc {
+  color: #d1d5db;
+}
+
+.royalimagecompare {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  aspect-ratio: 16 / 9;
+  user-select: none;
+  background: #111827;
+}
+
+.compare-img-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.compare-img-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Before layer clipped by CSS variable --pos */
+.compare-before {
+  z-index: 2;
+  clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0);
+}
+
+.compare-after {
+  z-index: 1;
+}
+
+.compare-label {
+  position: absolute;
+  top: 20px;
+  padding: 6px 14px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.compare-label.label-before {
+  left: 20px;
+  background: rgba(17, 24, 39, 0.85);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.compare-label.label-after {
+  right: 20px;
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.compare-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos, 50%);
+  width: 4px;
+  background: #ffffff;
+  transform: translateX(-50%);
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.compare-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.compare-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 10;
+  margin: 0;
+}
+
+.compare-caption {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* ==========================================================================
+   Completed Projects Gallery (royalportfolio)
+   ========================================================================== */
+.royalportfolio {
+  background: var(--light-bg);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.portfolio-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio-thumb {
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-thumb img {
+  transform: scale(1.07);
+}
+
+.portfolio-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--blue);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 9999px;
+}
+
+.portfolio-body {
+  padding: 24px;
+}
+
+.portfolio-body h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.portfolio-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.portfolio-meta i {
+  color: var(--orange);
+}
+
+.portfolio-body p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Process (royaltimeline)
+   ========================================================================== */
+.royaltimeline {
+  background: #ffffff;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.timeline-grid::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  right: 50px;
+  height: 3px;
+  background: #dbeafe;
+  z-index: 1;
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.step-badge {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #ffffff;
+  border: 5px solid #eff6ff;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 800;
+  transition: var(--transition);
+}
+
+.timeline-step:hover .step-badge {
+  background: var(--orange);
+  transform: scale(1.08);
+}
+
+.timeline-step h3 {
+  font-size: 17.5px;
+  margin-bottom: 8px;
+}
+
+.timeline-step p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Team Section (royalteam)
+   ========================================================================== */
+.royalteam {
+  background: var(--light-bg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-photo {
+  height: 300px;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.06);
+}
+
+.team-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.team-content h3 {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.team-content p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Reviews (royalreview)
+   ========================================================================== */
+.royalreview {
+  background: #ffffff;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.review-card {
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue);
+}
+
+.review-stars {
+  color: #f59e0b;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.review-text {
+  font-size: 14.5px;
+  color: var(--text-main);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--blue);
+}
+
+.review-author h4 {
+  font-size: 15.5px;
+  margin-bottom: 2px;
+}
+
+.review-author span {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Free Quote Form (royalform)
+   ========================================================================== */
+.quote-section {
+  background: var(--light-bg);
+}
+
+.quote-box {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border-top: 5px solid var(--blue);
+  padding: 45px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.quote-box .royalform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-family: var(--font-heading);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  background: #f9fafb;
+  color: var(--charcoal);
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+textarea.form-control {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.upload-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 22px;
+  text-align: center;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.upload-zone:hover {
+  border-color: var(--blue);
+  background: var(--blue-tint);
+}
+
+.upload-zone i {
+  font-size: 28px;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.upload-zone p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.upload-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-filename {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* ==========================================================================
+   Footer (Dark Charcoal 4-Column)
+   ========================================================================== */
+.footer {
+  background: var(--charcoal-dark);
+  color: #d1d5db;
+  padding-top: 70px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--orange);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: var(--orange);
+  padding-left: 4px;
+}
+
+.footer-contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.footer-contact-row i {
+  color: var(--orange);
+  margin-top: 4px;
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13.5px;
+  color: #6b7280;
+}
+
+.footer-bottom a {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 991px) {
+  .hero-title { font-size: 40px; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .timeline-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
+  .timeline-grid::before { display: none; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 32px; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .quote-box { padding: 28px 20px; }
+  .quote-box .royalform { grid-template-columns: 1fr; }
+  .form-group.full-width { grid-column: span 1; }
+  .footer-top { grid-template-columns: 1fr; }
+}

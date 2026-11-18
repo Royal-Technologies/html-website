@@ -1,0 +1,1125 @@
+/* ============================================
+   IronEdge CrossFit - Full Site Styles
+   Dark Theme: #0f0f0f | Orange: #f97316 | Red: #ef4444
+   ============================================ */
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ---- Container ---- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---- Section Base ---- */
+section { padding: 90px 0; }
+.section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f97316;
+    margin-bottom: 10px;
+    display: block;
+}
+.section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.section-title span { color: #f97316; }
+.section-subtitle {
+    font-size: 15px;
+    color: #888;
+    max-width: 540px;
+    line-height: 1.7;
+}
+.section-header { margin-bottom: 56px; }
+.section-header.center { text-align: center; }
+.section-header.center .section-subtitle { margin: 0 auto; }
+
+/* ---- Buttons ---- */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ea580c, #c2410c);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(249,115,22,0.4);
+}
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.btn-secondary:hover {
+    background: #fff;
+    color: #0f0f0f;
+    transform: translateY(-2px);
+}
+.btn-red {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+.btn-red:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    box-shadow: 0 8px 25px rgba(239,68,68,0.4);
+}
+
+/* ---- Scroll Reveal ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(15,15,15,0.90) 0%,
+        rgba(249,115,22,0.15) 50%,
+        rgba(15,15,15,0.85) 100%
+    );
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 120px 0 80px;
+    max-width: 760px;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.15);
+    border: 1px solid rgba(249,115,22,0.4);
+    color: #f97316;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+}
+.hero-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(52px, 9vw, 100px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+.hero-title span { color: #f97316; }
+.hero-subtitle {
+    font-size: 17px;
+    color: #bbb;
+    max-width: 480px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+.hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: bounce 2s infinite;
+}
+.hero-scroll i { font-size: 18px; color: #f97316; }
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ============================================
+   STATS BAR
+   ============================================ */
+.stats-bar {
+    background: #111;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 0;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.stat-box {
+    padding: 36px 24px;
+    text-align: center;
+    border-right: 1px solid #1a1a1a;
+    transition: background 0.3s;
+}
+.stat-box:last-child { border-right: none; }
+.stat-box:hover { background: #161616; }
+.stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f97316;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+}
+.stat-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   TRAINING PROGRAMS - royalservices
+   ============================================ */
+.royalservices { background: #0f0f0f; }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.service-card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    padding: 36px 28px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.service-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f97316, #ef4444);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover {
+    border-color: rgba(249,115,22,0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(249,115,22,0.1);
+    border: 1px solid rgba(249,115,22,0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #f97316;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.service-card:hover .service-icon {
+    background: rgba(249,115,22,0.2);
+    transform: scale(1.05);
+}
+.service-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.service-desc {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+.service-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f97316;
+}
+
+/* ============================================
+   BMI CALCULATOR
+   ============================================ */
+.bmi-section {
+    background: #111;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+}
+.bmi-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.bmi-info .section-subtitle { max-width: 100%; }
+.bmi-features {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.bmi-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: #aaa;
+}
+.bmi-feature-item i { color: #f97316; margin-top: 2px; font-size: 14px; }
+.bmi-calculator {
+    background: #0f0f0f;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    padding: 36px;
+}
+.bmi-calculator h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bmi-calculator h3 i { color: #f97316; }
+.bmi-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249,115,22,0.1);
+}
+.form-group select option { background: #111; }
+.bmi-actions { display: flex; gap: 12px; }
+.btn-outline {
+    background: transparent;
+    border: 2px solid #333;
+    color: #aaa;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-outline:hover { border-color: #f97316; color: #f97316; }
+#bmi-result {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    text-align: center;
+}
+.bmi-score {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 auto 12px;
+    border: 3px solid currentColor;
+}
+.bmi-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+}
+.bmi-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8; }
+.bmi-category {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.bmi-advice { font-size: 13px; color: #aaa; line-height: 1.6; }
+.bmi-advice i { margin-right: 6px; }
+.bmi-blue { color: #60a5fa; }
+.bmi-green { color: #4ade80; }
+.bmi-orange { color: #f97316; }
+.bmi-red { color: #ef4444; }
+.bmi-error { color: #ef4444; font-size: 14px; }
+
+/* BMI Scale */
+.bmi-scale {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px;
+}
+.bmi-scale span { flex: 1; }
+.bmi-scale .s1 { background: #60a5fa; }
+.bmi-scale .s2 { background: #4ade80; flex: 1.3; }
+.bmi-scale .s3 { background: #f97316; }
+.bmi-scale .s4 { background: #ef4444; }
+.bmi-scale-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 10px;
+    color: #666;
+}
+
+/* ============================================
+   SCHEDULE TABLE - royaltimeline
+   ============================================ */
+.royaltimeline { background: #0f0f0f; }
+.schedule-table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #1e1e1e; }
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+    background: #111;
+}
+.schedule-table th {
+    background: #0a0a0a;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f97316;
+    padding: 16px 12px;
+    text-align: center;
+    border-bottom: 2px solid #f97316;
+    border-right: 1px solid #1e1e1e;
+}
+.schedule-table th:first-child {
+    text-align: left;
+    color: #666;
+    font-size: 12px;
+}
+.schedule-table th:last-child { border-right: none; }
+.schedule-table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #1a1a1a;
+    border-right: 1px solid #1a1a1a;
+    vertical-align: middle;
+}
+.schedule-table td:last-child { border-right: none; }
+.schedule-table td:first-child {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 20px;
+    background: #0d0d0d;
+}
+.schedule-table tr:last-child td { border-bottom: none; }
+.schedule-table tr:hover td { background: rgba(249,115,22,0.04); }
+.class-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.badge-crossfit { background: rgba(249,115,22,0.15); color: #f97316; border: 1px solid rgba(249,115,22,0.3); }
+.badge-hiit { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+.badge-olympic { background: rgba(96,165,250,0.15); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+.badge-strength { background: rgba(168,85,247,0.15); color: #a855f7; border: 1px solid rgba(168,85,247,0.3); }
+.badge-mobility { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+.badge-nutrition { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+td.rest { color: #333; font-size: 12px; font-style: italic; }
+
+/* ============================================
+   TRAINER TEAM - royalteam
+   ============================================ */
+.royalteam { background: #111; }
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+.trainer-card {
+    background: #0f0f0f;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.trainer-card:hover {
+    border-color: rgba(249,115,22,0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.trainer-img {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.trainer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s;
+}
+.trainer-card:hover .trainer-img img { transform: scale(1.05); }
+.trainer-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+}
+.trainer-socials {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s;
+}
+.trainer-card:hover .trainer-socials { opacity: 1; transform: translateX(0); }
+.trainer-socials a {
+    width: 34px;
+    height: 34px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+.trainer-socials a:hover { background: #f97316; border-color: #f97316; }
+.trainer-cert {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.trainer-info {
+    padding: 24px;
+}
+.trainer-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.trainer-specialty {
+    font-size: 13px;
+    color: #f97316;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.trainer-bio {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.trainer-stats {
+    display: flex;
+    gap: 20px;
+}
+.trainer-stat {
+    text-align: center;
+}
+.trainer-stat strong {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #f97316;
+}
+.trainer-stat small {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   PRICING - royalpricingtable
+   ============================================ */
+.royalpricingtable { background: #0f0f0f; }
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+.pricing-card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+}
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.pricing-card.featured {
+    border-color: #f97316;
+    transform: scale(1.03);
+    box-shadow: 0 0 0 1px #f97316, 0 20px 60px rgba(249,115,22,0.2);
+}
+.pricing-card.featured:hover { transform: scale(1.03) translateY(-8px); }
+.pricing-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+.pricing-header {
+    padding: 32px 28px 24px;
+    border-bottom: 1px solid #1e1e1e;
+}
+.pricing-plan {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f97316;
+    margin-bottom: 12px;
+}
+.pricing-price {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+.price-dollar {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+}
+.price-amount {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+.price-period { font-size: 14px; color: #666; padding-top: 36px; }
+.pricing-desc { font-size: 13px; color: #888; }
+.pricing-features {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #ccc;
+}
+.feature-item i { color: #4ade80; font-size: 13px; margin-top: 2px; flex-shrink: 0; }
+.feature-item.disabled { color: #444; }
+.feature-item.disabled i { color: #333; }
+.pricing-cta {
+    padding: 0 28px 28px;
+}
+.pricing-cta .btn-primary,
+.pricing-cta .btn-secondary {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ============================================
+   REVIEWS - royalreview
+   ============================================ */
+.royalreview { background: #111; }
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.review-card {
+    background: #0f0f0f;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s;
+    position: relative;
+}
+.review-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 80px;
+    color: rgba(249,115,22,0.1);
+    line-height: 1;
+}
+.review-card:hover {
+    border-color: rgba(249,115,22,0.3);
+    transform: translateY(-4px);
+}
+.review-stars {
+    display: flex;
+    gap: 4px;
+    color: #f97316;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.review-text {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.review-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(249,115,22,0.3);
+    flex-shrink: 0;
+}
+.review-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.review-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.review-role { font-size: 12px; color: #f97316; }
+.review-result {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(74,222,128,0.1);
+    border: 1px solid rgba(74,222,128,0.2);
+    color: #4ade80;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-top: 6px;
+}
+
+/* ============================================
+   CONTACT / TRIAL FORM - royalform
+   ============================================ */
+.royalform { background: #0f0f0f; }
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+.form-info .section-subtitle { max-width: 100%; }
+.form-perks {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.perk-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+.perk-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(249,115,22,0.1);
+    border: 1px solid rgba(249,115,22,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #f97316;
+    flex-shrink: 0;
+}
+.perk-text strong { display: block; color: #fff; font-size: 14px; margin-bottom: 2px; }
+.perk-text span { font-size: 13px; color: #888; }
+.contact-form {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    padding: 40px;
+}
+.contact-form h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.form-group { margin-bottom: 16px; }
+.form-group textarea { resize: vertical; min-height: 90px; }
+.contact-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+    padding: 15px;
+    font-size: 16px;
+}
+.form-success {
+    text-align: center;
+    padding: 40px 20px;
+}
+.form-success .success-icon {
+    font-size: 56px;
+    color: #4ade80;
+    margin-bottom: 20px;
+}
+.form-success h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.form-success p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background: #080808;
+    border-top: 1px solid #1a1a1a;
+    padding: 72px 0 0;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #1a1a1a;
+}
+.footer-brand .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.footer-brand .logo-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+}
+.footer-brand .logo-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-brand p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+.footer-socials a:hover {
+    background: #f97316;
+    border-color: #f97316;
+    color: #fff;
+}
+.footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(249,115,22,0.3);
+    display: inline-block;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links li a {
+    font-size: 13px;
+    color: #888;
+    transition: color 0.2s, padding-left 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.footer-links li a:hover { color: #f97316; padding-left: 4px; }
+.footer-links li a i { font-size: 10px; color: #f97316; }
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.contact-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #888;
+}
+.contact-line i { color: #f97316; margin-top: 2px; font-size: 13px; }
+.footer-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #888;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #161616;
+}
+.hours-row:last-child { border-bottom: none; }
+.hours-row span:last-child { color: #4ade80; }
+.footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+.footer-bottom a { color: #f97316; transition: color 0.2s; }
+.footer-bottom a:hover { color: #ea580c; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+    .pricing-card.featured { transform: none; }
+    .pricing-card.featured:hover { transform: translateY(-8px); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .bmi-wrapper { grid-template-columns: 1fr; }
+    .form-wrapper { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    section { padding: 60px 0; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-box { border-bottom: 1px solid #1a1a1a; }
+    .services-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: clamp(44px, 12vw, 72px); }
+    .bmi-fields { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .pricing-grid { max-width: 100%; }
+    .footer-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+    .hero-ctas { flex-direction: column; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat-number { font-size: 36px; }
+    .contact-form { padding: 24px; }
+}

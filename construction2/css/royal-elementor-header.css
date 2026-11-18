@@ -1,0 +1,417 @@
+/**
+ * Royal Elementor Theme - Header Style 1 Stylesheet
+ * Compatible with: Royal Elementor Theme (template-parts/headerstyle1.php & header-top.php)
+ * & Royal Addons for Elementor
+ * Site: SolarPeak Energy (Solar Energy & Green Power)
+ * Author: Royal Technologies
+ */
+
+:root {
+  --color1st: #0a1628;        /* Deep Navy */
+  --color2nd: #22c55e;        /* Solar Green */
+  --color2nd_hover: #16a34a;
+  --amber: #f59e0b;           /* Sun Amber */
+  --amber_hover: #d97706;
+  --header_top_bg: #060e1a;
+  --header_top_text: #94a3b8;
+  --header_bg: #0a1628;
+  --menu_color: #e2e8f0;
+  --menu_hover: #22c55e;
+  --submenu_bg: #0f203a;
+  --action_btn_bg: #f59e0b;
+  --action_btn_text: #0a1628;
+}
+
+/* ==========================================================================
+   Header Top Bar (.headertop)
+   ========================================================================== */
+.headertop {
+  background: var(--header_top_bg);
+  color: var(--header_top_text);
+  font-size: 12.5px;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(34, 197, 94, 0.15);
+  position: relative;
+  z-index: 1002;
+}
+
+.headertop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headertop a {
+  color: var(--header_top_text);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop a:hover {
+  color: var(--color2nd);
+}
+
+.headertop .topleft,
+.headertop .topright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-solar-pill {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   Header Style 1 (.header) - Single Unified Dark Navy Sticky Bar
+   ========================================================================== */
+.header {
+  background: var(--header_bg);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(10, 22, 40, 0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+}
+
+.header .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.header-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+}
+
+.header-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-brand-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+}
+
+.header-brand-name span {
+  color: var(--color2nd);
+}
+
+.header-brand-tagline {
+  font-size: 10.5px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* Desktop Menu (.desktopmenu & .royalmenu) */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+}
+
+.royalmenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  color: var(--menu_color);
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.royalmenu > li > a:hover,
+.royalmenu > li.active > a {
+  color: var(--menu_hover);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.royalmenu > li > a .dropdown-arrow {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.royalmenu > li:hover > a .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Submenu */
+.royalmenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--submenu_bg);
+  min-width: 230px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+.royalmenu > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(4px);
+}
+
+.royalmenu .sub-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.royalmenu .sub-menu li a:hover {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  padding-left: 24px;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--action_btn_bg);
+  color: var(--action_btn_text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+}
+
+.royal-action-btn:hover {
+  background: var(--amber_hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+}
+
+/* Mobile Hamburger Icon */
+#navigation-icon {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #0a1628;
+  z-index: 10000;
+  padding: 24px;
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.6);
+  transition: right 0.35s ease;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-royalmenu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.mobile-royalmenu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-royalmenu li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.mobile-royalmenu .sub-menu {
+  list-style: none;
+  padding-left: 16px;
+  display: none;
+}
+
+.mobile-royalmenu .sub-menu.open {
+  display: block;
+}
+
+.mobile-royalmenu .sub-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 9px 0;
+}
+
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .desktopmenu {
+    display: none;
+  }
+  .header-actions .royal-action-btn {
+    display: none;
+  }
+  #navigation-icon {
+    display: inline-flex;
+  }
+  .mobile-cta-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .headertop .topleft {
+    display: none;
+  }
+  .headertop .container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,1053 @@
+/**
+ * BoltSteel Contractors - Main Stylesheet
+ * Compatible with Royal Addons for Elementor
+ * Author: Royal Technologies
+ */
+
+/* ==========================================================================
+   CSS Variables & Reset
+   ========================================================================== */
+:root {
+  --primary: #1c2b3a;       /* Steel Navy */
+  --primary-dark: #121c27;
+  --secondary: #f97316;     /* Construction Orange */
+  --secondary-hover: #ea580c;
+  --accent: #eab308;        /* Caution Yellow */
+  --light-bg: #f8fafc;
+  --light-card: #ffffff;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --text-light: #f1f5f9;
+  --border-color: #e2e8f0;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 25px -5px rgba(28,43,58,0.1);
+  --shadow-lg: 0 20px 30px -10px rgba(28,43,58,0.18);
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: #ffffff;
+  line-height: 1.6;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 55px auto;
+}
+
+.section-subtitle {
+  font-family: var(--font-heading);
+  color: var(--secondary);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-subtitle::before,
+.section-subtitle::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Buttons & Badges
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--secondary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background: #ffffff;
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-outline-dark:hover {
+  background: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: url('../images/hero.jpg') center center/cover no-repeat;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(28, 43, 58, 0.94) 0%, rgba(28, 43, 58, 0.8) 55%, rgba(28, 43, 58, 0.6) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249, 115, 22, 0.2);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  color: #ffaa5b;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero-title span {
+  color: var(--secondary);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #e2e8f0;
+  margin-bottom: 35px;
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Stats Bar Section
+   ========================================================================== */
+.stats-bar {
+  background: var(--light-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 40px 0;
+  margin-top: -30px;
+  position: relative;
+  z-index: 5;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--secondary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.stat-info h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-info p {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Services Section (royalservices)
+   ========================================================================== */
+.royalservices {
+  background: #ffffff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 35px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--secondary);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.service-card:hover::after {
+  width: 100%;
+}
+
+.service-icon-box {
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon-box {
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.service-link {
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-card:hover .service-link {
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Project Gallery (royalportfolio)
+   ========================================================================== */
+.royalportfolio {
+  background: var(--light-bg);
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 10px 22px;
+  background: #ffffff;
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--secondary);
+  color: #ffffff;
+  border-color: var(--secondary);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: #ffffff;
+  transition: var(--transition);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio-img-wrap {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.portfolio-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img-wrap img {
+  transform: scale(1.08);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(28, 43, 58, 0.9) 0%, rgba(28, 43, 58, 0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.portfolio-tag {
+  background: var(--secondary);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-info h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.portfolio-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.portfolio-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ==========================================================================
+   Safety Standards Section
+   ========================================================================== */
+.safety-section {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.safety-content .section-title {
+  color: #ffffff;
+}
+
+.safety-content p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.safety-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.safety-badge-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 24px 20px;
+  transition: var(--transition);
+}
+
+.safety-badge-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+.safety-badge-icon {
+  font-size: 30px;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.safety-badge-card h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.safety-badge-card p {
+  color: #94a3b8;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Engineering Process (royaltimeline)
+   ========================================================================== */
+.royaltimeline {
+  background: #ffffff;
+}
+
+.timeline-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.timeline-steps::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  right: 50px;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, var(--secondary), var(--secondary) 8px, transparent 8px, transparent 16px);
+  z-index: 1;
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: #ffffff;
+  padding: 0 10px;
+}
+
+.step-num {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--secondary);
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 3px var(--secondary);
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.timeline-step:hover .step-num {
+  background: var(--secondary);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.timeline-step h3 {
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.timeline-step p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Team Section (royalteam)
+   ========================================================================== */
+.royalteam {
+  background: var(--light-bg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-photo {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 24px;
+  text-align: center;
+}
+
+.team-info h3 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  color: var(--secondary);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.team-bio {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-social a {
+  width: 34px;
+  height: 34px;
+  background: #f1f5f9;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.team-social a:hover {
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Reviews (royalreview)
+   ========================================================================== */
+.royalreview {
+  background: #ffffff;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.review-card {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: var(--transition);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary);
+}
+
+.review-stars {
+  color: #f59e0b;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.review-text {
+  font-size: 14.5px;
+  color: var(--text-main);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--secondary);
+}
+
+.review-meta h4 {
+  font-size: 16px;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+
+.review-meta span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Quote Request Form (royalform)
+   ========================================================================== */
+.quote-section {
+  background: var(--light-bg);
+}
+
+.quote-wrapper {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border-top: 5px solid var(--secondary);
+  padding: 45px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.quote-wrapper .royalform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-main);
+  background: #f8fafc;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--secondary);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-notice {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background: #141f2a;
+  color: #cbd5e1;
+  padding-top: 70px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 22px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--secondary);
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: var(--secondary);
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.footer-contact-item i {
+  color: var(--secondary);
+  margin-top: 4px;
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+.footer-bottom a {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 42px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .safety-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .timeline-steps::before {
+    display: none;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 34px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-wrapper .royalform {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}

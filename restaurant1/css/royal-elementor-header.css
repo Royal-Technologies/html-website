@@ -1,0 +1,405 @@
+/* =============================================
+   Royal Elementor Theme — Header Styles
+   SteakCraft Fine Dining | Dark Luxury Theme
+   Colors: #1a0a00 (deep dark), #c9a84c (gold), #8b0000 (wine)
+   ============================================= */
+
+/* ---- Top Bar ---- */
+.headertop {
+  background-color: #0d0500;
+  color: #c9a84c;
+  padding: 8px 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.headertop .headertop-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.headertop .contact-info {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.headertop .contact-info a,
+.headertop .contact-info span {
+  color: #c9a84c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.headertop .contact-info a:hover {
+  color: #fff;
+}
+
+.headertop .contact-info i {
+  margin-right: 6px;
+  color: #8b0000;
+}
+
+.headertop .social-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.headertop .social-links a {
+  color: #c9a84c;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 50%;
+}
+
+.headertop .social-links a:hover {
+  color: #fff;
+  border-color: #c9a84c;
+  transform: translateY(-2px);
+}
+
+/* ---- Main Header ---- */
+.header {
+  background-color: #1a0a00;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s, padding 0.3s, box-shadow 0.3s;
+}
+
+.header.scrolled {
+  background-color: rgba(26, 10, 0, 0.98);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 80px;
+  transition: height 0.3s;
+}
+
+.header.scrolled .header-inner {
+  height: 65px;
+}
+
+/* ---- Logo ---- */
+.header .site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header .site-logo .logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c9a84c;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.header .site-logo .logo-text span {
+  color: #fff;
+}
+
+.header .site-logo .logo-tagline {
+  font-size: 10px;
+  color: rgba(201, 168, 76, 0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  display: block;
+}
+
+/* ---- Desktop Navigation ---- */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.royalmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #e8d5a3;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 28px 20px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.royalmenu > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #c9a84c;
+  transition: width 0.3s ease;
+}
+
+.royalmenu > li:hover > a,
+.royalmenu > li.active > a {
+  color: #c9a84c;
+}
+
+.royalmenu > li:hover > a::after,
+.royalmenu > li.active > a::after {
+  width: 70%;
+}
+
+.royalmenu > li > a .dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s;
+}
+
+.royalmenu > li:hover > a .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* ---- Dropdown Menu ---- */
+.royalmenu .dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  min-width: 200px;
+  background-color: #0d0500;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-top: 2px solid #c9a84c;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  z-index: 999;
+}
+
+.royalmenu > li:hover .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.royalmenu .dropdown li a {
+  display: block;
+  padding: 11px 22px;
+  color: #c9a84c;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s, background-color 0.2s, padding-left 0.2s;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+}
+
+.royalmenu .dropdown li:last-child a {
+  border-bottom: none;
+}
+
+.royalmenu .dropdown li a:hover {
+  color: #fff;
+  background-color: rgba(201, 168, 76, 0.1);
+  padding-left: 28px;
+}
+
+/* ---- Action Button (CTA) ---- */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  background: linear-gradient(135deg, #c9a84c 0%, #a07830 100%);
+  color: #1a0a00;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.royal-action-btn:hover {
+  background: linear-gradient(135deg, #e0bb6a 0%, #c9a84c 100%);
+  color: #0d0500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.4);
+}
+
+/* ---- Mobile Hamburger ---- */
+#navigation-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1100;
+  flex-shrink: 0;
+}
+
+#navigation-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #c9a84c;
+  border-radius: 2px;
+  transition: all 0.35s ease;
+  transform-origin: center;
+}
+
+#navigation-icon.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#navigation-icon.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+#navigation-icon.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---- Mobile Menu ---- */
+@media (max-width: 991px) {
+  #navigation-icon {
+    display: flex;
+  }
+
+  .desktopmenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #0d0500;
+    border-left: 1px solid rgba(201, 168, 76, 0.2);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    z-index: 1050;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.5);
+  }
+
+  .desktopmenu.open {
+    right: 0;
+  }
+
+  .royalmenu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .royalmenu > li {
+    width: 100%;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  }
+
+  .royalmenu > li > a {
+    padding: 15px 24px;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  .royalmenu > li > a::after {
+    display: none;
+  }
+
+  .royalmenu .dropdown {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    display: none;
+    background-color: rgba(201, 168, 76, 0.05);
+    border: none;
+    border-top: 1px solid rgba(201, 168, 76, 0.1);
+    box-shadow: none;
+    padding: 4px 0;
+  }
+
+  .royalmenu > li.mobile-open .dropdown {
+    display: block;
+  }
+
+  .royalmenu .dropdown li a {
+    padding: 10px 36px;
+    font-size: 13px;
+  }
+
+  .headertop .contact-info {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .royal-action-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .headertop {
+    display: none;
+  }
+
+  .header .header-inner {
+    height: 65px;
+  }
+}

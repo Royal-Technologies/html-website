@@ -1,0 +1,225 @@
+/* Royal Elementor Header CSS - BrightMinds Academy */
+:root {
+  --primary: #4f46e5;
+  --amber: #f59e0b;
+  --green: #10b981;
+  --red: #ef4444;
+  --white: #ffffff;
+  --light-bg: #f8f9ff;
+  --text-dark: #1f2937;
+  --text-mid: #4b5563;
+}
+
+/* ===== HEADER TOP ===== */
+.headertop {
+  background: var(--primary);
+  color: var(--white);
+  padding: 8px 0;
+  font-size: 13px;
+}
+.headertop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headertop a { color: var(--white); text-decoration: none; }
+.headertop .ht-left span { margin-right: 16px; }
+.headertop .ht-right a { margin-left: 12px; }
+
+/* ===== MAIN HEADER ===== */
+.header {
+  background: var(--white);
+  box-shadow: 0 2px 20px rgba(79,70,229,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.header.scrolled {
+  box-shadow: 0 4px 30px rgba(79,70,229,0.2);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.header-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+.header-logo .logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.header-logo .logo-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--primary);
+  line-height: 1.1;
+}
+.header-logo .logo-text span { color: var(--amber); }
+.header-logo .logo-sub {
+  font-size: 11px;
+  color: var(--text-mid);
+  font-weight: 500;
+}
+
+/* ===== DESKTOP MENU ===== */
+.desktopmenu { display: flex; align-items: center; gap: 24px; }
+.royalmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.royalmenu > li { position: relative; }
+.royalmenu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.25s;
+}
+.royalmenu > li > a:hover,
+.royalmenu > li.active > a {
+  background: var(--primary);
+  color: var(--white);
+}
+.royalmenu > li > a .arrow {
+  font-size: 10px;
+  transition: transform 0.25s;
+}
+.royalmenu > li:hover > a .arrow { transform: rotate(180deg); }
+
+/* Dropdown */
+.royalmenu .dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.25s;
+  list-style: none;
+  margin: 0;
+  border-top: 3px solid var(--primary);
+}
+.royalmenu > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.royalmenu .dropdown li a {
+  display: block;
+  padding: 9px 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-mid);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.royalmenu .dropdown li a:hover {
+  background: var(--light-bg);
+  color: var(--primary);
+  padding-left: 20px;
+}
+
+/* Action Button */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--amber);
+  color: var(--white);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+.royal-action-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79,70,229,0.4);
+}
+
+/* ===== MOBILE ===== */
+#navigation-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+}
+#navigation-icon span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+#navigation-icon.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+#navigation-icon.active span:nth-child(2) { opacity: 0; }
+#navigation-icon.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.mobile-menu {
+  display: none;
+  background: var(--white);
+  padding: 16px;
+  border-top: 2px solid var(--light-bg);
+}
+.mobile-menu.open { display: block; }
+.mobile-menu ul { list-style: none; margin: 0; padding: 0; }
+.mobile-menu ul li a {
+  display: block;
+  padding: 10px 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.mobile-menu ul li a:hover { background: var(--light-bg); color: var(--primary); }
+.mobile-menu .mobile-sub {
+  padding-left: 16px;
+  display: none;
+}
+.mobile-menu .mobile-sub.open { display: block; }
+.mobile-menu .has-sub > a { justify-content: space-between; display: flex; }
+
+@media (max-width: 991px) {
+  #navigation-icon { display: flex; }
+  .desktopmenu { display: none; }
+}

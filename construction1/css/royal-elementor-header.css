@@ -1,0 +1,477 @@
+/**
+ * Royal Elementor Theme - Header Style 2 Stylesheet
+ * Compatible with: Royal Elementor Theme (template-parts/headerstyle2.php & header-top.php)
+ * & Royal Addons for Elementor
+ * Site: BoltSteel Contractors (Commercial Building Contractor)
+ * Author: Royal Technologies
+ */
+
+:root {
+  --color1st: #1c2b3a; /* Steel Navy */
+  --color2nd: #f97316; /* Construction Orange */
+  --color2nd_hover: #ea580c;
+  --header_top_bg: #141f2a;
+  --header_top_text: #cbd5e1;
+  --header_bg: #ffffff;
+  --header_text: #1c2b3a;
+  --nav_bg: #1c2b3a;
+  --menu_color: #ffffff;
+  --menu_hover: #f97316;
+  --submenu_bg: #ffffff;
+  --action_btn_bg: #f97316;
+  --action_btn_text: #ffffff;
+}
+
+/* ==========================================================================
+   Header Top Bar (.headertop)
+   ========================================================================== */
+.headertop {
+  background: var(--header_top_bg);
+  color: var(--header_top_text);
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1002;
+}
+
+.headertop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headertop a {
+  color: var(--header_top_text);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop a:hover {
+  color: var(--color2nd);
+}
+
+.headertop .topleft,
+.headertop .topright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-cert-badge {
+  background: rgba(249, 115, 22, 0.15);
+  color: var(--color2nd);
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ==========================================================================
+   Middle Header Row (.header) - Logo & Quick Meta
+   ========================================================================== */
+.header {
+  background: var(--header_bg);
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  z-index: 1001;
+}
+
+.header .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.header-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color2nd);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+}
+
+.header-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-brand-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color1st);
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.header-brand-name span {
+  color: var(--color2nd);
+}
+
+.header-brand-tagline {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.header-contact-widgets {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-widget {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-widget-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: var(--color2nd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.header-widget-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-widget-label {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header-widget-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color1st);
+  text-decoration: none;
+}
+
+.header-widget-value:hover {
+  color: var(--color2nd);
+}
+
+/* ==========================================================================
+   Navigation Bar (Sticky)
+   ========================================================================== */
+.nav-wrapper {
+  background: var(--nav_bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(28, 43, 58, 0.15);
+  transition: all 0.3s ease;
+}
+
+.nav-wrapper.scrolled {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nav-wrapper .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Desktop Menu */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+}
+
+.royalmenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 20px;
+  color: var(--menu_color);
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.royalmenu > li > a:hover,
+.royalmenu > li.active > a {
+  color: var(--menu_hover);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.royalmenu > li > a .dropdown-arrow {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.royalmenu > li:hover > a .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Submenu Dropdown */
+.royalmenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--submenu_bg);
+  min-width: 240px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 6px 6px;
+  border-top: 3px solid var(--color2nd);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+.royalmenu > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.royalmenu .sub-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #1e293b;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.royalmenu .sub-menu li a:hover {
+  background: #f8fafc;
+  color: var(--color2nd);
+  padding-left: 24px;
+}
+
+/* Royal Action Button */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--action_btn_bg);
+  color: var(--action_btn_text);
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+}
+
+.royal-action-btn:hover {
+  background: var(--color2nd_hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.45);
+}
+
+/* Mobile Hamburger Button */
+#navigation-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+}
+
+/* Mobile Menu Backdrop & Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #1c2b3a;
+  z-index: 10000;
+  padding: 24px;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.5);
+  transition: right 0.35s ease;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-royalmenu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.mobile-royalmenu li {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.mobile-royalmenu li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.mobile-royalmenu .sub-menu {
+  list-style: none;
+  padding-left: 16px;
+  display: none;
+}
+
+.mobile-royalmenu .sub-menu.open {
+  display: block;
+}
+
+.mobile-royalmenu .sub-menu li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #cbd5e1;
+  text-transform: none;
+  padding: 8px 0;
+}
+
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .header-contact-widgets {
+    display: none;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  #navigation-icon {
+    display: block;
+  }
+  .nav-wrapper .royal-action-btn {
+    display: none;
+  }
+  .mobile-cta-btn {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .headertop .topleft {
+    display: none;
+  }
+  .headertop .container {
+    justify-content: center;
+  }
+}
