@@ -1,0 +1,36 @@
+/* Royal Elementor Header — DriveEasy Rentals (auto3) */
+:root {
+  --header-bg: #0f172a;
+  --header-text: #ffffff;
+  --header-accent: #3b82f6;
+  --topbar-bg: #080f1e;
+  --topbar-text: #94a3b8;
+  --menu-hover: #f59e0b;
+  --mobile-bg: #0f172a;
+}
+.headertop { background: var(--topbar-bg); color: var(--topbar-text); padding: 8px 0; font-size: 0.82rem; }
+.headertop .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.headertop a { color: var(--header-accent); text-decoration: none; }
+.headertop span { margin-right: 16px; }
+.header { background: var(--header-bg); position: relative; z-index: 1000; }
+.header.sticky { position: fixed; top: 0; left: 0; right: 0; box-shadow: 0 4px 24px rgba(0,0,0,0.5); animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+.headerstyle1 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
+.logo a { text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo img { height: 46px; width: auto; }
+.desktopmenu { flex: 1; display: flex; justify-content: center; }
+.royalmenu { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+.royalmenu li a { color: var(--header-text); text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 8px 16px; border-radius: 6px; transition: all 0.3s; letter-spacing: 0.3px; }
+.royalmenu li a:hover { color: var(--menu-hover); background: rgba(59,130,246,0.1); }
+.royal-action-btn { display: flex; align-items: center; gap: 12px; }
+.btn-primary { background: var(--header-accent); color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.88rem; transition: all 0.3s; border: none; cursor: pointer; }
+.btn-primary:hover { background: #2563eb; transform: translateY(-1px); }
+#navigation-icon { display: none; background: none; border: 2px solid rgba(255,255,255,0.3); color: white; font-size: 1.3rem; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+.mobile-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--mobile-bg); z-index: 9999; padding: 70px 24px 24px; }
+.mobile-nav.active { display: block; }
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; }
+.mobile-nav ul li { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.mobile-nav ul li a { display: block; padding: 15px 0; color: white; text-decoration: none; font-size: 1.1rem; }
+.mobile-close { position: absolute; top: 18px; right: 22px; background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+@media (max-width: 768px) { .desktopmenu { display: none; } #navigation-icon { display: block; } }

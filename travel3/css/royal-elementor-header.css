@@ -1,0 +1,617 @@
+/* ==========================================================================
+   Royal Elementor Header CSS - AquaVista Cruises (Header Style 4: Unified Inline)
+   Compatible with: Royal Elementor Theme & Royal Addons
+   Palette: #0a1628 (Deep Navy), #c9a84c (Maritime Gold), #0d9488 (Teal)
+   Fonts: Playfair Display + Inter
+   ========================================================================== */
+
+:root {
+  --aqv-primary: #0a1628;
+  --aqv-primary-dark: #060f1c;
+  --aqv-primary-light: #12233c;
+  --aqv-gold: #c9a84c;
+  --aqv-gold-light: #dfbe62;
+  --aqv-gold-dark: #a88730;
+  --aqv-gold-glow: rgba(201, 168, 76, 0.35);
+  --aqv-teal: #0d9488;
+  --aqv-teal-light: #14b8a6;
+  --aqv-text-light: #f8fafc;
+  --aqv-text-muted: #94a3b8;
+  --aqv-border: rgba(201, 168, 76, 0.2);
+  --aqv-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+/* ==================== TOP ANNOUNCEMENT BAR (.headertop) ==================== */
+.headertop {
+  background-color: var(--aqv-primary-dark);
+  color: var(--aqv-text-muted);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--aqv-border);
+  position: relative;
+  z-index: 1010;
+}
+
+.headertop .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.headertop .top-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.headertop .top-left .announcement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--aqv-gold-light);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.headertop .top-left .announcement-badge i {
+  color: var(--aqv-gold);
+  font-size: 14px;
+  animation: pulse-anchor 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-anchor {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(6deg) scale(1.1); }
+}
+
+.headertop .top-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.headertop a {
+  color: var(--aqv-text-muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+}
+
+.headertop a:hover {
+  color: var(--aqv-gold);
+}
+
+.headertop i {
+  color: var(--aqv-gold);
+  font-size: 13px;
+}
+
+.headertop .top-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop .social-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headertop .social-links a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--aqv-gold);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+.headertop .social-links a:hover {
+  background: var(--aqv-gold);
+  color: var(--aqv-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--aqv-gold-glow);
+}
+
+/* ==================== MAIN HEADER (.header & .headerstyle4) ==================== */
+.header,
+.header.headerstyle4 {
+  background-color: var(--aqv-primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(6, 15, 28, 0.45);
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: 2px solid var(--aqv-gold);
+}
+
+.header.scrolled {
+  background-color: rgba(10, 22, 40, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55);
+  border-bottom: 2px solid var(--aqv-gold-light);
+}
+
+.header .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  transition: height 0.3s ease;
+}
+
+.header.scrolled .container {
+  height: 72px;
+}
+
+/* ==================== BRAND LOGO ==================== */
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header .logo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #c9a84c 0%, #0d9488 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #060f1c;
+  font-size: 24px;
+  box-shadow: 0 4px 16px var(--aqv-gold-glow);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .logo:hover .logo-icon {
+  transform: rotate(8deg) scale(1.05);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.5);
+}
+
+.header .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .logo-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.header .logo-name span {
+  color: var(--aqv-gold);
+  font-style: italic;
+}
+
+.header .logo-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  color: var(--aqv-teal-light);
+  margin-top: 2px;
+}
+
+/* ==================== DESKTOP NAVIGATION (.desktopmenu, .royalmenu) ==================== */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+}
+
+.royalmenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 36px;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 28px 0;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.royalmenu > li > a:hover,
+.royalmenu > li.active > a {
+  color: var(--aqv-gold-light);
+}
+
+/* Maritime Gold underline accent */
+.royalmenu > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--aqv-gold), var(--aqv-teal));
+  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+}
+
+.royalmenu > li > a:hover::after,
+.royalmenu > li.active > a::after {
+  width: 100%;
+}
+
+.royalmenu > li .arrow {
+  font-size: 10px;
+  transition: transform 0.25s ease;
+  color: var(--aqv-gold);
+}
+
+.royalmenu > li:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* ==================== DROPDOWN MENU ==================== */
+.royalmenu .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 250px;
+  background: var(--aqv-primary-dark);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  padding: 12px 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid var(--aqv-border);
+  z-index: 1100;
+}
+
+.royalmenu > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.royalmenu .dropdown li {
+  padding: 0;
+}
+
+.royalmenu .dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.royalmenu .dropdown a i {
+  color: var(--aqv-gold);
+  font-size: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.royalmenu .dropdown a:hover {
+  background: rgba(201, 168, 76, 0.12);
+  color: #ffffff;
+  padding-left: 26px;
+}
+
+.royalmenu .dropdown a:hover i {
+  color: var(--aqv-teal-light);
+  transform: translateX(4px);
+}
+
+/* ==================== HEADER CTA BUTTON (.royal-action-btn) ==================== */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--aqv-gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px var(--aqv-gold-glow);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.royal-action-btn i {
+  font-size: 14px;
+  transition: transform 0.25s ease;
+}
+
+.royal-action-btn:hover {
+  background: linear-gradient(135deg, #dfbe62 0%, var(--aqv-gold) 100%);
+  color: #060f1c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.5);
+}
+
+.royal-action-btn:hover i {
+  transform: rotate(15deg);
+}
+
+/* ==================== MOBILE HAMBURGER (#navigation-icon) ==================== */
+#navigation-icon {
+  display: none;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid var(--aqv-border);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1020;
+  transition: all 0.25s ease;
+}
+
+#navigation-icon:hover {
+  background: rgba(201, 168, 76, 0.22);
+}
+
+#navigation-icon span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--aqv-gold);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+#navigation-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background: var(--aqv-gold-light);
+}
+
+#navigation-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#navigation-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background: var(--aqv-gold-light);
+}
+
+/* ==================== MOBILE MENU BACKDROP ==================== */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(4, 11, 20, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1014;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* ==================== MOBILE MENU DRAWER (.mobile-menu) ==================== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 330px;
+  max-width: 86%;
+  height: 100vh;
+  background: var(--aqv-primary-dark);
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.75);
+  border-left: 1px solid var(--aqv-border);
+  z-index: 1015;
+  padding: 85px 24px 40px;
+  overflow-y: auto;
+  transition: right 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid var(--aqv-border-subtle);
+}
+
+.mobile-menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8px;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu ul li a:hover,
+.mobile-menu ul li.active > a {
+  color: var(--aqv-gold);
+}
+
+.mobile-menu .dropdown {
+  display: none;
+  list-style: none;
+  padding: 6px 0 12px 18px;
+  margin: 0;
+  background: rgba(10, 22, 40, 0.6);
+  border-radius: 8px;
+}
+
+.mobile-menu .dropdown.mobile-open {
+  display: block;
+}
+
+.mobile-menu .dropdown li {
+  border-bottom: none;
+}
+
+.mobile-menu .dropdown a {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: var(--aqv-text-muted);
+}
+
+.mobile-menu .dropdown a:hover {
+  color: var(--aqv-gold-light);
+}
+
+.mobile-menu .mobile-cta {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, var(--aqv-gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 28px;
+  box-shadow: 0 4px 18px var(--aqv-gold-glow);
+}
+
+.mobile-menu .mobile-contact-info {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--aqv-border-subtle);
+  color: var(--aqv-text-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.mobile-menu .mobile-contact-info i {
+  color: var(--aqv-gold);
+  margin-right: 8px;
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+@media (max-width: 1080px) {
+  .royalmenu {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktopmenu,
+  .header .royal-action-btn {
+    display: none;
+  }
+
+  #navigation-icon,
+  .mobile-menu {
+    display: flex;
+  }
+
+  .header .container {
+    height: 74px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headertop .top-right {
+    display: none;
+  }
+
+  .headertop .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headertop .top-left {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo-name {
+    font-size: 20px;
+  }
+
+  .header .logo-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .headertop {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}

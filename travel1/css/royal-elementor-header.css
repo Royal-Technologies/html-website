@@ -1,0 +1,471 @@
+/* ==========================================================================
+   Royal Elementor Header CSS - Wanderlux Travels (Header Style 4: Unified Inline)
+   Compatible with: Royal Elementor Theme & Royal Addons
+   ========================================================================== */
+
+:root {
+  --wdx-primary: #0a2540;
+  --wdx-primary-dark: #06182c;
+  --wdx-accent: #f59e0b;
+  --wdx-accent-hover: #d97706;
+  --wdx-cyan: #06b6d4;
+  --wdx-text-light: #f1f5f9;
+  --wdx-text-muted: #94a3b8;
+  --wdx-border: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== TOP ANNOUNCEMENT BAR (.headertop) ==================== */
+.headertop {
+  background-color: var(--wdx-primary-dark);
+  color: var(--wdx-text-muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--wdx-border);
+  position: relative;
+  z-index: 1010;
+}
+
+.headertop .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.headertop .top-left,
+.headertop .top-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.headertop a {
+  color: var(--wdx-text-muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop a:hover {
+  color: var(--wdx-accent);
+}
+
+.headertop i {
+  color: var(--wdx-accent);
+  font-size: 13px;
+}
+
+.headertop .social-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headertop .social-links a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+.headertop .social-links a:hover {
+  background: var(--wdx-accent);
+  color: #0a2540;
+  transform: translateY(-2px);
+}
+
+/* ==================== MAIN HEADER (.header) ==================== */
+.header {
+  background-color: var(--wdx-primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.header.scrolled {
+  background-color: rgba(10, 37, 64, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.header .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* ==================== BRAND LOGO ==================== */
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header .logo-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f59e0b 0%, #06b6d4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 22px;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.header .logo:hover .logo-icon {
+  transform: rotate(10deg) scale(1.05);
+}
+
+.header .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .logo-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.header .logo-name span {
+  color: var(--wdx-accent);
+}
+
+.header .logo-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--wdx-cyan);
+}
+
+/* ==================== DESKTOP NAVIGATION (.desktopmenu, .royalmenu) ==================== */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+}
+
+.royalmenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 26px 0;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.royalmenu > li > a:hover,
+.royalmenu > li.active > a {
+  color: var(--wdx-accent);
+}
+
+.royalmenu > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--wdx-accent);
+  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+}
+
+.royalmenu > li > a:hover::after,
+.royalmenu > li.active > a::after {
+  width: 100%;
+}
+
+.royalmenu > li .arrow {
+  font-size: 10px;
+  transition: transform 0.25s ease;
+  color: var(--wdx-accent);
+}
+
+.royalmenu > li:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* ==================== DROPDOWN MENU ==================== */
+.royalmenu .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  background: #0d2e50;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1100;
+}
+
+.royalmenu > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.royalmenu .dropdown li {
+  padding: 0;
+}
+
+.royalmenu .dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.royalmenu .dropdown a i {
+  color: var(--wdx-cyan);
+  font-size: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.royalmenu .dropdown a:hover {
+  background: rgba(245, 158, 11, 0.12);
+  color: #ffffff;
+  padding-left: 24px;
+}
+
+.royalmenu .dropdown a:hover i {
+  color: var(--wdx-accent);
+  transform: translateX(3px);
+}
+
+/* ==================== HEADER CTA BUTTON (.royal-action-btn) ==================== */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--wdx-accent);
+  color: #0a2540;
+  padding: 12px 26px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.royal-action-btn:hover {
+  background: #ffffff;
+  color: var(--wdx-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.5);
+}
+
+/* ==================== MOBILE HAMBURGER (#navigation-icon) ==================== */
+#navigation-icon {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1020;
+}
+
+#navigation-icon span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+#navigation-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background: var(--wdx-accent);
+}
+
+#navigation-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#navigation-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background: var(--wdx-accent);
+}
+
+/* ==================== MOBILE MENU DRAWER ==================== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  max-width: 85%;
+  height: 100vh;
+  background: #071a2e;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+  z-index: 1015;
+  padding: 80px 24px 40px;
+  overflow-y: auto;
+  transition: right 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 4px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mobile-menu ul li a:hover {
+  color: var(--wdx-accent);
+}
+
+.mobile-menu .dropdown {
+  display: none;
+  padding-left: 14px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .dropdown.mobile-open {
+  display: block;
+}
+
+.mobile-menu .dropdown a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 10px 4px;
+}
+
+.mobile-menu .mobile-cta {
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+  background: var(--wdx-accent);
+  color: #0a2540;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+@media (max-width: 991px) {
+  .desktopmenu {
+    display: none;
+  }
+  #navigation-icon {
+    display: flex;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header .royal-action-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .headertop {
+    display: none;
+  }
+  .header .container {
+    height: 70px;
+  }
+  .header .logo-name {
+    font-size: 19px;
+  }
+}

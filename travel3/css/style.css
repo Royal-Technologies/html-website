@@ -1,0 +1,1989 @@
+/* ==========================================================================
+   AquaVista Cruises - Main Stylesheet (travel3)
+   Theme: Ocean Luxury (Luxury Cruise & Yacht Charter)
+   Palette:
+     - #0a1628 (Deep Navy)
+     - #060f1c (Darkest Midnight Navy)
+     - #12243d (Ocean Blue / Card Navy)
+     - #c9a84c (Maritime Gold)
+     - #dfbe62 (Gold Light)
+     - #0d9488 (Teal / Ocean Emerald)
+     - #14b8a6 (Teal Light)
+     - #fbf9f4 (Luxury Cream Off-White)
+     - #ffffff (Pure White)
+   Typography:
+     - Headings: 'Playfair Display', Georgia, serif
+     - Body: 'Inter', sans-serif
+   ========================================================================== */
+
+/* -------------------- RESET & GLOBAL -------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #0a1628;
+  --primary-dark: #060f1c;
+  --primary-light: #12243d;
+  --gold: #c9a84c;
+  --gold-light: #dfbe62;
+  --gold-dark: #a88730;
+  --gold-glow: rgba(201, 168, 76, 0.35);
+  --teal: #0d9488;
+  --teal-light: #14b8a6;
+  --teal-glow: rgba(13, 148, 136, 0.3);
+  --bg-cream: #fcfbf8;
+  --bg-white: #ffffff;
+  --bg-slate: #f1f5f9;
+  --text-dark: #0a1628;
+  --text-body: #475569;
+  --text-muted: #64748b;
+  --text-light: #f8fafc;
+  --border-light: #e2e8f0;
+  --border-gold: rgba(201, 168, 76, 0.3);
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 4px 12px rgba(10, 22, 40, 0.05);
+  --shadow-md: 0 12px 30px rgba(10, 22, 40, 0.08);
+  --shadow-lg: 0 20px 50px rgba(10, 22, 40, 0.14);
+  --shadow-dark: 0 25px 60px rgba(0, 0, 0, 0.5);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 50px;
+  --transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-body);
+  background-color: var(--bg-cream);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.bg-cream {
+  background-color: var(--bg-cream);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-dark {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* -------------------- SECTION HEADINGS -------------------- */
+.section-title-wrap {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 60px;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201, 168, 76, 0.12);
+  color: var(--gold-dark);
+  border: 1px solid var(--border-gold);
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-badge i {
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 18px;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.section-title span {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.section-title.light {
+  color: #ffffff;
+}
+
+.section-title.light span {
+  color: var(--gold-light);
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.section-subtitle.light {
+  color: #94a3b8;
+}
+
+/* -------------------- GLOBAL BUTTONS -------------------- */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 20px var(--gold-glow);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  color: #060f1c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(201, 168, 76, 0.5);
+}
+
+.btn-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(10, 22, 40, 0.5);
+  color: var(--gold-light);
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border: 2px solid var(--gold);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: #060f1c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--gold-glow);
+}
+
+/* ==========================================================================
+   1. HERO SECTION (#home)
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 0 180px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(6, 15, 28, 0.78) 0%,
+      rgba(10, 22, 40, 0.88) 60%,
+      rgba(6, 15, 28, 0.98) 100%
+    ),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  padding: 8px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-badge i {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 22px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title span {
+  color: var(--gold);
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #cbd5e1;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.hero-subtitle strong {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+/* -------------------- BOOKING WIDGET CARD -------------------- */
+.booking-widget-card {
+  background: rgba(10, 22, 40, 0.82);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.booking-widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.booking-widget-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.booking-widget-guarantee {
+  font-size: 13px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.booking-widget-guarantee i {
+  color: var(--teal-light);
+}
+
+.booking-form-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1fr 0.8fr 1.2fr;
+  gap: 16px;
+  align-items: end;
+}
+
+.booking-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-field label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.booking-field label i {
+  color: var(--gold);
+}
+
+.booking-input-wrap {
+  position: relative;
+}
+
+.booking-field select,
+.booking-field input {
+  width: 100%;
+  background: rgba(6, 15, 28, 0.85);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  color: #ffffff;
+  padding: 13px 14px;
+  border-radius: var(--radius-sm);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.booking-field select:focus,
+.booking-field input:focus {
+  border-color: var(--gold-light);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.2);
+}
+
+.booking-field select option {
+  background: #0a1628;
+  color: #ffffff;
+}
+
+.booking-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  border: none;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px var(--gold-glow);
+  transition: var(--transition);
+  height: 48px;
+}
+
+.booking-btn:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.5);
+}
+
+/* -------------------- CSS ANIMATED WAVE (Hero Bottom) -------------------- */
+.hero-wave-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hero-wave-wrap svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 80px;
+}
+
+.hero-wave-wrap .wave-path-back {
+  fill: rgba(13, 148, 136, 0.25);
+  animation: wave-animation-back 12s linear infinite;
+}
+
+.hero-wave-wrap .wave-path-middle {
+  fill: rgba(10, 22, 40, 0.6);
+  animation: wave-animation-mid 8s linear infinite;
+}
+
+.hero-wave-wrap .wave-path-front {
+  fill: var(--bg-cream);
+  animation: wave-animation-front 5s linear infinite;
+}
+
+@keyframes wave-animation-front {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-25%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes wave-animation-mid {
+  0% { transform: translateX(-50%); }
+  50% { transform: translateX(-25%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes wave-animation-back {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ==========================================================================
+   2. FEATURED CRUISES (.royalportfolio #cruises)
+   ========================================================================== */
+.cruises-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.cruise-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.cruise-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.cruise-thumb-wrap {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.cruise-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cruise-card:hover .cruise-thumb-wrap img {
+  transform: scale(1.08);
+}
+
+.cruise-duration-pill {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(6, 15, 28, 0.85);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(8px);
+}
+
+.cruise-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--teal);
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cruise-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cruise-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.cruise-route-box {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.cruise-route-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cruise-route-text {
+  font-size: 13px;
+  color: var(--primary);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cruise-highlights {
+  list-style: none;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.cruise-highlights li {
+  font-size: 13px;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.cruise-highlights li i {
+  color: var(--gold);
+  font-size: 12px;
+}
+
+.cruise-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+  margin-top: auto;
+}
+
+.cruise-price-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.cruise-price-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cruise-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.1;
+}
+
+.cruise-price span {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.cruise-cta-btn {
+  background: var(--primary);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.cruise-card:hover .cruise-cta-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  box-shadow: 0 4px 14px var(--gold-glow);
+}
+
+/* ==========================================================================
+   3. OUR FLEET (.royalcardmaker #fleet)
+   ========================================================================== */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.vessel-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.vessel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 168, 76, 0.45);
+}
+
+.vessel-img-wrap {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.vessel-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.vessel-card:hover .vessel-img-wrap img {
+  transform: scale(1.08);
+}
+
+.vessel-class-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(6, 15, 28, 0.88);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+}
+
+.vessel-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.vessel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.vessel-subtitle {
+  font-size: 13px;
+  color: var(--teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.vessel-desc {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.vessel-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: var(--bg-cream);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spec-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.spec-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.spec-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.vessel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-light);
+  margin-top: auto;
+}
+
+.vessel-rate {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.vessel-rate span {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.vessel-btn {
+  background: var(--primary);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.vessel-btn:hover {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px var(--gold-glow);
+}
+
+/* ==========================================================================
+   4. ONBOARD AMENITIES (.royalservices #amenities)
+   ========================================================================== */
+.amenities-section {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  position: relative;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.amenity-card {
+  background: rgba(18, 36, 61, 0.7);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 36px 30px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.amenity-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--teal));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-8px);
+  background: rgba(18, 36, 61, 0.95);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--gold);
+}
+
+.amenity-card:hover::before {
+  opacity: 1;
+}
+
+.amenity-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.2) 0%, rgba(13, 148, 136, 0.2) 100%);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: var(--gold-light);
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+.amenity-card:hover .amenity-icon-wrap {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--teal) 100%);
+  color: #060f1c;
+  transform: rotate(6deg) scale(1.05);
+}
+
+.amenity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.amenity-desc {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.amenity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.amenity-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--gold-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   5. CABIN CLASSES (.royalpricingtable #cabins)
+   ========================================================================== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.cabin-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.cabin-card.featured {
+  border: 2px solid var(--gold);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(201, 168, 76, 0.2);
+}
+
+.cabin-popular-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px var(--gold-glow);
+  z-index: 5;
+}
+
+.cabin-thumb {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.cabin-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cabin-card:hover .cabin-thumb img {
+  transform: scale(1.06);
+}
+
+.cabin-header {
+  padding: 26px 28px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cabin-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.cabin-price-wrap {
+  margin: 12px 0 6px;
+}
+
+.cabin-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.cabin-price sup {
+  font-size: 20px;
+  top: -12px;
+  color: var(--gold-dark);
+}
+
+.cabin-price sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  bottom: 0;
+}
+
+.cabin-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.cabin-body {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cabin-features {
+  list-style: none;
+  margin-bottom: 26px;
+  flex-grow: 1;
+}
+
+.cabin-features li {
+  font-size: 14px;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px dashed #f1f5f9;
+}
+
+.cabin-features li i {
+  color: var(--gold);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.cabin-btn {
+  width: 100%;
+  text-align: center;
+  padding: 13px 20px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.cabin-btn-default {
+  background: var(--bg-cream);
+  color: var(--primary);
+  border: 1px solid #cbd5e1;
+}
+
+.cabin-btn-default:hover {
+  background: var(--primary);
+  color: var(--gold-light);
+  border-color: var(--primary);
+}
+
+.cabin-btn-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 4px 16px var(--gold-glow);
+}
+
+.cabin-btn-gold:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.45);
+}
+
+/* ==========================================================================
+   6. BOARDING PROCESS (.royaltimeline #experience)
+   ========================================================================== */
+.timeline-wrap {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 40px;
+  left: 5%;
+  right: 5%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--teal), var(--gold));
+  z-index: 1;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-step {
+  text-align: center;
+}
+
+.timeline-icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid var(--gold);
+  box-shadow: 0 10px 25px rgba(201, 168, 76, 0.25);
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.timeline-step:hover .timeline-icon-box {
+  transform: scale(1.1);
+  border-color: var(--teal);
+  box-shadow: 0 14px 32px var(--teal-glow);
+}
+
+.timeline-icon-box i {
+  font-size: 26px;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.timeline-step:hover .timeline-icon-box i {
+  color: var(--teal);
+}
+
+.timeline-step-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--gold);
+  color: #060f1c;
+  font-size: 11px;
+  font-weight: 800;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-step-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.timeline-step-desc {
+  font-size: 13.5px;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   7. CREW & HOSPITALITY (.royalteam #crew)
+   ========================================================================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 168, 76, 0.45);
+}
+
+.team-photo-wrap {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: var(--primary);
+}
+
+.team-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.team-card:hover .team-photo-wrap img {
+  transform: scale(1.06);
+}
+
+.team-role-pill {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(6, 15, 28, 0.88);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+}
+
+.team-content {
+  padding: 26px 24px;
+}
+
+.team-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.team-experience {
+  font-size: 13px;
+  color: var(--teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+}
+
+.team-bio {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-cream);
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.team-socials a:hover {
+  background: var(--gold);
+  color: #060f1c;
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   8. GUEST REVIEWS (.royalreview #reviews)
+   ========================================================================== */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.review-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 36px 30px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 168, 76, 0.45);
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  color: var(--gold);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.review-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--primary);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.review-author-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-light);
+}
+
+.review-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+}
+
+.review-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.review-voyage {
+  font-size: 12px;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   9. CHARTER INQUIRY FORM (.royalform #contact)
+   ========================================================================== */
+.inquiry-section {
+  background: linear-gradient(
+      180deg,
+      rgba(6, 15, 28, 0.94) 0%,
+      rgba(10, 22, 40, 0.96) 100%
+    ),
+    url('../images/about.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #ffffff;
+  position: relative;
+}
+
+.inquiry-form-card {
+  background: rgba(10, 22, 40, 0.85);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-dark);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group label i {
+  color: var(--gold);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: rgba(6, 15, 28, 0.7);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: var(--radius-sm);
+  color: #ffffff;
+  padding: 14px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #64748b;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.25);
+}
+
+.form-group select option {
+  background: #0a1628;
+  color: #ffffff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.form-submit-wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-submit-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  border: none;
+  padding: 16px 42px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 22px var(--gold-glow);
+  transition: var(--transition);
+}
+
+.form-submit-btn:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.55);
+}
+
+/* ==========================================================================
+   10. FOOTER
+   ========================================================================== */
+.footer {
+  background-color: var(--primary-dark);
+  color: #94a3b8;
+  padding-top: 80px;
+  border-top: 2px solid var(--border-gold);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-col-brand .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.footer-logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--teal) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #060f1c;
+  font-size: 22px;
+  box-shadow: 0 4px 14px var(--gold-glow);
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-logo-name span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.footer-logo-tagline {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal-light);
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--gold-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  transition: var(--transition);
+}
+
+.footer-socials a:hover {
+  background: var(--gold);
+  color: #060f1c;
+  transform: translateY(-2px);
+  border-color: var(--gold);
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 22px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--gold);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 11px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.footer-links a i {
+  font-size: 11px;
+  color: var(--gold);
+  transition: transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+  padding-left: 4px;
+}
+
+.footer-links a:hover i {
+  transform: translateX(3px);
+}
+
+.footer-contact-list {
+  list-style: none;
+}
+
+.footer-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.footer-contact-list li i {
+  color: var(--gold);
+  font-size: 15px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.footer-contact-list a {
+  color: #cbd5e1;
+}
+
+.footer-contact-list a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  border-top: 1px solid var(--border-dark);
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.footer-bottom a {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   11. SUCCESS MODAL OVERLAY (#charterModal)
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(6, 15, 28, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  background: #0a1628;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-xl);
+  max-width: 520px;
+  width: 100%;
+  padding: 44px 36px;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+}
+
+.modal-overlay.open .modal-card {
+  transform: scale(1);
+}
+
+.modal-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.15);
+  border: 2px solid var(--gold);
+  color: var(--gold-light);
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 25px var(--gold-glow);
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.modal-title span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.modal-ref-box {
+  background: rgba(6, 15, 28, 0.7);
+  border: 1px dashed var(--border-gold);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  margin: 16px 0;
+  display: inline-block;
+}
+
+.modal-ref-label {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-ref-id {
+  font-family: 'Inter', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.modal-msg {
+  font-size: 14.5px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.modal-close-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, #b8933b 100%);
+  color: #060f1c;
+  border: none;
+  padding: 13px 36px;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px var(--gold-glow);
+  transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   12. RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .cruises-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .fleet-grid,
+  .amenities-grid,
+  .pricing-grid,
+  .team-grid,
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cabin-card.featured {
+    transform: none;
+  }
+
+  .timeline-track {
+    display: none;
+  }
+
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .hero-section {
+    padding: 110px 0 140px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .booking-widget-card {
+    padding: 20px;
+  }
+
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-btn {
+    grid-column: span 1;
+  }
+
+  .cruises-grid,
+  .fleet-grid,
+  .amenities-grid,
+  .pricing-grid,
+  .team-grid,
+  .reviews-grid,
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .inquiry-form-card {
+    padding: 28px 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}

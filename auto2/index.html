@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GearShift Auto Clinic | Expert Auto Repair &amp; Certified Garage</title>
+  <meta name="description" content="GearShift Auto Clinic provides ASE-certified auto repair, precision diagnostics, brake overhaul, engine care, and scheduled maintenance. Fast, honest, reliable.">
+  
+  <!-- Google Fonts: Oswald (Headings) + Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Theme Stylesheets -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. TOP HEADER BAR (.headertop)
+       phone left + hours right
+       ========================================================================== -->
+  <div class="headertop">
+    <div class="container">
+      <div class="top-left">
+        <span class="top-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Us: <a href="tel:5550192834">(555) 019-2834</a></span>
+        </span>
+        <span class="top-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>742 Evergreen Motorway, Metroville, CA</span>
+        </span>
+      </div>
+      <div class="top-right">
+        <span class="top-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>Mon - Fri: 8:00 AM - 6:00 PM | Sat: 9:00 AM - 4:00 PM</span>
+        </span>
+        <span class="hours-badge"><i class="fa-solid fa-circle" style="font-size: 8px; color: #22c55e;"></i> Open Today</span>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. MAIN HEADER (.header .headerstyle2)
+       logo "GearShift Auto Clinic" + nav + "Book Service" CTA
+       EXACTLY 4 menu items: Home | Services (dropdown) | Pricing | Book Now
+       ========================================================================== -->
+  <header class="header headerstyle2">
+    <div class="container">
+      <!-- Logo Warper -->
+      <div id="logowarper">
+        <a href="#home" class="branding-link">
+          <div class="brand-icon">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <div class="brand-text">
+            <h1 class="site-title">GearShift <span>Auto Clinic</span></h1>
+            <p class="site-description">Certified Auto Repair &amp; Garage</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation (.desktopmenu .royalmenu) -->
+      <nav class="desktopmenu" aria-label="Main Navigation">
+        <ul class="royalmenu">
+          <li class="active"><a href="#home">Home</a></li>
+          <li class="menu-item-has-children">
+            <a href="#services">Services <i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#services"><i class="fa-solid fa-oil-can"></i> Oil Change</a></li>
+              <li><a href="#services"><i class="fa-solid fa-car-burst"></i> Brake Repair</a></li>
+              <li><a href="#services"><i class="fa-solid fa-laptop-code"></i> Engine Diagnostics</a></li>
+              <li><a href="#services"><i class="fa-solid fa-snowflake"></i> AC Service</a></li>
+            </ul>
+          </li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions (.royal-action-btn and #navigation-icon) -->
+      <div class="header-actions">
+        <a href="#contact" class="royal-action-btn">
+          <i class="fa-solid fa-calendar-check"></i> Book Service
+        </a>
+        <button id="navigation-icon" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div id="mobile-backdrop" class="mobile-menu-backdrop"></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation">
+    <div class="mobile-menu-header">
+      <div class="brand-text">
+        <h2 class="site-title" style="font-size: 22px; margin: 0; font-family: 'Oswald', sans-serif;">
+          GearShift <span style="color: #ef4444;">Auto</span>
+        </h2>
+      </div>
+      <button id="mobile-close-btn" aria-label="Close menu" style="background: none; border: none; font-size: 24px; color: #1a1a1a; cursor: pointer;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="active"><a href="#home">Home</a></li>
+      <li>
+        <a href="#services" class="mobile-submenu-toggle">
+          Services <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <ul class="mobile-submenu">
+          <li><a href="#services"><i class="fa-solid fa-oil-can"></i> Oil Change</a></li>
+          <li><a href="#services"><i class="fa-solid fa-car-burst"></i> Brake Repair</a></li>
+          <li><a href="#services"><i class="fa-solid fa-laptop-code"></i> Engine Diagnostics</a></li>
+          <li><a href="#services"><i class="fa-solid fa-snowflake"></i> AC Service</a></li>
+        </ul>
+      </li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Book Now</a></li>
+    </ul>
+    <div class="mobile-menu-cta">
+      <a href="#contact" class="royal-action-btn" style="display: flex; justify-content: center;">
+        <i class="fa-solid fa-calendar-check"></i> Book Service
+      </a>
+      <p style="font-size: 13px; text-align: center; color: #64748b; margin-top: 14px;">
+        <i class="fa-solid fa-phone" style="color: #ef4444;"></i> (555) 019-2834
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       3. HERO SECTION (#home)
+       hero.jpg full-height dark overlay, red left accent bar,
+       h1 "Expert Auto Care You Can Trust", trust badges row (ASE Certified / 10+ Years / 5-Star / Same-Day Service),
+       Quick Booking mini-form in hero (service select + date input + name + phone + "Schedule Now" orange btn)
+       ========================================================================== -->
+  <section id="home" class="hero-repair">
+    <div class="hero-repair-overlay"></div>
+    <div class="container">
+      <div class="hero-repair-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <i class="fa-solid fa-certificate"></i> Certified Master Auto Technicians
+          </div>
+          
+          <div style="border-left: 5px solid #ef4444; padding-left: 24px; margin-bottom: 24px;">
+            <h1>Expert Auto Care <span>You Can Trust</span></h1>
+            <p class="hero-repair-desc">
+              From precision computerized diagnostics and brake overhauls to factory scheduled servicing, GearShift Auto Clinic keeps your vehicle performing at peak safety, power, and road efficiency.
+            </p>
+          </div>
+
+          <!-- Trust Badges Row (ASE Certified / 10+ Years / 5-Star / Same-Day Service) -->
+          <div class="trust-badges-row">
+            <div class="trust-badge-card">
+              <i class="fa-solid fa-award"></i>
+              <div class="trust-badge-title">ASE Certified</div>
+              <div class="trust-badge-sub">Master Mechanics</div>
+            </div>
+            <div class="trust-badge-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="trust-badge-title">10+ Years</div>
+              <div class="trust-badge-sub">Trusted Garage</div>
+            </div>
+            <div class="trust-badge-card">
+              <i class="fa-solid fa-star"></i>
+              <div class="trust-badge-title">5-Star Rated</div>
+              <div class="trust-badge-sub">Customer Satisfaction</div>
+            </div>
+            <div class="trust-badge-card">
+              <i class="fa-solid fa-bolt"></i>
+              <div class="trust-badge-title">Same-Day Service</div>
+              <div class="trust-badge-sub">Fast Turnaround</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Quick Booking mini-form -->
+        <div class="hero-booking-wrapper">
+          <div class="quick-booking-card">
+            <div class="quick-booking-header">
+              <h3>Quick Service Booking</h3>
+              <p>Reserve your service bay in under 60 seconds</p>
+            </div>
+            <form id="quickBookingForm" class="booking-form-grid">
+              <div class="booking-input-group">
+                <label for="quickService">Select Service</label>
+                <select id="quickService" required>
+                  <option value="" disabled selected>Choose a Service...</option>
+                  <option value="Oil Change">Full Synthetic Oil Change (from $49)</option>
+                  <option value="Brake Inspection">Brake Inspection &amp; Pad Replacement (from $129)</option>
+                  <option value="Engine Diagnostics">Engine Diagnostics (from $89)</option>
+                  <option value="Tire Rotation">Tire Rotation &amp; Balance (from $59)</option>
+                  <option value="AC Recharge">AC System Recharge (from $99)</option>
+                  <option value="Transmission">Transmission Service (from $199)</option>
+                </select>
+              </div>
+
+              <div class="booking-input-group">
+                <label for="quickDate">Preferred Date</label>
+                <input type="date" id="quickDate" required>
+              </div>
+
+              <div class="booking-row-2">
+                <div class="booking-input-group">
+                  <label for="quickName">Your Name</label>
+                  <input type="text" id="quickName" placeholder="Full Name" required>
+                </div>
+                <div class="booking-input-group">
+                  <label for="quickPhone">Phone Number</label>
+                  <input type="tel" id="quickPhone" placeholder="(555) 000-0000" required>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 6px;">
+                <i class="fa-solid fa-calendar-check"></i> Schedule Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SERVICES SECTION (.royalservices)
+       6 cards:
+       - Full Oil Change (from $49)
+       - Brake Inspection & Pad Replacement (from $129)
+       - Engine Diagnostics (from $89)
+       - Tire Rotation & Balance (from $59)
+       - AC System Recharge (from $99)
+       - Transmission Service (from $199)
+       ========================================================================== -->
+  <section id="services" class="section-padding services-section royalservices">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-screwdriver-wrench"></i> What We Do</div>
+        <h2 class="section-title">Complete <span>Auto Repair</span> &amp; Maintenance</h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="margin-top: 18px;">
+          Using OEM parts, dealership-grade computerized scanners, and master-level diagnostic rigor to keep your vehicle safe, road-worthy, and dependable.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-oil-can"></i>
+          </div>
+          <h3>Full Oil Change</h3>
+          <p>Complete drain and fill with premium full synthetic or high-mileage oil, OEM oil filter replacement, and a complimentary 21-point vehicle safety inspection.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$49</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="Oil Change">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-car-burst"></i>
+          </div>
+          <h3>Brake Inspection &amp; Pad Replacement</h3>
+          <p>Comprehensive caliper, rotor, and hydraulic line assessment, precision ceramic or semi-metallic pad installation, rotor resurfacing, and brake fluid bleed.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$129</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="Brake Repair">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Engine Diagnostics</h3>
+          <p>Advanced OBD-II computer scanning, live sensor telemetry, ignition system troubleshooting, fuel injector testing, and pinpoint check engine light diagnosis.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$89</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="Engine Diagnostic">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-compact-disc"></i>
+          </div>
+          <h3>Tire Rotation &amp; Balance</h3>
+          <p>Four-wheel high-speed dynamic balancing, tread wear pattern measurement, tire rotation across drive axles, and digital tire pressure sensor calibration.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$59</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="Tire Service">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3>AC System Recharge</h3>
+          <p>Complete refrigerant recovery, vacuum pressure leak testing, compressor clutch check, condenser coil cleaning, and precision OEM R134a/R1234yf recharge.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$99</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="AC Service">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-box">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3>Transmission Service</h3>
+          <p>Full automatic or manual transmission fluid flush, pan drop, magnetic debris cleaning, new filter and gasket installation, and road shift diagnostic.</p>
+          <div class="service-footer">
+            <div class="service-price-tag"><span>from </span>$199</div>
+            <a href="#contact" class="service-btn-link select-service-btn" data-service="Other">
+              Book <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PRICING PACKAGES (.royalpricingtable)
+       3 packages:
+       - Basic Care ($129, oil change+tire rotation+fluid top-up+inspection)
+       - Complete Care ($249, everything in Basic + brake check + AC check + battery test) [Most Popular]
+       - Premium Care ($399, everything in Complete + engine diagnostic + alignment + detailing)
+       ========================================================================== -->
+  <section id="pricing" class="section-padding pricing-section royalpricingtable">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-tag"></i> Transparent Pricing</div>
+        <h2 class="section-title">Value <span>Service Packages</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="margin-top: 18px;">
+          Choose an all-inclusive seasonal package designed to protect your investment and prevent costly breakdown repairs down the line.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Package 1: Basic Care -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Basic Care</h3>
+            <p>Essential seasonal maintenance package</p>
+            <div class="pricing-cost">$129 <span>/ visit</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Full Synthetic Oil &amp; Filter Change</li>
+            <li><i class="fa-solid fa-check"></i> 4-Wheel Tire Rotation &amp; PSI Check</li>
+            <li><i class="fa-solid fa-check"></i> All Essential Fluid Top-Ups</li>
+            <li><i class="fa-solid fa-check"></i> Multi-Point Safety Inspection</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Comprehensive Brake System Check</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Climate AC &amp; Heating Check</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Full Computer Engine Diagnostic</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline select-service-btn" data-service="Oil Change" style="width: 100%;">
+            Choose Basic Care
+          </a>
+        </div>
+
+        <!-- Package 2: Complete Care (Featured - Most Popular) -->
+        <div class="pricing-card featured">
+          <div class="popular-badge"><i class="fa-solid fa-fire"></i> Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Complete Care</h3>
+            <p>Comprehensive protection for daily commuters</p>
+            <div class="pricing-cost" style="color: #ef4444;">$249 <span>/ visit</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Everything included in Basic Care</strong></li>
+            <li><i class="fa-solid fa-check"></i> Comprehensive Brake Pad &amp; Rotor Check</li>
+            <li><i class="fa-solid fa-check"></i> AC &amp; Climate System Efficiency Check</li>
+            <li><i class="fa-solid fa-check"></i> Battery Load &amp; Alternator Charging Test</li>
+            <li><i class="fa-solid fa-check"></i> Air &amp; Cabin Pollen Filter Inspection</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Full Computer Engine Diagnostic</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Precision 4-Wheel Alignment</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary select-service-btn" data-service="Brake Repair" style="width: 100%;">
+            Choose Complete Care
+          </a>
+        </div>
+
+        <!-- Package 3: Premium Care -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Premium Care</h3>
+            <p>Ultimate bumper-to-bumper performance care</p>
+            <div class="pricing-cost">$399 <span>/ visit</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Everything included in Complete Care</strong></li>
+            <li><i class="fa-solid fa-check"></i> Full Computer Engine Diagnostic Scan</li>
+            <li><i class="fa-solid fa-check"></i> Precision 4-Wheel Laser Alignment</li>
+            <li><i class="fa-solid fa-check"></i> Spark Plug &amp; Ignition Coil Inspection</li>
+            <li><i class="fa-solid fa-check"></i> Fuel Injection System Flush</li>
+            <li><i class="fa-solid fa-check"></i> Hand Wash &amp; Interior Vacuum Detailing</li>
+            <li><i class="fa-solid fa-check"></i> Complimentary Priority Loaner Car</li>
+          </ul>
+          <a href="#contact" class="btn btn-orange select-service-btn" data-service="Engine Diagnostic" style="width: 100%;">
+            Choose Premium Care
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. WHY CHOOSE US (4 Feature Tiles)
+       - Free Multi-Point Inspection
+       - OEM Genuine Parts
+       - Lifetime Repair Warranty
+       - Loaner Cars Available
+       ========================================================================== -->
+  <section class="section-padding why-us-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" style="background: rgba(239, 68, 68, 0.2); border-color: #ef4444; color: #fca5a5;">
+          <i class="fa-solid fa-shield-halved"></i> The GearShift Advantage
+        </div>
+        <h2 class="section-title">Why Drivers <span>Choose Our Garage</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle">
+          We combine cutting-edge dealership technology with the honest, transparent customer service of an independent neighborhood shop.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Feature 1 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <h3>Free Multi-Point Inspection</h3>
+          <p>Every vehicle checked in receives a rigorous digital inspection report with photos sent directly to your phone before any work begins.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-cogs"></i>
+          </div>
+          <h3>OEM Genuine Parts</h3>
+          <p>We source only original equipment manufacturer components and high-tier fluids to ensure factory warranty compliance and optimum longevity.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3>Lifetime Repair Warranty</h3>
+          <p>We back our craftsmanship with a nationwide warranty on parts and labor. If something isn't right, we fix it at zero extra charge.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <h3>Loaner Cars Available</h3>
+          <p>Never disrupt your busy workday schedule. Take advantage of our clean, complimentary loaner cars while our specialists service your ride.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. REPAIR PROCESS (.royaltimeline)
+       4 steps:
+       1) Drop Off & Check-In
+       2) Diagnostic Assessment
+       3) Expert Repair
+       4) Quality Check & Delivery
+       ========================================================================== -->
+  <section class="section-padding process-section royaltimeline">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-arrow-progress"></i> How It Works</div>
+        <h2 class="section-title">Our 4-Step <span>Repair Process</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="margin-top: 18px;">
+          Seamless, honest, and completely transparent from the minute you pull up to our service drive.
+        </p>
+      </div>
+
+      <div class="timeline-row">
+        <!-- Step 1 -->
+        <div class="timeline-card">
+          <div class="timeline-step-badge">01</div>
+          <h3>Drop Off &amp; Check-In</h3>
+          <p>Pull into our climate-controlled bay. Our certified service advisor logs your mileage, notes symptoms, and listens to your concerns.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-card">
+          <div class="timeline-step-badge">02</div>
+          <h3>Diagnostic Assessment</h3>
+          <p>Our ASE Master Technicians run digital diagnostics, inspect physical parts, and provide an itemized upfront quote with clear pricing.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-card">
+          <div class="timeline-step-badge">03</div>
+          <h3>Expert Repair</h3>
+          <p>Upon your digital approval, our specialists install OEM parts using precision tools and factory torque specifications.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-card">
+          <div class="timeline-step-badge">04</div>
+          <h3>Quality Check &amp; Delivery</h3>
+          <p>We perform road testing, re-verify all computer codes, clean your interior, and return your keys ready for the open road.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TECHNICIAN TEAM (.royalteam)
+       3 cards:
+       - team-1.jpg "Mike Torres" (Master Technician, ASE Master Certified)
+       - team-2.jpg "Carlos Rivera" (Engine & Transmission Specialist, 15 years)
+       - team-3.jpg "Jason Park" (Brake & Suspension Expert, ASE Certified)
+       ========================================================================== -->
+  <section class="section-padding team-section royalteam">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-users-gear"></i> Master Technicians</div>
+        <h2 class="section-title">Meet Our <span>Certified Specialists</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="margin-top: 18px;">
+          With over four decades of combined automotive repair expertise, our technicians treat every vehicle as if it were their own family's car.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Tech 1: Mike Torres -->
+        <div class="tech-card">
+          <div class="tech-photo-box">
+            <img src="images/team-1.jpg" alt="Mike Torres - Master Technician" loading="lazy">
+            <div class="tech-ase-badge"><i class="fa-solid fa-star"></i> ASE Master</div>
+          </div>
+          <div class="tech-info">
+            <h3 class="tech-name">Mike Torres</h3>
+            <p class="tech-specialty">Master Technician</p>
+            <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">
+              ASE Master Certified technician with 18+ years of expertise spanning hybrid drivetrains, domestic V8s, and electrical fault isolation.
+            </p>
+            <div class="tech-certs">
+              <span class="cert-pill">ASE Master Certified</span>
+              <span class="cert-pill">18+ Years Exp</span>
+              <span class="cert-pill">EV &amp; Hybrid</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech 2: Carlos Rivera -->
+        <div class="tech-card">
+          <div class="tech-photo-box">
+            <img src="images/team-2.jpg" alt="Carlos Rivera - Engine & Transmission Specialist" loading="lazy">
+            <div class="tech-ase-badge"><i class="fa-solid fa-star"></i> Specialist</div>
+          </div>
+          <div class="tech-info">
+            <h3 class="tech-name">Carlos Rivera</h3>
+            <p class="tech-specialty">Engine &amp; Transmission Specialist</p>
+            <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">
+              15 years mastering internal combustion engine rebuilds, dual-clutch transmission servicing, and high-performance ECU calibration.
+            </p>
+            <div class="tech-certs">
+              <span class="cert-pill">15 Years Exp</span>
+              <span class="cert-pill">Drivetrain Pro</span>
+              <span class="cert-pill">ECU Diagnostics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech 3: Jason Park -->
+        <div class="tech-card">
+          <div class="tech-photo-box">
+            <img src="images/team-3.jpg" alt="Jason Park - Brake & Suspension Expert" loading="lazy">
+            <div class="tech-ase-badge"><i class="fa-solid fa-star"></i> ASE Certified</div>
+          </div>
+          <div class="tech-info">
+            <h3 class="tech-name">Jason Park</h3>
+            <p class="tech-specialty">Brake &amp; Suspension Expert</p>
+            <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">
+              ASE Certified suspension and chassis specialist focusing on high-speed stability, performance braking systems, and laser wheel alignment.
+            </p>
+            <div class="tech-certs">
+              <span class="cert-pill">ASE Certified</span>
+              <span class="cert-pill">Chassis Alignment</span>
+              <span class="cert-pill">ABS Diagnostics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. REVIEWS (.royalreview)
+       3 cards with review-1/2/3.jpg, 5 stars, car owner quotes about fast service and honesty
+       ========================================================================== -->
+  <section class="section-padding reviews-section royalreview">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-comments"></i> Real Driver Feedback</div>
+        <h2 class="section-title">What Our <span>Customers Say</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="margin-top: 18px;">
+          Rated 4.9/5 across over 850+ verified vehicle owner reviews in Metroville.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-box">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-body">
+              "My check engine light came on right before a road trip. Mike and the crew diagnosed a faulty MAF sensor within 20 minutes, had the OEM replacement installed the same afternoon, and saved me hundreds compared to the dealer quote. Unbelievably honest!"
+            </p>
+          </div>
+          <div class="review-user">
+            <img src="images/review-1.jpg" alt="Sarah Jenkins" class="review-avatar" loading="lazy">
+            <div>
+              <div class="review-author-name">Sarah Jenkins</div>
+              <div class="review-vehicle-tag">2021 Honda CR-V Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-box">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-body">
+              "Finding a mechanic you can genuinely trust feels impossible these days. GearShift explained every line item of my brake overhaul, gave me a complimentary loaner vehicle, and finished before the promised time. This is my forever garage."
+            </p>
+          </div>
+          <div class="review-user">
+            <img src="images/review-2.jpg" alt="David Miller" class="review-avatar" loading="lazy">
+            <div>
+              <div class="review-author-name">David Miller</div>
+              <div class="review-vehicle-tag">2018 Ford F-150 Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-box">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-body">
+              "Their transmission service made my Audi shift like butter again. Carlos took the time to show me the worn clutch fluid and explained the whole procedure. Fast turnaround, spotless waiting lounge, and reasonable pricing!"
+            </p>
+          </div>
+          <div class="review-user">
+            <img src="images/review-3.jpg" alt="Marcus Chen" class="review-avatar" loading="lazy">
+            <div>
+              <div class="review-author-name">Marcus Chen</div>
+              <div class="review-vehicle-tag">2020 Audi A4 Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. BOOKING FORM (.royalform) (#contact)
+       Dark section, form fields:
+       Vehicle Make + Model (text inputs in one row),
+       Year + Mileage (row),
+       Service Type (select: Oil Change/Brake Repair/Engine Diagnostic/Tire Service/AC Service/Other),
+       Preferred Date (date input) + Time Slot (select: 8am/10am/12pm/2pm/4pm),
+       Name + Phone (row),
+       Notes textarea,
+       Submit "Schedule My Service" orange button → shows success alert
+       ========================================================================== -->
+  <section id="contact" class="section-padding booking-section" style="background: #181818; border-top: 2px solid #262626;">
+    <span id="book-now" style="display: block; position: relative; top: -100px; visibility: hidden;"></span>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" style="background: rgba(239, 68, 68, 0.2); border-color: #ef4444; color: #fca5a5;">
+          <i class="fa-solid fa-calendar-check"></i> Book Online
+        </div>
+        <h2 class="section-title" style="color: #ffffff;">Schedule Your <span>Service Bay</span></h2>
+        <div class="red-divider"></div>
+        <p class="section-subtitle" style="color: #a3a3a3; margin-top: 18px;">
+          Lock in your appointment with our certified mechanics. We will confirm your bay reservation via phone and SMS within 15 minutes.
+        </p>
+      </div>
+
+      <div class="booking-layout">
+        <!-- Left: Garage Booking Info Box -->
+        <div class="booking-info-box">
+          <div class="section-badge" style="background: rgba(239, 68, 68, 0.25); border-color: #ef4444; color: #fca5a5; margin-bottom: 20px;">
+            <i class="fa-solid fa-wrench"></i> Fast Check-In
+          </div>
+          <h3>Why Book in Advance?</h3>
+          <p>
+            Pre-scheduling ensures our specialized diagnostics bay is dedicated exclusively to your vehicle the moment you arrive.
+          </p>
+
+          <div class="info-bullet">
+            <div class="info-bullet-icon">
+              <i class="fa-solid fa-stopwatch"></i>
+            </div>
+            <div class="info-bullet-text">
+              <h4>Zero Wait Time</h4>
+              <p>Skip the morning waiting queue. Your technician is ready upon arrival.</p>
+            </div>
+          </div>
+
+          <div class="info-bullet">
+            <div class="info-bullet-icon">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <div class="info-bullet-text">
+              <h4>Upfront Price Guarantee</h4>
+              <p>No unexpected surprise charges. We obtain explicit authorization before turning a wrench.</p>
+            </div>
+          </div>
+
+          <div class="info-bullet">
+            <div class="info-bullet-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="info-bullet-text">
+              <h4>Comfortable Lounge or Loaners</h4>
+              <p>Enjoy complimentary espresso, high-speed Wi-Fi, or pick up a sanitized loaner vehicle.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.12);">
+            <p style="font-size: 13px; color: #9ca3af; margin-bottom: 6px;">Need immediate roadside assistance or emergency towing?</p>
+            <div style="font-family: 'Oswald', sans-serif; font-size: 24px; color: #f97316;">
+              <i class="fa-solid fa-phone" style="font-size: 18px;"></i> (555) 019-2834
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Booking Form (.royalform) -->
+        <form id="serviceBookingForm" class="royalform">
+          <!-- Row 1: Vehicle Make + Model -->
+          <div class="form-grid-2">
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="vehicleMake">Vehicle Make</label>
+              <input type="text" id="vehicleMake" class="form-input" placeholder="e.g. Toyota, Ford, BMW" required>
+            </div>
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="vehicleModel">Vehicle Model</label>
+              <input type="text" id="vehicleModel" class="form-input" placeholder="e.g. Camry, F-150, 3-Series" required>
+            </div>
+          </div>
+
+          <!-- Row 2: Year + Mileage -->
+          <div class="form-grid-2">
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="vehicleYear">Vehicle Year</label>
+              <input type="number" id="vehicleYear" class="form-input" placeholder="e.g. 2019" min="1970" max="2026" required>
+            </div>
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="vehicleMileage">Current Mileage</label>
+              <input type="text" id="vehicleMileage" class="form-input" placeholder="e.g. 45,000 miles" required>
+            </div>
+          </div>
+
+          <!-- Row 3: Service Type -->
+          <div class="form-item">
+            <label for="serviceType">Service Type</label>
+            <select id="serviceType" class="form-input" required>
+              <option value="" disabled selected>Select a Service...</option>
+              <option value="Oil Change">Oil Change</option>
+              <option value="Brake Repair">Brake Repair</option>
+              <option value="Engine Diagnostic">Engine Diagnostic</option>
+              <option value="Tire Service">Tire Service</option>
+              <option value="AC Service">AC Service</option>
+              <option value="Other">Other / General Maintenance</option>
+            </select>
+          </div>
+
+          <!-- Row 4: Preferred Date + Time Slot -->
+          <div class="form-grid-2">
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" class="form-input" required>
+            </div>
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="timeSlot">Preferred Time Slot</label>
+              <select id="timeSlot" class="form-input" required>
+                <option value="" disabled selected>Select Time Slot...</option>
+                <option value="8am">8:00 AM - Morning Slot</option>
+                <option value="10am">10:00 AM - Mid-Morning</option>
+                <option value="12pm">12:00 PM - Midday</option>
+                <option value="2pm">2:00 PM - Afternoon</option>
+                <option value="4pm">4:00 PM - Late Afternoon</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Row 5: Name + Phone -->
+          <div class="form-grid-2">
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="customerName">Your Full Name</label>
+              <input type="text" id="customerName" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-item" style="margin-bottom: 0;">
+              <label for="customerPhone">Phone Number</label>
+              <input type="tel" id="customerPhone" class="form-input" placeholder="(555) 019-2834" required>
+            </div>
+          </div>
+
+          <!-- Row 6: Notes textarea -->
+          <div class="form-item">
+            <label for="serviceNotes">Service Notes / Symptoms (Optional)</label>
+            <textarea id="serviceNotes" class="form-input" rows="3" placeholder="Describe squeaking noises, dashboard warning codes, shuddering, or other symptoms..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-orange" style="width: 100%;">
+            <i class="fa-solid fa-calendar-check"></i> Schedule My Service
+          </button>
+
+          <!-- Alert notification container -->
+          <div id="bookingAlert" class="form-alert" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FOOTER (.site-footer .garage-footer)
+       Dark 4-column:
+       1) Brand col with logo + desc + social
+       2) Services links
+       3) Hours table Mon-Fri 8am-6pm Sat 9am-4pm
+       4) Contact info
+       footer-bottom: © 2026 GearShift Auto Clinic. Powered by Royal Technologies (https://www.royaltechbd.com)
+       ========================================================================== -->
+  <footer class="site-footer garage-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+            <div class="brand-icon" style="width: 40px; height: 40px; font-size: 18px;">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <div>
+              <h3 style="font-family: 'Oswald', sans-serif; font-size: 24px; color: #ffffff; margin: 0; line-height: 1;">
+                GearShift <span style="color: #ef4444;">Auto</span>
+              </h3>
+              <p style="font-size: 11px; color: #9ca3af; margin: 2px 0 0; letter-spacing: 1px; text-transform: uppercase;">
+                Certified Garage Clinic
+              </p>
+            </div>
+          </div>
+          <p style="font-size: 14px; color: #9ca3af; line-height: 1.7; margin-bottom: 20px;">
+            Metroville's premier ASE-certified automotive repair shop. High-precision diagnostics, dealership-standard equipment, and an unwavering commitment to honesty and safety.
+          </p>
+          <div class="headertop" style="background: transparent; border: none; padding: 0;">
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Services Links -->
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Full Oil Change</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Brake Repair &amp; Pads</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Engine Diagnostics</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Tire Rotation &amp; Balancing</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> AC System Recharge</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Transmission Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours Table Mon-Fri 8am-6pm Sat 9am-4pm -->
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <table style="width: 100%; font-size: 14px; color: #cbd5e1; border-collapse: collapse;">
+            <tbody>
+              <tr style="border-bottom: 1px solid #262626;">
+                <td style="padding: 8px 0; font-weight: 600;">Mon - Fri:</td>
+                <td style="padding: 8px 0; text-align: right; color: #f97316;">8:00 AM - 6:00 PM</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #262626;">
+                <td style="padding: 8px 0; font-weight: 600;">Saturday:</td>
+                <td style="padding: 8px 0; text-align: right; color: #f97316;">9:00 AM - 4:00 PM</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; font-weight: 600;">Sunday:</td>
+                <td style="padding: 8px 0; text-align: right; color: #ef4444;">Closed (Emergencies)</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="margin-top: 16px; font-size: 12px; color: #9ca3af; background: #1c1c1c; padding: 8px 12px; border-left: 3px solid #ef4444; border-radius: 2px;">
+            <i class="fa-solid fa-key" style="color: #ef4444; margin-right: 4px;"></i> 24/7 Early-Bird &amp; Night Owl Key Drop Available
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col">
+          <h4>Garage Contact</h4>
+          <div class="garage-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>742 Evergreen Motorway, Metroville, CA 90210</div>
+          </div>
+          <div class="garage-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <a href="tel:5550192834" style="color: #ffffff; font-weight: 600;">(555) 019-2834</a><br>
+              <span style="font-size: 12px; color: #737373;">Direct Dispatch &amp; Appointments</span>
+            </div>
+          </div>
+          <div class="garage-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <a href="mailto:service@gearshiftauto.com" style="color: #cbd5e1;">service@gearshiftauto.com</a>
+            </div>
+          </div>
+          <div class="garage-contact-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>Licensed, Bonded &amp; Insured Facility</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 GearShift Auto Clinic. All rights reserved.
+        </div>
+        <div>
+          Powered by <a href="https://www.royaltechbd.com" target="_blank" rel="noopener noreferrer">Royal Technologies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
