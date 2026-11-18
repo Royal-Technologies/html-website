@@ -14,10 +14,14 @@ A collection of modern, responsive, and production-ready static HTML websites de
 | 04 | **advocate1** (JusticeShield) | Corporate Law & Commercial Litigation (কর্পোরেট ল ফার্ম ও বাণিজ্যিক লিটিগেশন) | [Preview advocate1](https://royal-technologies.github.io/html-website/advocate1/) |
 | 05 | **advocate2** (ApexTrial) | Criminal Defense & Civil Rights (ক্রিমিনাল ডিফেন্স ও জরুরি আইনি সুরক্ষা) | [Preview advocate2](https://royal-technologies.github.io/html-website/advocate2/) |
 | 06 | **advocate3** (HavenFamily) | Family Law & Estate Planning (পারিবারিক আইন, ডিভোর্স ও এস্টেট প্ল্যানিং) | [Preview advocate3](https://royal-technologies.github.io/html-website/advocate3/) |
-| 07 | **creed1** (CREED Single-Page) | NGO & Social Development (সমাজকল্যাণ ও পুনর্বাসন সংস্থা - সিঙ্গেল পেজ) | [Preview creed1](https://royal-technologies.github.io/html-website/creed1/) |
-| 08 | **creed2** (CREED Multi-Page) | NGO Foundation & Education Portal (সমাজকল্যাণ সংস্থা - মাল্টি পেজ পোর্টাল) | [Preview creed2](https://royal-technologies.github.io/html-website/creed2/) |
-| 09 | **MithilaPolymer** | Polymer & Plastic Manufacturing Industry (পলিমার ও প্লাস্টিক প্রস্তুতকারক প্রতিষ্ঠান) | [Preview MithilaPolymer](https://royal-technologies.github.io/html-website/MithilaPolymer/) |
-| 10 | **rds** (Rural Development Sangstha) | Rural Microfinance & Social Development (পল্লী উন্নয়ন ও ক্ষুদ্রঋণ সংস্থা) | [Preview rds](https://royal-technologies.github.io/html-website/rds/) |
+| 07 | **hermitage** (Hermitage Group) | International Certification Body & ISO Standards (আন্তর্জাতিক সার্টিফিকেশন ও আইএসও অডিট বডি) | [Preview hermitage](https://royal-technologies.github.io/html-website/hermitage/) |
+| 08 | **medicare1** (LifeCare) | Multi-Specialty General Hospital (মাল্টি-স্পেশালিটি জেনারেল হাসপাতাল ও ইমার্জেন্সি কেয়ার) | [Preview medicare1](https://royal-technologies.github.io/html-website/medicare1/) |
+| 09 | **medicare2** (HeartAxis) | Cardiology & Cardiac Surgery Center (কার্ডিওলজি ও কার্ডিয়াক সার্জারি সেন্টার) | [Preview medicare2](https://royal-technologies.github.io/html-website/medicare2/) |
+| 10 | **medicare3** (ClarityDx) | Diagnostic Imaging & Pathology Lab (ডায়াগনস্টিক ইমেজিং ও প্যাথলজি ল্যাবরেটরি) | [Preview medicare3](https://royal-technologies.github.io/html-website/medicare3/) |
+| 11 | **creed1** (CREED Single-Page) | NGO & Social Development (সমাজকল্যাণ ও পুনর্বাসন সংস্থা - সিঙ্গেল পেজ) | [Preview creed1](https://royal-technologies.github.io/html-website/creed1/) |
+| 12 | **creed2** (CREED Multi-Page) | NGO Foundation & Education Portal (সমাজকল্যাণ সংস্থা - মাল্টি পেজ পোর্টাল) | [Preview creed2](https://royal-technologies.github.io/html-website/creed2/) |
+| 13 | **MithilaPolymer** | Polymer & Plastic Manufacturing Industry (পলিমার ও প্লাস্টিক প্রস্তুতকারক প্রতিষ্ঠান) | [Preview MithilaPolymer](https://royal-technologies.github.io/html-website/MithilaPolymer/) |
+| 14 | **rds** (Rural Development Sangstha) | Rural Microfinance & Social Development (পল্লী উন্নয়ন ও ক্ষুদ্রঋণ সংস্থা) | [Preview rds](https://royal-technologies.github.io/html-website/rds/) |
 
 ---
 
