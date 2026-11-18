@@ -49,6 +49,21 @@ A collection of modern, responsive, and production-ready static HTML websites de
 | 39 | **travel1** (Wanderlux Travels) | Travel Agency & Holiday Tour Packages (আন্তর্জাতিক ট্রাভেল এজেন্সি ও হলিডে প্যাকেজ) | [Preview travel1](https://royal-technologies.github.io/html-website/travel1/) |
 | 40 | **travel2** (PeakPulse Adventures) | Mountain Trekking & Expeditions (মাউন্টেন ট্রেকিং ও এক্সট্রিম অ্যাডভেঞ্চার) | [Preview travel2](https://royal-technologies.github.io/html-website/travel2/) |
 | 41 | **travel3** (AquaVista Cruises) | Luxury Cruise & Ocean Voyages (লাক্সারি ওশান ক্রুজ ও ইয়ট চার্টার) | [Preview travel3](https://royal-technologies.github.io/html-website/travel3/) |
+| 42 | **finance1** (WealthGuard Capital) | Wealth Management & Private Investment Advisory (ওয়েলথ ম্যানেজমেন্ট ও প্রাইভেট ইনভেস্টমেন্ট অ্যাডভাইজরি) | [Preview finance1](https://royal-technologies.github.io/html-website/finance1/) |
+| 43 | **finance2** (FinPay) | FinTech, Neo-Banking & Digital Payments (ফিনটেক, নিও-ব্যাংকিং ও ডিজিটাল পেমেন্ট প্ল্যাটফর্ম) | [Preview finance2](https://royal-technologies.github.io/html-website/finance2/) |
+| 44 | **finance3** (TaxPro Advisors) | Corporate Accounting & Tax Advisory (কর্পোরেট অ্যাকাউন্টিং, বুককিপিং ও ট্যাক্স কনসালটেন্সি) | [Preview finance3](https://royal-technologies.github.io/html-website/finance3/) |
+| 45 | **pet1** (HappyPaws Clinic) | Veterinary Clinic & Pet Hospital (ভেটেরিনারি ক্লিনিক ও পেট হসপিটাল) | [Preview pet1](https://royal-technologies.github.io/html-website/pet1/) |
+| 46 | **pet2** (PoshPaws Grooming) | Luxury Pet Spa & Styling Salon (লাক্সারি ডগ গ্রুমিং ও পেট স্পা সেলুন) | [Preview pet2](https://royal-technologies.github.io/html-website/pet2/) |
+| 47 | **pet3** (CanineCommand) | Dog Training Academy & K9 Boarding (ডগ ট্রেইনিং একাডেমি ও বোর্ডিং রিসোর্ট) | [Preview pet3](https://royal-technologies.github.io/html-website/pet3/) |
+| 48 | **wedding1** (ForeverMoments) | Luxury Wedding Planner & Event Designer (লাক্সারি ওয়েডিং প্ল্যানার ও ইভেন্ট ডিজাইনার) | [Preview wedding1](https://royal-technologies.github.io/html-website/wedding1/) |
+| 49 | **photo1** (LensCraft Studio) | Commercial & Portrait Photography Studio (কমার্শিয়াল, ফ্যাশন ও পোর্ট্রেট ফটোগ্রাফি স্টুডিও) | [Preview photo1](https://royal-technologies.github.io/html-website/photo1/) |
+| 50 | **event1** (SoundStage Live) | Concert, Festival & Stage Production (কনসার্ট, লাইভ মিউজিক ও স্টেজ প্রোডাকশন) | [Preview event1](https://royal-technologies.github.io/html-website/event1/) |
+| 51 | **service1** (AquaFlow Pro) | Master Plumber & Emergency Plumbing (মাস্টার প্লাম্বার ও ২৪/৭ ইমার্জেন্সি প্লাম্বিং সার্ভিস) | [Preview service1](https://royal-technologies.github.io/html-website/service1/) |
+| 52 | **service2** (VoltShield Electric) | Master Electricians & Smart Home Power (মাস্টার ইলেকট্রিশিয়ান ও স্মার্ট ইলেকট্রিক্যাল সিস্টেম) | [Preview service2](https://royal-technologies.github.io/html-website/service2/) |
+| 53 | **service3** (SparkleClean) | Residential & Commercial Cleaning (রেসিডেন্সিয়াল ও কমার্শিয়াল ক্লিনিং সার্ভিস) | [Preview service3](https://royal-technologies.github.io/html-website/service3/) |
+| 54 | **ngo1** (HopeHorizon) | Global Humanitarian Aid & Disaster Relief (আন্তর্জাতিক মানবিক সহায়তা ও দুর্যোগ ত্রাণ চ্যারিটি) | [Preview ngo1](https://royal-technologies.github.io/html-website/ngo1/) |
+| 55 | **green1** (EcoRoots Earth) | Rainforest & Wildlife Conservation (রেইনফরেস্ট রিস্টোরেশন ও বন্যপ্রাণী সংরক্ষণ সংস্থা) | [Preview green1](https://royal-technologies.github.io/html-website/green1/) |
+| 56 | **ngo2** (PureWater Life) | Global Clean Water & Solar Well Foundation (বিশুদ্ধ খাবার পানি ও সোলার গভীর নলকূপ ফাউন্ডেশন) | [Preview ngo2](https://royal-technologies.github.io/html-website/ngo2/) |
 
 ---
 

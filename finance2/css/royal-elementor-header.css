@@ -1,0 +1,39 @@
+/* Royal Elementor Header — FinPay (finance2) */
+:root {
+  --header-bg: #0f172a;
+  --header-text: #ffffff;
+  --header-accent: #06b6d4;
+  --header-indigo: #6366f1;
+  --topbar-bg: #020617;
+  --topbar-text: #94a3b8;
+  --menu-hover: #06b6d4;
+  --mobile-bg: #0f172a;
+}
+.headertop { background: var(--topbar-bg); color: var(--topbar-text); padding: 7px 0; font-size: 0.82rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.headertop .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.headertop a { color: var(--header-accent); text-decoration: none; font-weight: 600; }
+.headertop span { margin-right: 18px; }
+.header { background: var(--header-bg); position: relative; z-index: 1000; transition: all 0.3s ease; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.header.sticky { position: fixed; top: 0; left: 0; right: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.3); animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+.headerstyle4 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
+.logo a { text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--header-indigo), var(--header-accent)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: white; font-weight: 800; }
+.logo-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.55rem; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; }
+.logo-title span { color: var(--header-accent); }
+.desktopmenu { flex: 1; display: flex; justify-content: center; }
+.royalmenu { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
+.royalmenu li a { color: #e2e8f0; text-decoration: none; font-size: 0.92rem; font-weight: 500; padding: 8px 16px; border-radius: 6px; transition: all 0.25s; letter-spacing: 0.2px; }
+.royalmenu li a:hover { color: var(--menu-hover); background: rgba(6,182,212,0.1); }
+.royal-action-btn { display: flex; align-items: center; gap: 12px; }
+.btn-primary { background: linear-gradient(135deg, #4f46e5, #06b6d4); color: #ffffff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.88rem; transition: all 0.3s; border: none; cursor: pointer; box-shadow: 0 4px 14px rgba(79,70,229,0.35); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(6,182,212,0.4); }
+#navigation-icon { display: none; background: none; border: 1px solid rgba(255,255,255,0.2); color: white; font-size: 1.3rem; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+.mobile-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--mobile-bg); z-index: 9999; padding: 70px 24px 24px; }
+.mobile-nav.active { display: block; }
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; }
+.mobile-nav ul li { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.mobile-nav ul li a { display: block; padding: 15px 0; color: white; text-decoration: none; font-size: 1.1rem; }
+.mobile-close { position: absolute; top: 18px; right: 22px; background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+@media (max-width: 768px) { .desktopmenu { display: none; } #navigation-icon { display: block; } }

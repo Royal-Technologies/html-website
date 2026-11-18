@@ -1,0 +1,39 @@
+/* Royal Elementor Header — LensCraft Studio (photo1) */
+:root {
+  --header-bg: #09090b;
+  --header-text: #ffffff;
+  --header-accent: #ccff00;
+  --topbar-bg: #000000;
+  --topbar-text: #a1a1aa;
+  --menu-hover: #ccff00;
+  --mobile-bg: #09090b;
+}
+.headertop { background: var(--topbar-bg); color: var(--topbar-text); padding: 7px 0; font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.06); font-family: 'Space Grotesk', sans-serif; }
+.headertop .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.headertop a { color: var(--header-accent); text-decoration: none; font-weight: 700; }
+.headertop span { margin-right: 18px; }
+.header { background: var(--header-bg); position: relative; z-index: 1000; transition: all 0.3s ease; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.header.sticky { position: fixed; top: 0; left: 0; right: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.5); animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+.headerstyle1 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 20px; }
+.logo a { text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.logo-lens { width: 32px; height: 32px; border: 2px solid var(--header-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; }
+.logo-lens::after { content: ''; width: 10px; height: 10px; background: var(--header-accent); border-radius: 50%; }
+.logo-title { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; text-transform: uppercase; }
+.logo-title span { color: var(--header-accent); }
+.desktopmenu { flex: 1; display: flex; justify-content: center; }
+.royalmenu { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
+.royalmenu li a { color: #d4d4d8; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-size: 0.9rem; font-weight: 600; padding: 8px 16px; border-radius: 4px; transition: all 0.2s; letter-spacing: 0.5px; text-transform: uppercase; }
+.royalmenu li a:hover { color: #000000; background: var(--header-accent); }
+.royal-action-btn { display: flex; align-items: center; gap: 12px; }
+.btn-primary { background: var(--header-accent); color: #000000; padding: 11px 22px; border-radius: 4px; text-decoration: none; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.88rem; transition: all 0.3s; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.btn-primary:hover { background: #b8e600; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(204,255,0,0.4); }
+#navigation-icon { display: none; background: none; border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 1.3rem; padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+.mobile-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--mobile-bg); z-index: 9999; padding: 70px 24px 24px; }
+.mobile-nav.active { display: block; }
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; }
+.mobile-nav ul li { border-bottom: 1px solid rgba(255,255,255,0.1); }
+.mobile-nav ul li a { display: block; padding: 15px 0; color: white; text-decoration: none; font-family: 'Syne', sans-serif; font-size: 1.2rem; text-transform: uppercase; }
+.mobile-close { position: absolute; top: 18px; right: 22px; background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+@media (max-width: 768px) { .desktopmenu { display: none; } #navigation-icon { display: block; } }

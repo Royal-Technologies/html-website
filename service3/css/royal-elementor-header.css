@@ -1,0 +1,39 @@
+/* Royal Elementor Header — SparkleClean (service3) */
+:root {
+  --header-bg: #ffffff;
+  --header-text: #0f172a;
+  --header-accent: #0d9488;
+  --header-accent-hover: #0f766e;
+  --topbar-bg: #0f172a;
+  --topbar-text: #94a3b8;
+  --menu-hover: #0d9488;
+  --mobile-bg: #0f172a;
+}
+.headertop { background: var(--topbar-bg); color: var(--topbar-text); padding: 8px 0; font-size: 0.84rem; }
+.headertop .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.headertop a { color: #2dd4bf; text-decoration: none; font-weight: 700; }
+.headertop span { margin-right: 18px; }
+.header { background: var(--header-bg); position: relative; z-index: 1000; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header.sticky { position: fixed; top: 0; left: 0; right: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+.headerstyle2 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 20px; }
+.logo a { text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 40px; height: 40px; background: #ccfbf1; color: var(--header-accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+.logo-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
+.logo-title span { color: var(--header-accent); }
+.desktopmenu { flex: 1; display: flex; justify-content: center; }
+.royalmenu { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
+.royalmenu li a { color: #334155; text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.94rem; font-weight: 700; padding: 8px 18px; border-radius: 6px; transition: all 0.25s; }
+.royalmenu li a:hover { color: var(--menu-hover); background: #f0fdfa; }
+.royal-action-btn { display: flex; align-items: center; gap: 12px; }
+.btn-primary { background: var(--header-accent); color: #ffffff; padding: 11px 22px; border-radius: 6px; text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 0.88rem; transition: all 0.3s; border: none; cursor: pointer; box-shadow: 0 4px 14px rgba(13,148,136,0.25); }
+.btn-primary:hover { background: var(--header-accent-hover); transform: translateY(-2px); }
+#navigation-icon { display: none; background: none; border: 1px solid #cbd5e1; color: #0f172a; font-size: 1.3rem; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+.mobile-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--mobile-bg); z-index: 9999; padding: 70px 24px 24px; }
+.mobile-nav.active { display: block; }
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; }
+.mobile-nav ul li { border-bottom: 1px solid rgba(255,255,255,0.08); }
+@media (max-width: 991px) {
+  .desktopmenu { display: none; }
+  #navigation-icon { display: block; }
+}

@@ -1,0 +1,167 @@
+/* SoundStage Live — style.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --violet-dark: #0d0718;
+  --violet: #180d2b;
+  --violet-card: #23143d;
+  --magenta: #ec4899;
+  --purple: #8b5cf6;
+  --amber: #f59e0b;
+  --white: #ffffff;
+  --text-light: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: rgba(255,255,255,0.1);
+  --shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: var(--text-light); background: var(--violet-dark); line-height: 1.6; }
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px; color: var(--white); }
+section { padding: 95px 0; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-tag { display: inline-block; background: rgba(236,72,153,0.15); color: var(--magenta); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 2px; padding: 6px 18px; border-radius: 50px; margin-bottom: 14px; border: 1px solid rgba(236,72,153,0.3); }
+.section-header h2 { font-size: clamp(2.4rem, 5.5vw, 4rem); margin-bottom: 12px; }
+.section-header p { color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto; }
+
+/* HERO */
+.hero-section { position: relative; min-height: 94vh; display: flex; align-items: center; background: radial-gradient(circle at center, #2e1065, #180d2b 60%, #0d0718); overflow: hidden; padding: 100px 0; text-align: center; }
+.hero-bg { position: absolute; inset: 0; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.28; filter: contrast(120%); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,7,24,0.7) 0%, rgba(13,7,24,0.95) 100%); }
+.hero-content { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid var(--magenta); color: #fbcfe8; padding: 8px 22px; border-radius: 50px; font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; letter-spacing: 1.5px; margin-bottom: 24px; }
+.hero-text h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); line-height: 0.95; margin-bottom: 24px; }
+.hero-text h1 .gradient { background: linear-gradient(135deg, #f43f5e, #ec4899 40%, #8b5cf6 80%, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-text p { color: #cbd5e1; font-size: 1.25rem; margin-bottom: 40px; line-height: 1.7; max-width: 680px; margin-left: auto; margin-right: auto; }
+.hero-btns { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+.btn-magenta { background: linear-gradient(135deg, #ec4899, #8b5cf6); color: white; padding: 16px 38px; border-radius: 50px; text-decoration: none; font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 1px; transition: all 0.3s; border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(236,72,153,0.4); }
+.btn-magenta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(236,72,153,0.6); }
+.btn-outline-white { background: transparent; color: white; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 1px; border: 2px solid rgba(255,255,255,0.4); transition: all 0.3s; }
+.btn-outline-white:hover { border-color: var(--magenta); color: var(--magenta); }
+
+/* STATS */
+.stats-strip { background: #130a24; padding: 36px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: center; }
+.stat-box .num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--magenta); display: block; margin-bottom: 2px; }
+.stat-box .label { color: #94a3b8; font-size: 0.88rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+/* SERVICES / EXPERIENCES (royalservices) */
+.services-section { background: var(--violet); }
+.royalservices.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.service-card { background: var(--violet-card); border-radius: 16px; padding: 38px 28px; border: 1px solid var(--border); transition: all 0.3s ease; position: relative; }
+.service-card:hover { transform: translateY(-6px); border-color: var(--magenta); box-shadow: 0 16px 40px rgba(236,72,153,0.15); }
+.service-icon { width: 56px; height: 56px; background: rgba(236,72,153,0.15); color: var(--magenta); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 20px; }
+.service-card h3 { font-size: 1.6rem; margin-bottom: 10px; }
+.service-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+/* ABOUT / FESTIVAL GROUNDS */
+.about-section { background: var(--violet-dark); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-img { border-radius: 16px; overflow: hidden; position: relative; border: 1px solid var(--border); }
+.about-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-badge { position: absolute; bottom: 20px; right: 20px; background: var(--violet-dark); color: white; padding: 18px 24px; border-radius: 10px; border: 2px solid var(--magenta); text-align: center; }
+.about-badge strong { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--magenta); }
+.about-text h2 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 18px; }
+.about-text p { color: #cbd5e1; font-size: 1.05rem; line-height: 1.8; margin-bottom: 18px; }
+.about-highlights { list-style: none; margin-top: 24px; }
+.about-highlights li { display: flex; align-items: center; gap: 12px; font-weight: 600; color: white; margin-bottom: 12px; font-size: 1rem; }
+.about-highlights li::before { content: '⚡'; color: var(--magenta); }
+
+/* SCHEDULE TIMELINE (royaltimeline) */
+.timeline-section { background: var(--violet); }
+.royaltimeline.timeline-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 26px; }
+.timeline-card { background: var(--violet-card); border: 1px solid var(--border); border-radius: 12px; padding: 32px 22px; text-align: center; transition: all 0.3s; }
+.timeline-card:hover { border-color: var(--magenta); transform: translateY(-4px); }
+.timeline-num { width: 50px; height: 50px; background: linear-gradient(135deg, var(--magenta), var(--purple)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; margin: 0 auto 18px; }
+.timeline-card h3 { color: white; font-size: 1.5rem; margin-bottom: 8px; }
+.timeline-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+
+/* HEADLINERS / LINEUP (royalportfolio) */
+.lineup-section { background: var(--violet-dark); }
+.royalportfolio.lineup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+.lineup-card { background: var(--violet-card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: transform 0.3s; }
+.lineup-card:hover { transform: translateY(-6px); border-color: var(--magenta); }
+.lineup-card img { width: 100%; height: 260px; object-fit: cover; }
+.lineup-body { padding: 22px; }
+.lineup-tag { display: inline-block; background: rgba(236,72,153,0.15); color: var(--magenta); font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; padding: 4px 12px; border-radius: 50px; margin-bottom: 8px; }
+.lineup-card h3 { font-size: 1.5rem; margin-bottom: 6px; }
+.lineup-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+
+/* TICKETS (royalpricingtable) */
+.pricing-section { background: var(--violet); }
+.royalpricingtable.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1050px; margin: 0 auto; }
+.pricing-card { background: var(--violet-card); border: 1px solid var(--border); border-radius: 16px; padding: 44px 30px; text-align: center; transition: all 0.3s; position: relative; }
+.pricing-card:hover { transform: translateY(-6px); }
+.pricing-card.featured { border-color: var(--magenta); box-shadow: 0 16px 48px rgba(236,72,153,0.25); transform: scale(1.02); }
+.pricing-badge { background: linear-gradient(135deg, var(--magenta), var(--purple)); color: white; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 1px; padding: 4px 16px; border-radius: 50px; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); }
+.pricing-card h3 { font-size: 1.7rem; margin-bottom: 8px; }
+.pricing-price { font-family: 'Bebas Neue', sans-serif; font-size: 3.4rem; color: var(--white); margin-bottom: 6px; }
+.pricing-price span { font-size: 1rem; font-family: 'Inter', sans-serif; color: var(--text-muted); font-weight: 500; }
+.pricing-card.featured .pricing-price { color: var(--magenta); }
+.pricing-features { list-style: none; text-align: left; margin: 24px 0 34px; }
+.pricing-features li { padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; color: #cbd5e1; display: flex; align-items: center; gap: 10px; }
+.pricing-features li::before { content: '⚡'; color: var(--magenta); }
+.plan-btn { display: block; width: 100%; padding: 14px; border-radius: 50px; font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 1px; text-decoration: none; transition: all 0.3s; }
+.pricing-card .plan-btn { background: rgba(255,255,255,0.08); color: white; border: 1px solid var(--border); }
+.pricing-card .plan-btn:hover { background: var(--magenta); border-color: var(--magenta); }
+.pricing-card.featured .plan-btn { background: linear-gradient(135deg, var(--magenta), var(--purple)); color: white; }
+
+/* TEAM / KEYNOTES (royalteam) */
+.team-section { background: var(--violet-dark); }
+.royalteam.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 30px; }
+.team-card { background: var(--violet-card); border-radius: 14px; overflow: hidden; border: 1px solid var(--border); text-align: center; }
+.team-card img { width: 100%; height: 260px; object-fit: cover; }
+.team-body { padding: 24px 20px; }
+.team-card h3 { font-size: 1.5rem; margin-bottom: 4px; }
+.team-role { color: var(--magenta); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 8px; }
+.team-bio { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; }
+
+/* REVIEWS (royalreview) */
+.reviews-section { background: var(--violet); }
+.royalreview.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+.review-card { background: var(--violet-card); border: 1px solid var(--border); border-radius: 14px; padding: 34px 26px; }
+.stars { color: #f59e0b; font-size: 1.2rem; margin-bottom: 14px; letter-spacing: 2px; }
+.review-card p { font-size: 0.98rem; font-style: italic; line-height: 1.8; margin-bottom: 22px; color: #cbd5e1; }
+.reviewer { display: flex; align-items: center; gap: 12px; }
+.reviewer img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--magenta); }
+.reviewer strong { display: block; color: white; font-size: 0.95rem; }
+.reviewer small { color: var(--text-muted); font-size: 0.82rem; }
+
+/* FORM (royalform) */
+.contact-section { background: var(--violet-dark); }
+.royalform.form-wrapper { max-width: 800px; margin: 0 auto; background: var(--violet-card); border: 1px solid var(--border); border-radius: 16px; padding: 48px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.5px; color: white; }
+.form-group input, .form-group select, .form-group textarea { padding: 13px 16px; border: 1px solid var(--border); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 0.92rem; outline: none; transition: border-color 0.25s; background: var(--violet-dark); color: white; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--magenta); }
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-group.full { grid-column: 1 / -1; }
+.submit-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--magenta), var(--purple)); color: white; border: none; border-radius: 50px; font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 1px; cursor: pointer; transition: all 0.3s; margin-top: 10px; }
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(236,72,153,0.5); }
+
+/* FOOTER */
+.site-footer { background: #07030c; padding: 70px 0 24px; color: white; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 48px; }
+.footer-col h4 { color: white; font-size: 1.5rem; margin-bottom: 18px; font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px; }
+.footer-col p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+.footer-col ul li a:hover { color: var(--magenta); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; text-align: center; color: #64748b; font-size: 0.85rem; }
+.footer-bottom a { color: var(--magenta); text-decoration: none; }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  section { padding: 60px 0; }
+  .about-grid, .form-row { grid-template-columns: 1fr; }
+  .royalpricingtable.pricing-grid, .royaltimeline.timeline-steps { grid-template-columns: 1fr; }
+  .royalform.form-wrapper { padding: 28px 20px; }
+}
