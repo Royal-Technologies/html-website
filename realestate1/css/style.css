@@ -1,0 +1,868 @@
+/* ============================================================
+   ApexLiving Luxury Real Estate — Main Stylesheet
+   Compatible with Royal Elementor Theme & Royal Addons
+   Author: Royal Technologies (https://www.royaltechbd.com)
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --emerald:   #0b2520;
+  --emerald-d: #061513;
+  --emerald-l: #123d35;
+  --gold:      #d4af37;
+  --gold-d:    #b8972e;
+  --gold-lt:   #fdf8e6;
+  --slate:     #1e293b;
+  --muted:     #64748b;
+  --light-bg:  #f8faf9;
+  --white:     #ffffff;
+  --border:    #e5e7eb;
+  --radius:    12px;
+  --shadow:    0 10px 30px rgba(11, 37, 32, 0.08);
+  --transition: all 0.28s ease;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--slate);
+  background: #ffffff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 90px 0; }
+.section-alt { background: var(--light-bg); }
+
+/* Section Header */
+.section-header { text-align: center; max-width: 680px; margin: 0 auto 55px; }
+.section-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(28px, 3.8vw, 42px);
+  font-weight: 900;
+  color: var(--emerald);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+.section-title span { color: var(--gold); }
+.section-desc { font-size: 16px; color: var(--muted); line-height: 1.7; }
+
+/* Buttons */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--emerald-d) !important;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 13px 26px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.35);
+}
+.btn-gold:hover {
+  background: var(--gold-d);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-outline-white:hover {
+  background: #ffffff;
+  color: var(--emerald);
+}
+
+/* ============================================================
+   HERO SECTION (#home)
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: var(--emerald-d);
+  overflow: hidden;
+  padding: 100px 0 120px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  opacity: 0.32;
+  transform: scale(1.05);
+  animation: heroZoom 20s infinite alternate ease-in-out;
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6, 21, 19, 0.92) 0%, rgba(11, 37, 32, 0.75) 60%, rgba(6, 21, 19, 0.88) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold);
+  padding: 6px 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: clamp(34px, 5.5vw, 62px);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.hero-title span { color: var(--gold); }
+
+.hero-desc {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 660px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* Property Search Bar Widget */
+.property-search-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  text-align: left;
+}
+
+.search-field label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.search-field select,
+.search-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--emerald);
+  background: transparent;
+}
+
+.search-field select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%2364748b' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  padding-right: 20px;
+}
+
+/* ============================================================
+   TRUST STATS BAR
+   ============================================================ */
+.stats-bar {
+  background: var(--emerald);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 28px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 16px;
+}
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   FEATURED ESTATES (royalportfolio / royalcardmaker)
+   ============================================================ */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 9px 20px;
+  border-radius: 100px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--slate);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--emerald);
+  color: var(--gold);
+  border-color: var(--emerald);
+}
+
+.estates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+.estate-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+}
+.estate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(11, 37, 32, 0.14);
+  border-color: var(--gold);
+}
+
+.estate-img-wrap {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+.estate-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.estate-card:hover .estate-img-wrap img { transform: scale(1.06); }
+
+.estate-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--emerald);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.estate-price {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(6, 21, 19, 0.9);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.estate-body { padding: 24px; }
+.estate-location {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.estate-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--emerald);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.estate-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.estate-spec-item { display: flex; align-items: center; gap: 6px; }
+.estate-spec-item i { color: var(--gold); font-size: 15px; }
+
+/* ============================================================
+   VIRTUAL TOUR / 360 CTA BOX (royalcalltoactionbox)
+   ============================================================ */
+.virtual-tour-box {
+  background: linear-gradient(135deg, var(--emerald-d) 0%, var(--emerald) 100%);
+  border-radius: 16px;
+  padding: 60px 48px;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+}
+.virtual-tour-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tour-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.tour-title { font-size: 32px; font-weight: 900; margin-bottom: 16px; line-height: 1.2; }
+.tour-desc { font-size: 15.5px; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 28px; }
+
+.tour-action-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+.tour-icon-pulse {
+  width: 70px;
+  height: 70px;
+  background: var(--gold);
+  color: var(--emerald-d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 0 10px rgba(212, 175, 55, 0.25);
+  animation: pulseGold 2s infinite;
+}
+@keyframes pulseGold {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5); }
+  70% { box-shadow: 0 0 0 18px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+/* ============================================================
+   NEIGHBORHOODS (royaladvancedtabs)
+   ============================================================ */
+.neighborhood-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.n-tab-btn {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--slate);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.n-tab-btn.active {
+  background: var(--emerald);
+  color: var(--gold);
+  border-color: var(--emerald);
+  box-shadow: 0 4px 15px rgba(11, 37, 32, 0.15);
+}
+
+.neighborhood-content {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.n-info h3 { font-size: 26px; font-weight: 800; color: var(--emerald); margin-bottom: 12px; }
+.n-info p { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
+
+.n-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.n-highlight-item {
+  background: var(--light-bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--emerald);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.n-highlight-item i { color: var(--gold); }
+
+.n-img-box img {
+  border-radius: 10px;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+/* ============================================================
+   ADVISORS (royalteam)
+   ============================================================ */
+.advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.advisor-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+.advisor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(11, 37, 32, 0.12);
+  border-color: var(--gold);
+}
+
+.advisor-img-box {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.advisor-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.advisor-card:hover .advisor-img-box img { transform: scale(1.05); }
+
+.advisor-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(6, 21, 19, 0.8));
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: var(--transition);
+}
+.advisor-card:hover .advisor-overlay { opacity: 1; }
+
+.advisor-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: var(--transition);
+}
+.advisor-social-btn:hover { background: var(--gold); color: var(--emerald); }
+
+.advisor-body { padding: 24px; }
+.advisor-name { font-size: 18px; font-weight: 800; color: var(--emerald); margin-bottom: 4px; }
+.advisor-role { font-size: 12.5px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+.advisor-stats { font-size: 13.5px; color: var(--muted); }
+
+/* ============================================================
+   REVIEWS (royalreview)
+   ============================================================ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.review-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+}
+.review-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+
+.review-stars { color: var(--gold); font-size: 15px; margin-bottom: 16px; display: flex; gap: 4px; }
+.review-text { font-size: 14.5px; color: var(--slate); font-style: italic; line-height: 1.7; margin-bottom: 24px; }
+
+.review-user { display: flex; align-items: center; gap: 14px; }
+.review-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); flex-shrink: 0; }
+.review-name { font-size: 15px; font-weight: 800; color: var(--emerald); }
+.review-property { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+/* ============================================================
+   MORTGAGE CALCULATOR
+   ============================================================ */
+.calc-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.calc-inputs { display: flex; flex-direction: column; gap: 20px; }
+.calc-group label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--emerald);
+  margin-bottom: 8px;
+}
+.calc-group input[type="range"] {
+  width: 100%;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+
+.calc-result-box {
+  background: var(--emerald);
+  border-radius: 12px;
+  padding: 36px 30px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.calc-res-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); font-weight: 700; margin-bottom: 8px; }
+.calc-res-amount { font-size: 42px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 20px; }
+.calc-breakdown { font-size: 13px; color: rgba(255,255,255,0.6); display: flex; flex-direction: column; gap: 6px; }
+
+/* ============================================================
+   PRIVATE VIEWING FORM (royalform)
+   ============================================================ */
+.booking-section {
+  background: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-d) 100%);
+  color: #ffffff;
+  padding: 90px 0;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.booking-info h2 { font-size: 38px; font-weight: 900; line-height: 1.2; margin-bottom: 16px; }
+.booking-info h2 span { color: var(--gold); }
+.booking-info p { font-size: 16px; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 32px; }
+
+.concierge-badges { display: flex; flex-direction: column; gap: 14px; }
+.c-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+}
+.c-badge-item i { color: var(--gold); font-size: 18px; }
+
+.booking-form-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 16px;
+  padding: 36px;
+  backdrop-filter: blur(10px);
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-group label { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  background: rgba(255,255,255,0.12);
+}
+.form-group select option { background: var(--emerald-d); color: #ffffff; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  background: var(--emerald-d);
+  color: rgba(255,255,255,0.7);
+  padding: 70px 0 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-brand .footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.footer-logo-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--gold);
+  color: var(--emerald);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer-logo-text { font-size: 20px; font-weight: 900; color: #ffffff; }
+.footer-logo-text span { color: var(--gold); }
+
+.footer-brand p { font-size: 13.5px; line-height: 1.7; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  color: rgba(255,255,255,0.55);
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+.footer-links a:hover { color: var(--gold); padding-left: 4px; }
+
+.footer-contact-items { display: flex; flex-direction: column; gap: 12px; }
+.footer-c-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.55);
+}
+.footer-c-item i { color: var(--gold); font-size: 16px; margin-top: 2px; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.4); }
+.footer-bottom a { color: var(--gold); font-weight: 600; }
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
+.modal-overlay.active { opacity: 1; pointer-events: all; }
+.modal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 460px;
+  width: 90%;
+  text-align: center;
+  transform: translateY(20px) scale(0.95);
+  transition: var(--transition);
+}
+.modal-overlay.active .modal-card { transform: translateY(0) scale(1); }
+.modal-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--gold-lt);
+  color: var(--gold-d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 20px;
+}
+.modal-card h3 { font-size: 22px; font-weight: 800; color: var(--emerald); margin-bottom: 10px; }
+.modal-card p { font-size: 14.5px; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .property-search-box { grid-template-columns: 1fr 1fr; }
+  .virtual-tour-box { grid-template-columns: 1fr; }
+  .neighborhood-content { grid-template-columns: 1fr; }
+  .calc-card { grid-template-columns: 1fr; }
+  .booking-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .property-search-box { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 16px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 540px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; }
+}

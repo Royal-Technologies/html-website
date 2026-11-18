@@ -1,0 +1,382 @@
+/**
+ * Royal Elementor Theme - Header Style 1 Stylesheet
+ * Compatible with: Royal Elementor Theme (template-parts/headerstyle1.php & header-top.php)
+ * & Royal Addons for Elementor
+ * Site: ArchVogue Architecture & Interior Design Studio
+ * Author: Royal Technologies
+ */
+
+:root {
+  --color1st: #1c1917;
+  --color2nd: #c2410c;
+  --color2nd_hover: #9a3412;
+  --header_top_bg_color: #0c0a09;
+  --header_top_text_color: #a8a29e;
+  --header_bg_color: #ffffff;
+  --header_text_color: #1c1917;
+  --menu_bg: #1c1917;
+  --menu_color: #e7e5e4;
+  --menu_hover_color: #fdba74;
+  --submenu_bg: #ffffff;
+  --action_btn_bg: #c2410c;
+  --action_btn_color: #ffffff;
+}
+
+/* ======= HEADER TOP BAR (.headertop) ======= */
+.headertop {
+  background: var(--header_top_bg_color);
+  color: var(--header_top_text_color);
+  font-size: 12.5px;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.headertop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.headertop a {
+  color: var(--header_top_text_color);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headertop a:hover { color: #fdba74; }
+
+.headertop .topleft,
+.headertop .topright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-award-badge {
+  background: rgba(194, 65, 12, 0.18);
+  color: #fdba74;
+  border: 1px solid rgba(194, 65, 12, 0.4);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ======= MIDDLE BRANDING HEADER (.header) ======= */
+.header {
+  background: var(--header_bg_color);
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e5e4;
+  position: relative;
+}
+
+.header .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--color1st);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fdba74;
+  box-shadow: 0 4px 12px rgba(28, 25, 23, 0.15);
+}
+
+.logo-text-wrap .site-name {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color1st);
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.logo-text-wrap .site-name span { color: var(--color2nd); }
+
+.logo-text-wrap .site-tagline {
+  font-size: 10.5px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+/* Middle Studio Info */
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-info-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-info-icon {
+  width: 40px;
+  height: 40px;
+  background: #f5f5f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--color2nd);
+}
+
+.header-info-block .info-label {
+  font-size: 11px;
+  color: #a8a29e;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.header-info-block .info-value {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color1st);
+}
+
+/* Action Button */
+.royal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--action_btn_bg);
+  color: var(--action_btn_color) !important;
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 11px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(194, 65, 12, 0.3);
+  white-space: nowrap;
+}
+
+.royal-action-btn:hover {
+  background: var(--color2nd_hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(194, 65, 12, 0.4);
+}
+
+/* ======= FULL-WIDTH STICKY NAVIGATION (.desktopmenu) ======= */
+.desktopmenu {
+  background: var(--menu_bg);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.desktopmenu .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Royal Menu (.royalmenu) */
+.royalmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+
+.royalmenu > li {
+  position: relative;
+}
+
+.royalmenu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--menu_color);
+  text-decoration: none;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.royalmenu > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 3px;
+  background: var(--color2nd);
+  transition: all 0.25s;
+}
+
+.royalmenu > li:hover > a,
+.royalmenu > li.current-menu-item > a {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.royalmenu > li:hover > a::after,
+.royalmenu > li.current-menu-item > a::after {
+  left: 12px;
+  right: 12px;
+}
+
+.royalmenu > li > a .caret {
+  font-size: 10px;
+  transition: transform 0.2s;
+  opacity: 0.7;
+}
+
+.royalmenu > li:hover > a .caret {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* Sub-menu */
+.royalmenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 250px;
+  background: var(--submenu_bg);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+  border-top: 3px solid var(--color2nd);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: all 0.22s ease;
+  z-index: 1000;
+}
+
+.royalmenu li:hover > .sub-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.royalmenu .sub-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #44403c;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.royalmenu .sub-menu li a:hover {
+  background: #fafaf9;
+  color: var(--color2nd);
+  padding-left: 25px;
+}
+
+.royalmenu .sub-menu li a i {
+  color: var(--color2nd);
+  font-size: 14px;
+}
+
+/* Mobile Toggle (#navigation-icon) */
+#navigation-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+#navigation-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+  #navigation-icon { display: flex; }
+  .header-meta { display: none; }
+
+  .royalmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--menu_bg);
+    padding: 12px 0 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  .royalmenu.mobile-open { display: flex; }
+
+  .royalmenu > li > a { padding: 12px 24px; }
+  .royalmenu > li > a::after { display: none; }
+
+  .royalmenu .sub-menu {
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid var(--color2nd);
+    background: rgba(0,0,0,0.3);
+    border-radius: 0;
+    display: none;
+  }
+
+  .royalmenu li.menu-item-has-children.open .sub-menu { display: block; }
+  .royalmenu .sub-menu li a { color: rgba(255,255,255,0.85); padding: 9px 16px 9px 36px; }
+}

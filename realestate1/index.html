@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApexLiving — Luxury Real Estate &amp; Private Estates</title>
+  <meta name="description" content="Discover ultra-luxury penthouses, waterfront villas, and prime architectural estates curated by ApexLiving Real Estate Group." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Royal Elementor Theme Header Style 4 CSS -->
+  <link rel="stylesheet" href="css/royal-elementor-header.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER STYLE 4 (Top Bar + Unified Inline Header)
+       ============================================================ -->
+
+  <!-- Top Announcement Bar (.headertop) -->
+  <div class="headertop">
+    <div class="container">
+      <div class="topleft">
+        <span class="top-pill"><i class="bi bi-gem"></i> Exclusive Portfolio</span>
+        <span><i class="bi bi-geo-alt-fill text-gold"></i> Beverly Hills &bull; Manhattan &bull; Miami &bull; Palm Beach</span>
+      </div>
+      <div class="topright">
+        <a href="tel:+18005557788"><i class="bi bi-telephone-fill"></i> +1 (800) 555-REAL</a>
+        <a href="mailto:concierge@apexliving.com"><i class="bi bi-envelope-fill"></i> concierge@apexliving.com</a>
+        <a href="#viewing"><i class="bi bi-shield-lock-fill"></i> VIP Client Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inline Header (.header) -->
+  <header class="header">
+    <div class="container">
+      <!-- Site Logo -->
+      <a href="#home" class="site-logo">
+        <div class="logo-icon-box">
+          <i class="bi bi-key-fill"></i>
+        </div>
+        <div class="logo-text-wrap">
+          <div class="site-name">Apex<span>Living</span></div>
+          <div class="site-tagline">Private Luxury Estates</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (.desktopmenu) -->
+      <nav class="desktopmenu" aria-label="Main Navigation">
+        <!-- Exactly 4 Primary Menu Items -->
+        <ul class="royalmenu">
+          <li class="current-menu-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#estates">
+              Estates <i class="bi bi-chevron-down caret"></i>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="#estates"><i class="bi bi-building"></i> Penthouse Suites</a></li>
+              <li><a href="#estates"><i class="bi bi-water"></i> Waterfront Villas</a></li>
+              <li><a href="#estates"><i class="bi bi-house-door"></i> Gated Acreage Estates</a></li>
+              <li><a href="#estates"><i class="bi bi-palette"></i> Modern Architectural Lofts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#neighborhoods">Neighborhoods</a>
+          </li>
+          <li>
+            <a href="#viewing">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-right-actions">
+        <a href="#viewing" class="royal-action-btn">
+          <i class="bi bi-calendar2-check"></i> Private Viewing
+        </a>
+
+        <!-- Mobile Hamburger (#navigation-icon) -->
+        <button id="navigation-icon" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION (#home)
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <i class="bi bi-stars"></i> Curating Extraordinary Living
+        </div>
+        <h1 class="hero-title">
+          Where Architectural Masterpieces Meet <span>Private Luxury</span>.
+        </h1>
+        <p class="hero-desc">
+          Representing the world’s most prestigious residential enclaves, ultra-exclusive penthouses, and private coastal sanctuaries with discreet advisory.
+        </p>
+
+        <!-- Property Search Filter Widget -->
+        <div class="property-search-box">
+          <div class="search-field">
+            <label>Location</label>
+            <select>
+              <option>All Enclaves</option>
+              <option>Beverly Hills, CA</option>
+              <option>TriBeCa, NY</option>
+              <option>Star Island, Miami</option>
+              <option>Palm Beach, FL</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label>Estate Type</label>
+            <select>
+              <option>All Properties</option>
+              <option>Penthouse Suite</option>
+              <option>Waterfront Villa</option>
+              <option>Gated Compound</option>
+              <option>Architectural Modern</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label>Price Range</label>
+            <select>
+              <option>$5M – $15M</option>
+              <option>$15M – $30M</option>
+              <option>$30M – $60M</option>
+              <option>$60M+</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label>Bedrooms</label>
+            <select>
+              <option>4+ Bedrooms</option>
+              <option>5+ Bedrooms</option>
+              <option>6+ Bedrooms</option>
+              <option>8+ Bedrooms Estate</option>
+            </select>
+          </div>
+
+          <a href="#estates" class="btn-gold" style="white-space: nowrap;">
+            <i class="bi bi-search"></i> Find Estates
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST METRICS BAR
+       ============================================================ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">$4.8B+</div>
+          <div class="stat-label">Transactions Closed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">98.4%</div>
+          <div class="stat-label">Off-Market Discretion Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">45 Days</div>
+          <div class="stat-label">Average Sale Velocity</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">28 Years</div>
+          <div class="stat-label">Ultra-Prime Heritage</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FEATURED ESTATES (#estates / royalportfolio)
+       ============================================================ -->
+  <section class="section section-alt" id="estates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="bi bi-building"></i> Exclusive Collection</div>
+        <h2 class="section-title">Current Prime <span>Residential Listings</span></h2>
+        <p class="section-desc">
+          Every residence in our private registry is individually inspected, vetted for architectural excellence, and curated for discerning global acquisitions.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Properties</button>
+        <button class="filter-btn" data-filter="villa">Waterfront Villas</button>
+        <button class="filter-btn" data-filter="penthouse">Penthouses</button>
+        <button class="filter-btn" data-filter="estate">Gated Estates</button>
+      </div>
+
+      <!-- Estates Grid -->
+      <div class="estates-grid">
+        <!-- Estate 1 -->
+        <div class="estate-card" data-category="villa">
+          <div class="estate-img-wrap">
+            <img src="images/prop-1.jpg" alt="The Bel Air Sanctuary" loading="lazy" />
+            <div class="estate-badge">Exclusive Offering</div>
+            <div class="estate-price">$28,500,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> Bel Air, Los Angeles, CA</div>
+            <h3 class="estate-title">The Bel Air Sanctuary &bull; 2.4-Acre Promontory</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 6 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 8 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 14,200 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-water"></i> Infinity Pool</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estate 2 -->
+        <div class="estate-card" data-category="penthouse">
+          <div class="estate-img-wrap">
+            <img src="images/prop-2.jpg" alt="The TriBeCa Sky Manor" loading="lazy" />
+            <div class="estate-badge">Duplex Penthouse</div>
+            <div class="estate-price">$22,000,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> TriBeCa, Manhattan, NY</div>
+            <h3 class="estate-title">The TriBeCa Sky Manor &bull; Private 360&deg; Terrace</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 5 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 6 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 8,800 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-sun"></i> Private Deck</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estate 3 -->
+        <div class="estate-card" data-category="estate">
+          <div class="estate-img-wrap">
+            <img src="images/prop-3.jpg" alt="Villa Bellissima" loading="lazy" />
+            <div class="estate-badge">Newly Listed</div>
+            <div class="estate-price">$18,750,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> Palm Beach, FL</div>
+            <h3 class="estate-title">Villa Bellissima &bull; Mediterranean Waterfront</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 6 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 7 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 11,400 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-anchor"></i> Yacht Dock</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estate 4 -->
+        <div class="estate-card" data-category="villa">
+          <div class="estate-img-wrap">
+            <img src="images/prop-4.jpg" alt="Biscayne Bay Glass Pavilion" loading="lazy" />
+            <div class="estate-badge">Superyacht Dock</div>
+            <div class="estate-price">$34,000,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> Star Island, Miami, FL</div>
+            <h3 class="estate-title">Biscayne Bay Glass Pavilion &bull; 130ft Waterfront</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 7 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 9 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 16,500 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-shield-lock"></i> Guard Gated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estate 5 -->
+        <div class="estate-card" data-category="penthouse">
+          <div class="estate-img-wrap">
+            <img src="images/prop-5.jpg" alt="SoHo Cast-Iron Loft Tower" loading="lazy" />
+            <div class="estate-badge">Historic Modern</div>
+            <div class="estate-price">$16,200,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> SoHo, Manhattan, NY</div>
+            <h3 class="estate-title">SoHo Cast-Iron Loft &bull; 14-Foot Ceilings &bull; Skylights</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 4 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 5 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 7,200 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-car-front"></i> Auto Elevator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estate 6 -->
+        <div class="estate-card" data-category="estate">
+          <div class="estate-img-wrap">
+            <img src="images/prop-6.jpg" alt="Paradise Valley Hillside Estate" loading="lazy" />
+            <div class="estate-badge">Mountain Views</div>
+            <div class="estate-price">$14,900,000</div>
+          </div>
+          <div class="estate-body">
+            <div class="estate-location"><i class="bi bi-geo-alt"></i> Paradise Valley, Scottsdale, AZ</div>
+            <h3 class="estate-title">Hillside Contemporary Compound &bull; Tennis Court</h3>
+            <div class="estate-specs">
+              <span class="estate-spec-item"><i class="bi bi-door-open"></i> 5 Beds</span>
+              <span class="estate-spec-item"><i class="bi bi-droplet"></i> 6 Baths</span>
+              <span class="estate-spec-item"><i class="bi bi-aspect-ratio"></i> 10,800 sq.ft</span>
+              <span class="estate-spec-item"><i class="bi bi-trophy"></i> Sports Court</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VIRTUAL TOUR / 360 CTA BOX (royalcalltoactionbox)
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="virtual-tour-box">
+        <div>
+          <div class="tour-badge"><i class="bi bi-camera-reels"></i> Immersive Experience</div>
+          <h2 class="tour-title">Experience Ultra-HD 3D Digital Twin Walkthroughs.</h2>
+          <p class="tour-desc">
+            Explore every custom millwork detail, architectural angle, and sweeping skyline view from anywhere in the world with our private virtual concierge walkthrough.
+          </p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a href="#viewing" class="btn-gold"><i class="bi bi-play-circle"></i> Launch 3D Tour</a>
+            <a href="#viewing" class="btn-outline-white"><i class="bi bi-telephone"></i> Request Broker Walkthrough</a>
+          </div>
+        </div>
+
+        <div class="tour-action-card">
+          <div class="tour-icon-pulse">
+            <i class="bi bi-eye-fill"></i>
+          </div>
+          <h4 style="font-size:18px;font-weight:800;margin-bottom:8px;">Live Agent Tour</h4>
+          <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:18px;">
+            Book an encrypted 1-on-1 video walkthrough with our senior estate partners.
+          </p>
+          <a href="#viewing" class="btn-gold" style="width:100%;justify-content:center;padding:10px 16px;font-size:13px;">
+            Book VIP Session
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NEIGHBORHOODS GUIDE (royaladvancedtabs)
+       ============================================================ -->
+  <section class="section section-alt" id="neighborhoods">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="bi bi-geo-alt"></i> Premier Enclaves</div>
+        <h2 class="section-title">Curated <span>Lifestyle Destinations</span></h2>
+        <p class="section-desc">
+          Compare prime luxury markets, cultural highlights, lifestyle amenities, and long-term capital appreciation across iconic territories.
+        </p>
+      </div>
+
+      <!-- Tab Switchers -->
+      <div class="neighborhood-tabs">
+        <button class="n-tab-btn active" data-target="tribeca">TriBeCa &amp; SoHo, NYC</button>
+        <button class="n-tab-btn" data-target="beverly">Beverly Hills &amp; Bel Air, CA</button>
+        <button class="n-tab-btn" data-target="miami">Star Island &amp; Biscayne, FL</button>
+      </div>
+
+      <!-- Neighborhood Content -->
+      <div class="neighborhood-content">
+        <div class="n-info">
+          <h3 id="nTitle">TriBeCa &amp; SoHo Penthouse District</h3>
+          <p id="nDesc">
+            Cobblestone streets, world-renowned dining, and architectural cast-iron lofts offering supreme privacy and private rooftop terraces.
+          </p>
+
+          <div class="n-highlights">
+            <div class="n-highlight-item" id="nH1"><i class="bi bi-shield-check"></i> 24/7 Doorman &amp; Concierge</div>
+            <div class="n-highlight-item" id="nH2"><i class="bi bi-star-fill"></i> Michelin-Star Dining Proximity</div>
+            <div class="n-highlight-item" id="nH3"><i class="bi bi-car-front-fill"></i> Private Subterranean Parking</div>
+            <div class="n-highlight-item" id="nH4"><i class="bi bi-sun-fill"></i> Private Rooftop Gardens</div>
+          </div>
+
+          <a href="#estates" class="btn-gold"><i class="bi bi-arrow-right"></i> View Enclave Inventory</a>
+        </div>
+
+        <div class="n-img-box">
+          <img id="nImg" src="images/prop-2.jpg" alt="Neighborhood Skyline" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SENIOR ADVISORS (royalteam)
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="bi bi-people"></i> Estate Leadership</div>
+        <h2 class="section-title">Our Senior <span>Private Wealth Advisors</span></h2>
+        <p class="section-desc">
+          Seasoned luxury property consultants with an unmatched track record in confidential acquisitions, off-market portfolio trading, and estate advisory.
+        </p>
+      </div>
+
+      <div class="advisors-grid">
+        <!-- Advisor 1 -->
+        <div class="advisor-card">
+          <div class="advisor-img-box">
+            <img src="images/agent-1.jpg" alt="Alexander Vance" loading="lazy" />
+            <div class="advisor-overlay">
+              <a href="#" class="advisor-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="advisor-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+          <div class="advisor-body">
+            <h3 class="advisor-name">Alexander Vance</h3>
+            <div class="advisor-role">Managing Principal &bull; West Coast</div>
+            <div class="advisor-stats">Closed $1.2B+ in Beverly Hills &amp; Malibu Estates</div>
+          </div>
+        </div>
+
+        <!-- Advisor 2 -->
+        <div class="advisor-card">
+          <div class="advisor-img-box">
+            <img src="images/agent-2.jpg" alt="Elena Rostova" loading="lazy" />
+            <div class="advisor-overlay">
+              <a href="#" class="advisor-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="advisor-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+          <div class="advisor-body">
+            <h3 class="advisor-name">Elena Rostova</h3>
+            <div class="advisor-role">Head of Penthouse Advisory &bull; Manhattan</div>
+            <div class="advisor-stats">Leading Top 1% Luxury Broker in NYC for 14 Years</div>
+          </div>
+        </div>
+
+        <!-- Advisor 3 -->
+        <div class="advisor-card">
+          <div class="advisor-img-box">
+            <img src="images/agent-3.jpg" alt="Marcus Sterling" loading="lazy" />
+            <div class="advisor-overlay">
+              <a href="#" class="advisor-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="advisor-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+          <div class="advisor-body">
+            <h3 class="advisor-name">Marcus Sterling</h3>
+            <div class="advisor-role">Waterfront Acquisitions &bull; Florida &amp; Caribbean</div>
+            <div class="advisor-stats">Superyacht Dock &amp; Coastal Estate Specialist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MORTGAGE & WEALTH CALCULATOR
+       ============================================================ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="bi bi-calculator"></i> Financial Planning</div>
+        <h2 class="section-title">Interactive <span>Investment &amp; Mortgage</span> Calculator</h2>
+        <p class="section-desc">
+          Estimate monthly debt service, required liquidity equity, and structural loan amortizations for ultra-luxury residential properties.
+        </p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <div class="calc-group">
+            <label><span>Property Purchase Price</span><span id="priceVal">$18,000,000</span></label>
+            <input type="range" id="calcPrice" min="5000000" max="50000000" step="500000" value="18000000" />
+          </div>
+
+          <div class="calc-group">
+            <label><span>Down Payment (%)</span><span id="downVal">25% ($4,500,000)</span></label>
+            <input type="range" id="calcDown" min="15" max="50" step="5" value="25" />
+          </div>
+
+          <div class="calc-group">
+            <label><span>Interest Rate</span><span id="rateVal">5.5%</span></label>
+            <input type="range" id="calcRate" min="3.5" max="8.0" step="0.1" value="5.5" />
+          </div>
+
+          <div class="calc-group">
+            <label><span>Loan Term</span><span id="yearsVal">30 Years</span></label>
+            <input type="range" id="calcYears" min="15" max="30" step="5" value="30" />
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div class="calc-res-label">Estimated Monthly Payment</div>
+          <div class="calc-res-amount" id="monthlyPayment">$76,651/mo</div>
+          <div class="calc-breakdown">
+            <span id="loanPrincipal">Principal Loan: $13,500,000</span>
+            <span>Excludes private property taxes &amp; umbrella insurance</span>
+          </div>
+          <a href="#viewing" class="btn-gold" style="margin-top:24px;width:100%;justify-content:center;">
+            Connect with Private Banker
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REVIEWS (royalreview)
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="bi bi-star"></i> Client Testimonials</div>
+        <h2 class="section-title">Trusted by <span>Global Visionaries</span></h2>
+        <p class="section-desc">
+          Read what family offices, corporate founders, and high-profile collectors say about our discreet advisory process.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            &ldquo;ApexLiving sourced our waterfront compound entirely off-market. Their confidentiality, speed in closing, and structural contract advisory exceeded our expectations.&rdquo;
+          </p>
+          <div class="review-user">
+            <img class="review-avatar" src="images/review-1.jpg" alt="Harrison Croft" />
+            <div>
+              <div class="review-name">Harrison Croft</div>
+              <div class="review-property">Buyer &bull; Star Island Waterfront Compound</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            &ldquo;Elena secured our TriBeCa duplex penthouse within 72 hours of its discrete private release. Her mastery of Manhattan co-op boards is truly unmatched.&rdquo;
+          </p>
+          <div class="review-user">
+            <img class="review-avatar" src="images/review-2.jpg" alt="Sophia Lindqvist" />
+            <div>
+              <div class="review-name">Sophia Lindqvist</div>
+              <div class="review-property">Buyer &bull; TriBeCa Duplex Penthouse</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            &ldquo;From architectural assessment to escrow closing, Alexander and his advisory partners conducted the acquisition with absolute discretion and white-glove service.&rdquo;
+          </p>
+          <div class="review-user">
+            <img class="review-avatar" src="images/review-3.jpg" alt="Julian Delacroix" />
+            <div>
+              <div class="review-name">Julian Delacroix</div>
+              <div class="review-property">Buyer &bull; Bel Air Hilltop Promontory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRIVATE VIEWING FORM (#viewing / royalform)
+       ============================================================ -->
+  <section class="booking-section" id="viewing">
+    <div class="container">
+      <div class="booking-grid">
+        <!-- Info Column -->
+        <div class="booking-info">
+          <div class="section-label" style="color:var(--gold);"><i class="bi bi-shield-check"></i> Bespoke Experience</div>
+          <h2>Schedule Your <span>Confidential</span> Viewing</h2>
+          <p>
+            Private showings are organized with complete discretion. Our managing partners will personally coordinate security escorts and private chauffeurs upon request.
+          </p>
+
+          <div class="concierge-badges">
+            <div class="c-badge-item">
+              <i class="bi bi-shield-lock-fill"></i> Strict Non-Disclosure &amp; Security Protocols
+            </div>
+            <div class="c-badge-item">
+              <i class="bi bi-airplane-fill"></i> Private Helipad &amp; Runway Coordination
+            </div>
+            <div class="c-badge-item">
+              <i class="bi bi-file-earmark-lock-fill"></i> Verified Proof-of-Funds Prior to Inspection
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="booking-form-card">
+          <form id="viewingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vName">Full Legal Name *</label>
+                <input type="text" id="vName" placeholder="Lord / Lady / Mr. / Ms." required />
+              </div>
+              <div class="form-group">
+                <label for="vPhone">Direct Telephone *</label>
+                <input type="tel" id="vPhone" placeholder="+1 (555) 000-0000" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vEmail">Confidential Email *</label>
+                <input type="email" id="vEmail" placeholder="client@familyoffice.com" required />
+              </div>
+              <div class="form-group">
+                <label for="vProp">Estate of Interest *</label>
+                <select id="vProp" required>
+                  <option value="" disabled selected>Select Property</option>
+                  <option value="The Bel Air Sanctuary ($28.5M)">The Bel Air Sanctuary ($28.5M)</option>
+                  <option value="The TriBeCa Sky Manor ($22M)">The TriBeCa Sky Manor ($22M)</option>
+                  <option value="Villa Bellissima ($18.75M)">Villa Bellissima ($18.75M)</option>
+                  <option value="Biscayne Bay Glass Pavilion ($34M)">Biscayne Bay Glass Pavilion ($34M)</option>
+                  <option value="SoHo Cast-Iron Loft ($16.2M)">SoHo Cast-Iron Loft ($16.2M)</option>
+                  <option value="Off-Market Registry Briefing">Off-Market Registry Briefing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vDate">Preferred Date *</label>
+                <input type="date" id="vDate" required />
+              </div>
+              <div class="form-group">
+                <label for="vTime">Preferred Window *</label>
+                <select id="vTime" required>
+                  <option value="Morning (9:00 AM – 12:00 PM)">Morning (9:00 AM – 12:00 PM)</option>
+                  <option value="Afternoon (1:00 PM – 4:00 PM)">Afternoon (1:00 PM – 4:00 PM)</option>
+                  <option value="Golden Hour Sunset (5:00 PM – 7:30 PM)">Golden Hour Sunset (5:00 PM – 7:30 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vNotes">Specific Advisory Requirements</label>
+              <textarea id="vNotes" rows="2" placeholder="Helicopter transfer, security NDA, family office advisor presence..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width:100%;justify-content:center;font-size:15px;padding:14px;">
+              <i class="bi bi-lock-fill"></i> Request Private Viewing
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <div class="footer-logo-icon"><i class="bi bi-key-fill"></i></div>
+            <div class="footer-logo-text">Apex<span>Living</span></div>
+          </div>
+          <p>
+            The pinnacle of ultra-luxury residential real estate brokerage, discrete acquisitions, and private wealth asset preservation across the world’s elite markets.
+          </p>
+          <div style="display:flex;gap:12px;font-size:16px;">
+            <a href="#" style="color:var(--gold);"><i class="bi bi-instagram"></i></a>
+            <a href="#" style="color:var(--gold);"><i class="bi bi-linkedin"></i></a>
+            <a href="#" style="color:var(--gold);"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Estates -->
+        <div class="footer-col">
+          <h4>Estates</h4>
+          <div class="footer-links">
+            <a href="#estates"><i class="bi bi-chevron-right"></i> Penthouse Suites</a>
+            <a href="#estates"><i class="bi bi-chevron-right"></i> Waterfront Villas</a>
+            <a href="#estates"><i class="bi bi-chevron-right"></i> Gated Acreage</a>
+            <a href="#estates"><i class="bi bi-chevron-right"></i> Modern Architecture</a>
+            <a href="#viewing"><i class="bi bi-chevron-right"></i> Off-Market Deals</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Enclaves -->
+        <div class="footer-col">
+          <h4>Territories</h4>
+          <div class="footer-links">
+            <a href="#neighborhoods"><i class="bi bi-chevron-right"></i> Beverly Hills, CA</a>
+            <a href="#neighborhoods"><i class="bi bi-chevron-right"></i> TriBeCa, NYC</a>
+            <a href="#neighborhoods"><i class="bi bi-chevron-right"></i> Star Island, Miami</a>
+            <a href="#neighborhoods"><i class="bi bi-chevron-right"></i> Palm Beach, FL</a>
+            <a href="#neighborhoods"><i class="bi bi-chevron-right"></i> Aspen, Colorado</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h4>Headquarters</h4>
+          <div class="footer-contact-items">
+            <div class="footer-c-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>9600 Wilshire Boulevard, Suite 800, Beverly Hills, CA 90212</span>
+            </div>
+            <div class="footer-c-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+1 (800) 555-REAL &bull; Direct VIP Concierge</span>
+            </div>
+            <div class="footer-c-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>concierge@apexliving.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 ApexLiving Luxury Real Estate. All rights reserved. Powered by <a href="https://www.royaltechbd.com/" target="_blank" rel="noopener">Royal Technologies</a>.</p>
+        <div style="display:flex;gap:18px;">
+          <a href="#" style="color:rgba(255,255,255,0.4);font-size:13px;">Equal Housing Opportunity</a>
+          <a href="#" style="color:rgba(255,255,255,0.4);font-size:13px;">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Confirmation -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <div class="modal-icon">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <h3>Viewing Requested</h3>
+      <p>
+        Thank you, <strong id="modalClientName">Client</strong>. Your private viewing request for <span id="modalProp" style="color:var(--emerald);font-weight:700;">Property</span> has been received. Our senior managing partner will contact your office discreetly within 2 hours.
+      </p>
+      <button class="btn-gold" id="modalCloseBtn" style="width:100%;justify-content:center;">
+        Acknowledge &amp; Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
